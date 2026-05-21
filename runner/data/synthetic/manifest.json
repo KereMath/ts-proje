@@ -1,0 +1,302 @@
+[
+  {
+    "file": "rw_L45_00.csv",
+    "kind": "rw",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rw_L45_01.csv",
+    "kind": "rw",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rw_L45_02.csv",
+    "kind": "rw",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rw_L45_03.csv",
+    "kind": "rw",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rw_L45_04.csv",
+    "kind": "rw",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rw_L100_00.csv",
+    "kind": "rw",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rw_L100_01.csv",
+    "kind": "rw",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rw_L100_02.csv",
+    "kind": "rw",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rw_L100_03.csv",
+    "kind": "rw",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rw_L100_04.csv",
+    "kind": "rw",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rwd_L45_00.csv",
+    "kind": "rwd",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rwd_L45_01.csv",
+    "kind": "rwd",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rwd_L45_02.csv",
+    "kind": "rwd",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rwd_L45_03.csv",
+    "kind": "rwd",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rwd_L45_04.csv",
+    "kind": "rwd",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rwd_L100_00.csv",
+    "kind": "rwd",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rwd_L100_01.csv",
+    "kind": "rwd",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rwd_L100_02.csv",
+    "kind": "rwd",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rwd_L100_03.csv",
+    "kind": "rwd",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "rwd_L100_04.csv",
+    "kind": "rwd",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ari_L45_00.csv",
+    "kind": "ari",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ari_L45_01.csv",
+    "kind": "ari",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ari_L45_02.csv",
+    "kind": "ari",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ari_L45_03.csv",
+    "kind": "ari",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ari_L45_04.csv",
+    "kind": "ari",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ari_L100_00.csv",
+    "kind": "ari",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ari_L100_01.csv",
+    "kind": "ari",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ari_L100_02.csv",
+    "kind": "ari",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ari_L100_03.csv",
+    "kind": "ari",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ari_L100_04.csv",
+    "kind": "ari",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ima_L45_00.csv",
+    "kind": "ima",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ima_L45_01.csv",
+    "kind": "ima",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ima_L45_02.csv",
+    "kind": "ima",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ima_L45_03.csv",
+    "kind": "ima",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ima_L45_04.csv",
+    "kind": "ima",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ima_L100_00.csv",
+    "kind": "ima",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ima_L100_01.csv",
+    "kind": "ima",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ima_L100_02.csv",
+    "kind": "ima",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ima_L100_03.csv",
+    "kind": "ima",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "ima_L100_04.csv",
+    "kind": "ima",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "arima_L45_00.csv",
+    "kind": "arima",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "arima_L45_01.csv",
+    "kind": "arima",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "arima_L45_02.csv",
+    "kind": "arima",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "arima_L45_03.csv",
+    "kind": "arima",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "arima_L45_04.csv",
+    "kind": "arima",
+    "length": 45,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "arima_L100_00.csv",
+    "kind": "arima",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "arima_L100_01.csv",
+    "kind": "arima",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "arima_L100_02.csv",
+    "kind": "arima",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "arima_L100_03.csv",
+    "kind": "arima",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  },
+  {
+    "file": "arima_L100_04.csv",
+    "kind": "arima",
+    "length": 100,
+    "expected_class": "stochastic_trend"
+  }
+]

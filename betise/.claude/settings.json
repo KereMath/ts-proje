@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python -c \"import betise, os; print\\(betise.__file__\\); print\\(os.path.dirname\\(betise.__file__\\)\\)\")",
+      "Read(//c/Users/Pc/AppData/Local/Programs/Python/Python313/Lib/site-packages/betise/**)",
+      "Read(//c/Users/Pc/AppData/Local/Programs/Python/Python313/Lib/site-packages/betise/config/**)",
+      "PowerShell(pip show betise)",
+      "Read(//c/Users/Pc/AppData/Local/Programs/Python/Python313/Lib/site-packages/betise-0.2.1.dist-info/**)",
+      "PowerShell($src = \"C:\\\\Users\\\\Pc\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\Lib\\\\site-packages\\\\betise\"; $dst = \"C:\\\\Users\\\\Pc\\\\Desktop\\\\betise\"; Get-ChildItem -Path $src -Recurse -Exclude \"__pycache__\" | Where-Object { $_.FullName -notmatch \"__pycache__\" } | ForEach-Object { $rel = $_.FullName.Substring\\($src.Length + 1\\); $target = Join-Path $dst $rel; if \\($_.PSIsContainer\\) { if \\(-not \\(Test-Path $target\\)\\) { New-Item -ItemType Directory -Path $target -Force | Out-Null } } else { $parent = Split-Path $target -Parent; if \\(-not \\(Test-Path $parent\\)\\) { New-Item -ItemType Directory -Path $parent -Force | Out-Null }; Copy-Item -Path $_.FullName -Destination $target -Force } }; Write-Output \"Done\"; Get-ChildItem -Path $dst -Recurse -File | Where-Object { $_.FullName -notmatch \"__pycache__\" -and $_.FullName -notmatch \"\\\\.claude\" } | Select-Object FullName)",
+      "PowerShell(python c:\\\\Users\\\\Pc\\\\Desktop\\\\betise\\\\_extract_docx.py)",
+      "WebSearch"
+    ]
+  }
+}

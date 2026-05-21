@@ -1,0 +1,248 @@
+[
+  {
+    "src": "airpass.txt",
+    "out": "airpass.csv",
+    "format": "brockwell",
+    "n": 144
+  },
+  {
+    "src": "beer.txt",
+    "out": "beer.csv",
+    "format": "brockwell",
+    "n": 422
+  },
+  {
+    "src": "deaths.txt",
+    "out": "deaths.csv",
+    "format": "brockwell",
+    "n": 72
+  },
+  {
+    "src": "e1.dat.txt",
+    "out": "e1.csv",
+    "format": "jmulti",
+    "n": 92
+  },
+  {
+    "src": "e2.dat.txt",
+    "out": "e2.csv",
+    "format": "jmulti",
+    "n": 104
+  },
+  {
+    "src": "German_consumption.dat.txt",
+    "out": "German_consumption.csv",
+    "format": "jmulti",
+    "n": 93
+  },
+  {
+    "src": "German_income.dat.txt",
+    "out": "German_income.csv",
+    "format": "jmulti",
+    "n": 113
+  },
+  {
+    "src": "GermanGNP.dat.txt",
+    "out": "GermanGNP.csv",
+    "format": "jmulti",
+    "n": 88
+  },
+  {
+    "src": "NP_AWHours.dat.txt",
+    "out": "NP_AWHours.csv",
+    "format": "jmulti",
+    "n": 479
+  },
+  {
+    "src": "NP_xetradax_returns100.dat.txt",
+    "out": "NP_xetradax_returns100.csv",
+    "format": "jmulti",
+    "n": 1028
+  },
+  {
+    "src": "Polish_productivity.dat.txt",
+    "out": "Polish_productivity.csv",
+    "format": "jmulti",
+    "n": 117
+  },
+  {
+    "src": "RealInt_dataframe.txt",
+    "out": "RealInt_dataframe.csv",
+    "format": "dataframe_header",
+    "n": 103
+  },
+  {
+    "src": "rec_dataframe.txt",
+    "out": "rec_dataframe.csv",
+    "format": "dataframe_header",
+    "n": 0
+  },
+  {
+    "src": "soi_dataframe.txt",
+    "out": "soi_dataframe.csv",
+    "format": "dataframe_header",
+    "n": 453
+  },
+  {
+    "src": "strikes.txt",
+    "out": "strikes.csv",
+    "format": "brockwell",
+    "n": 30
+  },
+  {
+    "src": "sunspots.txt",
+    "out": "sunspots.csv",
+    "format": "brockwell",
+    "n": 100
+  },
+  {
+    "src": "US_investment.dat.txt",
+    "out": "US_investment.csv",
+    "format": "jmulti",
+    "n": 104
+  },
+  {
+    "src": "uspop.txt",
+    "out": "uspop.csv",
+    "format": "brockwell",
+    "n": 21
+  },
+  {
+    "src": "W1.txt",
+    "out": "W1.csv",
+    "format": "whitespace_multi",
+    "n": 45
+  },
+  {
+    "src": "W10.txt",
+    "out": "W10.csv",
+    "format": "whitespace_multi",
+    "n": 8
+  },
+  {
+    "src": "W11.txt",
+    "out": "W11.csv",
+    "format": "whitespace_multi",
+    "n": 166
+  },
+  {
+    "src": "W12-1.txt",
+    "out": "W12-1.csv",
+    "format": "whitespace_multi",
+    "n": 54
+  },
+  {
+    "src": "W12-2.txt",
+    "out": "W12-2.csv",
+    "format": "whitespace_multi",
+    "n": 54
+  },
+  {
+    "src": "W13-1.txt",
+    "out": "W13-1.csv",
+    "format": "whitespace_multi",
+    "n": 82
+  },
+  {
+    "src": "W13-2.txt",
+    "out": "W13-2.csv",
+    "format": "whitespace_multi",
+    "n": 82
+  },
+  {
+    "src": "W13-3.txt",
+    "out": "W13-3.csv",
+    "format": "whitespace_multi",
+    "n": 82
+  },
+  {
+    "src": "W13-4.txt",
+    "out": "W13-4.csv",
+    "format": "whitespace_multi",
+    "n": 82
+  },
+  {
+    "src": "W13-5.txt",
+    "out": "W13-5.csv",
+    "format": "whitespace_multi",
+    "n": 82
+  },
+  {
+    "src": "W14.txt",
+    "out": "W14.csv",
+    "format": "whitespace_multi",
+    "n": 87
+  },
+  {
+    "src": "W15-1.txt",
+    "out": "W15-1.csv",
+    "format": "whitespace_multi",
+    "n": 46
+  },
+  {
+    "src": "W15-2.txt",
+    "out": "W15-2.csv",
+    "format": "whitespace_multi",
+    "n": 46
+  },
+  {
+    "src": "W16.txt",
+    "out": "W16.csv",
+    "format": "whitespace_multi",
+    "n": 15
+  },
+  {
+    "src": "W2.txt",
+    "out": "W2.csv",
+    "format": "whitespace_multi",
+    "n": 302
+  },
+  {
+    "src": "W3.txt",
+    "out": "W3.csv",
+    "format": "whitespace_multi",
+    "n": 82
+  },
+  {
+    "src": "W5.txt",
+    "out": "W5.csv",
+    "format": "whitespace_multi",
+    "n": 71
+  },
+  {
+    "src": "W6.txt",
+    "out": "W6.csv",
+    "format": "whitespace_multi",
+    "n": 114
+  },
+  {
+    "src": "W8.txt",
+    "out": "W8.csv",
+    "format": "whitespace_multi",
+    "n": 150
+  },
+  {
+    "src": "W9.txt",
+    "out": "W9.csv",
+    "format": "whitespace_multi",
+    "n": 11
+  },
+  {
+    "src": "wine.txt",
+    "out": "wine.csv",
+    "format": "brockwell",
+    "n": 142
+  },
+  {
+    "src": "INDPRO.csv",
+    "out": "INDPRO.csv",
+    "format": "csv_header",
+    "n": 372
+  },
+  {
+    "src": "UNRATE.csv",
+    "out": "UNRATE.csv",
+    "format": "csv_header",
+    "n": 372
+  }
+]

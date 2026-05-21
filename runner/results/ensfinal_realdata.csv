@@ -1,0 +1,33 @@
+name,n,pred_base,pred_anoms,path,stat_prob,router_p,base_stationary,base_deterministic_trend,base_stochastic_trend,base_volatility,anom_collective_anomaly,anom_contextual_anomaly,anom_mean_shift,anom_point_anomaly,anom_trend_shift,anom_variance_shift
+airpass.csv,144,deterministic_trend,"collective_anomaly, contextual_anomaly, point_anomaly",combo,0.046,0.9887,0.0053,0.9705,0.0143,0.0099,0.9145,0.9758,0.0035,0.3774,0.0056,0.0274
+beer.csv,422,deterministic_trend,"collective_anomaly, contextual_anomaly, point_anomaly",combo,0.0689,0.9981,0.0343,0.9541,0.006,0.0056,0.3419,0.5492,0.0027,0.3584,0.0173,0.0148
+deaths.csv,72,stationary,"collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift",combo,0.0036,0.9974,0.7014,0.2463,0.0264,0.0258,0.166,0.9947,0.0013,0.009,0.0266,0.0084
+e1.csv,92,stochastic_trend,"collective_anomaly, contextual_anomaly",combo,0.003,0.988,0.0162,0.2818,0.6777,0.0244,0.9133,0.9786,0.0028,0.1362,0.0034,0.0037
+e2.csv,104,deterministic_trend,contextual_anomaly,combo,0.0833,0.9908,0.0085,0.956,0.0266,0.0089,0.2044,0.9758,0.0033,0.2301,0.0046,0.0028
+German_consumption.csv,93,deterministic_trend,"collective_anomaly, contextual_anomaly",combo,0.0051,0.9967,0.0257,0.9576,0.0093,0.0073,0.9113,0.9786,0.0026,0.1477,0.003,0.003
+German_income.csv,113,deterministic_trend,"collective_anomaly, contextual_anomaly, point_anomaly",combo,0.0251,0.9932,0.0135,0.9588,0.0193,0.0084,0.4195,0.5492,0.0047,0.9931,0.0028,0.0017
+GermanGNP.csv,88,deterministic_trend,"collective_anomaly, contextual_anomaly",combo,0.0043,0.9935,0.0055,0.9832,0.0062,0.0052,0.9161,0.5553,0.0037,0.0109,0.0037,0.006
+INDPRO.csv,372,deterministic_trend,"collective_anomaly, contextual_anomaly, point_anomaly",combo,0.2587,0.9974,0.0009,0.9817,0.0105,0.0069,0.7288,0.0297,0.0077,0.5054,0.0019,0.0049
+NP_AWHours.csv,479,deterministic_trend,collective_anomaly,combo,0.507,0.9971,0.0018,0.9832,0.0091,0.006,0.9934,0.0052,0.0356,0.2487,0.0012,0.0155
+NP_xetradax_returns100.csv,1028,stationary,"collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift",combo,0.0061,0.9916,0.8737,0.015,0.0111,0.1002,0.9304,0.0229,0.0022,0.4809,0.0025,0.0066
+Polish_productivity.csv,117,volatility,"collective_anomaly, point_anomaly",combo,0.8707,0.9983,0.0026,0.002,0.3229,0.6725,0.4152,0.0052,0.001,0.9831,0.0018,0.1652
+RealInt_dataframe.csv,103,deterministic_trend,"collective_anomaly, contextual_anomaly",combo,0.0042,0.999,0.0076,0.9842,0.0023,0.0059,0.9111,0.5436,0.0024,0.0102,0.0092,0.0072
+soi_dataframe.csv,453,stochastic_trend,collective_anomaly,combo,0.3188,0.9913,0.0342,0.0594,0.8095,0.0969,0.9186,0.0052,0.1067,0.0075,0.0027,0.1194
+sunspots.csv,100,deterministic_trend,"collective_anomaly, contextual_anomaly",combo,0.0126,0.9981,0.1464,0.7406,0.0864,0.0266,0.897,0.9786,0.001,0.0738,0.0179,0.0029
+UNRATE.csv,372,deterministic_trend,collective_anomaly,combo,0.6485,0.9878,0.002,0.9261,0.0661,0.0058,0.9939,0.0052,0.0023,0.2449,0.0017,0.003
+US_investment.csv,104,stationary,"collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift",combo,0.0011,0.9938,0.8404,0.1252,0.018,0.0163,0.2366,0.5522,0.0009,0.0078,0.0071,0.002
+W11.csv,166,stochastic_trend,"collective_anomaly, contextual_anomaly",combo,0.004,0.9979,0.0126,0.1792,0.7951,0.0132,0.9927,0.0357,0.0006,0.1619,0.01,0.0166
+W12-1.csv,54,stationary,"collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift",combo,0.0026,0.9455,0.7732,0.0499,0.1076,0.0693,0.2116,0.9947,0.0012,0.0089,0.0057,0.0033
+W12-2.csv,54,stationary,"collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift",combo,0.0021,0.969,0.7909,0.0331,0.1267,0.0493,0.0972,0.6718,0.0025,0.0837,0.0095,0.0024
+W13-1.csv,82,deterministic_trend,contextual_anomaly,combo,0.0008,0.9877,0.029,0.7662,0.1709,0.0339,0.1931,0.6718,0.0044,0.0125,0.0049,0.0243
+W13-2.csv,82,deterministic_trend,contextual_anomaly,combo,0.0021,0.9956,0.0117,0.9524,0.0224,0.0135,0.2146,0.9947,0.0028,0.0094,0.0116,0.0031
+W13-3.csv,82,deterministic_trend,"collective_anomaly, contextual_anomaly",combo,0.0017,0.9934,0.0334,0.9332,0.0125,0.0209,0.4111,0.5553,0.001,0.0086,0.0201,0.0023
+W13-4.csv,82,deterministic_trend,contextual_anomaly,combo,0.0049,0.9977,0.0355,0.6402,0.2953,0.0291,0.1732,0.6645,0.0051,0.0948,0.0115,0.0023
+W13-5.csv,82,deterministic_trend,"collective_anomaly, contextual_anomaly",combo,0.0022,0.9893,0.0047,0.9757,0.0109,0.0086,0.9077,0.9786,0.0031,0.0844,0.0047,0.0223
+W14.csv,87,deterministic_trend,"collective_anomaly, contextual_anomaly",combo,0.0036,0.9964,0.218,0.7465,0.0179,0.0176,0.914,0.5553,0.0038,0.0115,0.021,0.017
+W2.csv,302,deterministic_trend,"collective_anomaly, contextual_anomaly, point_anomaly",combo,0.0046,0.981,0.1898,0.6229,0.165,0.0223,0.2494,0.9758,0.0033,0.1884,0.0104,0.0054
+W3.csv,82,stationary,"collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift",combo,0.002,0.9914,0.7077,0.1941,0.0534,0.0448,0.8913,0.5553,0.0038,0.006,0.0102,0.0026
+W5.csv,71,deterministic_trend,"collective_anomaly, contextual_anomaly",combo,0.001,0.9948,0.087,0.887,0.0091,0.0169,0.911,0.9786,0.0035,0.1273,0.0032,0.0096
+W6.csv,114,deterministic_trend,"collective_anomaly, contextual_anomaly",combo,0.0153,0.9912,0.0062,0.9843,0.0036,0.0059,0.9175,0.9786,0.0024,0.0123,0.0084,0.0097
+W8.csv,150,deterministic_trend,"contextual_anomaly, point_anomaly",combo,0.0286,0.9972,0.0034,0.9919,0.0017,0.003,0.1667,0.9758,0.0053,0.9701,0.004,0.007
+wine.csv,142,deterministic_trend,"collective_anomaly, contextual_anomaly",combo,0.0163,0.9984,0.0846,0.9065,0.0043,0.0045,0.8906,0.5553,0.005,0.113,0.007,0.0094

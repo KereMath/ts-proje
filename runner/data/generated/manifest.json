@@ -1,0 +1,4512 @@
+[
+  {
+    "gid": 1,
+    "name": "stationary",
+    "subpath": "stationary",
+    "file": "stationary_00.csv",
+    "length": 98,
+    "spec": {
+      "base": "stationary"
+    }
+  },
+  {
+    "gid": 1,
+    "name": "stationary",
+    "subpath": "stationary",
+    "file": "stationary_01.csv",
+    "length": 83,
+    "spec": {
+      "base": "stationary"
+    }
+  },
+  {
+    "gid": 1,
+    "name": "stationary",
+    "subpath": "stationary",
+    "file": "stationary_02.csv",
+    "length": 125,
+    "spec": {
+      "base": "stationary"
+    }
+  },
+  {
+    "gid": 1,
+    "name": "stationary",
+    "subpath": "stationary",
+    "file": "stationary_03.csv",
+    "length": 126,
+    "spec": {
+      "base": "stationary"
+    }
+  },
+  {
+    "gid": 1,
+    "name": "stationary",
+    "subpath": "stationary",
+    "file": "stationary_04.csv",
+    "length": 131,
+    "spec": {
+      "base": "stationary"
+    }
+  },
+  {
+    "gid": 1,
+    "name": "stationary",
+    "subpath": "stationary",
+    "file": "stationary_05.csv",
+    "length": 112,
+    "spec": {
+      "base": "stationary"
+    }
+  },
+  {
+    "gid": 1,
+    "name": "stationary",
+    "subpath": "stationary",
+    "file": "stationary_06.csv",
+    "length": 82,
+    "spec": {
+      "base": "stationary"
+    }
+  },
+  {
+    "gid": 1,
+    "name": "stationary",
+    "subpath": "stationary",
+    "file": "stationary_07.csv",
+    "length": 138,
+    "spec": {
+      "base": "stationary"
+    }
+  },
+  {
+    "gid": 1,
+    "name": "stationary",
+    "subpath": "stationary",
+    "file": "stationary_08.csv",
+    "length": 97,
+    "spec": {
+      "base": "stationary"
+    }
+  },
+  {
+    "gid": 1,
+    "name": "stationary",
+    "subpath": "stationary",
+    "file": "stationary_09.csv",
+    "length": 111,
+    "spec": {
+      "base": "stationary"
+    }
+  },
+  {
+    "gid": 2,
+    "name": "deterministic_trend",
+    "subpath": "deterministic_trend",
+    "file": "deterministic_trend_00.csv",
+    "length": 129,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear"
+    }
+  },
+  {
+    "gid": 2,
+    "name": "deterministic_trend",
+    "subpath": "deterministic_trend",
+    "file": "deterministic_trend_01.csv",
+    "length": 140,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear"
+    }
+  },
+  {
+    "gid": 2,
+    "name": "deterministic_trend",
+    "subpath": "deterministic_trend",
+    "file": "deterministic_trend_02.csv",
+    "length": 126,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear"
+    }
+  },
+  {
+    "gid": 2,
+    "name": "deterministic_trend",
+    "subpath": "deterministic_trend",
+    "file": "deterministic_trend_03.csv",
+    "length": 144,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear"
+    }
+  },
+  {
+    "gid": 2,
+    "name": "deterministic_trend",
+    "subpath": "deterministic_trend",
+    "file": "deterministic_trend_04.csv",
+    "length": 145,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear"
+    }
+  },
+  {
+    "gid": 2,
+    "name": "deterministic_trend",
+    "subpath": "deterministic_trend",
+    "file": "deterministic_trend_05.csv",
+    "length": 106,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear"
+    }
+  },
+  {
+    "gid": 2,
+    "name": "deterministic_trend",
+    "subpath": "deterministic_trend",
+    "file": "deterministic_trend_06.csv",
+    "length": 134,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear"
+    }
+  },
+  {
+    "gid": 2,
+    "name": "deterministic_trend",
+    "subpath": "deterministic_trend",
+    "file": "deterministic_trend_07.csv",
+    "length": 106,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear"
+    }
+  },
+  {
+    "gid": 2,
+    "name": "deterministic_trend",
+    "subpath": "deterministic_trend",
+    "file": "deterministic_trend_08.csv",
+    "length": 105,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear"
+    }
+  },
+  {
+    "gid": 2,
+    "name": "deterministic_trend",
+    "subpath": "deterministic_trend",
+    "file": "deterministic_trend_09.csv",
+    "length": 112,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear"
+    }
+  },
+  {
+    "gid": 3,
+    "name": "stochastic_trend",
+    "subpath": "Stochastic Trend",
+    "file": "stochastic_trend_00.csv",
+    "length": 135,
+    "spec": {
+      "base": "stochastic"
+    }
+  },
+  {
+    "gid": 3,
+    "name": "stochastic_trend",
+    "subpath": "Stochastic Trend",
+    "file": "stochastic_trend_01.csv",
+    "length": 110,
+    "spec": {
+      "base": "stochastic"
+    }
+  },
+  {
+    "gid": 3,
+    "name": "stochastic_trend",
+    "subpath": "Stochastic Trend",
+    "file": "stochastic_trend_02.csv",
+    "length": 84,
+    "spec": {
+      "base": "stochastic"
+    }
+  },
+  {
+    "gid": 3,
+    "name": "stochastic_trend",
+    "subpath": "Stochastic Trend",
+    "file": "stochastic_trend_03.csv",
+    "length": 121,
+    "spec": {
+      "base": "stochastic"
+    }
+  },
+  {
+    "gid": 3,
+    "name": "stochastic_trend",
+    "subpath": "Stochastic Trend",
+    "file": "stochastic_trend_04.csv",
+    "length": 127,
+    "spec": {
+      "base": "stochastic"
+    }
+  },
+  {
+    "gid": 3,
+    "name": "stochastic_trend",
+    "subpath": "Stochastic Trend",
+    "file": "stochastic_trend_05.csv",
+    "length": 143,
+    "spec": {
+      "base": "stochastic"
+    }
+  },
+  {
+    "gid": 3,
+    "name": "stochastic_trend",
+    "subpath": "Stochastic Trend",
+    "file": "stochastic_trend_06.csv",
+    "length": 118,
+    "spec": {
+      "base": "stochastic"
+    }
+  },
+  {
+    "gid": 3,
+    "name": "stochastic_trend",
+    "subpath": "Stochastic Trend",
+    "file": "stochastic_trend_07.csv",
+    "length": 86,
+    "spec": {
+      "base": "stochastic"
+    }
+  },
+  {
+    "gid": 3,
+    "name": "stochastic_trend",
+    "subpath": "Stochastic Trend",
+    "file": "stochastic_trend_08.csv",
+    "length": 101,
+    "spec": {
+      "base": "stochastic"
+    }
+  },
+  {
+    "gid": 3,
+    "name": "stochastic_trend",
+    "subpath": "Stochastic Trend",
+    "file": "stochastic_trend_09.csv",
+    "length": 119,
+    "spec": {
+      "base": "stochastic"
+    }
+  },
+  {
+    "gid": 4,
+    "name": "volatility",
+    "subpath": "Volatility",
+    "file": "volatility_00.csv",
+    "length": 109,
+    "spec": {
+      "base": "volatility"
+    }
+  },
+  {
+    "gid": 4,
+    "name": "volatility",
+    "subpath": "Volatility",
+    "file": "volatility_01.csv",
+    "length": 145,
+    "spec": {
+      "base": "volatility"
+    }
+  },
+  {
+    "gid": 4,
+    "name": "volatility",
+    "subpath": "Volatility",
+    "file": "volatility_02.csv",
+    "length": 107,
+    "spec": {
+      "base": "volatility"
+    }
+  },
+  {
+    "gid": 4,
+    "name": "volatility",
+    "subpath": "Volatility",
+    "file": "volatility_03.csv",
+    "length": 112,
+    "spec": {
+      "base": "volatility"
+    }
+  },
+  {
+    "gid": 4,
+    "name": "volatility",
+    "subpath": "Volatility",
+    "file": "volatility_04.csv",
+    "length": 100,
+    "spec": {
+      "base": "volatility"
+    }
+  },
+  {
+    "gid": 4,
+    "name": "volatility",
+    "subpath": "Volatility",
+    "file": "volatility_05.csv",
+    "length": 141,
+    "spec": {
+      "base": "volatility"
+    }
+  },
+  {
+    "gid": 4,
+    "name": "volatility",
+    "subpath": "Volatility",
+    "file": "volatility_06.csv",
+    "length": 97,
+    "spec": {
+      "base": "volatility"
+    }
+  },
+  {
+    "gid": 4,
+    "name": "volatility",
+    "subpath": "Volatility",
+    "file": "volatility_07.csv",
+    "length": 137,
+    "spec": {
+      "base": "volatility"
+    }
+  },
+  {
+    "gid": 4,
+    "name": "volatility",
+    "subpath": "Volatility",
+    "file": "volatility_08.csv",
+    "length": 84,
+    "spec": {
+      "base": "volatility"
+    }
+  },
+  {
+    "gid": 4,
+    "name": "volatility",
+    "subpath": "Volatility",
+    "file": "volatility_09.csv",
+    "length": 82,
+    "spec": {
+      "base": "volatility"
+    }
+  },
+  {
+    "gid": 5,
+    "name": "collective_anomaly",
+    "subpath": "collective_anomaly",
+    "file": "collective_anomaly_00.csv",
+    "length": 101,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 5,
+    "name": "collective_anomaly",
+    "subpath": "collective_anomaly",
+    "file": "collective_anomaly_01.csv",
+    "length": 148,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 5,
+    "name": "collective_anomaly",
+    "subpath": "collective_anomaly",
+    "file": "collective_anomaly_02.csv",
+    "length": 148,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 5,
+    "name": "collective_anomaly",
+    "subpath": "collective_anomaly",
+    "file": "collective_anomaly_03.csv",
+    "length": 91,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 5,
+    "name": "collective_anomaly",
+    "subpath": "collective_anomaly",
+    "file": "collective_anomaly_04.csv",
+    "length": 134,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 5,
+    "name": "collective_anomaly",
+    "subpath": "collective_anomaly",
+    "file": "collective_anomaly_05.csv",
+    "length": 143,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 5,
+    "name": "collective_anomaly",
+    "subpath": "collective_anomaly",
+    "file": "collective_anomaly_06.csv",
+    "length": 108,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 5,
+    "name": "collective_anomaly",
+    "subpath": "collective_anomaly",
+    "file": "collective_anomaly_07.csv",
+    "length": 138,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 5,
+    "name": "collective_anomaly",
+    "subpath": "collective_anomaly",
+    "file": "collective_anomaly_08.csv",
+    "length": 130,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 5,
+    "name": "collective_anomaly",
+    "subpath": "collective_anomaly",
+    "file": "collective_anomaly_09.csv",
+    "length": 96,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 6,
+    "name": "contextual_anomaly",
+    "subpath": "contextual_anomaly",
+    "file": "contextual_anomaly_00.csv",
+    "length": 129,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "contextual"
+    }
+  },
+  {
+    "gid": 6,
+    "name": "contextual_anomaly",
+    "subpath": "contextual_anomaly",
+    "file": "contextual_anomaly_01.csv",
+    "length": 99,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "contextual"
+    }
+  },
+  {
+    "gid": 6,
+    "name": "contextual_anomaly",
+    "subpath": "contextual_anomaly",
+    "file": "contextual_anomaly_02.csv",
+    "length": 87,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "contextual"
+    }
+  },
+  {
+    "gid": 6,
+    "name": "contextual_anomaly",
+    "subpath": "contextual_anomaly",
+    "file": "contextual_anomaly_03.csv",
+    "length": 114,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "contextual"
+    }
+  },
+  {
+    "gid": 6,
+    "name": "contextual_anomaly",
+    "subpath": "contextual_anomaly",
+    "file": "contextual_anomaly_04.csv",
+    "length": 99,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "contextual"
+    }
+  },
+  {
+    "gid": 6,
+    "name": "contextual_anomaly",
+    "subpath": "contextual_anomaly",
+    "file": "contextual_anomaly_05.csv",
+    "length": 95,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "contextual"
+    }
+  },
+  {
+    "gid": 6,
+    "name": "contextual_anomaly",
+    "subpath": "contextual_anomaly",
+    "file": "contextual_anomaly_06.csv",
+    "length": 95,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "contextual"
+    }
+  },
+  {
+    "gid": 6,
+    "name": "contextual_anomaly",
+    "subpath": "contextual_anomaly",
+    "file": "contextual_anomaly_07.csv",
+    "length": 91,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "contextual"
+    }
+  },
+  {
+    "gid": 6,
+    "name": "contextual_anomaly",
+    "subpath": "contextual_anomaly",
+    "file": "contextual_anomaly_08.csv",
+    "length": 109,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "contextual"
+    }
+  },
+  {
+    "gid": 6,
+    "name": "contextual_anomaly",
+    "subpath": "contextual_anomaly",
+    "file": "contextual_anomaly_09.csv",
+    "length": 82,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "contextual"
+    }
+  },
+  {
+    "gid": 7,
+    "name": "mean_shift",
+    "subpath": "mean_shift",
+    "file": "mean_shift_00.csv",
+    "length": 128,
+    "spec": {
+      "base": "stationary",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 7,
+    "name": "mean_shift",
+    "subpath": "mean_shift",
+    "file": "mean_shift_01.csv",
+    "length": 87,
+    "spec": {
+      "base": "stationary",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 7,
+    "name": "mean_shift",
+    "subpath": "mean_shift",
+    "file": "mean_shift_02.csv",
+    "length": 82,
+    "spec": {
+      "base": "stationary",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 7,
+    "name": "mean_shift",
+    "subpath": "mean_shift",
+    "file": "mean_shift_03.csv",
+    "length": 141,
+    "spec": {
+      "base": "stationary",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 7,
+    "name": "mean_shift",
+    "subpath": "mean_shift",
+    "file": "mean_shift_04.csv",
+    "length": 127,
+    "spec": {
+      "base": "stationary",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 7,
+    "name": "mean_shift",
+    "subpath": "mean_shift",
+    "file": "mean_shift_05.csv",
+    "length": 98,
+    "spec": {
+      "base": "stationary",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 7,
+    "name": "mean_shift",
+    "subpath": "mean_shift",
+    "file": "mean_shift_06.csv",
+    "length": 98,
+    "spec": {
+      "base": "stationary",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 7,
+    "name": "mean_shift",
+    "subpath": "mean_shift",
+    "file": "mean_shift_07.csv",
+    "length": 143,
+    "spec": {
+      "base": "stationary",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 7,
+    "name": "mean_shift",
+    "subpath": "mean_shift",
+    "file": "mean_shift_08.csv",
+    "length": 127,
+    "spec": {
+      "base": "stationary",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 7,
+    "name": "mean_shift",
+    "subpath": "mean_shift",
+    "file": "mean_shift_09.csv",
+    "length": 129,
+    "spec": {
+      "base": "stationary",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 8,
+    "name": "point_anomaly",
+    "subpath": "point_anomaly",
+    "file": "point_anomaly_00.csv",
+    "length": 100,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 8,
+    "name": "point_anomaly",
+    "subpath": "point_anomaly",
+    "file": "point_anomaly_01.csv",
+    "length": 136,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 8,
+    "name": "point_anomaly",
+    "subpath": "point_anomaly",
+    "file": "point_anomaly_02.csv",
+    "length": 123,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 8,
+    "name": "point_anomaly",
+    "subpath": "point_anomaly",
+    "file": "point_anomaly_03.csv",
+    "length": 145,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 8,
+    "name": "point_anomaly",
+    "subpath": "point_anomaly",
+    "file": "point_anomaly_04.csv",
+    "length": 142,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 8,
+    "name": "point_anomaly",
+    "subpath": "point_anomaly",
+    "file": "point_anomaly_05.csv",
+    "length": 112,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 8,
+    "name": "point_anomaly",
+    "subpath": "point_anomaly",
+    "file": "point_anomaly_06.csv",
+    "length": 105,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 8,
+    "name": "point_anomaly",
+    "subpath": "point_anomaly",
+    "file": "point_anomaly_07.csv",
+    "length": 101,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 8,
+    "name": "point_anomaly",
+    "subpath": "point_anomaly",
+    "file": "point_anomaly_08.csv",
+    "length": 85,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 8,
+    "name": "point_anomaly",
+    "subpath": "point_anomaly",
+    "file": "point_anomaly_09.csv",
+    "length": 89,
+    "spec": {
+      "base": "stationary",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 9,
+    "name": "trend_shift",
+    "subpath": "trend_shift",
+    "file": "trend_shift_00.csv",
+    "length": 100,
+    "spec": {
+      "base": "stationary",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 9,
+    "name": "trend_shift",
+    "subpath": "trend_shift",
+    "file": "trend_shift_01.csv",
+    "length": 112,
+    "spec": {
+      "base": "stationary",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 9,
+    "name": "trend_shift",
+    "subpath": "trend_shift",
+    "file": "trend_shift_02.csv",
+    "length": 106,
+    "spec": {
+      "base": "stationary",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 9,
+    "name": "trend_shift",
+    "subpath": "trend_shift",
+    "file": "trend_shift_03.csv",
+    "length": 102,
+    "spec": {
+      "base": "stationary",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 9,
+    "name": "trend_shift",
+    "subpath": "trend_shift",
+    "file": "trend_shift_04.csv",
+    "length": 134,
+    "spec": {
+      "base": "stationary",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 9,
+    "name": "trend_shift",
+    "subpath": "trend_shift",
+    "file": "trend_shift_05.csv",
+    "length": 88,
+    "spec": {
+      "base": "stationary",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 9,
+    "name": "trend_shift",
+    "subpath": "trend_shift",
+    "file": "trend_shift_06.csv",
+    "length": 117,
+    "spec": {
+      "base": "stationary",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 9,
+    "name": "trend_shift",
+    "subpath": "trend_shift",
+    "file": "trend_shift_07.csv",
+    "length": 91,
+    "spec": {
+      "base": "stationary",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 9,
+    "name": "trend_shift",
+    "subpath": "trend_shift",
+    "file": "trend_shift_08.csv",
+    "length": 80,
+    "spec": {
+      "base": "stationary",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 9,
+    "name": "trend_shift",
+    "subpath": "trend_shift",
+    "file": "trend_shift_09.csv",
+    "length": 103,
+    "spec": {
+      "base": "stationary",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 10,
+    "name": "variance_shift",
+    "subpath": "variance_shift",
+    "file": "variance_shift_00.csv",
+    "length": 125,
+    "spec": {
+      "base": "stationary",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 10,
+    "name": "variance_shift",
+    "subpath": "variance_shift",
+    "file": "variance_shift_01.csv",
+    "length": 99,
+    "spec": {
+      "base": "stationary",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 10,
+    "name": "variance_shift",
+    "subpath": "variance_shift",
+    "file": "variance_shift_02.csv",
+    "length": 119,
+    "spec": {
+      "base": "stationary",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 10,
+    "name": "variance_shift",
+    "subpath": "variance_shift",
+    "file": "variance_shift_03.csv",
+    "length": 141,
+    "spec": {
+      "base": "stationary",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 10,
+    "name": "variance_shift",
+    "subpath": "variance_shift",
+    "file": "variance_shift_04.csv",
+    "length": 150,
+    "spec": {
+      "base": "stationary",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 10,
+    "name": "variance_shift",
+    "subpath": "variance_shift",
+    "file": "variance_shift_05.csv",
+    "length": 137,
+    "spec": {
+      "base": "stationary",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 10,
+    "name": "variance_shift",
+    "subpath": "variance_shift",
+    "file": "variance_shift_06.csv",
+    "length": 110,
+    "spec": {
+      "base": "stationary",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 10,
+    "name": "variance_shift",
+    "subpath": "variance_shift",
+    "file": "variance_shift_07.csv",
+    "length": 121,
+    "spec": {
+      "base": "stationary",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 10,
+    "name": "variance_shift",
+    "subpath": "variance_shift",
+    "file": "variance_shift_08.csv",
+    "length": 131,
+    "spec": {
+      "base": "stationary",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 10,
+    "name": "variance_shift",
+    "subpath": "variance_shift",
+    "file": "variance_shift_09.csv",
+    "length": 110,
+    "spec": {
+      "base": "stationary",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 11,
+    "name": "cubic+collective",
+    "subpath": "Combinations/Cubic Base/Cubic Base/cubic_collective_anomaly",
+    "file": "cubic_collective_00.csv",
+    "length": 141,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 11,
+    "name": "cubic+collective",
+    "subpath": "Combinations/Cubic Base/Cubic Base/cubic_collective_anomaly",
+    "file": "cubic_collective_01.csv",
+    "length": 83,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 11,
+    "name": "cubic+collective",
+    "subpath": "Combinations/Cubic Base/Cubic Base/cubic_collective_anomaly",
+    "file": "cubic_collective_02.csv",
+    "length": 88,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 11,
+    "name": "cubic+collective",
+    "subpath": "Combinations/Cubic Base/Cubic Base/cubic_collective_anomaly",
+    "file": "cubic_collective_03.csv",
+    "length": 84,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 11,
+    "name": "cubic+collective",
+    "subpath": "Combinations/Cubic Base/Cubic Base/cubic_collective_anomaly",
+    "file": "cubic_collective_04.csv",
+    "length": 80,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 11,
+    "name": "cubic+collective",
+    "subpath": "Combinations/Cubic Base/Cubic Base/cubic_collective_anomaly",
+    "file": "cubic_collective_05.csv",
+    "length": 108,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 11,
+    "name": "cubic+collective",
+    "subpath": "Combinations/Cubic Base/Cubic Base/cubic_collective_anomaly",
+    "file": "cubic_collective_06.csv",
+    "length": 101,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 11,
+    "name": "cubic+collective",
+    "subpath": "Combinations/Cubic Base/Cubic Base/cubic_collective_anomaly",
+    "file": "cubic_collective_07.csv",
+    "length": 112,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 11,
+    "name": "cubic+collective",
+    "subpath": "Combinations/Cubic Base/Cubic Base/cubic_collective_anomaly",
+    "file": "cubic_collective_08.csv",
+    "length": 85,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 11,
+    "name": "cubic+collective",
+    "subpath": "Combinations/Cubic Base/Cubic Base/cubic_collective_anomaly",
+    "file": "cubic_collective_09.csv",
+    "length": 92,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 12,
+    "name": "cubic+mean_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Mean Shift",
+    "file": "cubic_mean_shift_00.csv",
+    "length": 83,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 12,
+    "name": "cubic+mean_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Mean Shift",
+    "file": "cubic_mean_shift_01.csv",
+    "length": 88,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 12,
+    "name": "cubic+mean_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Mean Shift",
+    "file": "cubic_mean_shift_02.csv",
+    "length": 147,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 12,
+    "name": "cubic+mean_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Mean Shift",
+    "file": "cubic_mean_shift_03.csv",
+    "length": 95,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 12,
+    "name": "cubic+mean_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Mean Shift",
+    "file": "cubic_mean_shift_04.csv",
+    "length": 129,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 12,
+    "name": "cubic+mean_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Mean Shift",
+    "file": "cubic_mean_shift_05.csv",
+    "length": 116,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 12,
+    "name": "cubic+mean_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Mean Shift",
+    "file": "cubic_mean_shift_06.csv",
+    "length": 126,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 12,
+    "name": "cubic+mean_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Mean Shift",
+    "file": "cubic_mean_shift_07.csv",
+    "length": 80,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 12,
+    "name": "cubic+mean_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Mean Shift",
+    "file": "cubic_mean_shift_08.csv",
+    "length": 137,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 12,
+    "name": "cubic+mean_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Mean Shift",
+    "file": "cubic_mean_shift_09.csv",
+    "length": 112,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 13,
+    "name": "cubic+point_anomaly",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Point Anomaly",
+    "file": "cubic_point_anomaly_00.csv",
+    "length": 108,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 13,
+    "name": "cubic+point_anomaly",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Point Anomaly",
+    "file": "cubic_point_anomaly_01.csv",
+    "length": 96,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 13,
+    "name": "cubic+point_anomaly",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Point Anomaly",
+    "file": "cubic_point_anomaly_02.csv",
+    "length": 146,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 13,
+    "name": "cubic+point_anomaly",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Point Anomaly",
+    "file": "cubic_point_anomaly_03.csv",
+    "length": 113,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 13,
+    "name": "cubic+point_anomaly",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Point Anomaly",
+    "file": "cubic_point_anomaly_04.csv",
+    "length": 130,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 13,
+    "name": "cubic+point_anomaly",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Point Anomaly",
+    "file": "cubic_point_anomaly_05.csv",
+    "length": 150,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 13,
+    "name": "cubic+point_anomaly",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Point Anomaly",
+    "file": "cubic_point_anomaly_06.csv",
+    "length": 103,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 13,
+    "name": "cubic+point_anomaly",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Point Anomaly",
+    "file": "cubic_point_anomaly_07.csv",
+    "length": 144,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 13,
+    "name": "cubic+point_anomaly",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Point Anomaly",
+    "file": "cubic_point_anomaly_08.csv",
+    "length": 110,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 13,
+    "name": "cubic+point_anomaly",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Point Anomaly",
+    "file": "cubic_point_anomaly_09.csv",
+    "length": 142,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 14,
+    "name": "cubic+variance_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Variance Shift",
+    "file": "cubic_variance_shift_00.csv",
+    "length": 84,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 14,
+    "name": "cubic+variance_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Variance Shift",
+    "file": "cubic_variance_shift_01.csv",
+    "length": 85,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 14,
+    "name": "cubic+variance_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Variance Shift",
+    "file": "cubic_variance_shift_02.csv",
+    "length": 126,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 14,
+    "name": "cubic+variance_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Variance Shift",
+    "file": "cubic_variance_shift_03.csv",
+    "length": 82,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 14,
+    "name": "cubic+variance_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Variance Shift",
+    "file": "cubic_variance_shift_04.csv",
+    "length": 108,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 14,
+    "name": "cubic+variance_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Variance Shift",
+    "file": "cubic_variance_shift_05.csv",
+    "length": 122,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 14,
+    "name": "cubic+variance_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Variance Shift",
+    "file": "cubic_variance_shift_06.csv",
+    "length": 140,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 14,
+    "name": "cubic+variance_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Variance Shift",
+    "file": "cubic_variance_shift_07.csv",
+    "length": 87,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 14,
+    "name": "cubic+variance_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Variance Shift",
+    "file": "cubic_variance_shift_08.csv",
+    "length": 150,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 14,
+    "name": "cubic+variance_shift",
+    "subpath": "Combinations/Cubic Base/Cubic Base/Cubic + Variance Shift",
+    "file": "cubic_variance_shift_09.csv",
+    "length": 140,
+    "spec": {
+      "base": "stationary",
+      "trend": "cubic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 15,
+    "name": "damped+collective",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Collective Anomaly",
+    "file": "damped_collective_00.csv",
+    "length": 114,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 15,
+    "name": "damped+collective",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Collective Anomaly",
+    "file": "damped_collective_01.csv",
+    "length": 116,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 15,
+    "name": "damped+collective",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Collective Anomaly",
+    "file": "damped_collective_02.csv",
+    "length": 141,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 15,
+    "name": "damped+collective",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Collective Anomaly",
+    "file": "damped_collective_03.csv",
+    "length": 134,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 15,
+    "name": "damped+collective",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Collective Anomaly",
+    "file": "damped_collective_04.csv",
+    "length": 124,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 15,
+    "name": "damped+collective",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Collective Anomaly",
+    "file": "damped_collective_05.csv",
+    "length": 149,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 15,
+    "name": "damped+collective",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Collective Anomaly",
+    "file": "damped_collective_06.csv",
+    "length": 85,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 15,
+    "name": "damped+collective",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Collective Anomaly",
+    "file": "damped_collective_07.csv",
+    "length": 80,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 15,
+    "name": "damped+collective",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Collective Anomaly",
+    "file": "damped_collective_08.csv",
+    "length": 138,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 15,
+    "name": "damped+collective",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Collective Anomaly",
+    "file": "damped_collective_09.csv",
+    "length": 91,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 16,
+    "name": "damped+mean_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Mean Shift",
+    "file": "damped_mean_shift_00.csv",
+    "length": 144,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 16,
+    "name": "damped+mean_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Mean Shift",
+    "file": "damped_mean_shift_01.csv",
+    "length": 127,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 16,
+    "name": "damped+mean_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Mean Shift",
+    "file": "damped_mean_shift_02.csv",
+    "length": 138,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 16,
+    "name": "damped+mean_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Mean Shift",
+    "file": "damped_mean_shift_03.csv",
+    "length": 85,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 16,
+    "name": "damped+mean_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Mean Shift",
+    "file": "damped_mean_shift_04.csv",
+    "length": 127,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 16,
+    "name": "damped+mean_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Mean Shift",
+    "file": "damped_mean_shift_05.csv",
+    "length": 99,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 16,
+    "name": "damped+mean_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Mean Shift",
+    "file": "damped_mean_shift_06.csv",
+    "length": 99,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 16,
+    "name": "damped+mean_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Mean Shift",
+    "file": "damped_mean_shift_07.csv",
+    "length": 91,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 16,
+    "name": "damped+mean_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Mean Shift",
+    "file": "damped_mean_shift_08.csv",
+    "length": 143,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 16,
+    "name": "damped+mean_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Mean Shift",
+    "file": "damped_mean_shift_09.csv",
+    "length": 122,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 17,
+    "name": "damped+point_anomaly",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Point Anomaly",
+    "file": "damped_point_anomaly_00.csv",
+    "length": 106,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 17,
+    "name": "damped+point_anomaly",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Point Anomaly",
+    "file": "damped_point_anomaly_01.csv",
+    "length": 117,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 17,
+    "name": "damped+point_anomaly",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Point Anomaly",
+    "file": "damped_point_anomaly_02.csv",
+    "length": 144,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 17,
+    "name": "damped+point_anomaly",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Point Anomaly",
+    "file": "damped_point_anomaly_03.csv",
+    "length": 127,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 17,
+    "name": "damped+point_anomaly",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Point Anomaly",
+    "file": "damped_point_anomaly_04.csv",
+    "length": 108,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 17,
+    "name": "damped+point_anomaly",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Point Anomaly",
+    "file": "damped_point_anomaly_05.csv",
+    "length": 139,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 17,
+    "name": "damped+point_anomaly",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Point Anomaly",
+    "file": "damped_point_anomaly_06.csv",
+    "length": 101,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 17,
+    "name": "damped+point_anomaly",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Point Anomaly",
+    "file": "damped_point_anomaly_07.csv",
+    "length": 89,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 17,
+    "name": "damped+point_anomaly",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Point Anomaly",
+    "file": "damped_point_anomaly_08.csv",
+    "length": 82,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 17,
+    "name": "damped+point_anomaly",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Point Anomaly",
+    "file": "damped_point_anomaly_09.csv",
+    "length": 115,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 18,
+    "name": "damped+variance_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Variance Shift",
+    "file": "damped_variance_shift_00.csv",
+    "length": 113,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 18,
+    "name": "damped+variance_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Variance Shift",
+    "file": "damped_variance_shift_01.csv",
+    "length": 82,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 18,
+    "name": "damped+variance_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Variance Shift",
+    "file": "damped_variance_shift_02.csv",
+    "length": 147,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 18,
+    "name": "damped+variance_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Variance Shift",
+    "file": "damped_variance_shift_03.csv",
+    "length": 143,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 18,
+    "name": "damped+variance_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Variance Shift",
+    "file": "damped_variance_shift_04.csv",
+    "length": 113,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 18,
+    "name": "damped+variance_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Variance Shift",
+    "file": "damped_variance_shift_05.csv",
+    "length": 130,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 18,
+    "name": "damped+variance_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Variance Shift",
+    "file": "damped_variance_shift_06.csv",
+    "length": 103,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 18,
+    "name": "damped+variance_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Variance Shift",
+    "file": "damped_variance_shift_07.csv",
+    "length": 121,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 18,
+    "name": "damped+variance_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Variance Shift",
+    "file": "damped_variance_shift_08.csv",
+    "length": 107,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 18,
+    "name": "damped+variance_shift",
+    "subpath": "Combinations/Damped Base/Damped Base/Damped + Variance Shift",
+    "file": "damped_variance_shift_09.csv",
+    "length": 98,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "trend_sign": -1,
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 19,
+    "name": "exp+collective",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_collective_anomaly",
+    "file": "exp_collective_00.csv",
+    "length": 98,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 19,
+    "name": "exp+collective",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_collective_anomaly",
+    "file": "exp_collective_01.csv",
+    "length": 125,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 19,
+    "name": "exp+collective",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_collective_anomaly",
+    "file": "exp_collective_02.csv",
+    "length": 103,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 19,
+    "name": "exp+collective",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_collective_anomaly",
+    "file": "exp_collective_03.csv",
+    "length": 100,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 19,
+    "name": "exp+collective",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_collective_anomaly",
+    "file": "exp_collective_04.csv",
+    "length": 142,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 19,
+    "name": "exp+collective",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_collective_anomaly",
+    "file": "exp_collective_05.csv",
+    "length": 83,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 19,
+    "name": "exp+collective",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_collective_anomaly",
+    "file": "exp_collective_06.csv",
+    "length": 120,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 19,
+    "name": "exp+collective",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_collective_anomaly",
+    "file": "exp_collective_07.csv",
+    "length": 109,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 19,
+    "name": "exp+collective",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_collective_anomaly",
+    "file": "exp_collective_08.csv",
+    "length": 85,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 19,
+    "name": "exp+collective",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_collective_anomaly",
+    "file": "exp_collective_09.csv",
+    "length": 137,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 20,
+    "name": "exp+mean_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/Exponential + Mean Shift",
+    "file": "exp_mean_shift_00.csv",
+    "length": 88,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 20,
+    "name": "exp+mean_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/Exponential + Mean Shift",
+    "file": "exp_mean_shift_01.csv",
+    "length": 132,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 20,
+    "name": "exp+mean_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/Exponential + Mean Shift",
+    "file": "exp_mean_shift_02.csv",
+    "length": 80,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 20,
+    "name": "exp+mean_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/Exponential + Mean Shift",
+    "file": "exp_mean_shift_03.csv",
+    "length": 123,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 20,
+    "name": "exp+mean_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/Exponential + Mean Shift",
+    "file": "exp_mean_shift_04.csv",
+    "length": 124,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 20,
+    "name": "exp+mean_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/Exponential + Mean Shift",
+    "file": "exp_mean_shift_05.csv",
+    "length": 138,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 20,
+    "name": "exp+mean_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/Exponential + Mean Shift",
+    "file": "exp_mean_shift_06.csv",
+    "length": 141,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 20,
+    "name": "exp+mean_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/Exponential + Mean Shift",
+    "file": "exp_mean_shift_07.csv",
+    "length": 110,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 20,
+    "name": "exp+mean_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/Exponential + Mean Shift",
+    "file": "exp_mean_shift_08.csv",
+    "length": 107,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 20,
+    "name": "exp+mean_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/Exponential + Mean Shift",
+    "file": "exp_mean_shift_09.csv",
+    "length": 120,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 21,
+    "name": "exp+point_anomaly",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_point_anomaly",
+    "file": "exp_point_anomaly_00.csv",
+    "length": 135,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 21,
+    "name": "exp+point_anomaly",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_point_anomaly",
+    "file": "exp_point_anomaly_01.csv",
+    "length": 105,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 21,
+    "name": "exp+point_anomaly",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_point_anomaly",
+    "file": "exp_point_anomaly_02.csv",
+    "length": 143,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 21,
+    "name": "exp+point_anomaly",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_point_anomaly",
+    "file": "exp_point_anomaly_03.csv",
+    "length": 135,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 21,
+    "name": "exp+point_anomaly",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_point_anomaly",
+    "file": "exp_point_anomaly_04.csv",
+    "length": 137,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 21,
+    "name": "exp+point_anomaly",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_point_anomaly",
+    "file": "exp_point_anomaly_05.csv",
+    "length": 132,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 21,
+    "name": "exp+point_anomaly",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_point_anomaly",
+    "file": "exp_point_anomaly_06.csv",
+    "length": 100,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 21,
+    "name": "exp+point_anomaly",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_point_anomaly",
+    "file": "exp_point_anomaly_07.csv",
+    "length": 139,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 21,
+    "name": "exp+point_anomaly",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_point_anomaly",
+    "file": "exp_point_anomaly_08.csv",
+    "length": 112,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 21,
+    "name": "exp+point_anomaly",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_point_anomaly",
+    "file": "exp_point_anomaly_09.csv",
+    "length": 123,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 22,
+    "name": "exp+variance_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_variance_shift",
+    "file": "exp_variance_shift_00.csv",
+    "length": 106,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 22,
+    "name": "exp+variance_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_variance_shift",
+    "file": "exp_variance_shift_01.csv",
+    "length": 115,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 22,
+    "name": "exp+variance_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_variance_shift",
+    "file": "exp_variance_shift_02.csv",
+    "length": 147,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 22,
+    "name": "exp+variance_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_variance_shift",
+    "file": "exp_variance_shift_03.csv",
+    "length": 114,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 22,
+    "name": "exp+variance_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_variance_shift",
+    "file": "exp_variance_shift_04.csv",
+    "length": 96,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 22,
+    "name": "exp+variance_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_variance_shift",
+    "file": "exp_variance_shift_05.csv",
+    "length": 84,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 22,
+    "name": "exp+variance_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_variance_shift",
+    "file": "exp_variance_shift_06.csv",
+    "length": 112,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 22,
+    "name": "exp+variance_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_variance_shift",
+    "file": "exp_variance_shift_07.csv",
+    "length": 142,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 22,
+    "name": "exp+variance_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_variance_shift",
+    "file": "exp_variance_shift_08.csv",
+    "length": 107,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 22,
+    "name": "exp+variance_shift",
+    "subpath": "Combinations/Exponential Base/Exponential Base/exponential_variance_shift",
+    "file": "exp_variance_shift_09.csv",
+    "length": 93,
+    "spec": {
+      "base": "stationary",
+      "trend": "exponential",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 23,
+    "name": "linear+collective",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Collective Anomaly",
+    "file": "linear_collective_00.csv",
+    "length": 132,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 23,
+    "name": "linear+collective",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Collective Anomaly",
+    "file": "linear_collective_01.csv",
+    "length": 123,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 23,
+    "name": "linear+collective",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Collective Anomaly",
+    "file": "linear_collective_02.csv",
+    "length": 101,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 23,
+    "name": "linear+collective",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Collective Anomaly",
+    "file": "linear_collective_03.csv",
+    "length": 114,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 23,
+    "name": "linear+collective",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Collective Anomaly",
+    "file": "linear_collective_04.csv",
+    "length": 132,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 23,
+    "name": "linear+collective",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Collective Anomaly",
+    "file": "linear_collective_05.csv",
+    "length": 81,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 23,
+    "name": "linear+collective",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Collective Anomaly",
+    "file": "linear_collective_06.csv",
+    "length": 102,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 23,
+    "name": "linear+collective",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Collective Anomaly",
+    "file": "linear_collective_07.csv",
+    "length": 135,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 23,
+    "name": "linear+collective",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Collective Anomaly",
+    "file": "linear_collective_08.csv",
+    "length": 107,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 23,
+    "name": "linear+collective",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Collective Anomaly",
+    "file": "linear_collective_09.csv",
+    "length": 143,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 24,
+    "name": "linear+mean_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Mean Shift",
+    "file": "linear_mean_shift_00.csv",
+    "length": 116,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 24,
+    "name": "linear+mean_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Mean Shift",
+    "file": "linear_mean_shift_01.csv",
+    "length": 122,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 24,
+    "name": "linear+mean_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Mean Shift",
+    "file": "linear_mean_shift_02.csv",
+    "length": 133,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 24,
+    "name": "linear+mean_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Mean Shift",
+    "file": "linear_mean_shift_03.csv",
+    "length": 100,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 24,
+    "name": "linear+mean_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Mean Shift",
+    "file": "linear_mean_shift_04.csv",
+    "length": 130,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 24,
+    "name": "linear+mean_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Mean Shift",
+    "file": "linear_mean_shift_05.csv",
+    "length": 90,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 24,
+    "name": "linear+mean_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Mean Shift",
+    "file": "linear_mean_shift_06.csv",
+    "length": 83,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 24,
+    "name": "linear+mean_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Mean Shift",
+    "file": "linear_mean_shift_07.csv",
+    "length": 130,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 24,
+    "name": "linear+mean_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Mean Shift",
+    "file": "linear_mean_shift_08.csv",
+    "length": 135,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 24,
+    "name": "linear+mean_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Mean Shift",
+    "file": "linear_mean_shift_09.csv",
+    "length": 144,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 25,
+    "name": "linear+point_anomaly",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Point Anomaly",
+    "file": "linear_point_anomaly_00.csv",
+    "length": 106,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 25,
+    "name": "linear+point_anomaly",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Point Anomaly",
+    "file": "linear_point_anomaly_01.csv",
+    "length": 112,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 25,
+    "name": "linear+point_anomaly",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Point Anomaly",
+    "file": "linear_point_anomaly_02.csv",
+    "length": 81,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 25,
+    "name": "linear+point_anomaly",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Point Anomaly",
+    "file": "linear_point_anomaly_03.csv",
+    "length": 132,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 25,
+    "name": "linear+point_anomaly",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Point Anomaly",
+    "file": "linear_point_anomaly_04.csv",
+    "length": 97,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 25,
+    "name": "linear+point_anomaly",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Point Anomaly",
+    "file": "linear_point_anomaly_05.csv",
+    "length": 129,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 25,
+    "name": "linear+point_anomaly",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Point Anomaly",
+    "file": "linear_point_anomaly_06.csv",
+    "length": 136,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 25,
+    "name": "linear+point_anomaly",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Point Anomaly",
+    "file": "linear_point_anomaly_07.csv",
+    "length": 117,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 25,
+    "name": "linear+point_anomaly",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Point Anomaly",
+    "file": "linear_point_anomaly_08.csv",
+    "length": 134,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 25,
+    "name": "linear+point_anomaly",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Point Anomaly",
+    "file": "linear_point_anomaly_09.csv",
+    "length": 95,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 26,
+    "name": "linear+trend_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Trend Shift",
+    "file": "linear_trend_shift_00.csv",
+    "length": 94,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 26,
+    "name": "linear+trend_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Trend Shift",
+    "file": "linear_trend_shift_01.csv",
+    "length": 84,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 26,
+    "name": "linear+trend_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Trend Shift",
+    "file": "linear_trend_shift_02.csv",
+    "length": 92,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 26,
+    "name": "linear+trend_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Trend Shift",
+    "file": "linear_trend_shift_03.csv",
+    "length": 139,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 26,
+    "name": "linear+trend_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Trend Shift",
+    "file": "linear_trend_shift_04.csv",
+    "length": 117,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 26,
+    "name": "linear+trend_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Trend Shift",
+    "file": "linear_trend_shift_05.csv",
+    "length": 129,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 26,
+    "name": "linear+trend_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Trend Shift",
+    "file": "linear_trend_shift_06.csv",
+    "length": 85,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 26,
+    "name": "linear+trend_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Trend Shift",
+    "file": "linear_trend_shift_07.csv",
+    "length": 116,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 26,
+    "name": "linear+trend_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Trend Shift",
+    "file": "linear_trend_shift_08.csv",
+    "length": 95,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 26,
+    "name": "linear+trend_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Trend Shift",
+    "file": "linear_trend_shift_09.csv",
+    "length": 118,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "trend_shift"
+    }
+  },
+  {
+    "gid": 27,
+    "name": "linear+variance_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Variance Shift",
+    "file": "linear_variance_shift_00.csv",
+    "length": 131,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 27,
+    "name": "linear+variance_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Variance Shift",
+    "file": "linear_variance_shift_01.csv",
+    "length": 100,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 27,
+    "name": "linear+variance_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Variance Shift",
+    "file": "linear_variance_shift_02.csv",
+    "length": 80,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 27,
+    "name": "linear+variance_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Variance Shift",
+    "file": "linear_variance_shift_03.csv",
+    "length": 123,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 27,
+    "name": "linear+variance_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Variance Shift",
+    "file": "linear_variance_shift_04.csv",
+    "length": 82,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 27,
+    "name": "linear+variance_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Variance Shift",
+    "file": "linear_variance_shift_05.csv",
+    "length": 93,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 27,
+    "name": "linear+variance_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Variance Shift",
+    "file": "linear_variance_shift_06.csv",
+    "length": 88,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 27,
+    "name": "linear+variance_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Variance Shift",
+    "file": "linear_variance_shift_07.csv",
+    "length": 100,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 27,
+    "name": "linear+variance_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Variance Shift",
+    "file": "linear_variance_shift_08.csv",
+    "length": 145,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 27,
+    "name": "linear+variance_shift",
+    "subpath": "Combinations/Linear Base/Linear Base/Linear + Variance Shift",
+    "file": "linear_variance_shift_09.csv",
+    "length": 111,
+    "spec": {
+      "base": "stationary",
+      "trend": "linear",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 28,
+    "name": "quad+collective",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Collective anomaly",
+    "file": "quad_collective_00.csv",
+    "length": 125,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 28,
+    "name": "quad+collective",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Collective anomaly",
+    "file": "quad_collective_01.csv",
+    "length": 83,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 28,
+    "name": "quad+collective",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Collective anomaly",
+    "file": "quad_collective_02.csv",
+    "length": 126,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 28,
+    "name": "quad+collective",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Collective anomaly",
+    "file": "quad_collective_03.csv",
+    "length": 142,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 28,
+    "name": "quad+collective",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Collective anomaly",
+    "file": "quad_collective_04.csv",
+    "length": 111,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 28,
+    "name": "quad+collective",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Collective anomaly",
+    "file": "quad_collective_05.csv",
+    "length": 96,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 28,
+    "name": "quad+collective",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Collective anomaly",
+    "file": "quad_collective_06.csv",
+    "length": 139,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 28,
+    "name": "quad+collective",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Collective anomaly",
+    "file": "quad_collective_07.csv",
+    "length": 89,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 28,
+    "name": "quad+collective",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Collective anomaly",
+    "file": "quad_collective_08.csv",
+    "length": 140,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 28,
+    "name": "quad+collective",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Collective anomaly",
+    "file": "quad_collective_09.csv",
+    "length": 138,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 29,
+    "name": "quad+mean_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Mean Shift",
+    "file": "quad_mean_shift_00.csv",
+    "length": 89,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 29,
+    "name": "quad+mean_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Mean Shift",
+    "file": "quad_mean_shift_01.csv",
+    "length": 123,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 29,
+    "name": "quad+mean_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Mean Shift",
+    "file": "quad_mean_shift_02.csv",
+    "length": 112,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 29,
+    "name": "quad+mean_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Mean Shift",
+    "file": "quad_mean_shift_03.csv",
+    "length": 92,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 29,
+    "name": "quad+mean_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Mean Shift",
+    "file": "quad_mean_shift_04.csv",
+    "length": 98,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 29,
+    "name": "quad+mean_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Mean Shift",
+    "file": "quad_mean_shift_05.csv",
+    "length": 93,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 29,
+    "name": "quad+mean_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Mean Shift",
+    "file": "quad_mean_shift_06.csv",
+    "length": 114,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 29,
+    "name": "quad+mean_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Mean Shift",
+    "file": "quad_mean_shift_07.csv",
+    "length": 120,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 29,
+    "name": "quad+mean_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Mean Shift",
+    "file": "quad_mean_shift_08.csv",
+    "length": 136,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 29,
+    "name": "quad+mean_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Mean Shift",
+    "file": "quad_mean_shift_09.csv",
+    "length": 80,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 30,
+    "name": "quad+point_anomaly",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Point Anomaly",
+    "file": "quad_point_anomaly_00.csv",
+    "length": 80,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 30,
+    "name": "quad+point_anomaly",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Point Anomaly",
+    "file": "quad_point_anomaly_01.csv",
+    "length": 125,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 30,
+    "name": "quad+point_anomaly",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Point Anomaly",
+    "file": "quad_point_anomaly_02.csv",
+    "length": 148,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 30,
+    "name": "quad+point_anomaly",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Point Anomaly",
+    "file": "quad_point_anomaly_03.csv",
+    "length": 135,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 30,
+    "name": "quad+point_anomaly",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Point Anomaly",
+    "file": "quad_point_anomaly_04.csv",
+    "length": 133,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 30,
+    "name": "quad+point_anomaly",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Point Anomaly",
+    "file": "quad_point_anomaly_05.csv",
+    "length": 101,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 30,
+    "name": "quad+point_anomaly",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Point Anomaly",
+    "file": "quad_point_anomaly_06.csv",
+    "length": 139,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 30,
+    "name": "quad+point_anomaly",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Point Anomaly",
+    "file": "quad_point_anomaly_07.csv",
+    "length": 118,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 30,
+    "name": "quad+point_anomaly",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Point Anomaly",
+    "file": "quad_point_anomaly_08.csv",
+    "length": 150,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 30,
+    "name": "quad+point_anomaly",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Point Anomaly",
+    "file": "quad_point_anomaly_09.csv",
+    "length": 127,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 31,
+    "name": "quad+variance_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Variance Shift",
+    "file": "quad_variance_shift_00.csv",
+    "length": 144,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 31,
+    "name": "quad+variance_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Variance Shift",
+    "file": "quad_variance_shift_01.csv",
+    "length": 100,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 31,
+    "name": "quad+variance_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Variance Shift",
+    "file": "quad_variance_shift_02.csv",
+    "length": 86,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 31,
+    "name": "quad+variance_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Variance Shift",
+    "file": "quad_variance_shift_03.csv",
+    "length": 103,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 31,
+    "name": "quad+variance_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Variance Shift",
+    "file": "quad_variance_shift_04.csv",
+    "length": 105,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 31,
+    "name": "quad+variance_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Variance Shift",
+    "file": "quad_variance_shift_05.csv",
+    "length": 148,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 31,
+    "name": "quad+variance_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Variance Shift",
+    "file": "quad_variance_shift_06.csv",
+    "length": 81,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 31,
+    "name": "quad+variance_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Variance Shift",
+    "file": "quad_variance_shift_07.csv",
+    "length": 86,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 31,
+    "name": "quad+variance_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Variance Shift",
+    "file": "quad_variance_shift_08.csv",
+    "length": 148,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 31,
+    "name": "quad+variance_shift",
+    "subpath": "Combinations/Quadratic Base/Quadratic Base/Quadratic + Variance Shift",
+    "file": "quad_variance_shift_09.csv",
+    "length": 131,
+    "spec": {
+      "base": "stationary",
+      "trend": "quadratic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 32,
+    "name": "stoch+collective",
+    "subpath": "Combinations/Stochastic Trend + Collective Anomaly",
+    "file": "stoch_collective_00.csv",
+    "length": 119,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 32,
+    "name": "stoch+collective",
+    "subpath": "Combinations/Stochastic Trend + Collective Anomaly",
+    "file": "stoch_collective_01.csv",
+    "length": 93,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 32,
+    "name": "stoch+collective",
+    "subpath": "Combinations/Stochastic Trend + Collective Anomaly",
+    "file": "stoch_collective_02.csv",
+    "length": 89,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 32,
+    "name": "stoch+collective",
+    "subpath": "Combinations/Stochastic Trend + Collective Anomaly",
+    "file": "stoch_collective_03.csv",
+    "length": 135,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 32,
+    "name": "stoch+collective",
+    "subpath": "Combinations/Stochastic Trend + Collective Anomaly",
+    "file": "stoch_collective_04.csv",
+    "length": 110,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 32,
+    "name": "stoch+collective",
+    "subpath": "Combinations/Stochastic Trend + Collective Anomaly",
+    "file": "stoch_collective_05.csv",
+    "length": 90,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 32,
+    "name": "stoch+collective",
+    "subpath": "Combinations/Stochastic Trend + Collective Anomaly",
+    "file": "stoch_collective_06.csv",
+    "length": 84,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 32,
+    "name": "stoch+collective",
+    "subpath": "Combinations/Stochastic Trend + Collective Anomaly",
+    "file": "stoch_collective_07.csv",
+    "length": 147,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 32,
+    "name": "stoch+collective",
+    "subpath": "Combinations/Stochastic Trend + Collective Anomaly",
+    "file": "stoch_collective_08.csv",
+    "length": 113,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 32,
+    "name": "stoch+collective",
+    "subpath": "Combinations/Stochastic Trend + Collective Anomaly",
+    "file": "stoch_collective_09.csv",
+    "length": 114,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 33,
+    "name": "stoch+mean_shift",
+    "subpath": "Combinations/Stochastic Trend + Mean Shift",
+    "file": "stoch_mean_shift_00.csv",
+    "length": 124,
+    "spec": {
+      "base": "stochastic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 33,
+    "name": "stoch+mean_shift",
+    "subpath": "Combinations/Stochastic Trend + Mean Shift",
+    "file": "stoch_mean_shift_01.csv",
+    "length": 132,
+    "spec": {
+      "base": "stochastic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 33,
+    "name": "stoch+mean_shift",
+    "subpath": "Combinations/Stochastic Trend + Mean Shift",
+    "file": "stoch_mean_shift_02.csv",
+    "length": 117,
+    "spec": {
+      "base": "stochastic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 33,
+    "name": "stoch+mean_shift",
+    "subpath": "Combinations/Stochastic Trend + Mean Shift",
+    "file": "stoch_mean_shift_03.csv",
+    "length": 83,
+    "spec": {
+      "base": "stochastic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 33,
+    "name": "stoch+mean_shift",
+    "subpath": "Combinations/Stochastic Trend + Mean Shift",
+    "file": "stoch_mean_shift_04.csv",
+    "length": 100,
+    "spec": {
+      "base": "stochastic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 33,
+    "name": "stoch+mean_shift",
+    "subpath": "Combinations/Stochastic Trend + Mean Shift",
+    "file": "stoch_mean_shift_05.csv",
+    "length": 87,
+    "spec": {
+      "base": "stochastic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 33,
+    "name": "stoch+mean_shift",
+    "subpath": "Combinations/Stochastic Trend + Mean Shift",
+    "file": "stoch_mean_shift_06.csv",
+    "length": 81,
+    "spec": {
+      "base": "stochastic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 33,
+    "name": "stoch+mean_shift",
+    "subpath": "Combinations/Stochastic Trend + Mean Shift",
+    "file": "stoch_mean_shift_07.csv",
+    "length": 95,
+    "spec": {
+      "base": "stochastic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 33,
+    "name": "stoch+mean_shift",
+    "subpath": "Combinations/Stochastic Trend + Mean Shift",
+    "file": "stoch_mean_shift_08.csv",
+    "length": 143,
+    "spec": {
+      "base": "stochastic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 33,
+    "name": "stoch+mean_shift",
+    "subpath": "Combinations/Stochastic Trend + Mean Shift",
+    "file": "stoch_mean_shift_09.csv",
+    "length": 141,
+    "spec": {
+      "base": "stochastic",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 34,
+    "name": "stoch+point_anomaly",
+    "subpath": "Combinations/Stochastic Trend + Point Anomaly",
+    "file": "stoch_point_anomaly_00.csv",
+    "length": 115,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 34,
+    "name": "stoch+point_anomaly",
+    "subpath": "Combinations/Stochastic Trend + Point Anomaly",
+    "file": "stoch_point_anomaly_01.csv",
+    "length": 84,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 34,
+    "name": "stoch+point_anomaly",
+    "subpath": "Combinations/Stochastic Trend + Point Anomaly",
+    "file": "stoch_point_anomaly_02.csv",
+    "length": 80,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 34,
+    "name": "stoch+point_anomaly",
+    "subpath": "Combinations/Stochastic Trend + Point Anomaly",
+    "file": "stoch_point_anomaly_03.csv",
+    "length": 90,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 34,
+    "name": "stoch+point_anomaly",
+    "subpath": "Combinations/Stochastic Trend + Point Anomaly",
+    "file": "stoch_point_anomaly_04.csv",
+    "length": 142,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 34,
+    "name": "stoch+point_anomaly",
+    "subpath": "Combinations/Stochastic Trend + Point Anomaly",
+    "file": "stoch_point_anomaly_05.csv",
+    "length": 115,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 34,
+    "name": "stoch+point_anomaly",
+    "subpath": "Combinations/Stochastic Trend + Point Anomaly",
+    "file": "stoch_point_anomaly_06.csv",
+    "length": 102,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 34,
+    "name": "stoch+point_anomaly",
+    "subpath": "Combinations/Stochastic Trend + Point Anomaly",
+    "file": "stoch_point_anomaly_07.csv",
+    "length": 107,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 34,
+    "name": "stoch+point_anomaly",
+    "subpath": "Combinations/Stochastic Trend + Point Anomaly",
+    "file": "stoch_point_anomaly_08.csv",
+    "length": 95,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 34,
+    "name": "stoch+point_anomaly",
+    "subpath": "Combinations/Stochastic Trend + Point Anomaly",
+    "file": "stoch_point_anomaly_09.csv",
+    "length": 110,
+    "spec": {
+      "base": "stochastic",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 35,
+    "name": "stoch+variance_shift",
+    "subpath": "Combinations/Stochastic Trend + Variance Shift/Stochastic Trend + Variance Shift",
+    "file": "stoch_variance_shift_00.csv",
+    "length": 99,
+    "spec": {
+      "base": "stochastic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 35,
+    "name": "stoch+variance_shift",
+    "subpath": "Combinations/Stochastic Trend + Variance Shift/Stochastic Trend + Variance Shift",
+    "file": "stoch_variance_shift_01.csv",
+    "length": 101,
+    "spec": {
+      "base": "stochastic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 35,
+    "name": "stoch+variance_shift",
+    "subpath": "Combinations/Stochastic Trend + Variance Shift/Stochastic Trend + Variance Shift",
+    "file": "stoch_variance_shift_02.csv",
+    "length": 104,
+    "spec": {
+      "base": "stochastic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 35,
+    "name": "stoch+variance_shift",
+    "subpath": "Combinations/Stochastic Trend + Variance Shift/Stochastic Trend + Variance Shift",
+    "file": "stoch_variance_shift_03.csv",
+    "length": 108,
+    "spec": {
+      "base": "stochastic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 35,
+    "name": "stoch+variance_shift",
+    "subpath": "Combinations/Stochastic Trend + Variance Shift/Stochastic Trend + Variance Shift",
+    "file": "stoch_variance_shift_04.csv",
+    "length": 148,
+    "spec": {
+      "base": "stochastic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 35,
+    "name": "stoch+variance_shift",
+    "subpath": "Combinations/Stochastic Trend + Variance Shift/Stochastic Trend + Variance Shift",
+    "file": "stoch_variance_shift_05.csv",
+    "length": 93,
+    "spec": {
+      "base": "stochastic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 35,
+    "name": "stoch+variance_shift",
+    "subpath": "Combinations/Stochastic Trend + Variance Shift/Stochastic Trend + Variance Shift",
+    "file": "stoch_variance_shift_06.csv",
+    "length": 117,
+    "spec": {
+      "base": "stochastic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 35,
+    "name": "stoch+variance_shift",
+    "subpath": "Combinations/Stochastic Trend + Variance Shift/Stochastic Trend + Variance Shift",
+    "file": "stoch_variance_shift_07.csv",
+    "length": 82,
+    "spec": {
+      "base": "stochastic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 35,
+    "name": "stoch+variance_shift",
+    "subpath": "Combinations/Stochastic Trend + Variance Shift/Stochastic Trend + Variance Shift",
+    "file": "stoch_variance_shift_08.csv",
+    "length": 147,
+    "spec": {
+      "base": "stochastic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 35,
+    "name": "stoch+variance_shift",
+    "subpath": "Combinations/Stochastic Trend + Variance Shift/Stochastic Trend + Variance Shift",
+    "file": "stoch_variance_shift_09.csv",
+    "length": 89,
+    "spec": {
+      "base": "stochastic",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 36,
+    "name": "vol+collective",
+    "subpath": "Combinations/Volatility + Collective Anomaly",
+    "file": "vol_collective_00.csv",
+    "length": 82,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 36,
+    "name": "vol+collective",
+    "subpath": "Combinations/Volatility + Collective Anomaly",
+    "file": "vol_collective_01.csv",
+    "length": 112,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 36,
+    "name": "vol+collective",
+    "subpath": "Combinations/Volatility + Collective Anomaly",
+    "file": "vol_collective_02.csv",
+    "length": 94,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 36,
+    "name": "vol+collective",
+    "subpath": "Combinations/Volatility + Collective Anomaly",
+    "file": "vol_collective_03.csv",
+    "length": 136,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 36,
+    "name": "vol+collective",
+    "subpath": "Combinations/Volatility + Collective Anomaly",
+    "file": "vol_collective_04.csv",
+    "length": 111,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 36,
+    "name": "vol+collective",
+    "subpath": "Combinations/Volatility + Collective Anomaly",
+    "file": "vol_collective_05.csv",
+    "length": 122,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 36,
+    "name": "vol+collective",
+    "subpath": "Combinations/Volatility + Collective Anomaly",
+    "file": "vol_collective_06.csv",
+    "length": 100,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 36,
+    "name": "vol+collective",
+    "subpath": "Combinations/Volatility + Collective Anomaly",
+    "file": "vol_collective_07.csv",
+    "length": 111,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 36,
+    "name": "vol+collective",
+    "subpath": "Combinations/Volatility + Collective Anomaly",
+    "file": "vol_collective_08.csv",
+    "length": 98,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 36,
+    "name": "vol+collective",
+    "subpath": "Combinations/Volatility + Collective Anomaly",
+    "file": "vol_collective_09.csv",
+    "length": 134,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "collective"
+    }
+  },
+  {
+    "gid": 37,
+    "name": "vol+mean_shift",
+    "subpath": "Combinations/Volatility + Mean Shift",
+    "file": "vol_mean_shift_00.csv",
+    "length": 106,
+    "spec": {
+      "base": "volatility",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 37,
+    "name": "vol+mean_shift",
+    "subpath": "Combinations/Volatility + Mean Shift",
+    "file": "vol_mean_shift_01.csv",
+    "length": 104,
+    "spec": {
+      "base": "volatility",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 37,
+    "name": "vol+mean_shift",
+    "subpath": "Combinations/Volatility + Mean Shift",
+    "file": "vol_mean_shift_02.csv",
+    "length": 144,
+    "spec": {
+      "base": "volatility",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 37,
+    "name": "vol+mean_shift",
+    "subpath": "Combinations/Volatility + Mean Shift",
+    "file": "vol_mean_shift_03.csv",
+    "length": 102,
+    "spec": {
+      "base": "volatility",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 37,
+    "name": "vol+mean_shift",
+    "subpath": "Combinations/Volatility + Mean Shift",
+    "file": "vol_mean_shift_04.csv",
+    "length": 112,
+    "spec": {
+      "base": "volatility",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 37,
+    "name": "vol+mean_shift",
+    "subpath": "Combinations/Volatility + Mean Shift",
+    "file": "vol_mean_shift_05.csv",
+    "length": 88,
+    "spec": {
+      "base": "volatility",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 37,
+    "name": "vol+mean_shift",
+    "subpath": "Combinations/Volatility + Mean Shift",
+    "file": "vol_mean_shift_06.csv",
+    "length": 141,
+    "spec": {
+      "base": "volatility",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 37,
+    "name": "vol+mean_shift",
+    "subpath": "Combinations/Volatility + Mean Shift",
+    "file": "vol_mean_shift_07.csv",
+    "length": 108,
+    "spec": {
+      "base": "volatility",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 37,
+    "name": "vol+mean_shift",
+    "subpath": "Combinations/Volatility + Mean Shift",
+    "file": "vol_mean_shift_08.csv",
+    "length": 145,
+    "spec": {
+      "base": "volatility",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 37,
+    "name": "vol+mean_shift",
+    "subpath": "Combinations/Volatility + Mean Shift",
+    "file": "vol_mean_shift_09.csv",
+    "length": 146,
+    "spec": {
+      "base": "volatility",
+      "break": "mean_shift"
+    }
+  },
+  {
+    "gid": 38,
+    "name": "vol+point_anomaly",
+    "subpath": "Combinations/Volatility + Point Anomaly",
+    "file": "vol_point_anomaly_00.csv",
+    "length": 142,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 38,
+    "name": "vol+point_anomaly",
+    "subpath": "Combinations/Volatility + Point Anomaly",
+    "file": "vol_point_anomaly_01.csv",
+    "length": 86,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 38,
+    "name": "vol+point_anomaly",
+    "subpath": "Combinations/Volatility + Point Anomaly",
+    "file": "vol_point_anomaly_02.csv",
+    "length": 138,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 38,
+    "name": "vol+point_anomaly",
+    "subpath": "Combinations/Volatility + Point Anomaly",
+    "file": "vol_point_anomaly_03.csv",
+    "length": 116,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 38,
+    "name": "vol+point_anomaly",
+    "subpath": "Combinations/Volatility + Point Anomaly",
+    "file": "vol_point_anomaly_04.csv",
+    "length": 132,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 38,
+    "name": "vol+point_anomaly",
+    "subpath": "Combinations/Volatility + Point Anomaly",
+    "file": "vol_point_anomaly_05.csv",
+    "length": 121,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 38,
+    "name": "vol+point_anomaly",
+    "subpath": "Combinations/Volatility + Point Anomaly",
+    "file": "vol_point_anomaly_06.csv",
+    "length": 132,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 38,
+    "name": "vol+point_anomaly",
+    "subpath": "Combinations/Volatility + Point Anomaly",
+    "file": "vol_point_anomaly_07.csv",
+    "length": 148,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 38,
+    "name": "vol+point_anomaly",
+    "subpath": "Combinations/Volatility + Point Anomaly",
+    "file": "vol_point_anomaly_08.csv",
+    "length": 137,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 38,
+    "name": "vol+point_anomaly",
+    "subpath": "Combinations/Volatility + Point Anomaly",
+    "file": "vol_point_anomaly_09.csv",
+    "length": 137,
+    "spec": {
+      "base": "volatility",
+      "anomaly": "point"
+    }
+  },
+  {
+    "gid": 39,
+    "name": "vol+variance_shift",
+    "subpath": "Combinations/Volatility + Variance Shift",
+    "file": "vol_variance_shift_00.csv",
+    "length": 88,
+    "spec": {
+      "base": "volatility",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 39,
+    "name": "vol+variance_shift",
+    "subpath": "Combinations/Volatility + Variance Shift",
+    "file": "vol_variance_shift_01.csv",
+    "length": 91,
+    "spec": {
+      "base": "volatility",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 39,
+    "name": "vol+variance_shift",
+    "subpath": "Combinations/Volatility + Variance Shift",
+    "file": "vol_variance_shift_02.csv",
+    "length": 129,
+    "spec": {
+      "base": "volatility",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 39,
+    "name": "vol+variance_shift",
+    "subpath": "Combinations/Volatility + Variance Shift",
+    "file": "vol_variance_shift_03.csv",
+    "length": 106,
+    "spec": {
+      "base": "volatility",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 39,
+    "name": "vol+variance_shift",
+    "subpath": "Combinations/Volatility + Variance Shift",
+    "file": "vol_variance_shift_04.csv",
+    "length": 94,
+    "spec": {
+      "base": "volatility",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 39,
+    "name": "vol+variance_shift",
+    "subpath": "Combinations/Volatility + Variance Shift",
+    "file": "vol_variance_shift_05.csv",
+    "length": 145,
+    "spec": {
+      "base": "volatility",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 39,
+    "name": "vol+variance_shift",
+    "subpath": "Combinations/Volatility + Variance Shift",
+    "file": "vol_variance_shift_06.csv",
+    "length": 116,
+    "spec": {
+      "base": "volatility",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 39,
+    "name": "vol+variance_shift",
+    "subpath": "Combinations/Volatility + Variance Shift",
+    "file": "vol_variance_shift_07.csv",
+    "length": 120,
+    "spec": {
+      "base": "volatility",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 39,
+    "name": "vol+variance_shift",
+    "subpath": "Combinations/Volatility + Variance Shift",
+    "file": "vol_variance_shift_08.csv",
+    "length": 109,
+    "spec": {
+      "base": "volatility",
+      "break": "variance_shift"
+    }
+  },
+  {
+    "gid": 39,
+    "name": "vol+variance_shift",
+    "subpath": "Combinations/Volatility + Variance Shift",
+    "file": "vol_variance_shift_09.csv",
+    "length": 138,
+    "spec": {
+      "base": "volatility",
+      "break": "variance_shift"
+    }
+  }
+]

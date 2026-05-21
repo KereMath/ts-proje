@@ -1,0 +1,6 @@
+Buldugum veri setleriyle ilgili aciklamalari su dosyaya koydum (datasets docx)
+Burada da kitaplardan indirdigim veri setleri var: (ts datasets folder)
+su maakale de baya guzel bir git vermis breakli veriler icin.
+https://arxiv.org/pdf/2601.02957v3
+https://github.com/alan-turing-institute/TCPD/tree/master/datasets
+Keremcim bu verileri egittigin modele koyup denemeler yapabilirsin. Bakalim ne sonuclar verecek

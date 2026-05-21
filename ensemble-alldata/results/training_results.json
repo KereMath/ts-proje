@@ -1,0 +1,222 @@
+{
+  "stationary": {
+    "best_clf": "LightGBM",
+    "test_f1": 0.9565,
+    "test_acc": 0.9444,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.7692,
+        "acc": 0.6667
+      },
+      "XGBoost": {
+        "f1": 0.7692,
+        "acc": 0.6667
+      },
+      "MLP": {
+        "f1": 0.5455,
+        "acc": 0.4444
+      }
+    },
+    "pos_count": 56,
+    "neg_count": 32,
+    "n_features": 777
+  },
+  "deterministic_trend": {
+    "best_clf": "LightGBM",
+    "test_f1": 0.6667,
+    "test_acc": 0.7368,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.6,
+        "acc": 0.6
+      },
+      "XGBoost": {
+        "f1": 0.6,
+        "acc": 0.6
+      },
+      "MLP": {
+        "f1": 0.4444,
+        "acc": 0.5
+      }
+    },
+    "pos_count": 44,
+    "neg_count": 51,
+    "n_features": 777
+  },
+  "stochastic_trend": {
+    "best_clf": "XGBoost",
+    "test_f1": 0.7368,
+    "test_acc": 0.7059,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.8333,
+        "acc": 0.7778
+      },
+      "XGBoost": {
+        "f1": 0.9091,
+        "acc": 0.8889
+      },
+      "MLP": {
+        "f1": 0.8,
+        "acc": 0.7778
+      }
+    },
+    "pos_count": 50,
+    "neg_count": 34,
+    "n_features": 777
+  },
+  "volatility": {
+    "best_clf": "XGBoost",
+    "test_f1": 0.8421,
+    "test_acc": 0.8235,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.8,
+        "acc": 0.7778
+      },
+      "XGBoost": {
+        "f1": 0.9091,
+        "acc": 0.8889
+      },
+      "MLP": {
+        "f1": 0.9091,
+        "acc": 0.8889
+      }
+    },
+    "pos_count": 50,
+    "neg_count": 34,
+    "n_features": 777
+  },
+  "collective_anomaly": {
+    "best_clf": "LightGBM",
+    "test_f1": 1.0,
+    "test_acc": 1.0,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.9091,
+        "acc": 0.8889
+      },
+      "XGBoost": {
+        "f1": 0.9091,
+        "acc": 0.8889
+      },
+      "MLP": {
+        "f1": 0.7692,
+        "acc": 0.6667
+      }
+    },
+    "pos_count": 56,
+    "neg_count": 31,
+    "n_features": 777
+  },
+  "contextual_anomaly": {
+    "best_clf": "XGBoost",
+    "test_f1": 1.0,
+    "test_acc": 1.0,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.3333,
+        "acc": 0.2
+      },
+      "XGBoost": {
+        "f1": 1.0,
+        "acc": 1.0
+      },
+      "MLP": {
+        "f1": 1.0,
+        "acc": 1.0
+      }
+    },
+    "pos_count": 10,
+    "neg_count": 38,
+    "n_features": 777
+  },
+  "mean_shift": {
+    "best_clf": "LightGBM",
+    "test_f1": 0.8333,
+    "test_acc": 0.7778,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.8571,
+        "acc": 0.7778
+      },
+      "XGBoost": {
+        "f1": 0.8571,
+        "acc": 0.7778
+      },
+      "MLP": {
+        "f1": 0.8,
+        "acc": 0.6667
+      }
+    },
+    "pos_count": 56,
+    "neg_count": 31,
+    "n_features": 777
+  },
+  "point_anomaly": {
+    "best_clf": "LightGBM",
+    "test_f1": 1.0,
+    "test_acc": 1.0,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 1.0,
+        "acc": 1.0
+      },
+      "XGBoost": {
+        "f1": 0.9091,
+        "acc": 0.8889
+      },
+      "MLP": {
+        "f1": 0.8571,
+        "acc": 0.7778
+      }
+    },
+    "pos_count": 56,
+    "neg_count": 31,
+    "n_features": 777
+  },
+  "trend_shift": {
+    "best_clf": "LightGBM",
+    "test_f1": 0.5,
+    "test_acc": 0.3333,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.5,
+        "acc": 0.3333
+      },
+      "XGBoost": {
+        "f1": 0.0,
+        "acc": 0.6667
+      },
+      "MLP": {
+        "f1": 0.0,
+        "acc": 0.5
+      }
+    },
+    "pos_count": 20,
+    "neg_count": 37,
+    "n_features": 777
+  },
+  "variance_shift": {
+    "best_clf": "XGBoost",
+    "test_f1": 0.8571,
+    "test_acc": 0.7778,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.8333,
+        "acc": 0.7778
+      },
+      "XGBoost": {
+        "f1": 0.8571,
+        "acc": 0.7778
+      },
+      "MLP": {
+        "f1": 0.8,
+        "acc": 0.6667
+      }
+    },
+    "pos_count": 56,
+    "neg_count": 31,
+    "n_features": 777
+  }
+}

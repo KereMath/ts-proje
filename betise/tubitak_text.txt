@@ -1,0 +1,981 @@
+TÜBİTAK 1001 ARAŞTIRMA PROJESİ
+2. GELİŞME RAPORU
+Proje Başlığı:
+Zaman Serisi Temel Tip ve Anomali Sınıflandırması için Hiyerarşik Çok Katmanlı Yığınlı Topluluk Yöntemi
+Proje Yürütücüsü: [AD SOYAD]
+Kurum: [ÜNİVERSİTE ADI], [BÖLÜM]
+Proje No: [PROJE NUMARASI]
+Rapor Tarihi: Nisan 2026
+PROJEYE İLİŞKİN TEMEL BİLGİLER
+Alan
+İçerik
+Proje Başlığı
+Zaman Serisi Temel Tip ve Anomali Sınıflandırması için Hiyerarşik Çok Katmanlı Yığınlı Topluluk Yöntemi
+Proje No
+[PROJE NUMARASI]
+Rapor Dönemi
+2. Dönem (İkinci Altı Ay)
+Kurum
+[ÜNİVERSİTE / ARAŞTIRMA KURUMU]
+Proje Yürütücüsü
+[AD SOYAD, Unvan]
+Rapor Tarihi
+Nisan 2026
+1. Özet
+Bu rapor, TÜBİTAK 1001 programı kapsamında yürütülen projenin ikinci döneminde elde edilen bulguları, geliştirilen yöntemleri ve deneysel sonuçları sunmaktadır. Proje, tek değişkenli ham zaman serilerini girdi alarak hem temel tipi hem de eş zamanlı olarak birden fazla anomali türünü sınıflandıran uçtan uca bir sistemin tasarımı ve gerçeklenmesi üzerine kurgulanmıştır.
+Bu dönemde, önceki dönemlerde geliştirilen alt-sınıflandırıcıların üzerine kurulan hiyerarşik çok katmanlı bir meta-öğrenme (stacking) mimarisi tamamlanmış ve geniş ölçekli zaman serisi veri kümesi üzerinde kapsamlı deneyler yürütülmüştür. Sistem; Tek Etiketli Sınıflandırıcılar, Kombinasyon Duyarlı Sınıflandırıcılar ve Durağanlık Dedektörü olmak üzere önceden eğitilmiş üç alt-bileşeni tek bir meta-öğrenme çatısı altında birleştirmektedir. Her bileşenin iç mimarisi raporun 4. Bölümünde ayrıntılı biçimde açıklanmıştır.
+Temel başarı ölçütü olarak katı TAM EŞLEŞME kriteri benimsenmiştir (ayrıntılı tanımı Bölüm 2.1'de verilmiştir). Dönem sonu itibarıyla sistemin ulaştığı temel performans değerleri aşağıdaki tabloda özetlenmiştir:
+Değerlendirme Protokolü
+Örnek Sayısı
+TAM EŞLEŞME
+Doğruluk
+Dengeli (Birincil) — θ_stat = 0,85
+39 000 (grup başına 1 000)
+34 962
+%89,65
+Ağırlıklı (Orijinal) — θ_stat = 0,92
+4 400 (yaprak başına 10)
+3 919
+%89,07
+Dengeli protokol (39 grupta eşit temsil) sınıf dengesizliği yanlılığını giderdiği için birincil ölçüt olarak belirlenmiştir; ağırlıklı protokol veri kümesinin doğal dağılımını yansıtan ikincil ölçüttür. Tablodaki θ_stat, durağanlık dedektörü eşiğidir ve her protokol için ayrı kalibre edilmiştir.
+2. Projenin Amacı ve Kapsamı
+2.1. Problem Tanımı
+Proje, ham bir zaman serisini girdi olarak alan ve eş zamanlı olarak iki çıktı üreten bir sınıflandırma sistemi geliştirmeyi hedeflemektedir:
+Temel tip — 4 sınıflı tekli etiket.
+Anomali etiketleri — 6 sınıflı çok etiketli (seri sıfır veya daha fazla etiket alabilir).
+Sınıf taksonomisi aşağıdaki tabloda özetlenmiştir:
+Kategori
+Sınıflar
+Temel Tip (4)
+stationary (durağan), deterministic_trend (deterministik trend), stochastic_trend (stokastik trend), volatility (oynaklık)
+Anomali Türü (6)
+collective_anomaly (kolektif), contextual_anomaly (bağlamsal), mean_shift (ortalama kayması), point_anomaly (nokta), trend_shift (trend kayması), variance_shift (varyans kayması)
+Değerlendirme ölçütü katı TAM EŞLEŞME biçimindedir: bir tahmin yalnızca (i) temel tip doğru tespit edilmişse, (ii) mevcut bütün anomaliler saptanmışsa ve (iii) hiçbir yanlış pozitif anomali üretilmemişse doğru sayılır. Raporda bildirilen performans ölçütleri, makine öğrenmesi literatüründe standart olan kesinlik (precision), duyarlılık (recall), F1 skoru ve doğruluk (accuracy) metrikleridir.
+2.2. Veri Kümesi ve Sınıf Taksonomisi
+Proje kapsamında kullanılan veri kümesi 39 farklı gruptan oluşmakta ve yüzbinler mertebesinde zaman serisi içermektedir. Bu 39 grup, dört bileşim seviyesi üzerinden organize edilmiştir:
+Seviye
+Açıklama
+Gruplar
+Örnek
+1. Saf Temel
+Tek süreç, anomali yok
+1–4
+stationary, deterministic_trend
+2. Durağan + Tek Anomali
+Durağan temel tip + tek anomali
+5–10
+stationary + mean_shift
+3. Durağan Olmayan + Anomali
+Trend / stokastik / oynaklık + tek anomali
+11–39
+cubic + collective, stochastic + mean_shift
+İki değerlendirme protokolü (dengeli ve ağırlıklı) Bölüm 1'de tanıtılmıştır; ayrıntılı sonuçlar sırasıyla Bölüm 6 ve Bölüm 7'de sunulmaktadır.
+3. Sistem Mimarisi
+3.1. Genel Sistem Akışı
+Geliştirilen sistem, her aşamasının farklı bir modelleme yaklaşımı kullandığı yedi aşamalı hiyerarşik bir boru hattı (pipeline) mimarisidir. Her alt-bileşen farklı bir veri gösterimi veya farklı bir eğitim paradigması üzerinde çalıştığı için aynı girdiyi farklı açılardan değerlendirmekte; nihai karar bu tamamlayıcı görüşlerin birleştirilmesiyle üretilmektedir. Aşamaların kısa özeti aşağıda sunulmuştur:
+Aşama
+Bileşen
+Giriş
+Çıkış
+A
+tsfresh Özellik Çıkarımı
+Ham zaman serisi
+777 boyutlu özellik vektörü
+B
+Durağanlık Dedektörü
+25 el-yapımı özellik
+Durağanlık olasılığı (tek skaler)
+C
+Aile A — Tek Etiketli Sınıflandırıcılar
+777 boyutlu tsfresh özelliği
+9 sınıf için olasılık vektörü
+D
+Aile B — Kombinasyon Duyarlı Sınıflandırıcılar
+777 boyutlu tsfresh özelliği
+10 sınıf için olasılık vektörü
+E
+Meta-Vektör İnşası
+19 olasılık + 14 türetilmiş + 777 ham özellik
+810 boyutlu meta-vektör
+F
+Yönlendirici (Tekil / Bileşik)
+810 boyutlu meta-vektör
+Bileşim olasılığı (tek skaler)
+G
+Meta-Öğreniciler (Yığınlama)
+810 boyutlu meta-vektör
+Temel tip + 6 anomali olasılığı
+Şekil 1. Sistem akışı ve üç dallı karar mantığı şeması.
+Mimarinin temel yeniliği, iki önceden eğitilmiş ikili sınıflandırıcı ailesinin çıktılarını, özel durağanlık dedektöründen gelen sinyali ve 777 boyutlu ham tsfresh özellik vektörünü birleştirerek 810 boyutlu bir meta-vektör oluşturmasıdır. Bu sayede meta-öğreniciler, elle kodlanmış sabit karar sınırları yerine hangi alt-bileşene hangi koşullar altında güvenileceğini doğrudan veriden öğrenmektedir.
+Sistemde üç farklı sınıflandırıcı bileşeni yer almaktadır. Bu bileşenler eğitim paradigmaları bakımından aşağıdaki biçimde ayrışmaktadır:
+Aile A (Tek Etiketli Sınıflandırıcılar): her zaman serisinin tam olarak bir sınıfa ait olduğu varsayımıyla eğitilmiş 9 bağımsız birer-karşı-tümü (one-vs-rest) dedektöründen oluşur. Yapısı gereği kombinasyon girdilerinde tek etiket üretme eğilimi baskındır.
+Aile B (Kombinasyon Duyarlı Sınıflandırıcılar): pozitif örnekleri hedef sınıfı içeren tüm kombinasyon klasörlerinden toplanmış 10 ikili sınıflandırıcıdan oluşur (4 temel tip + 6 anomali). Bir seri eş zamanlı olarak birden fazla sınıfa ait olabilir; her model bağımsız karar verir.
+Durağanlık Dedektörü: 25 özel durağanlık özniteliği üzerinde eğitilmiş tek bir ikili XGBoost sınıflandırıcısıdır. Yalnızca &quot;durağan mı, değil mi?&quot; sorusuna cevap verir ve boru hattında yüksek kesinlikli bir ön-eleme (geçersiz kılma) mekanizması olarak kullanılır.
+3.2. Üç Dallı Karar Mantığı
+Şekil 1'de gösterilen karar mantığı üç dala ayrılmaktadır: (i) Geçersiz Kılma Dalı — P(durağan) ≥ θ_stat ise doğrudan (&quot;stationary&quot;, []) üretilir; (ii) Tekil Dal — P(bileşik) &lt; 0,30 ise yalnızca temel tip döndürülür, anomali listesi boş bırakılır; (iii) Bileşik Dal — her anomali için meta-öğrenici ve Aile B olasılıkları harmanlanarak kalibre edilmiş eşiklerle karşılaştırılır. &quot;Tekil&quot; = anomali yok; &quot;bileşik&quot; = en az bir anomali mevcut anlamına gelmekte olup Gruplar 5–10 (tek anomali vakaları) da bileşik dalda değerlendirilmektedir.
+4. Sistem Bileşenleri
+Bu bölümde Aile A ve Aile B olarak anılan iki ikili sınıflandırıcı ailesi, önceki dönemlerde geliştirilmiş; bu dönemde yığınlama mimarisine önceden eğitilmiş (pre-trained) ve dondurulmuş (frozen) bileşenler olarak entegre edilmiştir. Her iki aile de aşağıdaki ortak modelleme standartlarını paylaşmaktadır:
+Boyut
+Aile A
+Aile B
+Algoritma havuzu
+LightGBM, XGBoost, MLP
+LightGBM, XGBoost, MLP
+Eğitim paradigması
+Tekli etiket · birer-karşı-tümü
+Kombinasyon duyarlı · ikili
+Seçim ölçütü
+Doğrulama F1
+Doğrulama F1
+Sınıf dengeleme
+class_weight = balanced
+scale_pos_weight = neg/pos (dinamik)
+Ayarlama
+Varsayılan (ızgara araması yok)
+Sınırlı ızgara (lr = 0,05 ; max_depth = 7)
+n_estimators
+300
+300
+Pipeline durumu
+Dondurulmuş (pre-trained, frozen)
+Dondurulmuş (pre-trained, frozen)
+Alt-bölümler her ailenin yalnızca kendine özgü kısımlarını (veri hazırlığı, kazanan modeller ve test performansı) kapsamaktadır.
+4.1. Bileşen 1 — tsfresh Özellik Çıkarımı
+tsfresh kütüphanesinin EfficientFCParameters ön ayarı kullanılarak değişken uzunluktaki ham zaman serisi, sabit 777 boyutlu bir özellik vektörüne deterministik olarak dönüştürülmektedir. Öznitelik seti; istatistiksel momentler, otokorelasyon/kısmi otokorelasyon, Fourier ve dalgacık katsayıları, değişim ve tepe metrikleri, doğrusal/doğrusal olmayan trend tanımlayıcıları ve sembolik toplama istatistikleri olmak üzere zaman serisinin karakteristiğini geniş kapsamda temsil eder.
+4.2. Bileşen 2 — Tek Etiketli Sınıflandırıcı Ailesi (Aile A)
+Bu bileşen, önceden eğitilmiş 9 ikili sınıflandırıcıdan oluşmaktadır. Her sınıflandırıcı, kendi anomali sınıfını pozitif (1) ve diğer sekiz sınıfı negatif (0) olarak ele alan bir birer-karşı-tümü (one-vs-rest, OvR) modelidir. Aşağıdaki alt-bölümler modellerin iç mimarisini, eğitim verisini, model seçim sürecini ve ulaştığı performansı ayrıntısıyla açıklamaktadır.
+4.2.1. Eğitim Verisi ve Örnekleme Stratejisi
+Eğitim kümesi dokuz sınıfın her biri için yaklaşık 2 400 örnekle dengelenmiş; tabakalı ayrımla ayrılmış bir test kümesi üzerinde değerlendirilmiştir. Girdi olarak önceden çıkarılmış tsfresh özellik matrisi kullanılmış, pencereleme uygulanmamıştır (her zaman serisi tek bir örnektir).
+4.2.2. Algoritma Seçimi
+Modeller doğrulama F1 skoruna göre seçilmiştir. Kazananların dağılımı: XGBoost 8/9 sınıf, LightGBM 1/9 sınıf (nokta anomalisi).
+4.2.3. Test Performansı
+Ayrılmış (held-out) test kümesinde (21 578 örnek) genel doğruluk %87,52 olup sınıf bazında F1 skorları:
+Sınıf
+Precision
+Recall
+F1
+Support
+collective_anomaly
+0,8119
+0,7021
+0,7530
+2 397
+contextual_anomaly
+1,0000
+1,0000
+1,0000
+2 397
+deterministic_trend
+0,9858
+0,9858
+0,9858
+2 397
+mean_shift
+0,8355
+0,7839
+0,8089
+2 397
+point_anomaly
+0,6233
+0,8957
+0,7351
+2 398
+stochastic_trend
+0,9640
+0,9495
+0,9567
+2 398
+trend_shift
+0,9417
+0,9158
+0,9285
+2 398
+variance_shift
+0,9062
+0,7973
+0,8483
+2 398
+volatility
+0,9177
+0,8465
+0,8807
+2 398
+Bağlamsal anomali F1 = 1,0000 ile kusursuz ayrıştırılmış; deterministik ve stokastik trendler F1 &gt; 0,95 seviyesindedir. En düşük skor collective_anomaly (F1 = 0,7530) ve nokta anomalisi (F1 = 0,7351) sınıflarına aittir.
+4.2.4. Meta-Öğrenici ile Entegrasyon
+Aile A, nihai tahmin üretmek yerine meta-öğrenme aşamasına 9 boyutlu bir olasılık vektörü sağlar; bu vektör 810 boyutlu meta-vektörün ilk 9 bileşenini oluşturur. Bağımsız bir model tarafından üretilen bu olasılıklar, meta-öğrenici için özellikle saf trend serilerinde (Grup 2) Aile B'nin kalibrasyon sorunlarının telafisine imkan tanıyan ikinci bir görüş niteliği taşımaktadır.
+4.3. Bileşen 3 — Kombinasyon Duyarlı Sınıflandırıcı Ailesi (Aile B)
+Bu bileşen, önceden eğitilmiş 10 ikili modelden oluşmaktadır: 4 temel tip (stationary, deterministic_trend, stochastic_trend, volatility) ve 6 anomali türü (collective, contextual, mean_shift, point, trend_shift, variance_shift). Aile A'dan farklı olarak Aile B, kombinasyon duyarlı (composition-aware) bir eğitim protokolü ile geliştirilmiştir: her modelin pozitif sınıfı, hedef anomali veya temel tipi içeren tüm kombinasyon klasörlerinden örneklenmektedir.
+4.3.1. Eğitim Verisi ve Örnekleme Stratejisi
+Her model için dengeli bir eğitim kümesi kurulmuştur: 1 320 pozitif + 1 320 negatif örnek. Tabakalı %70 eğitim / %10 doğrulama / %20 test ayrımı uygulanmıştır. Kaynak olarak 39 grubun tümü (10 tekli + 29 kombinasyon) kullanılmış, toplam 440 yaprak (leaf) klasör üzerinden yaprak-dengeli örnekleme yapılmıştır. Örnekleme sırasında her yaprağın en az 10 örnekle temsil edilmesi garanti altına alınmıştır; bu önlem, hedef örnek sayısı mevcut yaprak sayısına bölündüğünde bazı yaprakların sıfır paya sahip olması sorununu ortadan kaldırmış ve kombinasyon genellemesini bağımsız bir değerlendirme kümesinde %91'den %97,2'ye çıkarmıştır.
+4.3.2. Test Performansı (10 Model)
+Dahili test kümelerinde elde edilen sonuçlar aşağıdadır; ortalama test F1 = 0,9590.
+Model
+Kazanan Algoritma
+Test F1
+stationary
+LightGBM
+0,9590
+deterministic_trend
+LightGBM
+0,9905
+stochastic_trend
+LightGBM
+0,9905
+volatility
+LightGBM
+0,9906
+collective_anomaly
+LightGBM
+0,9346
+contextual_anomaly
+LightGBM
+1,0000
+mean_shift
+XGBoost
+0,9057
+point_anomaly
+XGBoost
+0,9436
+trend_shift
+XGBoost
+0,9718
+variance_shift
+XGBoost
+0,9039
+On modelin altısında LightGBM (stationary, deterministic_trend, stochastic_trend, volatility, collective_anomaly, contextual_anomaly), dördünde XGBoost (mean_shift, point_anomaly, trend_shift, variance_shift) kazanmıştır. En yüksek skor bağlamsal anomali için test F1 = 1,0000; en düşük skor varyans kayması için F1 = 0,9039'dur.
+Bağımsız kombinasyon testinde (290 örnek) sistem %97,2 tam eşleşme, %2,8 kısmi eşleşme ve %0,0 eşleşmesiz performans sergilemiştir. Bu sonuç, yaprak başına minimum 10 örnek garantisinin kombinasyon genellemesi için kritik olduğunu doğrulamaktadır.
+4.3.3. Çıkarım (Inference) Mekanizması
+Çıkarım iki aşamalı biçimde işler. Temel tip için 4 temel model (durağan, deterministik trend, stokastik trend, oynaklık) paralel çalıştırılır ve en yüksek olasılığa sahip olan sınıf tek etiket olarak seçilir. Anomaliler için 6 anomali modeli birbirinden bağımsız çalıştırılır; olasılığı 0,5 eşiğini geçen her anomali nihai etikete eklenir. Böylece çıkış tek bir temel tip ve sıfır veya daha fazla anomali etiketinden oluşan çok etiketli bir sonuçtur.
+4.3.4. Bilinen Zayıflık ve Meta-Öğrenici ile Entegrasyon
+Aile B bileşim gruplarında (11–39) dağılım içi %95,9 doğruluğa ulaşmaktadır; ancak saf temel tiplerde (Gruplar 1–4) aşırı güvenli yanlış pozitifler üretme eğilimindedir. Örneğin saf bir durağan seride P(point_anomaly) = 0,55 üreterek hatalı bir anomali etiketi çıkarabilmektedir. Bu davranış, sonraki katmandaki yönlendirme ve yığınlama katmanları tarafından düzeltilmekte; Aile B'nin 10 olasılığı 810 boyutlu meta-vektörün 9–18. boyutlarını oluşturmaktadır.
+4.4. Bileşen 4 — Durağanlık Dedektörü ve Geçersiz Kılma Eşiği
+Bu dedektör, Aile A ve Aile B'den farklı olarak tsfresh kullanmayan özel bir ikili sınıflandırıcıdır; durağanlık testine özgü 25 el-yapımı özellik üzerinde çalışır. Dedektör pipeline içinde yüksek hassasiyetli bir geçersiz kılma mekanizması olarak görev yapmaktadır: P(durağan) ≥ θ_stat koşulu sağlandığında sonraki katman bileşenleri devre dışı bırakılır ve doğrudan (&quot;stationary&quot;, []) sonucu döndürülür.
+4.4.1. Özel Özellik Seti (25 Özellik)
+Özellikler durağanlıktan sapmaları ortaya çıkaracak biçimde seçilmiştir:
+Temel istatistikler (13 özellik): ortalama, standart sapma, varyans, min, maks, aralık, çeyreklikler (birinci çeyrek, medyan, üçüncü çeyrek, çeyrekler arası aralık), çarpıklık, basıklık ve varyasyon katsayısı (standart sapmanın ortalamaya oranı).
+Fark istatistikleri (5 özellik): birinci ve ikinci dereceden farkların ortalama, standart sapma ve varyansı (diff1_mean, diff1_std, diff1_var, diff2_mean, diff2_std).
+Kayan pencere istatistikleri (3 özellik): rolling_mean_std, rolling_std_mean, rolling_std_std.
+Otokorelasyon (2 özellik): 1. ve 10. gecikme değerleri.
+Tepe analizi (2 özellik): tepe sayısı, sıfır-geçiş oranı.
+4.4.2. Eğitim Verisi
+Eğitim verisi iki kategoriden toplanmıştır: durağan seriler ve durağan olmayan seriler (dokuz anomali tipiyle temel tip kombinasyonlarını kapsar). Etiketleme ikilidir (0 = durağan, 1 = durağan değil); iki sınıf dengeli biçimde temsil edilmiştir.
+4.4.3. Algoritma Kıyaslaması ve Hiperparametre Araması
+LightGBM, XGBoost, Karar Ağacı, Rastgele Orman, Extra Trees, MLP ve MLP-Fast algoritmaları 5-kat çapraz doğrulama F1 skoruyla karşılaştırılmış; en iyi sonucu XGBoost üretmiş ve pipeline'a entegre edilmiştir. Seçilen modelin hiperparametreleri ve yakın rakibi aşağıdadır:
+Algoritma
+Optimum Hiperparametreler
+CV F1
+Test F1
+XGBoost (seçilen) ★
+n_estimators = 500 ; lr = 0,1 ; max_depth = 8
+0,8796
+0,8807
+LightGBM (runner-up)
+n_estimators = 500 ; lr = 0,1 ; max_depth = 6
+0,8785
+0,8797
+4.4.4. Test Performansı
+Seçilen XGBoost modeli, dengeli harici bir değerlendirme kümesinde şu metriklere ulaşmıştır: Genel Doğruluk ≈ %89,6 ; Makro F1 ≈ 0,895. Durağan sınıfı için kesinlik ≈ %100, duyarlılık ≈ %93'tür. Bu yüksek-kesinlik profilinin sağladığı düşük yanlış pozitif oranı, dedektörün pipeline'da geçersiz kılma mekanizması olarak kullanılmasını mümkün kılmaktadır.
+4.4.5. Meta-Öğrenici ile Entegrasyon
+Durağanlık dedektörü, boru hattına tek bir durağanlık olasılığı (skaler) üretmektedir. Üretim sisteminde bu skaler, geçersiz kılma kararının verilmesi için yalnızca θ_stat eşiğiyle karşılaştırmada kullanılmakta; meta-vektöre doğrudan eklenmemektedir. θ_stat değeri ızgara araması ile kalibre edilmiş ve optimum değer her değerlendirme kümesi için ayrı belirlenmiştir.
+4.5. Bileşen 5 — Tekil / Bileşik Yönlendirici
+Yönlendirici, serinin saf temel tip mı (sınıflar 1–4) yoksa temel tip + anomali bileşimi mi (sınıflar 5–39) olduğuna karar veren, XGBoost + LightGBM birleşiminden oluşan ikili bir sınıflandırıcıdır. 810 boyutlu meta-vektör üzerinde eğitilen model, 19 500 örneklik küme üzerinde %20 test ayrımı altında F1 = 0,978 değerine ulaşmıştır.
+Yönlendirici hiperparametreleri:
+XGBoost: n_estimators = 500, learning_rate = 0,05, max_depth = 6, min_child_weight = 3, gamma = 0,1, subsample = 0,8, colsample_bytree = 0,7, scale_pos_weight = neg/pos (dinamik), eval_metric = logloss.
+LightGBM: n_estimators = 500, learning_rate = 0,05, max_depth = 7, num_leaves = 63, subsample = 0,8, colsample_bytree = 0,7, scale_pos_weight = neg/pos (dinamik).
+Etiketleme: Pozitif sınıf = gruplar 5–39 (en az bir anomali veya durağan olmayan temel tipi içeren gruplar); negatif sınıf = gruplar 1–4 (saf temel tipler). Not: yönlendirici eğitiminde Gruplar 5–10 (durağan + tek anomali) pozitif sınıfa dahildir; &quot;tekil (single)&quot; etiketi yalnızca saf temel tiplere karşılık gelmekte olup tekil anomali vakalarını kapsamamaktadır.
+P(bileşik) &lt; 0,30 eşiği ızgara araması ile belirlenmiştir. Tekil dala yanlış yönlendirmenin anomali tespitlerini sessizce kaybetme maliyeti, bileşik dala yanlış yönlendirmenin maliyetinden yüksek olduğundan; yönlendirici bileşik dala daha geniş bir olasılık aralığında yönlendirecek biçimde kalibre edilmiştir.
+4.6. Bileşen 6 — Yığınlama Meta-Öğrenicileri
+Projenin merkezi katkısını oluşturan bileşen, iki sınıflandırıcı ailesinin ve ham tsfresh özelliklerinin görüşlerini birleştirerek nihai tahmine dönüştüren meta-öğrenicilerden oluşmaktadır. Bu yaklaşımda meta-öğreniciler, hangi aileye hangi koşullarda güvenilmesi gerektiğini sabit kurallar yerine doğrudan veriden öğrenmektedir.
+4.6.1. Meta-Özellik Vektörü (810 Boyut)
+Her örnek için meta-vektör şu şekilde inşa edilmektedir:
+Boyut Aralığı
+Kaynak
+Açıklama
+0 – 8
+Aile A olasılıkları
+9 ikili
+9 – 18
+Aile B olasılıkları
+10 ikili (4 temel + 6 anomali)
+19 – 32
+Türetilmiş meta-özellikler
+14 mühendislik özelliği
+33 – 809
+Standartlaştırılmış tsfresh özellikleri
+777 özellik
+TOPLAM
+810 boyut
+On dört türetilmiş meta-özellik, 19 ham sınıflandırıcı olasılığından hesaplanarak meta-öğrenicilere aileler arası anlaşmazlık, güven düzeyi ve sinyal gücü örüntüleri konusunda daha zengin sinyal sunar. Öne çıkan özellikler:
+base_agreement — iki ailenin temel tip üzerinde mutabık olup olmadığı (0/1).
+old_new_anomaly_correlation — iki ailenin anomali olasılık vektörleri arasındaki Pearson korelasyonu: +1 tam uyum, 0 ilişkisizlik, −1 tam zıtlık.
+base_confidence_gap — Aile B'nin maksimum temel olasılığı ile ikinci en yüksek olasılığı arasındaki fark (karar kesinliğinin vekili).
+anomaly_entropy — altı anomali olasılığının ortalama ikili entropisi.
+Kalan 10 özellik, aileler başına maksimum/argmax olasılıklar, 0,5 eşiğini geçen sınıf sayıları ve toplam sinyal büyüklükleri gibi özetleyici istatistiklerden oluşur.
+4.6.2. Temel Tip Meta-Öğrenicisi
+{durağan, deterministik_trend, stokastik_trend, oynaklık} sınıfları üzerinde 4 sınıflı bir XGBoost + LightGBM birleşik sınıflandırıcısı kullanılmaktadır. Hiperparametreler:
+Parametre
+Değer
+n_estimators
+500
+learning_rate
+0,05
+max_depth
+6 (XGBoost) / 7 (LightGBM)
+min_child_weight (XGBoost)
+3
+gamma (XGBoost)
+0,1
+subsample
+0,8
+colsample_bytree
+0,7
+reg_alpha / reg_lambda (XGBoost)
+0,1 / 1,0
+objective / num_class (XGBoost)
+multi:softprob / 4
+sample_weight (XGBoost)
+ters sınıf frekansı
+class_weight (LightGBM)
+'balanced'
+num_leaves (LightGBM)
+63
+random_state
+42
+XGB + LGB birleşik tahmini basit aritmetik ortalamayla elde edilmektedir: P = 0,5 × P_XGB + 0,5 × P_LGB. 19 500 meta-vektör üzerinde tabakalı %80 / %20 eğitim / test ayrımı uygulanmış; sistem %96,85 test doğruluğu ve 0,9685 ağırlıklı F1 skorlarına ulaşmıştır.
+4.6.3. Anomali Meta-Öğrenicileri (6 × İkili)
+Altı anomali türünün her biri için ayrı bir XGBoost + LightGBM birleşik sınıflandırıcısı eğitilmektedir: kolektif, bağlamsal, ortalama kayması, nokta, trend kayması ve varyans kayması. Hiperparametreler büyük ölçüde temel tip meta-öğrenicisiyle ortaktır (n_estimators = 500, lr = 0,05; XGBoost max_depth = 6 + reg_alpha / lambda = 0,1 / 1,0; LightGBM max_depth = 7, num_leaves = 63, subsample = 0,8, colsample_bytree = 0,7). Tek ciddi fark: temel meta-öğrenicide çok sınıflı sınıf ağırlıklandırması (LightGBM için `class_weight = balanced`, XGBoost için `sample_weight` = ters frekans) kullanılırken, anomali meta-öğrenicilerde dengesizlik `scale_pos_weight = negatif_sayısı / pozitif_sayısı` yoluyla dinamik olarak ele alınmaktadır.
+Anomali eğitiminde kritik önem taşıyan bir aşırı örnekleme (oversampling) stratejisi uygulanmıştır: 5–10. gruplara ait örnekler — durağan temel tip üzerine yerleştirilmiş tek anomali vakaları — eğitim kümesine iki kez daha eklenerek toplamda üç kez temsil edilir duruma getirilmiştir. Sentetik örnek üretmek yerine mevcut örneklerin doğrudan çoğaltılması biçimindeki bu basit teknik, modelin söz konusu ince anomali vakalarına karşı daha güçlü bir sinyal görmesini sağlamaktadır.
+Anomali meta-öğrenicilerinin test kümesindeki performansı:
+Anomali Türü
+F1 Skoru
+Doğruluk
+Kolektif (collective_anomaly)
+0,9127
+%96,6
+Bağlamsal (contextual_anomaly)
+0,9988
+%99,99
+Ortalama Kayması (mean_shift)
+0,9211
+%96,9
+Nokta Anomalisi (point_anomaly)
+0,9518
+%98,1
+Trend Kayması (trend_shift)
+0,9863
+%99,9
+Varyans Kayması (variance_shift)
+0,9297
+%97,2
+4.7. Bileşen 7 — Harmanlanmış Olasılık Kararı
+Bileşik dalda her anomali için nihai tespit olasılığı, meta-öğrenicinin tahmini ile Aile B'nin doğrudan tahmininin ağırlıklı ortalaması (konveks kombinasyon) biçiminde hesaplanır:
+harmanlı_olasılık_k  =  α_k · meta_olasılık_k  +  (1 − α_k) · aile_B_olasılık_k
+Karar kuralı: anomali_k saptandı ⇔ harmanlı_olasılık_k ≥ θ_k. Altı anomali için ızgara araması ile belirlenen (α, θ) çiftleri ve bu seçimlerin gerekçeleri aşağıdadır:
+Anomali
+α (Ağırlık)
+θ (Eşik)
+Gerekçe
+Kolektif Anomali
+0,85
+0,73
+Meta baskın; FP bastırma
+Bağlamsal Anomali
+0,70
+0,69
+Dengeli; iyi ayrım
+Ortalama Kayması
+0,90
+0,49
+Meta baskın; standart eşik
+Nokta Anomalisi
+0,70
+0,69
+Dengeli; FP engelleme
+Trend Kayması
+0,90
+0,73
+Meta baskın; yüksek netlik
+Varyans Kayması
+0,70
+0,69
+Dengeli; trend ayrımı
+Harmanlamanın gerekçesi: Aile B'nin doğrudan olasılığı, meta-öğrenicinin özellik etkileşimleri nedeniyle aşırı ya da eksik güven sergilediği durumlarda tahmin varyansını düşüren bağımsız bir doğrulama kaynağı işlevi görmektedir. Konveks kombinasyon, her iki kaynaktan gelen geçerli sinyali korumakta ve deneysel olarak her iki kaynağı tek başına kullanmaya kıyasla TAM EŞLEŞME oranını yükseltmektedir.
+5. Eğitim Süreci ve Hiperparametre Araması
+5.1. Meta-Öğrenici Eğitim Kümesi
+Meta-öğrenici eğitim kümesi, 39 grubun her birinden 500 örnek alınarak oluşturulan toplam 19 500 meta-vektörden meydana gelmektedir. Örnekleme, her terminal (yaprak) alt-dizinden orantılı olarak (yaprak-dengeli örnekleme) gerçekleştirilmiş; sınıflar bakımından tabakalı %80 / %20 eğitim / test bölüntüsü uygulanmıştır. Anomali meta-öğrenicilerinde 5–10. gruplar (durağan + tek anomali) kopya tabanlı olarak üç katına çıkarılmıştır. Eğitim ve değerlendirme kümelerinin çakışmaması için iki küme farklı dosya indekslerinden türetilmiştir.
+5.2. Hiperparametre Optimizasyonu
+Üç hiperparametre ailesi için ızgara araması uygulanmıştır:
+Durağanlık Eşiği (θ_stat): 0,30 – 1,00 aralığında 0,05 adımlarla taranmıştır. Dengeli değerlendirmede optimum θ_stat = 0,85; ağırlıklı değerlendirmede ise optimum θ_stat = 0,92 olarak bulunmuştur.
+Yönlendirici Eşiği: 0,25 – 0,50 aralığında 0,01 adımlarla taranmış; optimum değer 0,30 olarak belirlenmiştir.
+Anomali Başına (α, θ) Çiftleri: α için 8 aday değer × θ için yaklaşık 25 aday değer = anomali başına 200 kombinasyon. Sıralı iyileştirme stratejisi ile kolektif → bağlamsal → ortalama_kayması → nokta → trend_kayması → varyans_kayması sırasıyla ayarlanmış; her adımda önceki ayarlanmış değerler baseline olarak kullanılmıştır.
+6. Dengeli Değerlendirme Sonuçları (39 000 Örnek — Birincil Protokol)
+6.1. Yöntem ve Gerekçe
+Ağırlıklı protokolde grup büyüklükleri 10 ile 720 arasında değişmekte; saf temel gruplar aşırı, bileşim grupları eksik temsil edilmektedir. Bu yanlılığı gidermek üzere her grubun tam olarak 1 000 örnekle temsil edildiği 39 000 örneklik dengeli küme, sistemin birincil değerlendirme ölçütü olarak seçilmiş ve optimizasyon kararları bu küme üzerinden alınmıştır.
+6.2. Grup Bazlı TAM EŞLEŞME Tablosu (θ_stat = 0,85)
+#
+Grup Adı
+n
+TAM
+KISMİ
+YOK
+TAM %
+1
+stationary (durağan)
+1000
+675
+272
+53
+%67,50
+2
+deterministic_trend
+1000
+926
+21
+53
+%92,60
+3
+stochastic_trend
+1000
+811
+128
+61
+%81,10
+4
+volatility (oynaklık)
+1000
+809
+119
+72
+%80,90
+5
+collective_anomaly + stationary
+1000
+900
+21
+79
+%90,00
+6
+contextual_anomaly + stationary
+1000
+997
+3
+0
+%99,70
+7
+mean_shift + stationary
+1000
+904
+52
+44
+%90,40
+8
+point_anomaly + stationary
+1000
+816
+82
+102
+%81,60
+9
+trend_shift + stationary
+1000
+923
+19
+58
+%92,30
+10
+variance_shift + stationary
+1000
+786
+97
+117
+%78,60
+11
+cubic + collective
+1000
+998
+2
+0
+%99,80
+12
+cubic + mean_shift
+1000
+958
+42
+0
+%95,80
+13
+cubic + point_anomaly
+1000
+993
+7
+0
+%99,30
+14
+cubic + variance_shift
+1000
+989
+11
+0
+%98,90
+15
+damped + collective
+1000
+999
+1
+0
+%99,90
+16
+damped + mean_shift
+1000
+923
+77
+0
+%92,30
+17
+damped + point_anomaly
+1000
+1000
+0
+0
+%100,00
+18
+damped + variance_shift
+1000
+960
+40
+0
+%96,00
+19
+exponential + collective
+1000
+999
+1
+0
+%99,90
+20
+exponential + mean_shift
+1000
+958
+42
+0
+%95,80
+21
+exponential + point_anomaly
+1000
+1000
+0
+0
+%100,00
+22
+exponential + variance_shift
+1000
+989
+11
+0
+%98,90
+23
+linear + collective
+1000
+996
+3
+1
+%99,60
+24
+linear + mean_shift
+1000
+955
+45
+0
+%95,50
+25
+linear + point_anomaly
+1000
+987
+13
+0
+%98,70
+26
+linear + trend_shift
+1000
+994
+6
+0
+%99,40
+27
+linear + variance_shift
+1000
+983
+17
+0
+%98,30
+28
+quadratic + collective
+1000
+996
+3
+1
+%99,60
+29
+quadratic + mean_shift
+1000
+963
+37
+0
+%96,30
+30
+quadratic + point_anomaly
+1000
+1000
+0
+0
+%100,00
+31
+quadratic + variance_shift
+1000
+944
+56
+0
+%94,40
+32
+stochastic + collective
+1000
+791
+208
+1
+%79,10
+33
+stochastic + mean_shift
+1000
+528
+467
+5
+%52,80
+34
+stochastic + point_anomaly
+1000
+899
+99
+2
+%89,90
+35
+stochastic + variance_shift
+1000
+867
+132
+1
+%86,70
+36
+volatility + collective
+1000
+469
+531
+0
+%46,90
+37
+volatility + mean_shift
+1000
+819
+181
+0
+%81,90
+38
+volatility + point_anomaly
+1000
+684
+316
+0
+%68,40
+39
+volatility + variance_shift
+1000
+774
+225
+1
+%77,40
+—
+TOPLAM
+39 000
+34 962
+3 387
+651
+%89,65
+6.3. Özet İstatistikler
+Gösterge
+Değer
+TAM EŞLEŞME sayısı / oranı
+34 962 / 39 000 — %89,65
+KISMİ EŞLEŞME sayısı / oranı
+3 387 / 39 000 — %8,68
+EŞLEŞMESİZ sayı / oranı
+651 / 39 000 — %1,67
+%100 TAM EŞLEŞME'ye ulaşan grup sayısı
+3 (Grup 17, 21, 30)
+≥ %95 TAM EŞLEŞME'ye ulaşan grup sayısı
+20 / 39
+≥ %90 TAM EŞLEŞME'ye ulaşan grup sayısı
+26 / 39
+≥ %80 TAM EŞLEŞME'ye ulaşan grup sayısı
+32 / 39
+Grup başına medyan TAM EŞLEŞME
+%95,50
+Makro TAM EŞLEŞME (= ağırlıklı, dengeli set)
+%89,65
+6.4. Hata Analizi
+Düşük başarı gösteren gruplar ve baskın hata modları aşağıda özetlenmiştir:
+Grup
+TAM %
+Baskın Hata Modu
+36 — volatility + collective
+%46,90
+KISMİ baskın (531); temel tip doğru, anomali kısmen kaçırılıyor
+33 — stochastic + mean_shift
+%52,80
+KISMİ baskın (467); stokastik trend ile ortalama kayması sinyalleri çakışıyor
+1 — stationary
+%67,50
+KISMİ (272); durağanlık eşiğinin altında yanlış anomali enjeksiyonu
+38 — volatility + point_anomaly
+%68,40
+KISMİ (316); oynaklık altındaki nokta zirveleri doğası gereği zor
+10 — variance_shift
+%78,60
+EŞLEŞMESİZ (117); varyans kayması durağanlık geçersiz kılması tarafından bastırılıyor
+Zayıf gruplar bütününde baskın hata türünün EŞLEŞMESİZ değil KISMİ olduğu dikkat çekmektedir. Bu durum, sistemin temel tip tahmininde çoğunlukla doğru sonuç ürettiğini; kalan açığın anomali duyarlılığından — özellikle stokastik ve oynaklık bileşimlerinden — kaynaklandığını göstermektedir. Bu nedenle başlıca iyileştirme alanları anomali eşik kalibrasyonu ve bahsi geçen zor gruplara özel ikincil sınıflandırıcıların tasarlanmasıdır.
+7. Ağırlıklı Değerlendirme Sonuçları (4 400 Örnek)
+Ağırlıklı değerlendirme, yaprak başına 10 örnekle oluşturulan orijinal değerlendirme kümesini esas almaktadır; grup büyüklükleri 10 ile 720 arasında değişmekte ve veri kümesinin doğal sınıf önceliklerini yansıtmaktadır. θ_stat = 0,92 yapılandırması ile %89,07 TAM EŞLEŞME elde edilmiştir.
+Kategori
+Sayı / 4 400
+Oran
+TAM EŞLEŞME
+3 919
+%89,07
+KISMİ EŞLEŞME
+221
+%5,02
+EŞLEŞMESİZ
+260
+%5,91
+İki protokolün karşılaştırmalı özeti:
+Ölçüt
+Ağırlıklı (4 400)
+Dengeli (39 000)
+Optimum θ_stat
+0,92
+0,85
+Optimumdaki TAM EŞLEŞME
+3 919 / %89,07
+34 962 / %89,65
+0,85 ile 0,92 arasındaki fark
+—
+47 örnek
+Mimari tavan
+≈ %89,1
+≈ %89,7
+7.1. Tüm Veri Kümesi Üzerinde Harici Doğrulama (84 700 Örnek)
+İki ana değerlendirme protokolüne ek olarak, boru hattı tamamen harici bir büyük ölçekli küme üzerinde de çalıştırılmıştır: 39 grubun tümünden toplam 84 700 CSV dosyası (grup başına ortalama ≈ 2 170) sisteme girdi olarak verilmiş, elde edilen sonuçlar aşağıdaki tabloda özetlenmiştir:
+Gösterge
+Değer
+Toplam örnek
+84 700
+TAM EŞLEŞME (makro ortalama, 39 grup eşit ağırlıklı)
+%91,05
+Grup başına medyan TAM EŞLEŞME
+%94,50
+KISMİ EŞLEŞME
+17 582 — %20,76
+EŞLEŞMESİZ
+4 360 — %5,15
+Makro ortalamanın örnek-ağırlıklı ortalamadan yüksek çıkmasının nedeni, bu kümede Grup 1 (stationary) örnek sayısının (38 700) diğer gruplara oranla çok yüksek olmasıdır; sınıf başına adil ölçüm için makro ortalama tercih edilmiştir. Dengeli 39 000 örneklik kümedeki %89,65 değerinin üzerinde elde edilen bu sonuç, sistemin harici dağılım üzerinde de tutarlı performans sergilediğini ortaya koymaktadır.
+8. Eşik Sağlamlığı Analizi
+Dengeli 39 000 örneklik küme üzerinde durağanlık eşiği 0,30 ile 1,00 arasında taranmış; diğer tüm parametreler (yönlendirici eşiği = 0,30; anomali başına (α, θ) çiftleri) sabit tutulmuştur. Tablodaki sütun kısaltmaları: G1 = Grup 1 (saf durağan), G5 = Grup 5 (durağan + kolektif anomali), G7 = Grup 7 (durağan + ortalama kayması), G8 = Grup 8 (durağan + nokta anomalisi), G10 = Grup 10 (durağan + varyans kayması). Taramanın sonuçları aşağıdadır:
+θ_stat
+TAM / 39 000
+%
+G1 %
+G5 %
+G7 %
+G8 %
+G10 %
+0,30
+32 721
+%83,90
+%98,0
+%52,9
+%64,9
+%33,2
+%62,1
+0,35
+33 160
+%85,03
+%96,7
+%57,1
+%68,4
+%39,8
+%63,9
+0,40
+33 457
+%85,79
+%95,7
+%60,0
+%70,6
+%45,5
+%65,8
+0,45
+33 807
+%86,68
+%94,9
+%64,4
+%74,2
+%49,9
+%67,6
+0,50
+34 069
+%87,36
+%93,0
+%68,6
+%77,1
+%54,1
+%69,3
+0,55
+34 316
+%87,99
+%91,5
+%72,5
+%80,6
+%58,8
+%71,0
+0,60
+34 515
+%88,50
+%88,0
+%77,7
+%83,2
+%62,3
+%72,3
+0,65
+34 642
+%88,83
+%84,5
+%80,4
+%85,7
+%66,5
+%73,5
+0,70
+34 786
+%89,19
+%81,1
+%84,5
+%87,1
+%71,1
+%75,2
+0,75
+34 883
+%89,44
+%76,9
+%86,6
+%88,7
+%75,1
+%76,5
+0,80
+34 932
+%89,57
+%71,9
+%88,4
+%90,0
+%78,5
+%77,7
+0,85 ★
+34 962
+%89,65
+%67,5
+%90,0
+%90,4
+%81,6
+%78,6
+0,90
+34 930
+%89,56
+%60,8
+%90,3
+%90,7
+%83,6
+%79,1
+0,92
+34 915
+%89,53
+—
+—
+—
+—
+—
+0,95
+34 882
+%89,44
+%53,9
+%90,4
+%91,0
+%85,0
+%79,2
+1,00
+34 774
+%89,16
+%42,7
+%90,4
+%91,1
+%85,2
+%79,3
+Temel bulgular şöyle özetlenebilir:
+Açık bir denge ilişkisi gözlemlenmektedir. Düşük θ_stat, G1 (saf durağan) doğruluğunu artırırken G5–G10 (durağan + anomali) doğruluğunu düşürmektedir.
+Geniş bir düzlük mevcuttur: TAM EŞLEŞME oranı 0,75 – 0,95 aralığı boyunca 0,25 puandan az dalgalanmakta; sistem eşik seçimine karşı sağlamdır.
+Zirve noktası θ_stat = 0,85 olup 0,92 değerine göre fark yalnızca 47 örnek ile istatistiksel gürültü düzeyinde kalmaktadır.
+Örnek dengesizliği hipotezi çürütülmüştür: dengeli ve ağırlıklı protokoller aynı tavanı aynı eşik civarında göstermektedir.
+9. Kullanılan Teknikler — Akademik Özet
+Bu çalışmada uygulanan başlıca makine öğrenmesi ve istatistiksel öğrenme tekniklerinin özeti aşağıda sunulmuştur:
+Teknik
+Bu Çalışmadaki Uygulaması
+Yığınlı Genelleme (Wolpert, 1992)
+Meta-öğreniciler, temel sınıflandırıcı çıktıları üzerinde eğitilir
+Gradyan Artırmalı Karar Ağaçları (GBDT)
+Tüm ağaç tabanlı modellerde XGBoost ve LightGBM
+İkili Model Ortalaması
+XGB + LGB olasılıklarının basit ortalaması
+Birer-Karşı-Tümü (OvR) İkili Sınıflandırma
+Aile A'daki 9 dedektörün tümü
+Otomatik Özellik Mühendisliği
+tsfresh ile 777 zaman serisi özelliği
+Sınıf Ağırlıklandırma
+Temel meta-öğrenicide dengeli sınıf ağırlıkları
+Kopya Tabanlı Aşırı Örnekleme
+5–10. gruplar anomali eğitiminde üç katına çıkarılır
+Hiyerarşik Sınıflandırma
+Durağanlık eşiği + tekil / bileşik yönlendirici
+Olasılık Harmanı (Blending)
+Meta-öğrenici ve Aile B olasılıklarının konveks kombinasyonu
+Bağlam Bazlı Eşik Kalibrasyonu
+Anomali başına grid aramalı eşikler
+Türetilmiş Meta-Özellikler
+Uzlaşı, entropi, güven farkı, korelasyon metrikleri
+Hızlı Izgara Araması için Önbellekleme
+Ön hesaplanmış matrisler (cache_eval, balanced_cache)
+Yaprak-Dengeli Örnekleme
+Tüm alt-parametre kombinasyonlarının orantılı temsili
+Yanlılıksız Sınıf-Ortalama Değerlendirme
+Grup başına 1 000 örneklik dengeli protokol
+10. Sonuç ve Değerlendirme
+10.1. Elde Edilen Başarılar
+Bu dönem içinde geniş ölçekli bir zaman serisi veri kümesi üzerinde uçtan uca çalışan, yığınlı (stacked) bir sınıflandırma sistemi geliştirilmiştir. Sistem, 39 farklı sınıf kategorisini kapsayan katı TAM EŞLEŞME kriteri altında dengeli 39 000 örneklik değerlendirmede %89,65 doğruluk elde etmiştir.
+Temel tasarım kararlarının geçerliliği deneysel olarak doğrulanmıştır: (i) hiyerarşik karar mantığı (geçersiz kılma eşiği → yönlendirici → meta-öğrenici) yanlış pozitif anomali üretimini anlamlı ölçüde azaltmıştır; (ii) 810 boyutlu meta-vektör aracılığıyla sınıflandırıcı ailelerinin görüşlerinin ham tsfresh özellikleriyle birleştirilmesi meta-öğrenicilere öğrenilebilir bağlam sağlamıştır; (iii) eşik kalibrasyonu ve olasılık harmanı TAM EŞLEŞME oranını belirgin biçimde artırmıştır.
+10.2. Kısıtlar ve İyileştirme Alanları
+Sistemi zorlayan başlıca durumlar şunlardır: oynaklık + kolektif grubu (%46,90) ve stokastik + ortalama_kayması grubu (%52,80) hâlâ kayda değer hata oranlarına sahiptir; bu gruplardaki başarısızlıklar büyük ölçüde KISMİ türünde olup temel tip doğru tahmin edilmekte ancak anomali etiketi eksik kalmaktadır. Ayrıca saf durağan serilerde (Grup 1, %67,50) durağanlık eşiğinin altında kalan örneklerde yanlış anomali enjeksiyonu sorunu devam etmektedir.
+10.3. Planlanan Çalışmalar
+Sonraki dönem için şu geliştirmeler planlanmaktadır:
+Stokastik trend ve oynaklık bileşimleri üzerinde uzmanlaşmış ikincil alt-sınıflandırıcıların tasarımı.
+Ağırlıklı protokoldeki ağırlık şemasının yeniden değerlendirilmesi; durağanlık eşiği için protokol bağımsız bir optimizasyon stratejisi geliştirilmesi.
+Örnek ağırlıklandırma ve fokal kayıp (focal loss) kullanarak zor örneklerin eğitim üzerindeki etkisinin artırılması.
+Derin dizi tabanlı modellerin (LSTM, Temporal Convolutional Networks) karşılaştırma çalışması olarak araştırılması.
+11. Kaynakça
+Wolpert, D. H. (1992). Stacked Generalization. Neural Networks, 5(2), 241–259.
+Breiman, L. (1996). Stacked Regressions. Machine Learning, 24(1), 49–64.
+Chen, T., &amp; Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 785–794.
+Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., &amp; Liu, T. Y. (2017). LightGBM: A Highly Efficient Gradient Boosting Decision Tree. Advances in Neural Information Processing Systems, 30, 3146–3154.
+Christ, M., Braun, N., Neuffer, J., &amp; Kempa-Liehr, A. W. (2018). Time Series FeatuRe Extraction on basis of Scalable Hypothesis tests (tsfresh — A Python package). Neurocomputing, 307, 72–77.

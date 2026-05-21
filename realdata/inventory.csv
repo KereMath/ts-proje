@@ -1,0 +1,42 @@
+file,format,n_values,multivariate,note
+airpass.txt,BROCKWELL_HASH,144,False,
+beer.txt,BROCKWELL_HASH,1266,True,multivariate olabilir
+deaths.txt,BROCKWELL_HASH,216,True,multivariate olabilir
+e1.dat.txt,JMULTI,276,False,
+e2.dat.txt,JMULTI,208,False,
+German_consumption.dat.txt,JMULTI,95,False,
+German_income.dat.txt,JMULTI,115,False,
+GermanGNP.dat.txt,JMULTI,88,False,
+INDPRO.csv,CSV_HEADER,372,False,
+NP_AWHours.dat.txt,JMULTI,479,False,
+NP_xetradax_returns100.dat.txt,JMULTI,1028,False,
+Polish_productivity.dat.txt,JMULTI,119,False,
+RealInt_dataframe.txt,DATAFRAME_HEADER,103,False,
+rec_dataframe.txt,DATAFRAME_HEADER,0,False,veri çıkartılamadı
+soi_dataframe.txt,DATAFRAME_HEADER,453,False,
+strikes.txt,BROCKWELL_HASH,30,False,min uzunluk altında (< 50)
+sunspots.txt,BROCKWELL_HASH,100,False,
+UNRATE.csv,CSV_HEADER,372,False,
+US_investment.dat.txt,JMULTI,106,False,
+uspop.txt,BROCKWELL_HASH,21,False,min uzunluk altında (< 50)
+W1.txt,WHITESPACE_MULTI,45,False,min uzunluk altında (< 50)
+W10.txt,WHITESPACE_MULTI,32,False,min uzunluk altında (< 50)
+W11.txt,WHITESPACE_MULTI,166,True,multivariate olabilir
+W12-1.txt,WHITESPACE_MULTI,54,True,multivariate olabilir
+W12-2.txt,WHITESPACE_MULTI,54,True,multivariate olabilir
+W13-1.txt,WHITESPACE_MULTI,82,True,multivariate olabilir
+W13-2.txt,WHITESPACE_MULTI,82,True,multivariate olabilir
+W13-3.txt,WHITESPACE_MULTI,82,True,multivariate olabilir
+W13-4.txt,WHITESPACE_MULTI,82,True,multivariate olabilir
+W13-5.txt,WHITESPACE_MULTI,82,True,multivariate olabilir
+W14.txt,WHITESPACE_MULTI,87,True,multivariate olabilir
+W15-1.txt,WHITESPACE_MULTI,46,False,min uzunluk altında (< 50)
+W15-2.txt,WHITESPACE_MULTI,46,False,min uzunluk altında (< 50)
+W16.txt,WHITESPACE_MULTI,180,True,multivariate olabilir
+W2.txt,WHITESPACE_MULTI,302,True,multivariate olabilir
+W3.txt,WHITESPACE_MULTI,82,True,multivariate olabilir
+W5.txt,WHITESPACE_MULTI,71,True,multivariate olabilir
+W6.txt,WHITESPACE_MULTI,114,True,multivariate olabilir
+W8.txt,WHITESPACE_MULTI,150,True,multivariate olabilir
+W9.txt,WHITESPACE_MULTI,132,True,multivariate olabilir
+wine.txt,BROCKWELL_HASH,426,True,multivariate olabilir

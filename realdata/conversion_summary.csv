@@ -1,0 +1,17 @@
+src,out,format,n
+airpass.txt,airpass.csv,brockwell,144
+deaths.txt,deaths.csv,brockwell,72
+German_consumption.dat.txt,German_consumption.csv,jmulti,95
+German_income.dat.txt,German_income.csv,jmulti,115
+GermanGNP.dat.txt,GermanGNP.csv,jmulti,88
+INDPRO.csv,INDPRO.csv,csv_header,372
+Polish_productivity.dat.txt,Polish_productivity.csv,jmulti,119
+RealInt_dataframe.txt,RealInt_dataframe.csv,dataframe_header,103
+soi_dataframe.txt,soi_dataframe.csv,dataframe_header,453
+sunspots.txt,sunspots.csv,brockwell,100
+UNRATE.csv,UNRATE.csv,csv_header,372
+US_investment.dat.txt,US_investment.csv,jmulti,106
+W2.txt,W2.csv,whitespace_flatten,302
+W3.txt,W3.csv,whitespace_flatten,82
+W5.txt,W5.csv,whitespace_flatten,71
+W6.txt,W6.csv,whitespace_flatten,114

@@ -1,0 +1,129 @@
+PER-CLASS FEATURE IMPORTANCE - LIGHTGBM
+======================================================================
+
+
+collective_anomaly:
+                                                         feature  importance
+                              value__linear_trend__attr_"pvalue"         106
+                    value__fft_coefficient__attr_"real"__coeff_1          86
+                     value__fft_coefficient__attr_"abs"__coeff_1          76
+                     value__fft_coefficient__attr_"abs"__coeff_6          62
+                  value__mean_n_absolute_max__number_of_maxima_7          61
+                     value__fft_coefficient__attr_"abs"__coeff_4          60
+                     value__fft_coefficient__attr_"abs"__coeff_7          56
+                     value__fft_coefficient__attr_"abs"__coeff_5          55
+value__change_quantiles__f_agg_"var"__isabs_True__qh_1.0__ql_0.0          54
+           value__agg_autocorrelation__f_agg_"median"__maxlag_40          53
+----------------------------------------------------------------------
+
+contextual_anomaly:
+                                                        feature  importance
+                    value__fft_coefficient__attr_"abs"__coeff_0         264
+             value__agg_autocorrelation__f_agg_"var"__maxlag_40         223
+                              value__index_mass_quantile__q_0.2         223
+value__energy_ratio_by_chunks__num_segments_10__segment_focus_4         219
+                              value__index_mass_quantile__q_0.8         181
+                                      value__standard_deviation         169
+                                         value__quantile__q_0.1         136
+                              value__index_mass_quantile__q_0.1         109
+                                                value__variance         106
+                                         value__quantile__q_0.7         105
+----------------------------------------------------------------------
+
+deterministic_trend:
+                                                        feature  importance
+                           value__ar_coefficient__coeff_1__k_10         134
+                              value__index_mass_quantile__q_0.1         122
+                              value__index_mass_quantile__q_0.9         110
+                  value__fft_coefficient__attr_"angle"__coeff_1         103
+value__energy_ratio_by_chunks__num_segments_10__segment_focus_0         101
+   value__augmented_dickey_fuller__attr_"pvalue"__autolag_"AIC"          97
+                    value__fft_coefficient__attr_"abs"__coeff_0          87
+value__energy_ratio_by_chunks__num_segments_10__segment_focus_8          85
+value__energy_ratio_by_chunks__num_segments_10__segment_focus_9          84
+                   value__fft_coefficient__attr_"real"__coeff_1          83
+----------------------------------------------------------------------
+
+mean_shift:
+                                                           feature  importance
+                                value__linear_trend__attr_"pvalue"         155
+                      value__fft_coefficient__attr_"real"__coeff_1         110
+                       value__fft_coefficient__attr_"abs"__coeff_1          89
+                     value__fft_coefficient__attr_"angle"__coeff_1          56
+value__agg_linear_trend__attr_"rvalue"__chunk_len_10__f_agg_"mean"          56
+                              value__ar_coefficient__coeff_1__k_10          53
+                       value__fft_coefficient__attr_"abs"__coeff_7          52
+                    value__mean_n_absolute_max__number_of_maxima_7          52
+             value__agg_autocorrelation__f_agg_"median"__maxlag_40          50
+                       value__fft_coefficient__attr_"abs"__coeff_2          50
+----------------------------------------------------------------------
+
+point_anomaly:
+                                                             feature  importance
+                                             value__absolute_maximum         203
+                  value__agg_autocorrelation__f_agg_"var"__maxlag_40          70
+                         value__fft_coefficient__attr_"abs"__coeff_1          68
+     value__energy_ratio_by_chunks__num_segments_10__segment_focus_0          57
+                                                    value__c3__lag_1          57
+                   value__friedrich_coefficients__coeff_2__m_3__r_30          55
+value__agg_linear_trend__attr_"intercept"__chunk_len_50__f_agg_"var"          53
+    value__change_quantiles__f_agg_"var"__isabs_True__qh_1.0__ql_0.0          52
+                                   value__index_mass_quantile__q_0.1          52
+                                  value__ratio_beyond_r_sigma__r_2.5          49
+----------------------------------------------------------------------
+
+Stochastic Trend:
+                                                         feature  importance
+                            value__ar_coefficient__coeff_1__k_10         164
+   value__augmented_dickey_fuller__attr_"usedlag"__autolag_"AIC"         124
+                              value__spkt_welch_density__coeff_5          77
+    value__augmented_dickey_fuller__attr_"pvalue"__autolag_"AIC"          74
+                            value__ar_coefficient__coeff_2__k_10          71
+value__change_quantiles__f_agg_"var"__isabs_True__qh_1.0__ql_0.0          69
+                                                   value__length          65
+                              value__spkt_welch_density__coeff_2          62
+  value__augmented_dickey_fuller__attr_"teststat"__autolag_"AIC"          56
+                                         value__absolute_maximum          47
+----------------------------------------------------------------------
+
+trend_shift:
+                                                        feature  importance
+                           value__ar_coefficient__coeff_1__k_10         165
+                   value__fft_coefficient__attr_"real"__coeff_1         111
+                          value__partial_autocorrelation__lag_2          76
+ value__augmented_dickey_fuller__attr_"teststat"__autolag_"AIC"          67
+                           value__ar_coefficient__coeff_2__k_10          63
+                             value__spkt_welch_density__coeff_2          61
+                          value__partial_autocorrelation__lag_3          60
+value__energy_ratio_by_chunks__num_segments_10__segment_focus_8          57
+value__energy_ratio_by_chunks__num_segments_10__segment_focus_0          54
+                             value__spkt_welch_density__coeff_5          51
+----------------------------------------------------------------------
+
+variance_shift:
+                                                          feature  importance
+ value__agg_linear_trend__attr_"rvalue"__chunk_len_5__f_agg_"var"         163
+                                value__index_mass_quantile__q_0.9          86
+  value__energy_ratio_by_chunks__num_segments_10__segment_focus_0          81
+               value__agg_autocorrelation__f_agg_"var"__maxlag_40          77
+                                value__index_mass_quantile__q_0.1          76
+value__agg_linear_trend__attr_"rvalue"__chunk_len_10__f_agg_"var"          69
+  value__energy_ratio_by_chunks__num_segments_10__segment_focus_9          64
+                      value__fft_coefficient__attr_"abs"__coeff_1          60
+                                value__index_mass_quantile__q_0.8          60
+                                value__index_mass_quantile__q_0.2          58
+----------------------------------------------------------------------
+
+Volatility:
+                                                             feature  importance
+   value__agg_linear_trend__attr_"stderr"__chunk_len_10__f_agg_"var"         111
+                  value__agg_autocorrelation__f_agg_"var"__maxlag_40         106
+    value__change_quantiles__f_agg_"var"__isabs_True__qh_0.8__ql_0.0          96
+    value__change_quantiles__f_agg_"var"__isabs_True__qh_1.0__ql_0.2          88
+    value__change_quantiles__f_agg_"var"__isabs_True__qh_1.0__ql_0.0          79
+   value__change_quantiles__f_agg_"var"__isabs_False__qh_1.0__ql_0.4          61
+                                              value__mean_abs_change          61
+                                     value__fourier_entropy__bins_10          56
+                   value__friedrich_coefficients__coeff_2__m_3__r_30          54
+value__agg_linear_trend__attr_"intercept"__chunk_len_50__f_agg_"var"          52
+----------------------------------------------------------------------
