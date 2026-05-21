@@ -362,6 +362,39 @@ Kolon kisaltma — eski 9 (o_): col, ctx, det, ms, pt, st, ts, vs, vol; yeni 10 
 - `ari` ve `arima` zor — AR bileseni serinin daha stationary gorunmesine yol aciyor
 - Eski ensemble (o_*) sutunlarinda contextual_anomaly (o_ctx) sentetik veride dusuk — yani eski model bias'i sentetigimizi orta seviyede taniyor; ancak yeni ensemble (n_*) cok daha bilgili
 
+### KRITIK BULGU: Stationarity gate yanlis tetikleniyor
+
+**14 sentetik stochastic serisi icin** stat_gate (P(stationary) >= 0.92) tetiklenip base'i ZORLA `stationary` yapiyor — halbuki base meta-learner ayni serilerde `stochastic_trend` diyor (b_str=0.99).
+
+Ornek: `ari_L45_00.csv`
+```
+base meta-learner:  P(stationary)=0.00, P(stoch_trend)=0.99  -> argmax = stoch
+21-feat stat-gate:  P(stationary)=0.963                       -> gate fires (>=0.92)
+FINAL              -> stationary  (gate override)
+```
+
+**Gate kapali senaryosu (sadece base meta argmax):**
+
+| kind/n | mevcut acc | gate OFF acc |
+|---|---|---|
+| ari 45 | %20 | **%60** |
+| ari 100 | **%0** | **%80** |
+| arima 45 | %20 | %20 |
+| arima 100 | %20 | **%100** |
+| ima 45 | %20 | **%80** |
+| ima 100 | %60 | **%80** |
+| rw 45 | %40 | %40 |
+| rw 100 | %100 | %100 |
+| rwd 45 | %80 | %80 |
+| rwd 100 | %80 | %80 |
+| **TOPLAM** | **%44** | **%72** |
+
+**Yorum:**
+- 21-feature stationary detector (`stationary-detection-ml/best_model.pkl`) bizim eğitim datamızdan FARKLI bir veri setiyle (276K orijinal) egitildigi icin OOD davranisi var.
+- Kisa ARI/IMA/ARIMA serilerinde drift sinyali zayif kaliyor; statistical features (rolling_std vb.) stationary'e benziyor; gate yanlis tetikleniyor.
+- Ironik: ayni gate **realdata icin hicbir zaman acilmadi** (37/37 combo yoluna gitti). DAX log returns (kesin stationary) icin bile P(stat)=0.006.
+- **Tedavi:** Gate threshold 0.92 -> 0.97 yukseltmek veya gate'i kaldirmak. Veya base meta P(stationary) ile birlikte AND kontrolu (her ikisi de >0.7 ise stationary).
+
 Detayli JSON: [runner/results/ensfinal_synthetic.json](runner/results/ensfinal_synthetic.json)
 
 ### Pipeline-2 (ens-final) — kisa realdata
