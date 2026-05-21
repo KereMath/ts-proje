@@ -156,7 +156,9 @@ Not: `trend_shift` ve `deterministic_trend` modelleri zayif — sirasiyla 30 ve 
 Diger 25/39 grup %90+ FULL. Bu sonuc orijinal raporda (%89.65) ima edilen tavana yakin — sadece **10 seri/grup** ile elde edildi (orijinal: 19500 ornek + 4400 eval).
 
 ### 2.5. realdata uzerinde ens-final testi
-[runner/20_ensfinal_realdata.py](runner/20_ensfinal_realdata.py): 41 realdata dosyasi, 32'si pipeline'a uygun (n >= 50). W1, W10, W16, W9, uspop, strikes vs n<50 oldugu icin atlandi.
+**Iki ayri kosu:**
+- [runner/20_ensfinal_realdata.py](runner/20_ensfinal_realdata.py): n >= 50 olanlar (32 dosya, normal yol)
+- [runner/21_ensfinal_short_realdata.py](runner/21_ensfinal_short_realdata.py): 20 <= n < 50 olanlar (5 dosya: **W1**, uspop, strikes, W15-1, W15-2). n<20 olanlar (W9, W10, W16, rec_dataframe) tsfresh stabilite riski sebebiyle atlandi.
 
 **Cikti:** [runner/results/ENSFINAL_REALDATA_RAPOR.md](runner/results/ENSFINAL_REALDATA_RAPOR.md), [runner/results/ensfinal_realdata.csv](runner/results/ensfinal_realdata.csv), [runner/results/ensfinal_realdata.json](runner/results/ensfinal_realdata.json) (her dosya icin **9 eski + 10 yeni + 4 base meta + 6 anomali meta + P(stat) + P(combo)** = 31 olasilik).
 
@@ -207,11 +209,27 @@ Diger 25/39 grup %90+ FULL. Bu sonuc orijinal raporda (%89.65) ima edilen tavana
 ### 3.4. "sonra bidaha realdatadakilere bakmak gerekir"
 **Cevap:** 32 dosya (n>=50) icin tam pipeline sonucu [runner/results/ENSFINAL_REALDATA_RAPOR.md](runner/results/ENSFINAL_REALDATA_RAPOR.md). 
 
-### 3.5. "kisa seriler ozelinde basarim"
+### 3.5. "kisa seriler ozelinde basarim" + W1 detayi
 **Cevap:**
-- **tsfresh-ensemble-stationary** ile: sentetik n=45 ve n=100'de tahmin %0 dogru (her ikisinde de 25/25 contextual). Kisa-seriye bagli **degil**, model OOD'a karsi dayaniksiz.
-- **ens-final** ile: MIN_SERIES_LENGTH=50 oldugu icin n<50 (W1, W10, W16, W9, uspop, strikes) **pipeline'a giremiyor**. Kisa realdata icin pipeline calismadi. W1 (n=45) yalnizca tsfresh-ensemble-stationary'de calisti, orada da yanlis sonuc verdi (contextual).
+- **tsfresh-ensemble-stationary** ile: sentetik n=45 ve n=100'de tahmin %0 dogru (her ikisinde de 25/25 contextual). Kisa-seriye bagli **degil**, model OOD'a karsi dayaniksiz. W1 burada da contextual_anomaly cikiyor.
+- **ens-final** ile: MIN_SERIES_LENGTH=50 default, ama 21_ensfinal_short_realdata.py ile 20<=n<50 olanlari da pipeline'a soktum. 5 kisa dosya icin sonuc:
+
+| dosya | n | base | anomaliler | path | P(stat) | P(combo) |
+|---|---|---|---|---|---|---|
+| uspop | 21 | deterministic_trend | collective, contextual | combo | 0.014 | 0.951 |
+| strikes | 30 | stationary | hepsi (6 anomali) | combo | 0.007 | 0.982 |
+| **W1** | **45** | **stochastic_trend** | **collective_anomaly, variance_shift** | combo | 0.051 | 0.997 |
+| W15-1 | 46 | stochastic_trend | collective_anomaly | combo | 0.824 | 0.938 |
+| W15-2 | 46 | stochastic_trend | collective_anomaly | combo | 0.839 | 0.916 |
+
+- **W1 ozel detayi** ([runner/results/ENSFINAL_SHORT_RAPOR.md](runner/results/ENSFINAL_SHORT_RAPOR.md)):
+  - Eski ensemble (9 detector): contextual=0.57 (bias devam ediyor)
+  - Yeni ensemble (10 model): collective=0.97, variance=0.91, volatility=0.62 (en yuksek base)
+  - Base meta-learner: **stochastic_trend=0.40 (argmax)** > det_trend=0.28 > volatility=0.24 > stationary=0.08
+  - Anomali meta: collective=0.98 + variance=0.34 → threshold gecen: **collective + variance_shift**
+  - **Onemli: meta-learner eski ensemble'in contextual bias'ini gectip stochastic_trend dedi** — bu W1 (Wolfer sunspot benzeri stochastic dalgali seri) icin makul.
 - ens-final 39 grup egitim setinde **uzunluk [80, 150]** ile %88.2 — yani 80'lik kisa serilerde de calisiyor.
+- n<20 olanlar (W9, W10, W16, rec_dataframe) tsfresh stabilitesi riski yuzunden hala atlaniyor.
 
 ---
 
@@ -246,7 +264,8 @@ ens-final'in `MIN_SERIES_LENGTH = 50` kuraldir (tsfresh stabilite icin). W1 (n=4
 | [runner/03_run_pipeline.py](runner/03_run_pipeline.py) | tsfresh-ensemble-stationary 9-detector inference |
 | [runner/04_build_report.py](runner/04_build_report.py) | Birinci tur rapor uretici |
 | [runner/10_generate_39groups.py](runner/10_generate_39groups.py) | 39 grup × 10 seri = 390 betise serisi (ens-final icin) |
-| [runner/20_ensfinal_realdata.py](runner/20_ensfinal_realdata.py) | ens-final pipeline'ini realdata uzerinde calistir |
+| [runner/20_ensfinal_realdata.py](runner/20_ensfinal_realdata.py) | ens-final pipeline'ini realdata (n>=50) uzerinde calistir |
+| [runner/21_ensfinal_short_realdata.py](runner/21_ensfinal_short_realdata.py) | ens-final pipeline'ini KISA realdata (20<=n<50) uzerinde calistir — W1 buraya |
 
 ### Patchlenmis dosyalar
 | Dosya | Degisiklik |
@@ -261,9 +280,11 @@ ens-final'in `MIN_SERIES_LENGTH = 50` kuraldir (tsfresh stabilite icin). W1 (n=4
 | [runner/results/RAPOR.md](runner/results/RAPOR.md) | tsfresh-ensemble-stationary tek-pipeline raporu |
 | [runner/results/predictions.csv](runner/results/predictions.csv) | 9-detector x 90 seri probability tablosu |
 | [runner/results/predictions.json](runner/results/predictions.json) | Yukaridakinin detayli JSON'u |
-| [runner/results/ENSFINAL_REALDATA_RAPOR.md](runner/results/ENSFINAL_REALDATA_RAPOR.md) | ens-final realdata raporu |
+| [runner/results/ENSFINAL_REALDATA_RAPOR.md](runner/results/ENSFINAL_REALDATA_RAPOR.md) | ens-final realdata (n>=50) raporu |
 | [runner/results/ensfinal_realdata.csv](runner/results/ensfinal_realdata.csv) | ens-final realdata flat tablo |
 | [runner/results/ensfinal_realdata.json](runner/results/ensfinal_realdata.json) | **31 probability/dosya** detayli JSON |
+| [runner/results/ENSFINAL_SHORT_RAPOR.md](runner/results/ENSFINAL_SHORT_RAPOR.md) | **W1 + kisa seriler ens-final raporu** |
+| [runner/results/ensfinal_short.json](runner/results/ensfinal_short.json) | Kisa seriler 31 probability/dosya JSON |
 | [ens-final/results/evaluation_report.md](ens-final/results/evaluation_report.md) | 39 grup eval (egitim seti) raporu |
 | [ens-final/results/evaluation.json](ens-final/results/evaluation.json) | Yukaridakinin detayli JSON'u |
 | [ens-final/results/meta_training.json](ens-final/results/meta_training.json) | Meta-learner egitim metrikleri |
