@@ -814,10 +814,8 @@
     "expected_class": "stochastic_trend",
     "base_correct": true,
     "pred_base": "stochastic_trend",
-    "pred_anoms": [
-      "variance_shift"
-    ],
-    "decision_path": "combo",
+    "pred_anoms": [],
+    "decision_path": "single",
     "stat_prob": 0.6911,
     "router_combo_prob": 0.3279,
     "base_probs": {
@@ -1014,10 +1012,12 @@
     "kind": "ari",
     "n": 45,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
-    "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
+    "pred_anoms": [
+      "variance_shift"
+    ],
+    "decision_path": "combo",
     "stat_prob": 0.963,
     "router_combo_prob": 0.9156,
     "base_probs": {
@@ -1063,10 +1063,12 @@
     "kind": "ari",
     "n": 45,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
-    "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
+    "pred_anoms": [
+      "variance_shift"
+    ],
+    "decision_path": "combo",
     "stat_prob": 0.9546,
     "router_combo_prob": 0.8977,
     "base_probs": {
@@ -1166,12 +1168,7 @@
     "base_correct": false,
     "pred_base": "stationary",
     "pred_anoms": [
-      "collective_anomaly",
-      "contextual_anomaly",
-      "mean_shift",
-      "point_anomaly",
-      "trend_shift",
-      "variance_shift"
+      "mean_shift"
     ],
     "decision_path": "combo",
     "stat_prob": 0.052,
@@ -1270,10 +1267,12 @@
     "kind": "ari",
     "n": 100,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
-    "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
+    "pred_anoms": [
+      "variance_shift"
+    ],
+    "decision_path": "combo",
     "stat_prob": 0.9759,
     "router_combo_prob": 0.9656,
     "base_probs": {
@@ -1319,10 +1318,10 @@
     "kind": "ari",
     "n": 100,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
     "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "decision_path": "combo",
     "stat_prob": 0.9356,
     "router_combo_prob": 0.8964,
     "base_probs": {
@@ -1368,10 +1367,12 @@
     "kind": "ari",
     "n": 100,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
-    "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
+    "pred_anoms": [
+      "mean_shift"
+    ],
+    "decision_path": "combo",
     "stat_prob": 0.9647,
     "router_combo_prob": 0.9421,
     "base_probs": {
@@ -1419,15 +1420,8 @@
     "expected_class": "stochastic_trend",
     "base_correct": false,
     "pred_base": "stationary",
-    "pred_anoms": [
-      "collective_anomaly",
-      "contextual_anomaly",
-      "mean_shift",
-      "point_anomaly",
-      "trend_shift",
-      "variance_shift"
-    ],
-    "decision_path": "combo",
+    "pred_anoms": [],
+    "decision_path": "combo_suppress",
     "stat_prob": 0.0102,
     "router_combo_prob": 0.991,
     "base_probs": {
@@ -1473,10 +1467,12 @@
     "kind": "ari",
     "n": 100,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
-    "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
+    "pred_anoms": [
+      "variance_shift"
+    ],
+    "decision_path": "combo",
     "stat_prob": 0.938,
     "router_combo_prob": 0.8031,
     "base_probs": {
@@ -1522,10 +1518,12 @@
     "kind": "ima",
     "n": 45,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
-    "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
+    "pred_anoms": [
+      "variance_shift"
+    ],
+    "decision_path": "combo",
     "stat_prob": 0.9731,
     "router_combo_prob": 0.8295,
     "base_probs": {
@@ -1571,10 +1569,12 @@
     "kind": "ima",
     "n": 45,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
-    "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
+    "pred_anoms": [
+      "variance_shift"
+    ],
+    "decision_path": "combo",
     "stat_prob": 0.9914,
     "router_combo_prob": 0.9528,
     "base_probs": {
@@ -1620,10 +1620,12 @@
     "kind": "ima",
     "n": 45,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
-    "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
+    "pred_anoms": [
+      "variance_shift"
+    ],
+    "decision_path": "combo",
     "stat_prob": 0.9846,
     "router_combo_prob": 0.5663,
     "base_probs": {
@@ -1924,15 +1926,8 @@
     "expected_class": "stochastic_trend",
     "base_correct": false,
     "pred_base": "stationary",
-    "pred_anoms": [
-      "collective_anomaly",
-      "contextual_anomaly",
-      "mean_shift",
-      "point_anomaly",
-      "trend_shift",
-      "variance_shift"
-    ],
-    "decision_path": "combo",
+    "pred_anoms": [],
+    "decision_path": "combo_suppress",
     "stat_prob": 0.0107,
     "router_combo_prob": 0.9967,
     "base_probs": {
@@ -1978,10 +1973,12 @@
     "kind": "ima",
     "n": 100,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
-    "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
+    "pred_anoms": [
+      "mean_shift"
+    ],
+    "decision_path": "combo",
     "stat_prob": 0.9799,
     "router_combo_prob": 0.9929,
     "base_probs": {
@@ -2132,11 +2129,6 @@
     "base_correct": false,
     "pred_base": "stationary",
     "pred_anoms": [
-      "collective_anomaly",
-      "contextual_anomaly",
-      "mean_shift",
-      "point_anomaly",
-      "trend_shift",
       "variance_shift"
     ],
     "decision_path": "combo",
@@ -2283,10 +2275,12 @@
     "kind": "arima",
     "n": 100,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
-    "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
+    "pred_anoms": [
+      "variance_shift"
+    ],
+    "decision_path": "combo",
     "stat_prob": 0.9904,
     "router_combo_prob": 0.9745,
     "base_probs": {
@@ -2381,10 +2375,12 @@
     "kind": "arima",
     "n": 100,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
-    "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
+    "pred_anoms": [
+      "mean_shift"
+    ],
+    "decision_path": "combo",
     "stat_prob": 0.985,
     "router_combo_prob": 0.9668,
     "base_probs": {
@@ -2430,10 +2426,12 @@
     "kind": "arima",
     "n": 100,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
-    "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
+    "pred_anoms": [
+      "variance_shift"
+    ],
+    "decision_path": "combo",
     "stat_prob": 0.9368,
     "router_combo_prob": 0.933,
     "base_probs": {
@@ -2479,10 +2477,12 @@
     "kind": "arima",
     "n": 100,
     "expected_class": "stochastic_trend",
-    "base_correct": false,
-    "pred_base": "stationary",
-    "pred_anoms": [],
-    "decision_path": "stat_gate",
+    "base_correct": true,
+    "pred_base": "stochastic_trend",
+    "pred_anoms": [
+      "variance_shift"
+    ],
+    "decision_path": "combo",
     "stat_prob": 0.9505,
     "router_combo_prob": 0.9896,
     "base_probs": {

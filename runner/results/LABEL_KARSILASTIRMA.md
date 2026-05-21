@@ -15,13 +15,13 @@ Ground truth Datasets.pdf'ten cikarildi (Wei, Brockwell, Lutkepohl, Shumway & St
 
 | Match | Sayi |
 |---|---|
-| FULL | 0 |
-| PARTIAL | 8 |
-| NONE | 11 |
-| MISSING | 2 |
+| FULL | 3 |
+| PARTIAL | 5 |
+| NONE | 12 |
+| MISSING | 1 |
 | **TOPLAM** | **21** |
 
-**Base type dogru: 8 / 19** (MISSING dosyalar haric)
+**Base type dogru: 8 / 20** (MISSING dosyalar haric)
 
 ## Tum karsilastirma
 
@@ -29,25 +29,25 @@ Ground truth Datasets.pdf'ten cikarildi (Wei, Brockwell, Lutkepohl, Shumway & St
 |---|---|---|---|---|---|---|---|---|
 | W1.csv | 45 | Wei | stationary | point_anomaly | stochastic_trend | collective_anomaly, variance_shift | ✗ | NONE |
 | W2.csv | 302 | Wei | stationary | variance_shift | deterministic_trend | collective_anomaly, contextual_anomaly, point_anomaly | ✗ | NONE |
-| W3.csv | 82 | Wei | stationary | variance_shift | stationary | collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift | ✓ | PARTIAL |
+| W3.csv | 82 | Wei | stationary | variance_shift | stationary | collective_anomaly, contextual_anomaly | ✓ | PARTIAL |
 | W5.csv | 71 | Wei | deterministic_trend | mean_shift | deterministic_trend | collective_anomaly, contextual_anomaly | ✓ | PARTIAL |
 | W6.csv | 114 | Wei | deterministic_trend | variance_shift | deterministic_trend | collective_anomaly, contextual_anomaly | ✓ | PARTIAL |
 | W10.csv | - | Wei | stochastic_trend | point_anomaly | (pipeline'a girmedi) | - | ✗ | MISSING |
 | uspop.csv | 21 | Brockwell | deterministic_trend | - | deterministic_trend | collective_anomaly, contextual_anomaly | ✓ | PARTIAL |
-| strikes.csv | 30 | Brockwell | stationary | - | stationary | collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift | ✓ | PARTIAL |
+| strikes.csv | 30 | Brockwell | stationary | - | stationary | - | ✓ | **FULL** |
 | sunspots.csv | 100 | Brockwell | stationary | - | deterministic_trend | collective_anomaly, contextual_anomaly | ✗ | NONE |
 | airpass.csv | 144 | Brockwell | stochastic_trend | - | deterministic_trend | collective_anomaly, contextual_anomaly, point_anomaly | ✗ | NONE |
-| deaths.csv | 72 | Brockwell | stochastic_trend | - | stationary | collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift | ✗ | NONE |
+| deaths.csv | 72 | Brockwell | stochastic_trend | - | stationary | contextual_anomaly | ✗ | NONE |
 | INDPRO.csv | 372 | Shumway | stochastic_trend | - | deterministic_trend | collective_anomaly, contextual_anomaly, point_anomaly | ✗ | NONE |
 | UNRATE.csv | 372 | Shumway | stochastic_trend | - | deterministic_trend | collective_anomaly | ✗ | NONE |
 | soi_dataframe.csv | 453 | Shumway | stationary | - | stochastic_trend | collective_anomaly | ✗ | NONE |
-| rec_dataframe.csv | - | Shumway | stationary | - | (pipeline'a girmedi) | - | ✗ | MISSING |
+| rec_dataframe.csv | 453 | Shumway | stationary | - | deterministic_trend | contextual_anomaly, point_anomaly | ✗ | NONE |
 | GermanGNP.csv | 88 | JMulTi | deterministic_trend | trend_shift | deterministic_trend | collective_anomaly, contextual_anomaly | ✓ | PARTIAL |
-| US_investment.csv | 104 | JMulTi | stationary | - | stationary | collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift | ✓ | PARTIAL |
+| US_investment.csv | 104 | JMulTi | stationary | - | stationary | - | ✓ | **FULL** |
 | German_consumption.csv | 93 | JMulTi | stochastic_trend | - | deterministic_trend | collective_anomaly, contextual_anomaly | ✗ | NONE |
 | Polish_productivity.csv | 117 | JMulTi | stochastic_trend | trend_shift | volatility | collective_anomaly, point_anomaly | ✗ | NONE |
 | RealInt_dataframe.csv | 103 | Bai-Perron | stationary | mean_shift | deterministic_trend | collective_anomaly, contextual_anomaly | ✗ | NONE |
-| NP_xetradax_returns100.csv | 1028 | Lutkepohl | stationary | - | stationary | collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift | ✓ | PARTIAL |
+| NP_xetradax_returns100.csv | 1028 | Lutkepohl | stationary | - | stationary | - | ✓ | **FULL** |
 
 ## Detayli notlar (PDF'ten)
 
@@ -83,11 +83,11 @@ PDF'te acikca 'stationary' diye etiketlenmis dosyalar:
 |---|---|---|---|---|---|---|
 | W1.csv | 45 | Wei | stochastic_trend | collective_anomaly, variance_shift | ✗ | NONE |
 | W2.csv | 302 | Wei | deterministic_trend | collective_anomaly, contextual_anomaly, point_anomaly | ✗ | NONE |
-| W3.csv | 82 | Wei | stationary | collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift | ✓ | PARTIAL |
-| strikes.csv | 30 | Brockwell | stationary | collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift | ✓ | PARTIAL |
+| W3.csv | 82 | Wei | stationary | collective_anomaly, contextual_anomaly | ✓ | PARTIAL |
+| strikes.csv | 30 | Brockwell | stationary | - | ✓ | FULL |
 | sunspots.csv | 100 | Brockwell | deterministic_trend | collective_anomaly, contextual_anomaly | ✗ | NONE |
 | soi_dataframe.csv | 453 | Shumway | stochastic_trend | collective_anomaly | ✗ | NONE |
-| rec_dataframe.csv | - | Shumway | (pipeline'a girmedi) | - | ✗ | MISSING |
-| US_investment.csv | 104 | JMulTi | stationary | collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift | ✓ | PARTIAL |
+| rec_dataframe.csv | 453 | Shumway | deterministic_trend | contextual_anomaly, point_anomaly | ✗ | NONE |
+| US_investment.csv | 104 | JMulTi | stationary | - | ✓ | FULL |
 | RealInt_dataframe.csv | 103 | Bai-Perron | deterministic_trend | collective_anomaly, contextual_anomaly | ✗ | NONE |
-| NP_xetradax_returns100.csv | 1028 | Lutkepohl | stationary | collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift | ✓ | PARTIAL |
+| NP_xetradax_returns100.csv | 1028 | Lutkepohl | stationary | - | ✓ | FULL |

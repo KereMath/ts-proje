@@ -30,8 +30,9 @@ from stat_detector import (
 warnings.filterwarnings("ignore")
 
 SAMPLES_PER_LEAF = 10
-CONTEXT_THRESH = 0.0     # combo + stationary base icin anomali esigi
+CONTEXT_THRESH = 0.55    # combo + stationary base icin anomali esigi (0.0 over-fire idi)
 STAT_DET_THRESHOLD = 0.95    # stat detector >= bu → direkt stationary, anomali yok
+STAT_BASE_META_AND = 0.40    # stat-gate tetikletmek icin base meta P(stationary) >= bu sart
 
 
 # ===================================================================
@@ -113,8 +114,11 @@ def predict_batch(base_meta, anom_metas, blend_params, router, meta_X, raw_new_p
         base_type = BASE_LABELS[base_idx]
 
         # STATIONARY DETECTOR OVERRIDE:
-        # Stat detector cok yuksek guvenle stationary diyorsa → direkt stationary, anomali yok
-        if stat_probs is not None and stat_probs[i] >= STAT_DET_THRESHOLD:
+        # Stat detector cok yuksek guvenle stationary diyorsa ve base meta da uyusuyorsa
+        # → direkt stationary, anomali yok. (AND mantigi: sentetik OOD yanlis-pozitiflerden kacis)
+        if (stat_probs is not None
+                and stat_probs[i] >= STAT_DET_THRESHOLD
+                and ens_base_proba[i, 0] >= STAT_BASE_META_AND):
             results.append(("stationary", []))
             continue
 
@@ -149,9 +153,10 @@ def predict_batch(base_meta, anom_metas, blend_params, router, meta_X, raw_new_p
         for anom_name in ANOM_LABELS:
             params = blend_params.get(anom_name, {"alpha": 0.5, "threshold": 0.5})
             threshold = params["threshold"]
-            # Context: combo + stationary base → esigi dusur (grp 5-10 icin)
+            # Context: combo + stationary base → esigi YUKSELT (saf stationary'de over-fire'i kapat)
+            # (Eskiden min(threshold, 0.0) idi -> her zaman fire ediyordu, bug fix)
             if context_lower:
-                threshold = min(threshold, CONTEXT_THRESH)
+                threshold = max(threshold, CONTEXT_THRESH)
             if blended_probs.get(anom_name, 0) >= threshold:
                 anomalies.append(anom_name)
 

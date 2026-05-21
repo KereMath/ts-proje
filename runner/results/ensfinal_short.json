@@ -3,15 +3,8 @@
     "name": "strikes.csv",
     "n": 30,
     "pred_base": "stationary",
-    "pred_anoms": [
-      "collective_anomaly",
-      "contextual_anomaly",
-      "mean_shift",
-      "point_anomaly",
-      "trend_shift",
-      "variance_shift"
-    ],
-    "decision_path": "combo",
+    "pred_anoms": [],
+    "decision_path": "combo_suppress",
     "stat_prob": 0.007,
     "router_combo_prob": 0.9821,
     "base_probs": {

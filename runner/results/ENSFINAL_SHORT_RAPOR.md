@@ -8,7 +8,7 @@ Toplam 5 kisa dosya. (n<20 olanlar tsfresh stabilite icin atlandi.)
 | dosya | n | yol | base | anomaliler | P(stat) | P(combo) |
 |---|---|---|---|---|---|---|
 | uspop.csv | 21 | combo | deterministic_trend | collective_anomaly, contextual_anomaly | 0.014 | 0.951 |
-| strikes.csv | 30 | combo | stationary | collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift | 0.007 | 0.982 |
+| strikes.csv | 30 | combo_suppress | stationary | - | 0.007 | 0.982 |
 | W1.csv | 45 | combo | stochastic_trend | collective_anomaly, variance_shift | 0.051 | 0.997 |
 | W15-1.csv | 46 | combo | stochastic_trend | collective_anomaly | 0.824 | 0.938 |
 | W15-2.csv | 46 | combo | stochastic_trend | collective_anomaly | 0.839 | 0.916 |

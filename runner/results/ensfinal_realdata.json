@@ -31,7 +31,7 @@
       "deterministic_trend": 0.1737,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0187,
+      "stochastic_trend": 0.0121,
       "trend_shift": 0.0,
       "variance_shift": 0.0002,
       "volatility": 0.0
@@ -104,39 +104,34 @@
     "n": 72,
     "pred_base": "stationary",
     "pred_anoms": [
-      "collective_anomaly",
-      "contextual_anomaly",
-      "mean_shift",
-      "point_anomaly",
-      "trend_shift",
-      "variance_shift"
+      "contextual_anomaly"
     ],
     "decision_path": "combo",
     "stat_prob": 0.0036,
-    "router_combo_prob": 0.9974,
+    "router_combo_prob": 0.9975,
     "base_probs": {
-      "stationary": 0.7014,
-      "deterministic_trend": 0.2463,
-      "stochastic_trend": 0.0264,
-      "volatility": 0.0258
+      "stationary": 0.7111,
+      "deterministic_trend": 0.2397,
+      "stochastic_trend": 0.0255,
+      "volatility": 0.0237
     },
     "anom_probs": {
-      "collective_anomaly": 0.166,
+      "collective_anomaly": 0.1645,
       "contextual_anomaly": 0.9947,
       "mean_shift": 0.0013,
       "point_anomaly": 0.009,
       "trend_shift": 0.0266,
-      "variance_shift": 0.0084
+      "variance_shift": 0.008
     },
     "old_probs": {
-      "collective_anomaly": 0.0001,
+      "collective_anomaly": 0.0002,
       "contextual_anomaly": 0.3556,
-      "deterministic_trend": 0.7848,
+      "deterministic_trend": 0.7395,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0029,
+      "stochastic_trend": 0.0033,
       "trend_shift": 0.0,
-      "variance_shift": 0.0001,
+      "variance_shift": 0.0,
       "volatility": 0.0
     },
     "new_probs": {
@@ -144,7 +139,7 @@
       "deterministic_trend": 0.9546,
       "stochastic_trend": 0.1958,
       "volatility": 0.3612,
-      "collective_anomaly": 0.8781,
+      "collective_anomaly": 0.8539,
       "contextual_anomaly": 0.9556,
       "mean_shift": 0.2336,
       "point_anomaly": 0.0343,
@@ -162,17 +157,17 @@
     ],
     "decision_path": "combo",
     "stat_prob": 0.003,
-    "router_combo_prob": 0.988,
+    "router_combo_prob": 0.9886,
     "base_probs": {
-      "stationary": 0.0162,
-      "deterministic_trend": 0.2818,
-      "stochastic_trend": 0.6777,
-      "volatility": 0.0244
+      "stationary": 0.017,
+      "deterministic_trend": 0.2819,
+      "stochastic_trend": 0.6778,
+      "volatility": 0.0233
     },
     "anom_probs": {
       "collective_anomaly": 0.9133,
       "contextual_anomaly": 0.9786,
-      "mean_shift": 0.0028,
+      "mean_shift": 0.0027,
       "point_anomaly": 0.1362,
       "trend_shift": 0.0034,
       "variance_shift": 0.0037
@@ -180,18 +175,18 @@
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.3305,
-      "deterministic_trend": 0.0586,
+      "deterministic_trend": 0.0463,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0064,
+      "stochastic_trend": 0.0042,
       "trend_shift": 0.0,
-      "variance_shift": 0.0,
+      "variance_shift": 0.0001,
       "volatility": 0.0
     },
     "new_probs": {
       "stationary": 0.6614,
       "deterministic_trend": 0.271,
-      "stochastic_trend": 0.8333,
+      "stochastic_trend": 0.8389,
       "volatility": 0.0307,
       "collective_anomaly": 0.9878,
       "contextual_anomaly": 0.9557,
@@ -220,7 +215,7 @@
     "anom_probs": {
       "collective_anomaly": 0.2044,
       "contextual_anomaly": 0.9758,
-      "mean_shift": 0.0033,
+      "mean_shift": 0.0031,
       "point_anomaly": 0.2301,
       "trend_shift": 0.0046,
       "variance_shift": 0.0028
@@ -228,7 +223,7 @@
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.3034,
-      "deterministic_trend": 0.0802,
+      "deterministic_trend": 0.0635,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
       "stochastic_trend": 0.0002,
@@ -259,30 +254,30 @@
     ],
     "decision_path": "combo",
     "stat_prob": 0.0051,
-    "router_combo_prob": 0.9967,
+    "router_combo_prob": 0.9968,
     "base_probs": {
-      "stationary": 0.0257,
-      "deterministic_trend": 0.9576,
-      "stochastic_trend": 0.0093,
-      "volatility": 0.0073
+      "stationary": 0.0261,
+      "deterministic_trend": 0.9574,
+      "stochastic_trend": 0.0094,
+      "volatility": 0.0071
     },
     "anom_probs": {
       "collective_anomaly": 0.9113,
       "contextual_anomaly": 0.9786,
-      "mean_shift": 0.0026,
+      "mean_shift": 0.0025,
       "point_anomaly": 0.1477,
       "trend_shift": 0.003,
-      "variance_shift": 0.003
+      "variance_shift": 0.0032
     },
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.3529,
-      "deterministic_trend": 0.0533,
+      "deterministic_trend": 0.042,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0091,
+      "stochastic_trend": 0.0065,
       "trend_shift": 0.0,
-      "variance_shift": 0.0,
+      "variance_shift": 0.0001,
       "volatility": 0.0
     },
     "new_probs": {
@@ -319,7 +314,7 @@
     "anom_probs": {
       "collective_anomaly": 0.4195,
       "contextual_anomaly": 0.5492,
-      "mean_shift": 0.0047,
+      "mean_shift": 0.0045,
       "point_anomaly": 0.9931,
       "trend_shift": 0.0028,
       "variance_shift": 0.0017
@@ -327,10 +322,10 @@
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.9357,
-      "deterministic_trend": 0.1165,
+      "deterministic_trend": 0.0931,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0059,
+      "stochastic_trend": 0.0042,
       "trend_shift": 0.0,
       "variance_shift": 0.0,
       "volatility": 0.0
@@ -358,28 +353,28 @@
     ],
     "decision_path": "combo",
     "stat_prob": 0.0043,
-    "router_combo_prob": 0.9935,
+    "router_combo_prob": 0.9939,
     "base_probs": {
       "stationary": 0.0055,
-      "deterministic_trend": 0.9832,
+      "deterministic_trend": 0.9833,
       "stochastic_trend": 0.0062,
-      "volatility": 0.0052
+      "volatility": 0.0049
     },
     "anom_probs": {
       "collective_anomaly": 0.9161,
       "contextual_anomaly": 0.5553,
-      "mean_shift": 0.0037,
+      "mean_shift": 0.0035,
       "point_anomaly": 0.0109,
-      "trend_shift": 0.0037,
-      "variance_shift": 0.006
+      "trend_shift": 0.0036,
+      "variance_shift": 0.0064
     },
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.3305,
-      "deterministic_trend": 0.037,
+      "deterministic_trend": 0.029,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0016,
+      "stochastic_trend": 0.0011,
       "trend_shift": 0.0,
       "variance_shift": 0.0,
       "volatility": 0.0
@@ -387,9 +382,9 @@
     "new_probs": {
       "stationary": 0.7874,
       "deterministic_trend": 0.9927,
-      "stochastic_trend": 0.6267,
+      "stochastic_trend": 0.6362,
       "volatility": 0.0366,
-      "collective_anomaly": 0.9867,
+      "collective_anomaly": 0.9836,
       "contextual_anomaly": 0.9547,
       "mean_shift": 0.1778,
       "point_anomaly": 0.1142,
@@ -499,15 +494,8 @@
     "name": "NP_xetradax_returns100.csv",
     "n": 1028,
     "pred_base": "stationary",
-    "pred_anoms": [
-      "collective_anomaly",
-      "contextual_anomaly",
-      "mean_shift",
-      "point_anomaly",
-      "trend_shift",
-      "variance_shift"
-    ],
-    "decision_path": "combo",
+    "pred_anoms": [],
+    "decision_path": "combo_suppress",
     "stat_prob": 0.0061,
     "router_combo_prob": 0.9916,
     "base_probs": {
@@ -562,13 +550,13 @@
     "base_probs": {
       "stationary": 0.0026,
       "deterministic_trend": 0.002,
-      "stochastic_trend": 0.3229,
-      "volatility": 0.6725
+      "stochastic_trend": 0.3276,
+      "volatility": 0.6678
     },
     "anom_probs": {
       "collective_anomaly": 0.4152,
       "contextual_anomaly": 0.0052,
-      "mean_shift": 0.001,
+      "mean_shift": 0.0009,
       "point_anomaly": 0.9831,
       "trend_shift": 0.0018,
       "variance_shift": 0.1652
@@ -576,13 +564,13 @@
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.9486,
-      "deterministic_trend": 0.0721,
-      "mean_shift": 0.0023,
+      "deterministic_trend": 0.057,
+      "mean_shift": 0.0021,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0076,
+      "stochastic_trend": 0.0089,
       "trend_shift": 0.0,
       "variance_shift": 0.0,
-      "volatility": 0.0266
+      "volatility": 0.0164
     },
     "new_probs": {
       "stationary": 0.0186,
@@ -615,20 +603,20 @@
       "volatility": 0.0059
     },
     "anom_probs": {
-      "collective_anomaly": 0.9111,
+      "collective_anomaly": 0.909,
       "contextual_anomaly": 0.5436,
-      "mean_shift": 0.0024,
+      "mean_shift": 0.0022,
       "point_anomaly": 0.0102,
-      "trend_shift": 0.0092,
-      "variance_shift": 0.0072
+      "trend_shift": 0.0087,
+      "variance_shift": 0.0075
     },
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.9995,
-      "deterministic_trend": 0.0003,
+      "deterministic_trend": 0.0002,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0074,
+      "stochastic_trend": 0.0037,
       "trend_shift": 0.0,
       "variance_shift": 0.0,
       "volatility": 0.0
@@ -644,6 +632,55 @@
       "point_anomaly": 0.0936,
       "trend_shift": 0.5,
       "variance_shift": 0.5713
+    }
+  },
+  {
+    "name": "rec_dataframe.csv",
+    "n": 453,
+    "pred_base": "deterministic_trend",
+    "pred_anoms": [
+      "contextual_anomaly",
+      "point_anomaly"
+    ],
+    "decision_path": "combo",
+    "stat_prob": 0.0017,
+    "router_combo_prob": 0.9835,
+    "base_probs": {
+      "stationary": 0.1096,
+      "deterministic_trend": 0.7498,
+      "stochastic_trend": 0.1236,
+      "volatility": 0.017
+    },
+    "anom_probs": {
+      "collective_anomaly": 0.2183,
+      "contextual_anomaly": 0.9758,
+      "mean_shift": 0.0009,
+      "point_anomaly": 0.2262,
+      "trend_shift": 0.004,
+      "variance_shift": 0.0042
+    },
+    "old_probs": {
+      "collective_anomaly": 0.0,
+      "contextual_anomaly": 0.4708,
+      "deterministic_trend": 0.0352,
+      "mean_shift": 0.0,
+      "point_anomaly": 0.0,
+      "stochastic_trend": 0.0151,
+      "trend_shift": 0.0,
+      "variance_shift": 0.0,
+      "volatility": 0.0
+    },
+    "new_probs": {
+      "stationary": 0.9104,
+      "deterministic_trend": 0.1747,
+      "stochastic_trend": 0.7324,
+      "volatility": 0.0961,
+      "collective_anomaly": 0.9013,
+      "contextual_anomaly": 0.9557,
+      "mean_shift": 0.2551,
+      "point_anomaly": 0.9903,
+      "trend_shift": 0.5,
+      "variance_shift": 0.2077
     }
   },
   {
@@ -706,10 +743,10 @@
     "stat_prob": 0.0126,
     "router_combo_prob": 0.9981,
     "base_probs": {
-      "stationary": 0.1464,
-      "deterministic_trend": 0.7406,
-      "stochastic_trend": 0.0864,
-      "volatility": 0.0266
+      "stationary": 0.1467,
+      "deterministic_trend": 0.7412,
+      "stochastic_trend": 0.0866,
+      "volatility": 0.0255
     },
     "anom_probs": {
       "collective_anomaly": 0.897,
@@ -722,12 +759,12 @@
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.4127,
-      "deterministic_trend": 0.0805,
+      "deterministic_trend": 0.0638,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0005,
+      "stochastic_trend": 0.0004,
       "trend_shift": 0.0,
-      "variance_shift": 0.0004,
+      "variance_shift": 0.0005,
       "volatility": 0.0
     },
     "new_probs": {
@@ -795,27 +832,20 @@
     "name": "US_investment.csv",
     "n": 104,
     "pred_base": "stationary",
-    "pred_anoms": [
-      "collective_anomaly",
-      "contextual_anomaly",
-      "mean_shift",
-      "point_anomaly",
-      "trend_shift",
-      "variance_shift"
-    ],
-    "decision_path": "combo",
+    "pred_anoms": [],
+    "decision_path": "combo_suppress",
     "stat_prob": 0.0011,
-    "router_combo_prob": 0.9938,
+    "router_combo_prob": 0.9937,
     "base_probs": {
-      "stationary": 0.8404,
-      "deterministic_trend": 0.1252,
-      "stochastic_trend": 0.018,
-      "volatility": 0.0163
+      "stationary": 0.8608,
+      "deterministic_trend": 0.1095,
+      "stochastic_trend": 0.0155,
+      "volatility": 0.0141
     },
     "anom_probs": {
       "collective_anomaly": 0.2366,
       "contextual_anomaly": 0.5522,
-      "mean_shift": 0.0009,
+      "mean_shift": 0.0008,
       "point_anomaly": 0.0078,
       "trend_shift": 0.0071,
       "variance_shift": 0.002
@@ -823,7 +853,7 @@
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.9996,
-      "deterministic_trend": 0.0014,
+      "deterministic_trend": 0.0011,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
       "stochastic_trend": 0.0002,
@@ -875,10 +905,10 @@
       "deterministic_trend": 0.0165,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0007,
+      "stochastic_trend": 0.0006,
       "trend_shift": 0.0,
       "variance_shift": 0.0007,
-      "volatility": 0.0001
+      "volatility": 0.0
     },
     "new_probs": {
       "stationary": 0.0945,
@@ -897,38 +927,31 @@
     "name": "W12-1.csv",
     "n": 54,
     "pred_base": "stationary",
-    "pred_anoms": [
-      "collective_anomaly",
-      "contextual_anomaly",
-      "mean_shift",
-      "point_anomaly",
-      "trend_shift",
-      "variance_shift"
-    ],
-    "decision_path": "combo",
+    "pred_anoms": [],
+    "decision_path": "combo_suppress",
     "stat_prob": 0.0026,
     "router_combo_prob": 0.9455,
     "base_probs": {
-      "stationary": 0.7732,
-      "deterministic_trend": 0.0499,
-      "stochastic_trend": 0.1076,
-      "volatility": 0.0693
+      "stationary": 0.7882,
+      "deterministic_trend": 0.0471,
+      "stochastic_trend": 0.1018,
+      "volatility": 0.063
     },
     "anom_probs": {
       "collective_anomaly": 0.2116,
       "contextual_anomaly": 0.9947,
-      "mean_shift": 0.0012,
+      "mean_shift": 0.0011,
       "point_anomaly": 0.0089,
       "trend_shift": 0.0057,
-      "variance_shift": 0.0033
+      "variance_shift": 0.0032
     },
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.926,
-      "deterministic_trend": 0.202,
+      "deterministic_trend": 0.1646,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0024,
+      "stochastic_trend": 0.0017,
       "trend_shift": 0.0,
       "variance_shift": 0.0,
       "volatility": 0.0
@@ -938,7 +961,7 @@
       "deterministic_trend": 0.7894,
       "stochastic_trend": 0.6796,
       "volatility": 0.656,
-      "collective_anomaly": 0.8922,
+      "collective_anomaly": 0.8704,
       "contextual_anomaly": 0.9557,
       "mean_shift": 0.3091,
       "point_anomaly": 0.0337,
@@ -950,38 +973,31 @@
     "name": "W12-2.csv",
     "n": 54,
     "pred_base": "stationary",
-    "pred_anoms": [
-      "collective_anomaly",
-      "contextual_anomaly",
-      "mean_shift",
-      "point_anomaly",
-      "trend_shift",
-      "variance_shift"
-    ],
-    "decision_path": "combo",
+    "pred_anoms": [],
+    "decision_path": "combo_suppress",
     "stat_prob": 0.0021,
     "router_combo_prob": 0.969,
     "base_probs": {
-      "stationary": 0.7909,
-      "deterministic_trend": 0.0331,
-      "stochastic_trend": 0.1267,
-      "volatility": 0.0493
+      "stationary": 0.8055,
+      "deterministic_trend": 0.0306,
+      "stochastic_trend": 0.1194,
+      "volatility": 0.0445
     },
     "anom_probs": {
       "collective_anomaly": 0.0972,
       "contextual_anomaly": 0.6718,
-      "mean_shift": 0.0025,
+      "mean_shift": 0.0024,
       "point_anomaly": 0.0837,
       "trend_shift": 0.0095,
-      "variance_shift": 0.0024
+      "variance_shift": 0.0025
     },
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.954,
-      "deterministic_trend": 0.0717,
+      "deterministic_trend": 0.0567,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0107,
+      "stochastic_trend": 0.0075,
       "trend_shift": 0.0,
       "variance_shift": 0.0,
       "volatility": 0.0
@@ -991,7 +1007,7 @@
       "deterministic_trend": 0.2092,
       "stochastic_trend": 0.7681,
       "volatility": 0.6567,
-      "collective_anomaly": 0.2958,
+      "collective_anomaly": 0.2542,
       "contextual_anomaly": 0.9538,
       "mean_shift": 0.4391,
       "point_anomaly": 0.3306,
@@ -1010,36 +1026,36 @@
     "stat_prob": 0.0008,
     "router_combo_prob": 0.9877,
     "base_probs": {
-      "stationary": 0.029,
-      "deterministic_trend": 0.7662,
-      "stochastic_trend": 0.1709,
-      "volatility": 0.0339
+      "stationary": 0.0354,
+      "deterministic_trend": 0.7633,
+      "stochastic_trend": 0.1692,
+      "volatility": 0.0321
     },
     "anom_probs": {
       "collective_anomaly": 0.1931,
       "contextual_anomaly": 0.6718,
-      "mean_shift": 0.0044,
+      "mean_shift": 0.0042,
       "point_anomaly": 0.0125,
-      "trend_shift": 0.0049,
+      "trend_shift": 0.0047,
       "variance_shift": 0.0243
     },
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.9421,
-      "deterministic_trend": 0.3132,
+      "deterministic_trend": 0.262,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0049,
+      "stochastic_trend": 0.0047,
       "trend_shift": 0.0,
-      "variance_shift": 0.0027,
-      "volatility": 0.0009
+      "variance_shift": 0.0046,
+      "volatility": 0.0022
     },
     "new_probs": {
       "stationary": 0.8114,
       "deterministic_trend": 0.9856,
-      "stochastic_trend": 0.7903,
+      "stochastic_trend": 0.797,
       "volatility": 0.0509,
-      "collective_anomaly": 0.863,
+      "collective_anomaly": 0.8363,
       "contextual_anomaly": 0.9547,
       "mean_shift": 0.1619,
       "point_anomaly": 0.0179,
@@ -1056,38 +1072,38 @@
     ],
     "decision_path": "combo",
     "stat_prob": 0.0021,
-    "router_combo_prob": 0.9956,
+    "router_combo_prob": 0.9958,
     "base_probs": {
-      "stationary": 0.0117,
-      "deterministic_trend": 0.9524,
+      "stationary": 0.0118,
+      "deterministic_trend": 0.9529,
       "stochastic_trend": 0.0224,
-      "volatility": 0.0135
+      "volatility": 0.0129
     },
     "anom_probs": {
-      "collective_anomaly": 0.2146,
+      "collective_anomaly": 0.2098,
       "contextual_anomaly": 0.9947,
-      "mean_shift": 0.0028,
+      "mean_shift": 0.0027,
       "point_anomaly": 0.0094,
-      "trend_shift": 0.0116,
+      "trend_shift": 0.0111,
       "variance_shift": 0.0031
     },
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.3305,
-      "deterministic_trend": 0.2569,
+      "deterministic_trend": 0.2121,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0059,
+      "stochastic_trend": 0.0044,
       "trend_shift": 0.0,
       "variance_shift": 0.0,
-      "volatility": 0.0003
+      "volatility": 0.0005
     },
     "new_probs": {
       "stationary": 0.8499,
       "deterministic_trend": 0.9825,
-      "stochastic_trend": 0.6992,
+      "stochastic_trend": 0.7077,
       "volatility": 0.0438,
-      "collective_anomaly": 0.8916,
+      "collective_anomaly": 0.8697,
       "contextual_anomaly": 0.9557,
       "mean_shift": 0.2962,
       "point_anomaly": 0.09,
@@ -1105,17 +1121,17 @@
     ],
     "decision_path": "combo",
     "stat_prob": 0.0017,
-    "router_combo_prob": 0.9934,
+    "router_combo_prob": 0.9937,
     "base_probs": {
-      "stationary": 0.0334,
-      "deterministic_trend": 0.9332,
+      "stationary": 0.0335,
+      "deterministic_trend": 0.934,
       "stochastic_trend": 0.0125,
-      "volatility": 0.0209
+      "volatility": 0.02
     },
     "anom_probs": {
-      "collective_anomaly": 0.4111,
+      "collective_anomaly": 0.3597,
       "contextual_anomaly": 0.5553,
-      "mean_shift": 0.001,
+      "mean_shift": 0.0009,
       "point_anomaly": 0.0086,
       "trend_shift": 0.0201,
       "variance_shift": 0.0023
@@ -1123,20 +1139,20 @@
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.3305,
-      "deterministic_trend": 0.1172,
+      "deterministic_trend": 0.0937,
       "mean_shift": 0.0001,
       "point_anomaly": 0.0,
       "stochastic_trend": 0.0001,
       "trend_shift": 0.0,
       "variance_shift": 0.0001,
-      "volatility": 0.0
+      "volatility": 0.0001
     },
     "new_probs": {
       "stationary": 0.964,
       "deterministic_trend": 0.9837,
-      "stochastic_trend": 0.4242,
+      "stochastic_trend": 0.4342,
       "volatility": 0.031,
-      "collective_anomaly": 0.9766,
+      "collective_anomaly": 0.9714,
       "contextual_anomaly": 0.9538,
       "mean_shift": 0.438,
       "point_anomaly": 0.0119,
@@ -1155,36 +1171,36 @@
     "stat_prob": 0.0049,
     "router_combo_prob": 0.9977,
     "base_probs": {
-      "stationary": 0.0355,
-      "deterministic_trend": 0.6402,
-      "stochastic_trend": 0.2953,
-      "volatility": 0.0291
+      "stationary": 0.0358,
+      "deterministic_trend": 0.6407,
+      "stochastic_trend": 0.2957,
+      "volatility": 0.0278
     },
     "anom_probs": {
       "collective_anomaly": 0.1732,
       "contextual_anomaly": 0.6645,
-      "mean_shift": 0.0051,
-      "point_anomaly": 0.0948,
+      "mean_shift": 0.0048,
+      "point_anomaly": 0.1059,
       "trend_shift": 0.0115,
       "variance_shift": 0.0023
     },
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.9441,
-      "deterministic_trend": 0.1288,
-      "mean_shift": 0.0002,
+      "deterministic_trend": 0.1126,
+      "mean_shift": 0.0001,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0137,
+      "stochastic_trend": 0.0133,
       "trend_shift": 0.0,
       "variance_shift": 0.0,
-      "volatility": 0.0003
+      "volatility": 0.0008
     },
     "new_probs": {
       "stationary": 0.8849,
       "deterministic_trend": 0.9715,
-      "stochastic_trend": 0.8725,
+      "stochastic_trend": 0.877,
       "volatility": 0.0565,
-      "collective_anomaly": 0.8491,
+      "collective_anomaly": 0.8203,
       "contextual_anomaly": 0.9518,
       "mean_shift": 0.3636,
       "point_anomaly": 0.434,
@@ -1202,38 +1218,38 @@
     ],
     "decision_path": "combo",
     "stat_prob": 0.0022,
-    "router_combo_prob": 0.9893,
+    "router_combo_prob": 0.9898,
     "base_probs": {
       "stationary": 0.0047,
-      "deterministic_trend": 0.9757,
+      "deterministic_trend": 0.9761,
       "stochastic_trend": 0.0109,
-      "volatility": 0.0086
+      "volatility": 0.0082
     },
     "anom_probs": {
       "collective_anomaly": 0.9077,
       "contextual_anomaly": 0.9786,
-      "mean_shift": 0.0031,
+      "mean_shift": 0.0029,
       "point_anomaly": 0.0844,
-      "trend_shift": 0.0047,
+      "trend_shift": 0.0045,
       "variance_shift": 0.0223
     },
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.3305,
-      "deterministic_trend": 0.2289,
-      "mean_shift": 0.0001,
+      "deterministic_trend": 0.1877,
+      "mean_shift": 0.0,
       "point_anomaly": 0.0,
       "stochastic_trend": 0.0003,
       "trend_shift": 0.0,
       "variance_shift": 0.0006,
-      "volatility": 0.0001
+      "volatility": 0.0002
     },
     "new_probs": {
       "stationary": 0.6733,
       "deterministic_trend": 0.9577,
-      "stochastic_trend": 0.5713,
+      "stochastic_trend": 0.5813,
       "volatility": 0.0307,
-      "collective_anomaly": 0.9867,
+      "collective_anomaly": 0.9837,
       "contextual_anomaly": 0.9557,
       "mean_shift": 0.2639,
       "point_anomaly": 0.5024,
@@ -1253,36 +1269,36 @@
     "stat_prob": 0.0036,
     "router_combo_prob": 0.9964,
     "base_probs": {
-      "stationary": 0.218,
-      "deterministic_trend": 0.7465,
+      "stationary": 0.2182,
+      "deterministic_trend": 0.7471,
       "stochastic_trend": 0.0179,
-      "volatility": 0.0176
+      "volatility": 0.0168
     },
     "anom_probs": {
       "collective_anomaly": 0.914,
       "contextual_anomaly": 0.5553,
-      "mean_shift": 0.0038,
+      "mean_shift": 0.0036,
       "point_anomaly": 0.0115,
       "trend_shift": 0.021,
-      "variance_shift": 0.017
+      "variance_shift": 0.0152
     },
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.9421,
-      "deterministic_trend": 0.0314,
+      "deterministic_trend": 0.0246,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0025,
+      "stochastic_trend": 0.0017,
       "trend_shift": 0.0,
-      "variance_shift": 0.0004,
-      "volatility": 0.0001
+      "variance_shift": 0.0003,
+      "volatility": 0.0002
     },
     "new_probs": {
       "stationary": 0.9966,
       "deterministic_trend": 0.9539,
-      "stochastic_trend": 0.5397,
+      "stochastic_trend": 0.5498,
       "volatility": 0.1768,
-      "collective_anomaly": 0.9935,
+      "collective_anomaly": 0.992,
       "contextual_anomaly": 0.9547,
       "mean_shift": 0.1544,
       "point_anomaly": 0.0437,
@@ -1346,25 +1362,21 @@
     "pred_base": "stationary",
     "pred_anoms": [
       "collective_anomaly",
-      "contextual_anomaly",
-      "mean_shift",
-      "point_anomaly",
-      "trend_shift",
-      "variance_shift"
+      "contextual_anomaly"
     ],
     "decision_path": "combo",
     "stat_prob": 0.002,
-    "router_combo_prob": 0.9914,
+    "router_combo_prob": 0.9919,
     "base_probs": {
-      "stationary": 0.7077,
-      "deterministic_trend": 0.1941,
-      "stochastic_trend": 0.0534,
-      "volatility": 0.0448
+      "stationary": 0.678,
+      "deterministic_trend": 0.1657,
+      "stochastic_trend": 0.1208,
+      "volatility": 0.0356
     },
     "anom_probs": {
       "collective_anomaly": 0.8913,
       "contextual_anomaly": 0.5553,
-      "mean_shift": 0.0038,
+      "mean_shift": 0.0036,
       "point_anomaly": 0.006,
       "trend_shift": 0.0102,
       "variance_shift": 0.0026
@@ -1372,20 +1384,20 @@
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.3556,
-      "deterministic_trend": 0.1913,
+      "deterministic_trend": 0.1555,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
       "stochastic_trend": 0.0002,
       "trend_shift": 0.0,
-      "variance_shift": 0.0009,
-      "volatility": 0.0001
+      "variance_shift": 0.0007,
+      "volatility": 0.0002
     },
     "new_probs": {
       "stationary": 0.9855,
       "deterministic_trend": 0.7697,
-      "stochastic_trend": 0.6349,
+      "stochastic_trend": 0.6444,
       "volatility": 0.1956,
-      "collective_anomaly": 0.9896,
+      "collective_anomaly": 0.9872,
       "contextual_anomaly": 0.9538,
       "mean_shift": 0.1647,
       "point_anomaly": 0.0499,
@@ -1405,26 +1417,26 @@
     "stat_prob": 0.001,
     "router_combo_prob": 0.9948,
     "base_probs": {
-      "stationary": 0.087,
-      "deterministic_trend": 0.887,
-      "stochastic_trend": 0.0091,
-      "volatility": 0.0169
+      "stationary": 0.0933,
+      "deterministic_trend": 0.8817,
+      "stochastic_trend": 0.009,
+      "volatility": 0.0159
     },
     "anom_probs": {
       "collective_anomaly": 0.911,
       "contextual_anomaly": 0.9786,
-      "mean_shift": 0.0035,
+      "mean_shift": 0.0033,
       "point_anomaly": 0.1273,
-      "trend_shift": 0.0032,
+      "trend_shift": 0.0031,
       "variance_shift": 0.0096
     },
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.948,
-      "deterministic_trend": 0.0472,
+      "deterministic_trend": 0.0372,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0004,
+      "stochastic_trend": 0.0003,
       "trend_shift": 0.0,
       "variance_shift": 0.0,
       "volatility": 0.0
@@ -1434,7 +1446,7 @@
       "deterministic_trend": 0.6035,
       "stochastic_trend": 0.4119,
       "volatility": 0.0394,
-      "collective_anomaly": 0.9917,
+      "collective_anomaly": 0.9898,
       "contextual_anomaly": 0.9578,
       "mean_shift": 0.39,
       "point_anomaly": 0.5565,
@@ -1462,7 +1474,7 @@
     "anom_probs": {
       "collective_anomaly": 0.9175,
       "contextual_anomaly": 0.9786,
-      "mean_shift": 0.0024,
+      "mean_shift": 0.0023,
       "point_anomaly": 0.0123,
       "trend_shift": 0.0084,
       "variance_shift": 0.0097
@@ -1470,13 +1482,13 @@
     "old_probs": {
       "collective_anomaly": 0.0,
       "contextual_anomaly": 0.9357,
-      "deterministic_trend": 0.1414,
+      "deterministic_trend": 0.1137,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0011,
+      "stochastic_trend": 0.0008,
       "trend_shift": 0.0,
       "variance_shift": 0.0001,
-      "volatility": 0.0
+      "volatility": 0.0001
     },
     "new_probs": {
       "stationary": 0.7955,
@@ -1522,7 +1534,7 @@
       "deterministic_trend": 0.0775,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0022,
+      "stochastic_trend": 0.0017,
       "trend_shift": 0.0,
       "variance_shift": 0.0001,
       "volatility": 0.0
@@ -1552,10 +1564,10 @@
     "stat_prob": 0.0163,
     "router_combo_prob": 0.9984,
     "base_probs": {
-      "stationary": 0.0846,
-      "deterministic_trend": 0.9065,
-      "stochastic_trend": 0.0043,
-      "volatility": 0.0045
+      "stationary": 0.0863,
+      "deterministic_trend": 0.9047,
+      "stochastic_trend": 0.0044,
+      "volatility": 0.0046
     },
     "anom_probs": {
       "collective_anomaly": 0.8906,
@@ -1571,7 +1583,7 @@
       "deterministic_trend": 0.0758,
       "mean_shift": 0.0,
       "point_anomaly": 0.0,
-      "stochastic_trend": 0.0132,
+      "stochastic_trend": 0.0088,
       "trend_shift": 0.0,
       "variance_shift": 0.0,
       "volatility": 0.0

@@ -121,27 +121,39 @@ def main():
 
     # --- 7. Decision logic ---
     raw_new_anom = raw_new[:, 4:]
+    # ens_base_proba = 0.5 * xgb_bp + 0.5 * lgb_bp  (zaten base_pred icin hesaplandi)
+    ens_base_p = 0.5 * xgb_bp + 0.5 * lgb_bp
+    # Fix: gate sadece stat-detector + base_meta uyusursa, anomali context threshold YUKSELT
+    STAT_GATE = 0.95
+    STAT_BASE_AND = 0.40
+    CTX_THRESH = 0.55
+    ROUTER_THETA = 0.40
+    STAT_CONFIDENT = 0.75  # base meta P(stationary) >= 0.75 ise anomali bastir
     results = []
     for i, it in enumerate(keep):
         base_type = BASE_LABELS[base_pred[i]]
-        if stat_probs[i] >= 0.92:
+        if stat_probs[i] >= STAT_GATE and ens_base_p[i, 0] >= STAT_BASE_AND:
             pred_base, pred_anoms = "stationary", []
             decision_path = "stat_gate"
-        elif router_p[i] < 0.30:
+        elif router_p[i] < ROUTER_THETA:
             pred_base, pred_anoms = base_type, []
             decision_path = "single"
         else:
             anomalies = []
-            for j, anom_name in enumerate(ANOM_LABELS):
-                params = blend_params.get(anom_name, {"alpha": 1.0, "threshold": 0.5})
-                meta_p = anom_probs_d[anom_name][i]
-                new_p = float(raw_new_anom[i, j])
-                blended = params["alpha"] * meta_p + (1 - params["alpha"]) * new_p
-                eff_t = min(params["threshold"], 0.0) if base_type == "stationary" else params["threshold"]
-                if blended >= eff_t:
-                    anomalies.append(anom_name)
+            # Fix: stationary base + base meta yuksek guvenli ise anomali tamamen bastir
+            suppress_anom = (base_type == "stationary" and ens_base_p[i, 0] >= STAT_CONFIDENT)
+            if not suppress_anom:
+                for j, anom_name in enumerate(ANOM_LABELS):
+                    params = blend_params.get(anom_name, {"alpha": 1.0, "threshold": 0.5})
+                    meta_p = anom_probs_d[anom_name][i]
+                    new_p = float(raw_new_anom[i, j])
+                    blended = params["alpha"] * meta_p + (1 - params["alpha"]) * new_p
+                    # Fix: stationary base'de anomali tetigi icin esigi YUKSELT (eskiden 0.0 idi - bug)
+                    eff_t = max(params["threshold"], CTX_THRESH) if base_type == "stationary" else params["threshold"]
+                    if blended >= eff_t:
+                        anomalies.append(anom_name)
             pred_base, pred_anoms = base_type, anomalies
-            decision_path = "combo"
+            decision_path = "combo_suppress" if suppress_anom else "combo"
         rec = {
             "name": it["name"], "n": it["n"],
             "pred_base": pred_base, "pred_anoms": pred_anoms,
