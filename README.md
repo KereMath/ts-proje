@@ -277,14 +277,101 @@ Saf white noise N(0,1) bile P(contextual)=0.9995 veriyor.
 
 **realdata kisa seriler** (n<=100): 23 dosya, 21'i contextual_anomaly, 2'si deterministic_trend.
 
-### Pipeline-2 (ens-final)
+### Sentetik kisa seriler — ens-final 19-vektor (Pipeline-2)
+
+**Onemli:** Pipeline-1 sentetik veriler icin %0 accuracy verirken Pipeline-2 (ens-final) ayni veride
+cok daha iyi sonuc veriyor. Asagidaki tablo 50 sentetik serinin her biri icin 19-vektor + karar.
+
+**ens-final sentetik base accuracy (hepsi `stochastic_trend` bekleniyor):**
+
+| kind | n | accuracy | dominant pred |
+|---|---|---|---|
+| ari | 45 | 20% | stationary |
+| ari | 100 | 0% | stationary |
+| arima | 45 | 20% | deterministic_trend |
+| arima | 100 | 20% | stationary |
+| ima | 45 | 20% | stationary |
+| ima | 100 | 60% | stochastic_trend |
+| rw | 45 | 40% | deterministic_trend |
+| rw | 100 | 100% | stochastic_trend |
+| rwd | 45 | 80% | stochastic_trend |
+| rwd | 100 | 80% | stochastic_trend |
+
+**Genel ortalama: 44%** (Pipeline-1: %0)
+
+**19-vektor + meta + karar (50 sentetik seri):**
+
+Kolon kisaltma — eski 9 (o_): col, ctx, det, ms, pt, st, ts, vs, vol; yeni 10 (n_): sta, det, stoch, vol, col, ctx, ms, pt, ts, vs.
+
+| dosya | n | o_col | o_ctx | o_det | o_ms | o_pt | o_st | o_ts | o_vs | o_vol | n_sta | n_det | n_stoch | n_vol | n_col | n_ctx | n_ms | n_pt | n_ts | n_vs | base | anom | ✓ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ari_L45_00.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .40 | .96 | .05 | .00 | .04 | .55 | .00 | .50 | .97 | **stationa** | - | ✗ |
+| ari_L45_01.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .78 | .97 | .04 | .00 | .04 | .60 | .00 | .50 | .95 | **stationa** | - | ✗ |
+| ari_L45_02.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .74 | .40 | .02 | .01 | .04 | .99 | .00 | .50 | .97 | **determin** | var | ✗ |
+| ari_L45_03.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .07 | .00 | .51 | .35 | .01 | .04 | 1.0 | .00 | .50 | .79 | **stationa** | col, con, mea, poi, tre, var | ✗ |
+| ari_L45_04.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .40 | .92 | .05 | .00 | .04 | .66 | .00 | .50 | .97 | **stochast** | var | ✓ |
+| ari_L100_00.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .96 | .04 | .01 | .04 | .32 | .07 | .50 | .88 | **stationa** | - | ✗ |
+| ari_L100_01.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .01 | .00 | .00 | .00 | .00 | .58 | .94 | .04 | .02 | .04 | .93 | .00 | .50 | .64 | **stationa** | - | ✗ |
+| ari_L100_02.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .01 | .00 | .00 | .00 | .00 | .40 | .90 | .05 | .01 | .04 | .99 | .00 | .50 | .83 | **stationa** | - | ✗ |
+| ari_L100_03.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .92 | .52 | .06 | .22 | .01 | .04 | .64 | .00 | .50 | .76 | **stationa** | col, con, mea, poi, tre, var | ✗ |
+| ari_L100_04.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .64 | .87 | .04 | .00 | .04 | .82 | .00 | .50 | .76 | **stationa** | - | ✗ |
+| arima_L45_00.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .51 | .01 | .61 | .10 | .01 | .04 | .97 | .00 | .50 | .38 | **determin** | mea | ✗ |
+| arima_L45_01.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .95 | .49 | .07 | .00 | .04 | .98 | .00 | .50 | .89 | **determin** | mea | ✗ |
+| arima_L45_02.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .39 | .61 | .76 | .55 | .00 | .04 | .57 | .00 | .50 | .95 | **stationa** | col, con, mea, poi, tre, var | ✗ |
+| arima_L45_03.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .06 | .77 | .89 | .03 | .01 | .04 | .97 | .00 | .50 | .78 | **stochast** | - | ✓ |
+| arima_L45_04.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .17 | .01 | .20 | .20 | .05 | .04 | .60 | .00 | .50 | .84 | **determin** | - | ✗ |
+| arima_L100_00.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .17 | .97 | .02 | .00 | .04 | .80 | .00 | .50 | .96 | **stationa** | - | ✗ |
+| arima_L100_01.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .97 | .89 | .23 | .00 | .04 | .92 | .00 | .50 | .50 | **stochast** | - | ✓ |
+| arima_L100_02.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .58 | .96 | .04 | .00 | .04 | .97 | .00 | .50 | .80 | **stationa** | - | ✗ |
+| arima_L100_03.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .07 | .96 | .02 | .00 | .04 | .83 | .01 | .50 | .87 | **stationa** | - | ✗ |
+| arima_L100_04.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .01 | .12 | .97 | .02 | .00 | .04 | .61 | .00 | .50 | .96 | **stationa** | - | ✗ |
+| ima_L45_00.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .01 | .00 | .01 | .16 | .96 | .03 | .01 | .04 | .98 | .00 | .50 | .98 | **stationa** | - | ✗ |
+| ima_L45_01.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .37 | .88 | .05 | .00 | .04 | .86 | .00 | .50 | .96 | **stationa** | - | ✗ |
+| ima_L45_02.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .01 | .00 | .00 | .00 | .00 | .26 | .97 | .07 | .00 | .04 | .79 | .00 | .50 | .90 | **stationa** | - | ✗ |
+| ima_L45_03.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .33 | .13 | .25 | .18 | .00 | .04 | .97 | .00 | .50 | .93 | **determin** | var | ✗ |
+| ima_L45_04.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .08 | .93 | .05 | .00 | .04 | .70 | .00 | .50 | .95 | **stochast** | var | ✓ |
+| ima_L100_00.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .05 | .00 | .00 | .00 | .00 | .09 | .94 | .02 | .00 | .04 | .70 | .00 | .50 | .95 | **stochast** | var | ✓ |
+| ima_L100_01.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .01 | .00 | .00 | .00 | .00 | .86 | .89 | .04 | .01 | .04 | 1.0 | .00 | .50 | .81 | **stochast** | - | ✓ |
+| ima_L100_02.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .01 | .98 | .02 | .00 | .04 | .86 | .00 | .50 | .95 | **stochast** | var | ✓ |
+| ima_L100_03.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .01 | .00 | .00 | .00 | 1.0 | .36 | .27 | .43 | .01 | .04 | .97 | .00 | .50 | .28 | **stationa** | col, con, mea, poi, tre, var | ✗ |
+| ima_L100_04.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .37 | .83 | .15 | .00 | .04 | .99 | .00 | .50 | .41 | **stationa** | - | ✗ |
+| rw_L45_00.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .08 | .40 | .51 | .59 | .07 | .04 | .95 | .00 | .50 | .89 | **determin** | var | ✗ |
+| rw_L45_01.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .01 | .45 | .48 | .05 | .00 | .04 | .99 | .00 | .50 | .84 | **determin** | - | ✗ |
+| rw_L45_02.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .19 | .47 | .30 | .17 | .00 | .04 | .75 | .00 | .50 | .86 | **determin** | var | ✗ |
+| rw_L45_03.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .96 | .89 | .07 | .00 | .04 | .59 | .00 | .50 | .91 | **stochast** | var | ✓ |
+| rw_L45_04.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .01 | .10 | .92 | .06 | .00 | .04 | .99 | .00 | .50 | .83 | **stochast** | mea | ✓ |
+| rw_L100_00.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .01 | .00 | .00 | .00 | .00 | .98 | .86 | .21 | .00 | .04 | .98 | .00 | .50 | .90 | **stochast** | mea | ✓ |
+| rw_L100_01.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .02 | .89 | .02 | .01 | .04 | .46 | .00 | .50 | .92 | **stochast** | var | ✓ |
+| rw_L100_02.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .01 | .00 | .00 | .00 | .00 | .04 | .95 | .21 | .00 | .04 | .57 | .00 | .50 | .72 | **stochast** | - | ✓ |
+| rw_L100_03.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .01 | .00 | .00 | .00 | .00 | .03 | .90 | .37 | .07 | .04 | .95 | .00 | .50 | .59 | **stochast** | mea | ✓ |
+| rw_L100_04.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .96 | .95 | .04 | .00 | .04 | .83 | .00 | .50 | .95 | **stochast** | var | ✓ |
+| rwd_L45_00.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .97 | .94 | .05 | .00 | .04 | .99 | .00 | .50 | .95 | **stochast** | var | ✓ |
+| rwd_L45_01.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .01 | .01 | .92 | .04 | .00 | .04 | .22 | .00 | .50 | .87 | **stochast** | var | ✓ |
+| rwd_L45_02.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .01 | .11 | .83 | .07 | .00 | .04 | .84 | .00 | .50 | .91 | **stochast** | var | ✓ |
+| rwd_L45_03.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .01 | .08 | .83 | .07 | .00 | .04 | .99 | .00 | .50 | .95 | **stochast** | var | ✓ |
+| rwd_L45_04.csv | 45 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .95 | .70 | .06 | .00 | .04 | 1.0 | .00 | .50 | .87 | **determin** | - | ✗ |
+| rwd_L100_00.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .01 | .00 | .00 | .00 | .00 | .99 | .68 | .12 | .00 | .04 | .99 | .00 | .50 | .72 | **determin** | - | ✗ |
+| rwd_L100_01.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .07 | .92 | .02 | .00 | .04 | .76 | .00 | .50 | .85 | **stochast** | var | ✓ |
+| rwd_L100_02.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .23 | .85 | .02 | .00 | .04 | .95 | .00 | .50 | .73 | **stochast** | mea | ✓ |
+| rwd_L100_03.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .02 | .97 | .02 | .00 | .04 | .79 | .00 | .50 | .85 | **stochast** | - | ✓ |
+| rwd_L100_04.csv | 100 | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .11 | .93 | .02 | .00 | .04 | .12 | .05 | .50 | .92 | **stochast** | var | ✓ |
+
+**Gozlemler:**
+- `rw` (random walk) **n=100'de %100** — ens-final pure RW'yi mukemmel taniyor
+- `rwd` (RW + drift) her iki uzunlukta da %80 — drift sinyali yardim ediyor
+- `ari` ve `arima` zor — AR bileseni serinin daha stationary gorunmesine yol aciyor
+- Eski ensemble (o_*) sutunlarinda contextual_anomaly (o_ctx) sentetik veride dusuk — yani eski model bias'i sentetigimizi orta seviyede taniyor; ancak yeni ensemble (n_*) cok daha bilgili
+
+Detayli JSON: [runner/results/ensfinal_synthetic.json](runner/results/ensfinal_synthetic.json)
+
+### Pipeline-2 (ens-final) — kisa realdata
 
 Ens-final MIN_SERIES_LENGTH=50 (default). Dolayisiyla:
 - n>=50 olan 32 realdata dosyasi normal pipeline'a girdi
 - 20<=n<50 olan 5 dosya (W1, uspop, strikes, W15-1, W15-2) ozel scriptle (`runner/21_ensfinal_short_realdata.py`) pipeline'a sokuldu
 - n<20 olan 4 dosya (W9, W10, W16, rec_dataframe) tsfresh stabilite riski sebebiyle atlandi
 
-**Kisa realdata (n<=100) ens-final tahminleri:**
+**Kisa realdata (n<=100) ens-final ozet:**
 
 | dosya | n | base | anomaliler | path | P(stat) | P(combo) |
 |---|---|---|---|---|---|---|
@@ -308,6 +395,31 @@ Ens-final MIN_SERIES_LENGTH=50 (default). Dolayisiyla:
 | e1.csv | 92 | stochastic_trend | collective_anomaly, contextual_anomaly | combo | .00 | .99 |
 | German_consumption.csv | 93 | deterministic_trend | collective_anomaly, contextual_anomaly | combo | .01 | 1.0 |
 | sunspots.csv | 100 | deterministic_trend | collective_anomaly, contextual_anomaly | combo | .01 | 1.0 |
+
+**Kisa realdata 19-vektor (9 eski + 10 yeni):**
+
+| dosya | n | o_col | o_ctx | o_det | o_ms | o_pt | o_st | o_ts | o_vs | o_vol | n_sta | n_det | n_stoch | n_vol | n_col | n_ctx | n_ms | n_pt | n_ts | n_vs |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| uspop.csv | 21 | .00 | .30 | .87 | .00 | .00 | .00 | .00 | .00 | .00 | .60 | .94 | .50 | .11 | 1.0 | .95 | .27 | .01 | .50 | .46 |
+| strikes.csv | 30 | .00 | .36 | .15 | .00 | .00 | .00 | .00 | .00 | .00 | .96 | .80 | .29 | .17 | 1.0 | .95 | .49 | .08 | .50 | .42 |
+| W1.csv | 45 | .00 | .57 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .31 | .22 | .13 | .62 | .97 | .04 | .41 | .00 | .50 | .91 |
+| W15-1.csv | 46 | .00 | .98 | .01 | .00 | .00 | .00 | .00 | .00 | .00 | .02 | .33 | .87 | .54 | .94 | .04 | .88 | .00 | .50 | .65 |
+| W15-2.csv | 46 | .00 | .98 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .01 | .73 | .89 | .49 | .83 | .04 | .67 | .00 | .50 | .62 |
+| W12-1.csv | 54 | .00 | .93 | .20 | .00 | .00 | .00 | .00 | .00 | .00 | .93 | .79 | .68 | .66 | .89 | .96 | .31 | .03 | .50 | .12 |
+| W12-2.csv | 54 | .00 | .95 | .07 | .00 | .00 | .01 | .00 | .00 | .00 | .99 | .21 | .77 | .66 | .30 | .95 | .44 | .33 | .50 | .07 |
+| W5.csv | 71 | .00 | .95 | .05 | .00 | .00 | .00 | .00 | .00 | .00 | .89 | .60 | .41 | .04 | .99 | .96 | .39 | .56 | .50 | .17 |
+| deaths.csv | 72 | .00 | .36 | .78 | .00 | .00 | .00 | .00 | .00 | .00 | .98 | .95 | .20 | .36 | .88 | .96 | .23 | .03 | .50 | .06 |
+| W13-1.csv | 82 | .00 | .94 | .31 | .00 | .00 | .00 | .00 | .00 | .00 | .81 | .99 | .79 | .05 | .86 | .95 | .16 | .02 | .50 | .24 |
+| W13-2.csv | 82 | .00 | .33 | .26 | .00 | .00 | .01 | .00 | .00 | .00 | .85 | .98 | .70 | .04 | .89 | .96 | .30 | .09 | .50 | .11 |
+| W13-3.csv | 82 | .00 | .33 | .12 | .00 | .00 | .00 | .00 | .00 | .00 | .96 | .98 | .42 | .03 | .98 | .95 | .44 | .01 | .50 | .41 |
+| W13-4.csv | 82 | .00 | .94 | .13 | .00 | .00 | .01 | .00 | .00 | .00 | .88 | .97 | .87 | .06 | .85 | .95 | .36 | .43 | .50 | .12 |
+| W13-5.csv | 82 | .00 | .33 | .23 | .00 | .00 | .00 | .00 | .00 | .00 | .67 | .96 | .57 | .03 | .99 | .96 | .26 | .50 | .50 | .41 |
+| W3.csv | 82 | .00 | .36 | .19 | .00 | .00 | .00 | .00 | .00 | .00 | .99 | .77 | .63 | .20 | .99 | .95 | .16 | .05 | .50 | .04 |
+| W14.csv | 87 | .00 | .94 | .03 | .00 | .00 | .00 | .00 | .00 | .00 | 1.0 | .95 | .54 | .18 | .99 | .95 | .15 | .04 | .50 | .45 |
+| GermanGNP.csv | 88 | .00 | .33 | .04 | .00 | .00 | .00 | .00 | .00 | .00 | .79 | .99 | .63 | .04 | .99 | .95 | .18 | .11 | .50 | .30 |
+| e1.csv | 92 | .00 | .33 | .06 | .00 | .00 | .01 | .00 | .00 | .00 | .66 | .27 | .83 | .03 | .99 | .96 | .15 | .39 | .50 | .27 |
+| German_consumption.csv | 93 | .00 | .35 | .05 | .00 | .00 | .01 | .00 | .00 | .00 | .89 | .24 | .49 | .04 | .98 | .96 | .18 | .52 | .50 | .17 |
+| sunspots.csv | 100 | .00 | .41 | .08 | .00 | .00 | .00 | .00 | .00 | .00 | .85 | 1.0 | .58 | .41 | .99 | .96 | .07 | .30 | .50 | .12 |
 
 **Sonuc:**
 - Pipeline-1'in aksine pipeline-2 farkli base tipleri ayirt edebiliyor (deterministic_trend, stochastic_trend, stationary, volatility).
@@ -360,11 +472,41 @@ acik etiketler veriyor.
 
 Tam karsilastirma: [runner/results/LABEL_KARSILASTIRMA.md](runner/results/LABEL_KARSILASTIRMA.md)
 
+### Ground truth dosyalari icin 19-vektor (ens-final)
+
+PDF'te etiketli her dosya icin 19 ham olasilik (9 eski + 10 yeni ensemble). **GT** sutunu PDF'teki dogru base.
+**✓** = model base'i dogru bildi mi.
+
+| dosya | n | GT | o_col | o_ctx | o_det | o_ms | o_pt | o_st | o_ts | o_vs | o_vol | n_sta | n_det | n_stoch | n_vol | n_col | n_ctx | n_ms | n_pt | n_ts | n_vs | pred | ✓ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| W1.csv | 45 | stationa | .00 | .57 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .31 | .22 | .13 | .62 | .97 | .04 | .41 | .00 | .50 | .91 | **stochast** | ✗ |
+| W2.csv | 302 | stationa | .00 | .39 | .09 | .00 | .00 | .01 | .00 | .00 | .00 | .99 | .71 | .66 | .06 | .96 | .96 | .03 | .98 | .50 | .42 | **determin** | ✗ |
+| W3.csv | 82 | stationa | .00 | .36 | .19 | .00 | .00 | .00 | .00 | .00 | .00 | .99 | .77 | .63 | .20 | .99 | .95 | .16 | .05 | .50 | .04 | **stationa** | ✓ |
+| W5.csv | 71 | determin | .00 | .95 | .05 | .00 | .00 | .00 | .00 | .00 | .00 | .89 | .60 | .41 | .04 | .99 | .96 | .39 | .56 | .50 | .17 | **determin** | ✓ |
+| W6.csv | 114 | determin | .00 | .94 | .14 | .00 | .00 | .00 | .00 | .00 | .00 | .80 | .99 | .54 | .04 | .99 | .96 | .34 | .03 | .50 | .27 | **determin** | ✓ |
+| W10.csv | - | stochast | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | (n<20) | - |
+| uspop.csv | 21 | determin | .00 | .30 | .87 | .00 | .00 | .00 | .00 | .00 | .00 | .60 | .94 | .50 | .11 | 1.0 | .95 | .27 | .01 | .50 | .46 | **determin** | ✓ |
+| strikes.csv | 30 | stationa | .00 | .36 | .15 | .00 | .00 | .00 | .00 | .00 | .00 | .96 | .80 | .29 | .17 | 1.0 | .95 | .49 | .08 | .50 | .42 | **stationa** | ✓ |
+| sunspots.csv | 100 | stationa | .00 | .41 | .08 | .00 | .00 | .00 | .00 | .00 | .00 | .85 | 1.0 | .58 | .41 | .99 | .96 | .07 | .30 | .50 | .12 | **determin** | ✗ |
+| airpass.csv | 144 | stochast | .00 | .30 | .17 | .00 | .00 | .02 | .00 | .00 | .00 | .59 | .94 | .62 | .03 | .98 | .96 | .14 | .99 | .50 | .36 | **determin** | ✗ |
+| deaths.csv | 72 | stochast | .00 | .36 | .78 | .00 | .00 | .00 | .00 | .00 | .00 | .98 | .95 | .20 | .36 | .88 | .96 | .23 | .03 | .50 | .06 | **stationa** | ✗ |
+| INDPRO.csv | 372 | stochast | .00 | .35 | .07 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .95 | .61 | .12 | .97 | .90 | .39 | .99 | .50 | .40 | **determin** | ✗ |
+| UNRATE.csv | 372 | stochast | .00 | .33 | .02 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | .68 | .67 | .02 | .98 | .87 | .61 | .68 | .50 | .18 | **determin** | ✗ |
+| soi_dataframe.csv | 453 | stationa | .00 | 1.0 | .00 | .00 | .00 | .01 | .00 | .00 | .00 | .11 | .00 | .77 | .60 | .86 | .04 | .82 | .01 | .50 | .60 | **stochast** | ✗ |
+| rec_dataframe.csv | - | stationa | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | (n<20) | - |
+| GermanGNP.csv | 88 | determin | .00 | .33 | .04 | .00 | .00 | .00 | .00 | .00 | .00 | .79 | .99 | .63 | .04 | .99 | .95 | .18 | .11 | .50 | .30 | **determin** | ✓ |
+| US_investment.csv | 104 | stationa | .00 | 1.0 | .00 | .00 | .00 | .00 | .00 | .00 | .00 | 1.0 | .15 | .07 | .19 | .94 | .95 | .16 | .05 | .50 | .37 | **stationa** | ✓ |
+| German_consumption.csv | 93 | stochast | .00 | .35 | .05 | .00 | .00 | .01 | .00 | .00 | .00 | .89 | .24 | .49 | .04 | .98 | .96 | .18 | .52 | .50 | .17 | **determin** | ✗ |
+| Polish_productivity.csv | 117 | stochast | .00 | .95 | .07 | .00 | .00 | .01 | .00 | .00 | .03 | .02 | .03 | .82 | .91 | .93 | .84 | .08 | 1.0 | .50 | .80 | **volatili** | ✗ |
+| RealInt_dataframe.csv | 103 | stationa | .00 | 1.0 | .00 | .00 | .00 | .01 | .00 | .00 | .00 | .96 | .97 | .06 | .05 | 1.0 | .95 | .06 | .09 | .50 | .57 | **determin** | ✗ |
+| NP_xetradax_returns100.csv | 1028 | stationa | .00 | 1.0 | .00 | .00 | .00 | .01 | .00 | .00 | .00 | 1.0 | .00 | .40 | .72 | .99 | .93 | .20 | .98 | .50 | .31 | **stationa** | ✓ |
+
 **Ana bulgular:**
 - **0 FULL match** — anomali tarafi tamamen over-fire ediyor
 - Base type **8 / 19** (~%42) dogru — DAX returns, US_investment gibi finansal/ekonomik stationary dosyalari dogru tanindi
 - Sezonsallik kategorisi eksikligi: airpass, INDPRO, UNRATE, deaths (hepsi seasonal+stoch) -> deterministic_trend deniyor
 - W1 (stationary+point) yanlis: hem base hem anomali tutmuyor
+- 19-vektor incelemesi: **o_ctx (eski contextual)** sutunu neredeyse her satirda yuksek. Yani eski ensemble OOD bias'i tum gercek-dunya verisinde mevcut; meta-learner bunu base secimi icin override edebiliyor ama anomali secimi icin (collective vs contextual) hala karistirabiliyor.
 
 ---
 

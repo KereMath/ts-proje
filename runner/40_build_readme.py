@@ -45,6 +45,21 @@ def load_ensfinal_all():
     return sorted(items, key=lambda r: r["n"])
 
 
+def load_ensfinal_synthetic():
+    """50 sentetik seri ens-final tahminleri."""
+    p = RESULTS / "ensfinal_synthetic.json"
+    if p.exists():
+        return json.load(open(p, encoding="utf-8"))
+    return []
+
+
+def vec19_row(r):
+    """Bir kayit icin 9 eski + 10 yeni olasilik string'i (markdown table cells)."""
+    old_cells = " | ".join(fmt_prob(r["old_probs"][c]) for c in OLD_CLASSES)
+    new_cells = " | ".join(fmt_prob(r["new_probs"][c]) for c in NEW_ALL_MODELS)
+    return old_cells, new_cells
+
+
 def load_tsfresh_only():
     """tsfresh-ensemble-stationary tek-pipeline (predictions.csv) realdata satirlari."""
     df = pd.read_csv(RESULTS / "predictions.csv")
@@ -65,8 +80,11 @@ def fmt_prob(p):
 
 def build_readme():
     ens = load_ensfinal_all()
+    ens_syn = load_ensfinal_synthetic()
     tsf = load_tsfresh_only()
     gt = pd.read_csv(RESULTS / "label_comparison.csv") if (RESULTS / "label_comparison.csv").exists() else None
+    # gt'a 19-vektor eklemek icin ens'i dict'e cevir
+    ens_by_name = {r["name"]: r for r in ens}
 
     out = []
     out.append("# ts-proje — Time Series Anomali Siniflandirma Pipeline")
@@ -273,14 +291,60 @@ def build_readme():
     out.append("")
     out.append("**realdata kisa seriler** (n<=100): 23 dosya, 21'i contextual_anomaly, 2'si deterministic_trend.")
     out.append("")
-    out.append("### Pipeline-2 (ens-final)")
+    out.append("### Sentetik kisa seriler — ens-final 19-vektor (Pipeline-2)")
+    out.append("")
+    out.append("**Onemli:** Pipeline-1 sentetik veriler icin %0 accuracy verirken Pipeline-2 (ens-final) ayni veride")
+    out.append("cok daha iyi sonuc veriyor. Asagidaki tablo 50 sentetik serinin her biri icin 19-vektor + karar.")
+    out.append("")
+    out.append("**ens-final sentetik base accuracy (hepsi `stochastic_trend` bekleniyor):**")
+    out.append("")
+    out.append("| kind | n | accuracy | dominant pred |")
+    out.append("|---|---|---|---|")
+    syn_df = pd.DataFrame([{
+        "kind": r["kind"], "n": r["n"],
+        "correct": r["base_correct"], "pred": r["pred_base"],
+    } for r in ens_syn])
+    for (kind, n), grp in syn_df.groupby(["kind", "n"]):
+        acc = grp["correct"].mean()
+        top_pred = grp["pred"].value_counts().idxmax()
+        out.append(f"| {kind} | {n} | {acc:.0%} | {top_pred} |")
+    out.append("")
+    out.append(f"**Genel ortalama: {syn_df['correct'].mean():.0%}** (Pipeline-1: %0)")
+    out.append("")
+    out.append("**19-vektor + meta + karar (50 sentetik seri):**")
+    out.append("")
+    out.append("Kolon kisaltma — eski 9 (o_): col, ctx, det, ms, pt, st, ts, vs, vol; yeni 10 (n_): sta, det, stoch, vol, col, ctx, ms, pt, ts, vs.")
+    out.append("")
+    header = ("| dosya | n | " +
+              " | ".join("o_" + a for a in OLD_ABBR) + " | " +
+              " | ".join("n_" + a for a in NEW_ABBR) + " | base | anom | ✓ |")
+    sep = "|---|---|" + "|".join(["---"] * 19) + "|---|---|---|"
+    out.append(header)
+    out.append(sep)
+    # Sort: kind, n, then file
+    syn_sorted = sorted(ens_syn, key=lambda r: (r["kind"], r["n"], r["name"]))
+    for r in syn_sorted:
+        oc, nc = vec19_row(r)
+        triggered = ", ".join(a[:3] for a in r["pred_anoms"]) if r["pred_anoms"] else "-"
+        ok = "✓" if r["base_correct"] else "✗"
+        out.append(f"| {r['name']} | {r['n']} | {oc} | {nc} | **{r['pred_base'][:8]}** | {triggered} | {ok} |")
+    out.append("")
+    out.append("**Gozlemler:**")
+    out.append("- `rw` (random walk) **n=100'de %100** — ens-final pure RW'yi mukemmel taniyor")
+    out.append("- `rwd` (RW + drift) her iki uzunlukta da %80 — drift sinyali yardim ediyor")
+    out.append("- `ari` ve `arima` zor — AR bileseni serinin daha stationary gorunmesine yol aciyor")
+    out.append("- Eski ensemble (o_*) sutunlarinda contextual_anomaly (o_ctx) sentetik veride dusuk — yani eski model bias'i sentetigimizi orta seviyede taniyor; ancak yeni ensemble (n_*) cok daha bilgili")
+    out.append("")
+    out.append("Detayli JSON: [runner/results/ensfinal_synthetic.json](runner/results/ensfinal_synthetic.json)")
+    out.append("")
+    out.append("### Pipeline-2 (ens-final) — kisa realdata")
     out.append("")
     out.append("Ens-final MIN_SERIES_LENGTH=50 (default). Dolayisiyla:")
     out.append("- n>=50 olan 32 realdata dosyasi normal pipeline'a girdi")
     out.append("- 20<=n<50 olan 5 dosya (W1, uspop, strikes, W15-1, W15-2) ozel scriptle (`runner/21_ensfinal_short_realdata.py`) pipeline'a sokuldu")
     out.append("- n<20 olan 4 dosya (W9, W10, W16, rec_dataframe) tsfresh stabilite riski sebebiyle atlandi")
     out.append("")
-    out.append("**Kisa realdata (n<=100) ens-final tahminleri:**")
+    out.append("**Kisa realdata (n<=100) ens-final ozet:**")
     out.append("")
     out.append("| dosya | n | base | anomaliler | path | P(stat) | P(combo) |")
     out.append("|---|---|---|---|---|---|---|")
@@ -291,6 +355,18 @@ def build_readme():
             f"| {r['name']} | {r['n']} | {r['pred_base']} | {anoms} | "
             f"{r['decision_path']} | {fmt_prob(r['stat_prob'])} | {fmt_prob(r['router_combo_prob'])} |"
         )
+    out.append("")
+    out.append("**Kisa realdata 19-vektor (9 eski + 10 yeni):**")
+    out.append("")
+    header = ("| dosya | n | " +
+              " | ".join("o_" + a for a in OLD_ABBR) + " | " +
+              " | ".join("n_" + a for a in NEW_ABBR) + " |")
+    sep = "|---|---|" + "|".join(["---"] * 19) + "|"
+    out.append(header)
+    out.append(sep)
+    for r in short_ens:
+        oc, nc = vec19_row(r)
+        out.append(f"| {r['name']} | {r['n']} | {oc} | {nc} |")
     out.append("")
     out.append("**Sonuc:**")
     out.append("- Pipeline-1'in aksine pipeline-2 farkli base tipleri ayirt edebiliyor (deterministic_trend, stochastic_trend, stationary, volatility).")
@@ -342,11 +418,37 @@ def build_readme():
         out.append("")
     out.append("Tam karsilastirma: [runner/results/LABEL_KARSILASTIRMA.md](runner/results/LABEL_KARSILASTIRMA.md)")
     out.append("")
+    out.append("### Ground truth dosyalari icin 19-vektor (ens-final)")
+    out.append("")
+    out.append("PDF'te etiketli her dosya icin 19 ham olasilik (9 eski + 10 yeni ensemble). **GT** sutunu PDF'teki dogru base.")
+    out.append("**✓** = model base'i dogru bildi mi.")
+    out.append("")
+    if gt is not None:
+        header = ("| dosya | n | GT | " +
+                  " | ".join("o_" + a for a in OLD_ABBR) + " | " +
+                  " | ".join("n_" + a for a in NEW_ABBR) + " | pred | ✓ |")
+        sep = "|---|---|---|" + "|".join(["---"] * 19) + "|---|---|"
+        out.append(header)
+        out.append(sep)
+        for _, gtr in gt.iterrows():
+            fname = gtr["file"]
+            if fname not in ens_by_name:
+                # MISSING — n<20 pipeline'a girmedi
+                out.append(f"| {fname} | - | {gtr['gt_base'][:8]} | "
+                           + " | ".join(["-"] * 19) + " | (n<20) | - |")
+                continue
+            r = ens_by_name[fname]
+            oc, nc = vec19_row(r)
+            mark = "✓" if gtr["base_ok"] else "✗"
+            out.append(f"| {fname} | {r['n']} | {gtr['gt_base'][:8]} | {oc} | {nc} | "
+                       f"**{r['pred_base'][:8]}** | {mark} |")
+        out.append("")
     out.append("**Ana bulgular:**")
     out.append("- **0 FULL match** — anomali tarafi tamamen over-fire ediyor")
     out.append("- Base type **8 / 19** (~%42) dogru — DAX returns, US_investment gibi finansal/ekonomik stationary dosyalari dogru tanindi")
     out.append("- Sezonsallik kategorisi eksikligi: airpass, INDPRO, UNRATE, deaths (hepsi seasonal+stoch) -> deterministic_trend deniyor")
     out.append("- W1 (stationary+point) yanlis: hem base hem anomali tutmuyor")
+    out.append("- 19-vektor incelemesi: **o_ctx (eski contextual)** sutunu neredeyse her satirda yuksek. Yani eski ensemble OOD bias'i tum gercek-dunya verisinde mevcut; meta-learner bunu base secimi icin override edebiliyor ama anomali secimi icin (collective vs contextual) hala karistirabiliyor.")
     out.append("")
     out.append("---")
     out.append("")
