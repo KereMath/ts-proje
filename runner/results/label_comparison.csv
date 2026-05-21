@@ -1,0 +1,22 @@
+file,n,source,gt_base,gt_anoms,pred_base,pred_anoms,base_ok,match,notes
+W1.csv,45,Wei,stationary,point_anomaly,stochastic_trend,"collective_anomaly, variance_shift",False,NONE,"stationary, AO/IO outliers at t=4,7,9,36"
+W2.csv,302,Wei,stationary,variance_shift,deterministic_trend,"collective_anomaly, contextual_anomaly, point_anomaly",False,NONE,"stationary in mean, possibly variance shift"
+W3.csv,82,Wei,stationary,variance_shift,stationary,"collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift",True,PARTIAL,"stationary in mean, possibly variance shift"
+W5.csv,71,Wei,deterministic_trend,mean_shift,deterministic_trend,"collective_anomaly, contextual_anomaly",True,PARTIAL,"non-stat in mean, increasing trend, TC at t=81,82"
+W6.csv,114,Wei,deterministic_trend,variance_shift,deterministic_trend,"collective_anomaly, contextual_anomaly",True,PARTIAL,non-stat in mean AND variance
+W10.csv,-,Wei,stochastic_trend,point_anomaly,(pipeline'a girmedi),-,False,MISSING,"seasonal unit root, outliers t=12,27 (cok kisa n=32)"
+uspop.csv,21,Brockwell,deterministic_trend,-,deterministic_trend,"collective_anomaly, contextual_anomaly",True,PARTIAL,exponentially increasing (US population)
+strikes.csv,30,Brockwell,stationary,-,stationary,"collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift",True,PARTIAL,"erratic, slowly rising level — pratikte stationary"
+sunspots.csv,100,Brockwell,stationary,-,deterministic_trend,"collective_anomaly, contextual_anomaly",False,NONE,"Wolfer sunspots, cyclic period ~11 years"
+airpass.csv,144,Brockwell,stochastic_trend,-,deterministic_trend,"collective_anomaly, contextual_anomaly, point_anomaly",False,NONE,regular + seasonal stochastic trend
+deaths.csv,72,Brockwell,stochastic_trend,-,stationary,"collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift",False,NONE,regular + seasonal unit root (period 12)
+INDPRO.csv,372,Shumway,stochastic_trend,-,deterministic_trend,"collective_anomaly, contextual_anomaly, point_anomaly",False,NONE,"ARIMA(0,1,1)(0,1,1)_12 — seasonal stochastic trend"
+UNRATE.csv,372,Shumway,stochastic_trend,-,deterministic_trend,collective_anomaly,False,NONE,Monthly Fed Unemployment 1948-1978
+soi_dataframe.csv,453,Shumway,stationary,-,stochastic_trend,collective_anomaly,False,NONE,"Southern Oscillation Index, cyclic ~1/yr"
+rec_dataframe.csv,-,Shumway,stationary,-,(pipeline'a girmedi),-,False,MISSING,Recruitment series — stationary (BIZDE n=0)
+GermanGNP.csv,88,JMulTi,deterministic_trend,trend_shift,deterministic_trend,"collective_anomaly, contextual_anomaly",True,PARTIAL,structural break at 1990Q3 (German unification)
+US_investment.csv,104,JMulTi,stationary,-,stationary,"collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift",True,PARTIAL,better as I(0) than I(1)
+German_consumption.csv,93,JMulTi,stochastic_trend,-,deterministic_trend,"collective_anomaly, contextual_anomaly",False,NONE,log consumption has unit root
+Polish_productivity.csv,117,JMulTi,stochastic_trend,trend_shift,volatility,"collective_anomaly, point_anomaly",False,NONE,structural shift 1990Q1
+RealInt_dataframe.csv,103,Bai-Perron,stationary,mean_shift,deterministic_trend,"collective_anomaly, contextual_anomaly",False,NONE,"US real interest rate, breaks at 1966,1972,1980"
+NP_xetradax_returns100.csv,1028,Lutkepohl,stationary,-,stationary,"collective_anomaly, contextual_anomaly, mean_shift, point_anomaly, trend_shift, variance_shift",True,PARTIAL,DAX log returns (finansal teori: stationary)
