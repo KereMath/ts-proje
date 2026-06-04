@@ -1,0 +1,200 @@
+{
+  "stationary": {
+    "best_clf": "LightGBM",
+    "test_f1": 0.8872,
+    "test_acc": 0.8771,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.875,
+        "acc": 0.8644
+      },
+      "XGBoost": {
+        "f1": 0.873,
+        "acc": 0.8644
+      },
+      "MLP": {
+        "f1": 0.848,
+        "acc": 0.839
+      }
+    },
+    "pos_count": 600,
+    "neg_count": 576,
+    "n_features": 777
+  },
+  "deterministic_trend": {
+    "best_clf": "LightGBM",
+    "test_f1": 0.9099,
+    "test_acc": 0.9118,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.871,
+        "acc": 0.8655
+      },
+      "XGBoost": {
+        "f1": 0.8661,
+        "acc": 0.8571
+      },
+      "MLP": {
+        "f1": 0.8099,
+        "acc": 0.8067
+      }
+    },
+    "pos_count": 594,
+    "neg_count": 592,
+    "n_features": 777
+  },
+  "stochastic_trend": {
+    "best_clf": "XGBoost",
+    "test_f1": 0.9356,
+    "test_acc": 0.9372,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.958,
+        "acc": 0.9583
+      },
+      "XGBoost": {
+        "f1": 0.9587,
+        "acc": 0.9583
+      },
+      "MLP": {
+        "f1": 0.9256,
+        "acc": 0.925
+      }
+    },
+    "pos_count": 600,
+    "neg_count": 594,
+    "n_features": 777
+  },
+  "volatility": {
+    "best_clf": "LightGBM",
+    "test_f1": 0.9237,
+    "test_acc": 0.9205,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.9355,
+        "acc": 0.9333
+      },
+      "XGBoost": {
+        "f1": 0.9194,
+        "acc": 0.9167
+      },
+      "MLP": {
+        "f1": 0.8976,
+        "acc": 0.8917
+      }
+    },
+    "pos_count": 600,
+    "neg_count": 594,
+    "n_features": 777
+  },
+  "collective_anomaly": {
+    "best_clf": "LightGBM",
+    "test_f1": 1.0,
+    "test_acc": 1.0,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.9917,
+        "acc": 0.9917
+      },
+      "XGBoost": {
+        "f1": 0.9917,
+        "acc": 0.9917
+      },
+      "MLP": {
+        "f1": 0.9421,
+        "acc": 0.9417
+      }
+    },
+    "pos_count": 600,
+    "neg_count": 600,
+    "n_features": 777
+  },
+  "mean_shift": {
+    "best_clf": "LightGBM",
+    "test_f1": 0.9249,
+    "test_acc": 0.9208,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.9355,
+        "acc": 0.9333
+      },
+      "XGBoost": {
+        "f1": 0.9344,
+        "acc": 0.9333
+      },
+      "MLP": {
+        "f1": 0.8293,
+        "acc": 0.825
+      }
+    },
+    "pos_count": 600,
+    "neg_count": 600,
+    "n_features": 777
+  },
+  "point_anomaly": {
+    "best_clf": "LightGBM",
+    "test_f1": 1.0,
+    "test_acc": 1.0,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 1.0,
+        "acc": 1.0
+      },
+      "XGBoost": {
+        "f1": 1.0,
+        "acc": 1.0
+      },
+      "MLP": {
+        "f1": 0.9831,
+        "acc": 0.9833
+      }
+    },
+    "pos_count": 600,
+    "neg_count": 600,
+    "n_features": 777
+  },
+  "trend_shift": {
+    "best_clf": "XGBoost",
+    "test_f1": 0.9551,
+    "test_acc": 0.9534,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.9524,
+        "acc": 0.9492
+      },
+      "XGBoost": {
+        "f1": 0.96,
+        "acc": 0.9576
+      },
+      "MLP": {
+        "f1": 0.928,
+        "acc": 0.9237
+      }
+    },
+    "pos_count": 600,
+    "neg_count": 576,
+    "n_features": 777
+  },
+  "variance_shift": {
+    "best_clf": "LightGBM",
+    "test_f1": 0.9504,
+    "test_acc": 0.95,
+    "val_scores": {
+      "LightGBM": {
+        "f1": 0.9421,
+        "acc": 0.9417
+      },
+      "XGBoost": {
+        "f1": 0.9421,
+        "acc": 0.9417
+      },
+      "MLP": {
+        "f1": 0.871,
+        "acc": 0.8667
+      }
+    },
+    "pos_count": 600,
+    "neg_count": 600,
+    "n_features": 777
+  }
+}

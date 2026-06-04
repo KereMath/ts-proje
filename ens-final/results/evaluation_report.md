@@ -8,27 +8,27 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 |---|---|
 | Toplam test | 390 |
 | Full match | 344 (88.21%) |
-| Partial match | 41 (10.5%) |
-| No match | 5 (1.3%) |
+| Partial match | 42 (10.8%) |
+| No match | 4 (1.0%) |
 
 ## Grup Bazli Ozet
 
 | # | Grup | Beklenen | Ornek | Full | Partial | None | Full% |
 |---|---|---|---|---|---|---|---|
-| 1 | stationary | stationary | 10 | 7 | 3 | 0 | %70 |
+| 1 | stationary | stationary | 10 | 10 | 0 | 0 | %100 |
 | 2 | deterministic_trend | deterministic_trend | 10 | 9 | 1 | 0 | %90 |
-| 3 | stochastic_trend | stochastic_trend | 10 | 7 | 1 | 2 | %70 |
+| 3 | stochastic_trend | stochastic_trend | 10 | 9 | 1 | 0 | %90 |
 | 4 | volatility | volatility | 10 | 9 | 1 | 0 | %90 |
 | 5 | collective_anomaly | stationary + collective_anomaly | 10 | 10 | 0 | 0 | %100 |
 | 6 | contextual_anomaly | stationary + contextual_anomaly | 10 | 10 | 0 | 0 | %100 |
 | 7 | mean_shift | stationary + mean_shift | 10 | 9 | 1 | 0 | %90 |
 | 8 | point_anomaly | stationary + point_anomaly | 10 | 10 | 0 | 0 | %100 |
-| 9 | trend_shift | stationary + trend_shift | 10 | 8 | 2 | 0 | %80 |
+| 9 | trend_shift | stationary + trend_shift | 10 | 0 | 10 | 0 | %0 |
 | 10 | variance_shift | stationary + variance_shift | 10 | 10 | 0 | 0 | %100 |
 | 11 | cubic+collective | deterministic_trend + collective_anomaly | 10 | 9 | 1 | 0 | %90 |
 | 12 | cubic+mean_shift | deterministic_trend + mean_shift | 10 | 10 | 0 | 0 | %100 |
 | 13 | cubic+point_anomaly | deterministic_trend + point_anomaly | 10 | 9 | 1 | 0 | %90 |
-| 14 | cubic+variance_shift | deterministic_trend + variance_shift | 10 | 9 | 0 | 1 | %90 |
+| 14 | cubic+variance_shift | deterministic_trend + variance_shift | 10 | 10 | 0 | 0 | %100 |
 | 15 | damped+collective | deterministic_trend + collective_anomaly | 10 | 9 | 1 | 0 | %90 |
 | 16 | damped+mean_shift | deterministic_trend + mean_shift | 10 | 7 | 3 | 0 | %70 |
 | 17 | damped+point_anomaly | deterministic_trend + point_anomaly | 10 | 10 | 0 | 0 | %100 |
@@ -40,16 +40,16 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 | 23 | linear+collective | deterministic_trend + collective_anomaly | 10 | 10 | 0 | 0 | %100 |
 | 24 | linear+mean_shift | deterministic_trend + mean_shift | 10 | 9 | 1 | 0 | %90 |
 | 25 | linear+point_anomaly | deterministic_trend + point_anomaly | 10 | 10 | 0 | 0 | %100 |
-| 26 | linear+trend_shift | deterministic_trend + trend_shift | 10 | 6 | 4 | 0 | %60 |
+| 26 | linear+trend_shift | deterministic_trend + trend_shift | 10 | 6 | 0 | 4 | %60 |
 | 27 | linear+variance_shift | deterministic_trend + variance_shift | 10 | 10 | 0 | 0 | %100 |
 | 28 | quad+collective | deterministic_trend + collective_anomaly | 10 | 10 | 0 | 0 | %100 |
-| 29 | quad+mean_shift | deterministic_trend + mean_shift | 10 | 5 | 4 | 1 | %50 |
+| 29 | quad+mean_shift | deterministic_trend + mean_shift | 10 | 6 | 4 | 0 | %60 |
 | 30 | quad+point_anomaly | deterministic_trend + point_anomaly | 10 | 10 | 0 | 0 | %100 |
 | 31 | quad+variance_shift | deterministic_trend + variance_shift | 10 | 7 | 3 | 0 | %70 |
 | 32 | stoch+collective | stochastic_trend + collective_anomaly | 10 | 10 | 0 | 0 | %100 |
 | 33 | stoch+mean_shift | stochastic_trend + mean_shift | 10 | 9 | 1 | 0 | %90 |
 | 34 | stoch+point_anomaly | stochastic_trend + point_anomaly | 10 | 7 | 3 | 0 | %70 |
-| 35 | stoch+variance_shift | stochastic_trend + variance_shift | 10 | 9 | 0 | 1 | %90 |
+| 35 | stoch+variance_shift | stochastic_trend + variance_shift | 10 | 10 | 0 | 0 | %100 |
 | 36 | vol+collective | volatility + collective_anomaly | 10 | 9 | 1 | 0 | %90 |
 | 37 | vol+mean_shift | volatility + mean_shift | 10 | 8 | 2 | 0 | %80 |
 | 38 | vol+point_anomaly | volatility + point_anomaly | 10 | 9 | 1 | 0 | %90 |
@@ -64,14 +64,14 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 |---|---|---|---|
 | `stationary` | `stationary_01.csv` | `stationary` | FULL |
 | `stationary` | `stationary_00.csv` | `stationary` | FULL |
-| `stationary` | `stationary_04.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | ~ PARTIAL |
+| `stationary` | `stationary_04.csv` | `stationary` | FULL |
 | `stationary` | `stationary_09.csv` | `stationary` | FULL |
 | `stationary` | `stationary_06.csv` | `stationary` | FULL |
 | `stationary` | `stationary_05.csv` | `stationary` | FULL |
-| `stationary` | `stationary_08.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | ~ PARTIAL |
+| `stationary` | `stationary_08.csv` | `stationary` | FULL |
 | `stationary` | `stationary_02.csv` | `stationary` | FULL |
 | `stationary` | `stationary_03.csv` | `stationary` | FULL |
-| `stationary` | `stationary_07.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | ~ PARTIAL |
+| `stationary` | `stationary_07.csv` | `stationary` | FULL |
 ---
 
 ## Grup 2: deterministic_trend
@@ -104,8 +104,8 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 | `Stochastic Trend` | `stochastic_trend_01.csv` | `stochastic_trend` | FULL |
 | `Stochastic Trend` | `stochastic_trend_09.csv` | `stochastic_trend` | FULL |
 | `Stochastic Trend` | `stochastic_trend_08.csv` | `stochastic_trend` | FULL |
-| `Stochastic Trend` | `stochastic_trend_02.csv` | `stationary` | x NONE |
-| `Stochastic Trend` | `stochastic_trend_05.csv` | `stationary` | x NONE |
+| `Stochastic Trend` | `stochastic_trend_02.csv` | `stochastic_trend` | FULL |
+| `Stochastic Trend` | `stochastic_trend_05.csv` | `stochastic_trend` | FULL |
 ---
 
 ## Grup 4: volatility
@@ -130,16 +130,16 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 
 | Leaf | CSV | Tahmin | Sonuc |
 |---|---|---|---|
-| `collective_anomaly` | `collective_anomaly_07.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `collective_anomaly` | `collective_anomaly_08.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `collective_anomaly` | `collective_anomaly_01.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `collective_anomaly` | `collective_anomaly_03.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `collective_anomaly` | `collective_anomaly_00.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `collective_anomaly` | `collective_anomaly_04.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `collective_anomaly` | `collective_anomaly_02.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `collective_anomaly` | `collective_anomaly_06.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `collective_anomaly` | `collective_anomaly_09.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `collective_anomaly` | `collective_anomaly_05.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
+| `collective_anomaly` | `collective_anomaly_07.csv` | `stationary + collective_anomaly` | FULL |
+| `collective_anomaly` | `collective_anomaly_08.csv` | `stationary + collective_anomaly` | FULL |
+| `collective_anomaly` | `collective_anomaly_01.csv` | `stationary + collective_anomaly` | FULL |
+| `collective_anomaly` | `collective_anomaly_03.csv` | `stationary + collective_anomaly` | FULL |
+| `collective_anomaly` | `collective_anomaly_00.csv` | `stationary + collective_anomaly` | FULL |
+| `collective_anomaly` | `collective_anomaly_04.csv` | `stationary + collective_anomaly` | FULL |
+| `collective_anomaly` | `collective_anomaly_02.csv` | `stationary + collective_anomaly` | FULL |
+| `collective_anomaly` | `collective_anomaly_06.csv` | `stationary + collective_anomaly` | FULL |
+| `collective_anomaly` | `collective_anomaly_09.csv` | `stationary + collective_anomaly` | FULL |
+| `collective_anomaly` | `collective_anomaly_05.csv` | `stationary + collective_anomaly` | FULL |
 ---
 
 ## Grup 6: contextual_anomaly
@@ -147,16 +147,16 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 
 | Leaf | CSV | Tahmin | Sonuc |
 |---|---|---|---|
-| `contextual_anomaly` | `contextual_anomaly_01.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `contextual_anomaly` | `contextual_anomaly_00.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `contextual_anomaly` | `contextual_anomaly_03.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `contextual_anomaly` | `contextual_anomaly_06.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `contextual_anomaly` | `contextual_anomaly_02.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `contextual_anomaly` | `contextual_anomaly_08.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `contextual_anomaly` | `contextual_anomaly_09.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `contextual_anomaly` | `contextual_anomaly_04.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `contextual_anomaly` | `contextual_anomaly_07.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `contextual_anomaly` | `contextual_anomaly_05.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
+| `contextual_anomaly` | `contextual_anomaly_01.csv` | `stationary + contextual_anomaly` | FULL |
+| `contextual_anomaly` | `contextual_anomaly_00.csv` | `stationary + contextual_anomaly` | FULL |
+| `contextual_anomaly` | `contextual_anomaly_03.csv` | `stationary + contextual_anomaly` | FULL |
+| `contextual_anomaly` | `contextual_anomaly_06.csv` | `stationary + contextual_anomaly` | FULL |
+| `contextual_anomaly` | `contextual_anomaly_02.csv` | `stationary + contextual_anomaly` | FULL |
+| `contextual_anomaly` | `contextual_anomaly_08.csv` | `stationary + contextual_anomaly` | FULL |
+| `contextual_anomaly` | `contextual_anomaly_09.csv` | `stationary + contextual_anomaly` | FULL |
+| `contextual_anomaly` | `contextual_anomaly_04.csv` | `stationary + contextual_anomaly` | FULL |
+| `contextual_anomaly` | `contextual_anomaly_07.csv` | `stationary + contextual_anomaly` | FULL |
+| `contextual_anomaly` | `contextual_anomaly_05.csv` | `stationary + contextual_anomaly` | FULL |
 ---
 
 ## Grup 7: mean_shift
@@ -164,16 +164,16 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 
 | Leaf | CSV | Tahmin | Sonuc |
 |---|---|---|---|
-| `mean_shift` | `mean_shift_07.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `mean_shift` | `mean_shift_05.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `mean_shift` | `mean_shift_02.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
+| `mean_shift` | `mean_shift_07.csv` | `stationary + mean_shift` | FULL |
+| `mean_shift` | `mean_shift_05.csv` | `stationary + mean_shift` | FULL |
+| `mean_shift` | `mean_shift_02.csv` | `stationary + mean_shift` | FULL |
 | `mean_shift` | `mean_shift_09.csv` | `deterministic_trend + mean_shift` | ~ PARTIAL |
-| `mean_shift` | `mean_shift_06.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `mean_shift` | `mean_shift_01.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `mean_shift` | `mean_shift_08.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `mean_shift` | `mean_shift_03.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `mean_shift` | `mean_shift_00.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `mean_shift` | `mean_shift_04.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
+| `mean_shift` | `mean_shift_06.csv` | `stationary + mean_shift` | FULL |
+| `mean_shift` | `mean_shift_01.csv` | `stationary + mean_shift` | FULL |
+| `mean_shift` | `mean_shift_08.csv` | `stationary + mean_shift` | FULL |
+| `mean_shift` | `mean_shift_03.csv` | `stationary + mean_shift` | FULL |
+| `mean_shift` | `mean_shift_00.csv` | `stationary + mean_shift` | FULL |
+| `mean_shift` | `mean_shift_04.csv` | `stationary + mean_shift` | FULL |
 ---
 
 ## Grup 8: point_anomaly
@@ -181,16 +181,16 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 
 | Leaf | CSV | Tahmin | Sonuc |
 |---|---|---|---|
-| `point_anomaly` | `point_anomaly_08.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `point_anomaly` | `point_anomaly_03.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `point_anomaly` | `point_anomaly_02.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `point_anomaly` | `point_anomaly_09.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `point_anomaly` | `point_anomaly_06.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `point_anomaly` | `point_anomaly_07.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `point_anomaly` | `point_anomaly_01.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `point_anomaly` | `point_anomaly_04.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `point_anomaly` | `point_anomaly_05.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `point_anomaly` | `point_anomaly_00.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
+| `point_anomaly` | `point_anomaly_08.csv` | `stationary + point_anomaly` | FULL |
+| `point_anomaly` | `point_anomaly_03.csv` | `stationary + point_anomaly` | FULL |
+| `point_anomaly` | `point_anomaly_02.csv` | `stationary + point_anomaly` | FULL |
+| `point_anomaly` | `point_anomaly_09.csv` | `stationary + point_anomaly` | FULL |
+| `point_anomaly` | `point_anomaly_06.csv` | `stationary + point_anomaly` | FULL |
+| `point_anomaly` | `point_anomaly_07.csv` | `stationary + point_anomaly` | FULL |
+| `point_anomaly` | `point_anomaly_01.csv` | `stationary + point_anomaly` | FULL |
+| `point_anomaly` | `point_anomaly_04.csv` | `stationary + point_anomaly` | FULL |
+| `point_anomaly` | `point_anomaly_05.csv` | `stationary + point_anomaly` | FULL |
+| `point_anomaly` | `point_anomaly_00.csv` | `stationary + point_anomaly` | FULL |
 ---
 
 ## Grup 9: trend_shift
@@ -198,14 +198,14 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 
 | Leaf | CSV | Tahmin | Sonuc |
 |---|---|---|---|
-| `trend_shift` | `trend_shift_03.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `trend_shift` | `trend_shift_00.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `trend_shift` | `trend_shift_05.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `trend_shift` | `trend_shift_09.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `trend_shift` | `trend_shift_02.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `trend_shift` | `trend_shift_08.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `trend_shift` | `trend_shift_01.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `trend_shift` | `trend_shift_07.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
+| `trend_shift` | `trend_shift_03.csv` | `stationary` | ~ PARTIAL |
+| `trend_shift` | `trend_shift_00.csv` | `stationary` | ~ PARTIAL |
+| `trend_shift` | `trend_shift_05.csv` | `stationary` | ~ PARTIAL |
+| `trend_shift` | `trend_shift_09.csv` | `stationary` | ~ PARTIAL |
+| `trend_shift` | `trend_shift_02.csv` | `stationary` | ~ PARTIAL |
+| `trend_shift` | `trend_shift_08.csv` | `stationary` | ~ PARTIAL |
+| `trend_shift` | `trend_shift_01.csv` | `stationary` | ~ PARTIAL |
+| `trend_shift` | `trend_shift_07.csv` | `stationary` | ~ PARTIAL |
 | `trend_shift` | `trend_shift_06.csv` | `deterministic_trend + mean_shift + trend_shift` | ~ PARTIAL |
 | `trend_shift` | `trend_shift_04.csv` | `deterministic_trend + trend_shift` | ~ PARTIAL |
 ---
@@ -215,16 +215,16 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 
 | Leaf | CSV | Tahmin | Sonuc |
 |---|---|---|---|
-| `variance_shift` | `variance_shift_07.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `variance_shift` | `variance_shift_06.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `variance_shift` | `variance_shift_09.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `variance_shift` | `variance_shift_01.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `variance_shift` | `variance_shift_02.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `variance_shift` | `variance_shift_08.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `variance_shift` | `variance_shift_04.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `variance_shift` | `variance_shift_05.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `variance_shift` | `variance_shift_03.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
-| `variance_shift` | `variance_shift_00.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | FULL |
+| `variance_shift` | `variance_shift_07.csv` | `stationary + variance_shift` | FULL |
+| `variance_shift` | `variance_shift_06.csv` | `stationary + variance_shift` | FULL |
+| `variance_shift` | `variance_shift_09.csv` | `stationary + variance_shift` | FULL |
+| `variance_shift` | `variance_shift_01.csv` | `stationary + variance_shift` | FULL |
+| `variance_shift` | `variance_shift_02.csv` | `stationary + variance_shift` | FULL |
+| `variance_shift` | `variance_shift_08.csv` | `stationary + variance_shift` | FULL |
+| `variance_shift` | `variance_shift_04.csv` | `stationary + variance_shift` | FULL |
+| `variance_shift` | `variance_shift_05.csv` | `stationary + variance_shift` | FULL |
+| `variance_shift` | `variance_shift_03.csv` | `stationary + variance_shift` | FULL |
+| `variance_shift` | `variance_shift_00.csv` | `stationary + variance_shift` | FULL |
 ---
 
 ## Grup 11: cubic+collective
@@ -285,7 +285,7 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 |---|---|---|---|
 | `Cubic + Variance Shift` | `cubic_variance_shift_02.csv` | `deterministic_trend + variance_shift` | FULL |
 | `Cubic + Variance Shift` | `cubic_variance_shift_07.csv` | `deterministic_trend + variance_shift` | FULL |
-| `Cubic + Variance Shift` | `cubic_variance_shift_00.csv` | `stationary` | x NONE |
+| `Cubic + Variance Shift` | `cubic_variance_shift_00.csv` | `deterministic_trend + variance_shift` | FULL |
 | `Cubic + Variance Shift` | `cubic_variance_shift_05.csv` | `deterministic_trend + variance_shift` | FULL |
 | `Cubic + Variance Shift` | `cubic_variance_shift_06.csv` | `deterministic_trend + variance_shift` | FULL |
 | `Cubic + Variance Shift` | `cubic_variance_shift_09.csv` | `deterministic_trend + variance_shift` | FULL |
@@ -487,15 +487,15 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 
 | Leaf | CSV | Tahmin | Sonuc |
 |---|---|---|---|
-| `Linear + Trend Shift` | `linear_trend_shift_06.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | ~ PARTIAL |
+| `Linear + Trend Shift` | `linear_trend_shift_06.csv` | `stationary + mean_shift` | x NONE |
 | `Linear + Trend Shift` | `linear_trend_shift_00.csv` | `deterministic_trend + mean_shift + trend_shift` | FULL |
 | `Linear + Trend Shift` | `linear_trend_shift_02.csv` | `deterministic_trend + trend_shift` | FULL |
 | `Linear + Trend Shift` | `linear_trend_shift_03.csv` | `deterministic_trend + trend_shift` | FULL |
 | `Linear + Trend Shift` | `linear_trend_shift_08.csv` | `deterministic_trend + trend_shift` | FULL |
-| `Linear + Trend Shift` | `linear_trend_shift_09.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | ~ PARTIAL |
-| `Linear + Trend Shift` | `linear_trend_shift_07.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | ~ PARTIAL |
+| `Linear + Trend Shift` | `linear_trend_shift_09.csv` | `stationary` | x NONE |
+| `Linear + Trend Shift` | `linear_trend_shift_07.csv` | `stationary` | x NONE |
 | `Linear + Trend Shift` | `linear_trend_shift_01.csv` | `deterministic_trend + trend_shift + variance_shift` | FULL |
-| `Linear + Trend Shift` | `linear_trend_shift_04.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | ~ PARTIAL |
+| `Linear + Trend Shift` | `linear_trend_shift_04.csv` | `stationary` | x NONE |
 | `Linear + Trend Shift` | `linear_trend_shift_05.csv` | `deterministic_trend + trend_shift` | FULL |
 ---
 
@@ -542,7 +542,7 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 | `Quadratic + Mean Shift` | `quad_mean_shift_09.csv` | `deterministic_trend + mean_shift` | FULL |
 | `Quadratic + Mean Shift` | `quad_mean_shift_03.csv` | `deterministic_trend` | ~ PARTIAL |
 | `Quadratic + Mean Shift` | `quad_mean_shift_07.csv` | `deterministic_trend + mean_shift` | FULL |
-| `Quadratic + Mean Shift` | `quad_mean_shift_00.csv` | `stationary` | x NONE |
+| `Quadratic + Mean Shift` | `quad_mean_shift_00.csv` | `deterministic_trend + mean_shift` | FULL |
 | `Quadratic + Mean Shift` | `quad_mean_shift_04.csv` | `deterministic_trend + mean_shift` | FULL |
 | `Quadratic + Mean Shift` | `quad_mean_shift_08.csv` | `deterministic_trend + mean_shift` | FULL |
 | `Quadratic + Mean Shift` | `quad_mean_shift_02.csv` | `deterministic_trend` | ~ PARTIAL |
@@ -574,7 +574,7 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 |---|---|---|---|
 | `Quadratic + Variance Shift` | `quad_variance_shift_04.csv` | `deterministic_trend + variance_shift` | FULL |
 | `Quadratic + Variance Shift` | `quad_variance_shift_07.csv` | `deterministic_trend + variance_shift` | FULL |
-| `Quadratic + Variance Shift` | `quad_variance_shift_05.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | ~ PARTIAL |
+| `Quadratic + Variance Shift` | `quad_variance_shift_05.csv` | `stationary + variance_shift` | ~ PARTIAL |
 | `Quadratic + Variance Shift` | `quad_variance_shift_06.csv` | `deterministic_trend + variance_shift` | FULL |
 | `Quadratic + Variance Shift` | `quad_variance_shift_00.csv` | `deterministic_trend + variance_shift` | FULL |
 | `Quadratic + Variance Shift` | `quad_variance_shift_08.csv` | `deterministic_trend + variance_shift` | FULL |
@@ -640,7 +640,7 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 
 | Leaf | CSV | Tahmin | Sonuc |
 |---|---|---|---|
-| `Stochastic Trend + Variance Shift` | `stoch_variance_shift_05.csv` | `stationary` | x NONE |
+| `Stochastic Trend + Variance Shift` | `stoch_variance_shift_05.csv` | `stochastic_trend + variance_shift` | FULL |
 | `Stochastic Trend + Variance Shift` | `stoch_variance_shift_03.csv` | `stochastic_trend + variance_shift` | FULL |
 | `Stochastic Trend + Variance Shift` | `stoch_variance_shift_04.csv` | `stochastic_trend + variance_shift` | FULL |
 | `Stochastic Trend + Variance Shift` | `stoch_variance_shift_07.csv` | `stochastic_trend + variance_shift` | FULL |
@@ -660,7 +660,7 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 | `Volatility + Collective Anomaly` | `vol_collective_00.csv` | `volatility + collective_anomaly` | FULL |
 | `Volatility + Collective Anomaly` | `vol_collective_09.csv` | `volatility + collective_anomaly` | FULL |
 | `Volatility + Collective Anomaly` | `vol_collective_05.csv` | `volatility + collective_anomaly` | FULL |
-| `Volatility + Collective Anomaly` | `vol_collective_06.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | ~ PARTIAL |
+| `Volatility + Collective Anomaly` | `vol_collective_06.csv` | `stationary + collective_anomaly` | ~ PARTIAL |
 | `Volatility + Collective Anomaly` | `vol_collective_01.csv` | `volatility + collective_anomaly` | FULL |
 | `Volatility + Collective Anomaly` | `vol_collective_02.csv` | `volatility + collective_anomaly` | FULL |
 | `Volatility + Collective Anomaly` | `vol_collective_07.csv` | `volatility + collective_anomaly` | FULL |
@@ -698,7 +698,7 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 | `Volatility + Point Anomaly` | `vol_point_anomaly_08.csv` | `volatility + point_anomaly` | FULL |
 | `Volatility + Point Anomaly` | `vol_point_anomaly_06.csv` | `volatility + point_anomaly` | FULL |
 | `Volatility + Point Anomaly` | `vol_point_anomaly_01.csv` | `volatility + point_anomaly` | FULL |
-| `Volatility + Point Anomaly` | `vol_point_anomaly_07.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | ~ PARTIAL |
+| `Volatility + Point Anomaly` | `vol_point_anomaly_07.csv` | `stationary + point_anomaly` | ~ PARTIAL |
 | `Volatility + Point Anomaly` | `vol_point_anomaly_05.csv` | `volatility + collective_anomaly + point_anomaly` | FULL |
 | `Volatility + Point Anomaly` | `vol_point_anomaly_03.csv` | `volatility + point_anomaly` | FULL |
 ---
@@ -717,5 +717,5 @@ Base: meta-learner | Anomali: meta-learner + safety net (new ensemble >= 0.80 ov
 | `Volatility + Variance Shift` | `vol_variance_shift_07.csv` | `volatility + variance_shift` | FULL |
 | `Volatility + Variance Shift` | `vol_variance_shift_00.csv` | `volatility + variance_shift` | FULL |
 | `Volatility + Variance Shift` | `vol_variance_shift_02.csv` | `volatility + variance_shift` | FULL |
-| `Volatility + Variance Shift` | `vol_variance_shift_03.csv` | `stationary + collective_anomaly + contextual_anomaly + mean_shift + point_anomaly + trend_shift + variance_shift` | ~ PARTIAL |
+| `Volatility + Variance Shift` | `vol_variance_shift_03.csv` | `stationary + variance_shift` | ~ PARTIAL |
 ---

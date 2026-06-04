@@ -4,3 +4,7 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 Thumbs.db
+# 10x scaled data — 181MB, script ile reproducible
+contextual-off/data_10x/
+contextual-off-10x/ens-final/processed_data/
+contextual-off-10x/ensemble-alldata/processed_data/

@@ -1,10 +1,10 @@
 {
   "summary": {
-    "total": 390,
-    "full": 344,
-    "partial": 42,
-    "none": 4,
-    "full_pct": 88.21,
+    "total": 380,
+    "full": 320,
+    "partial": 54,
+    "none": 6,
+    "full_pct": 84.21,
     "approach": "blended stacking v4",
     "samples_per_leaf": 10
   },
@@ -13,7 +13,7 @@
       "gid": 1,
       "group": "stationary",
       "leaf": "stationary",
-      "csv": "stationary_01.csv",
+      "csv": "stationary_654.csv",
       "expected": "stationary",
       "predicted": "stationary",
       "match": "FULL"
@@ -22,7 +22,7 @@
       "gid": 1,
       "group": "stationary",
       "leaf": "stationary",
-      "csv": "stationary_00.csv",
+      "csv": "stationary_114.csv",
       "expected": "stationary",
       "predicted": "stationary",
       "match": "FULL"
@@ -31,7 +31,7 @@
       "gid": 1,
       "group": "stationary",
       "leaf": "stationary",
-      "csv": "stationary_04.csv",
+      "csv": "stationary_025.csv",
       "expected": "stationary",
       "predicted": "stationary",
       "match": "FULL"
@@ -40,7 +40,7 @@
       "gid": 1,
       "group": "stationary",
       "leaf": "stationary",
-      "csv": "stationary_09.csv",
+      "csv": "stationary_759.csv",
       "expected": "stationary",
       "predicted": "stationary",
       "match": "FULL"
@@ -49,7 +49,7 @@
       "gid": 1,
       "group": "stationary",
       "leaf": "stationary",
-      "csv": "stationary_06.csv",
+      "csv": "stationary_281.csv",
       "expected": "stationary",
       "predicted": "stationary",
       "match": "FULL"
@@ -58,7 +58,7 @@
       "gid": 1,
       "group": "stationary",
       "leaf": "stationary",
-      "csv": "stationary_05.csv",
+      "csv": "stationary_250.csv",
       "expected": "stationary",
       "predicted": "stationary",
       "match": "FULL"
@@ -67,7 +67,7 @@
       "gid": 1,
       "group": "stationary",
       "leaf": "stationary",
-      "csv": "stationary_08.csv",
+      "csv": "stationary_228.csv",
       "expected": "stationary",
       "predicted": "stationary",
       "match": "FULL"
@@ -76,7 +76,7 @@
       "gid": 1,
       "group": "stationary",
       "leaf": "stationary",
-      "csv": "stationary_02.csv",
+      "csv": "stationary_142.csv",
       "expected": "stationary",
       "predicted": "stationary",
       "match": "FULL"
@@ -85,16 +85,16 @@
       "gid": 1,
       "group": "stationary",
       "leaf": "stationary",
-      "csv": "stationary_03.csv",
+      "csv": "stationary_754.csv",
       "expected": "stationary",
-      "predicted": "stationary",
-      "match": "FULL"
+      "predicted": "volatility",
+      "match": "NONE"
     },
     {
       "gid": 1,
       "group": "stationary",
       "leaf": "stationary",
-      "csv": "stationary_07.csv",
+      "csv": "stationary_104.csv",
       "expected": "stationary",
       "predicted": "stationary",
       "match": "FULL"
@@ -103,7 +103,7 @@
       "gid": 2,
       "group": "deterministic_trend",
       "leaf": "deterministic_trend",
-      "csv": "deterministic_trend_00.csv",
+      "csv": "deterministic_trend_692.csv",
       "expected": "deterministic_trend",
       "predicted": "deterministic_trend",
       "match": "FULL"
@@ -112,7 +112,7 @@
       "gid": 2,
       "group": "deterministic_trend",
       "leaf": "deterministic_trend",
-      "csv": "deterministic_trend_09.csv",
+      "csv": "deterministic_trend_758.csv",
       "expected": "deterministic_trend",
       "predicted": "deterministic_trend",
       "match": "FULL"
@@ -121,7 +121,7 @@
       "gid": 2,
       "group": "deterministic_trend",
       "leaf": "deterministic_trend",
-      "csv": "deterministic_trend_01.csv",
+      "csv": "deterministic_trend_913.csv",
       "expected": "deterministic_trend",
       "predicted": "deterministic_trend",
       "match": "FULL"
@@ -130,7 +130,7 @@
       "gid": 2,
       "group": "deterministic_trend",
       "leaf": "deterministic_trend",
-      "csv": "deterministic_trend_07.csv",
+      "csv": "deterministic_trend_558.csv",
       "expected": "deterministic_trend",
       "predicted": "deterministic_trend",
       "match": "FULL"
@@ -139,7 +139,7 @@
       "gid": 2,
       "group": "deterministic_trend",
       "leaf": "deterministic_trend",
-      "csv": "deterministic_trend_06.csv",
+      "csv": "deterministic_trend_089.csv",
       "expected": "deterministic_trend",
       "predicted": "deterministic_trend + variance_shift",
       "match": "PARTIAL"
@@ -148,7 +148,7 @@
       "gid": 2,
       "group": "deterministic_trend",
       "leaf": "deterministic_trend",
-      "csv": "deterministic_trend_04.csv",
+      "csv": "deterministic_trend_604.csv",
       "expected": "deterministic_trend",
       "predicted": "deterministic_trend",
       "match": "FULL"
@@ -157,7 +157,7 @@
       "gid": 2,
       "group": "deterministic_trend",
       "leaf": "deterministic_trend",
-      "csv": "deterministic_trend_08.csv",
+      "csv": "deterministic_trend_432.csv",
       "expected": "deterministic_trend",
       "predicted": "deterministic_trend",
       "match": "FULL"
@@ -166,7 +166,16 @@
       "gid": 2,
       "group": "deterministic_trend",
       "leaf": "deterministic_trend",
-      "csv": "deterministic_trend_02.csv",
+      "csv": "deterministic_trend_032.csv",
+      "expected": "deterministic_trend",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 2,
+      "group": "deterministic_trend",
+      "leaf": "deterministic_trend",
+      "csv": "deterministic_trend_030.csv",
       "expected": "deterministic_trend",
       "predicted": "deterministic_trend",
       "match": "FULL"
@@ -175,16 +184,7 @@
       "gid": 2,
       "group": "deterministic_trend",
       "leaf": "deterministic_trend",
-      "csv": "deterministic_trend_03.csv",
-      "expected": "deterministic_trend",
-      "predicted": "deterministic_trend",
-      "match": "FULL"
-    },
-    {
-      "gid": 2,
-      "group": "deterministic_trend",
-      "leaf": "deterministic_trend",
-      "csv": "deterministic_trend_05.csv",
+      "csv": "deterministic_trend_095.csv",
       "expected": "deterministic_trend",
       "predicted": "deterministic_trend",
       "match": "FULL"
@@ -193,7 +193,25 @@
       "gid": 3,
       "group": "stochastic_trend",
       "leaf": "Stochastic Trend",
-      "csv": "stochastic_trend_03.csv",
+      "csv": "stochastic_trend_223.csv",
+      "expected": "stochastic_trend",
+      "predicted": "stochastic_trend",
+      "match": "FULL"
+    },
+    {
+      "gid": 3,
+      "group": "stochastic_trend",
+      "leaf": "Stochastic Trend",
+      "csv": "stochastic_trend_238.csv",
+      "expected": "stochastic_trend",
+      "predicted": "stationary + mean_shift",
+      "match": "NONE"
+    },
+    {
+      "gid": 3,
+      "group": "stochastic_trend",
+      "leaf": "Stochastic Trend",
+      "csv": "stochastic_trend_517.csv",
       "expected": "stochastic_trend",
       "predicted": "stochastic_trend + variance_shift",
       "match": "PARTIAL"
@@ -202,7 +220,25 @@
       "gid": 3,
       "group": "stochastic_trend",
       "leaf": "Stochastic Trend",
-      "csv": "stochastic_trend_07.csv",
+      "csv": "stochastic_trend_616.csv",
+      "expected": "stochastic_trend",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "NONE"
+    },
+    {
+      "gid": 3,
+      "group": "stochastic_trend",
+      "leaf": "Stochastic Trend",
+      "csv": "stochastic_trend_027.csv",
+      "expected": "stochastic_trend",
+      "predicted": "stochastic_trend + mean_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 3,
+      "group": "stochastic_trend",
+      "leaf": "Stochastic Trend",
+      "csv": "stochastic_trend_574.csv",
       "expected": "stochastic_trend",
       "predicted": "stochastic_trend",
       "match": "FULL"
@@ -211,79 +247,43 @@
       "gid": 3,
       "group": "stochastic_trend",
       "leaf": "Stochastic Trend",
-      "csv": "stochastic_trend_04.csv",
+      "csv": "stochastic_trend_203.csv",
       "expected": "stochastic_trend",
-      "predicted": "stochastic_trend",
-      "match": "FULL"
+      "predicted": "stochastic_trend + mean_shift",
+      "match": "PARTIAL"
     },
     {
       "gid": 3,
       "group": "stochastic_trend",
       "leaf": "Stochastic Trend",
-      "csv": "stochastic_trend_06.csv",
+      "csv": "stochastic_trend_733.csv",
       "expected": "stochastic_trend",
-      "predicted": "stochastic_trend",
-      "match": "FULL"
+      "predicted": "stochastic_trend + variance_shift",
+      "match": "PARTIAL"
     },
     {
       "gid": 3,
       "group": "stochastic_trend",
       "leaf": "Stochastic Trend",
-      "csv": "stochastic_trend_00.csv",
+      "csv": "stochastic_trend_665.csv",
       "expected": "stochastic_trend",
-      "predicted": "stochastic_trend",
-      "match": "FULL"
+      "predicted": "stochastic_trend + mean_shift",
+      "match": "PARTIAL"
     },
     {
       "gid": 3,
       "group": "stochastic_trend",
       "leaf": "Stochastic Trend",
-      "csv": "stochastic_trend_01.csv",
+      "csv": "stochastic_trend_718.csv",
       "expected": "stochastic_trend",
-      "predicted": "stochastic_trend",
-      "match": "FULL"
-    },
-    {
-      "gid": 3,
-      "group": "stochastic_trend",
-      "leaf": "Stochastic Trend",
-      "csv": "stochastic_trend_09.csv",
-      "expected": "stochastic_trend",
-      "predicted": "stochastic_trend",
-      "match": "FULL"
-    },
-    {
-      "gid": 3,
-      "group": "stochastic_trend",
-      "leaf": "Stochastic Trend",
-      "csv": "stochastic_trend_08.csv",
-      "expected": "stochastic_trend",
-      "predicted": "stochastic_trend",
-      "match": "FULL"
-    },
-    {
-      "gid": 3,
-      "group": "stochastic_trend",
-      "leaf": "Stochastic Trend",
-      "csv": "stochastic_trend_02.csv",
-      "expected": "stochastic_trend",
-      "predicted": "stochastic_trend",
-      "match": "FULL"
-    },
-    {
-      "gid": 3,
-      "group": "stochastic_trend",
-      "leaf": "Stochastic Trend",
-      "csv": "stochastic_trend_05.csv",
-      "expected": "stochastic_trend",
-      "predicted": "stochastic_trend",
-      "match": "FULL"
+      "predicted": "stochastic_trend + variance_shift",
+      "match": "PARTIAL"
     },
     {
       "gid": 4,
       "group": "volatility",
       "leaf": "Volatility",
-      "csv": "volatility_03.csv",
+      "csv": "volatility_558.csv",
       "expected": "volatility",
       "predicted": "volatility",
       "match": "FULL"
@@ -292,7 +292,7 @@
       "gid": 4,
       "group": "volatility",
       "leaf": "Volatility",
-      "csv": "volatility_05.csv",
+      "csv": "volatility_429.csv",
       "expected": "volatility",
       "predicted": "volatility",
       "match": "FULL"
@@ -301,7 +301,7 @@
       "gid": 4,
       "group": "volatility",
       "leaf": "Volatility",
-      "csv": "volatility_01.csv",
+      "csv": "volatility_225.csv",
       "expected": "volatility",
       "predicted": "volatility",
       "match": "FULL"
@@ -310,7 +310,7 @@
       "gid": 4,
       "group": "volatility",
       "leaf": "Volatility",
-      "csv": "volatility_00.csv",
+      "csv": "volatility_459.csv",
       "expected": "volatility",
       "predicted": "volatility",
       "match": "FULL"
@@ -319,7 +319,43 @@
       "gid": 4,
       "group": "volatility",
       "leaf": "Volatility",
-      "csv": "volatility_09.csv",
+      "csv": "volatility_603.csv",
+      "expected": "volatility",
+      "predicted": "volatility",
+      "match": "FULL"
+    },
+    {
+      "gid": 4,
+      "group": "volatility",
+      "leaf": "Volatility",
+      "csv": "volatility_284.csv",
+      "expected": "volatility",
+      "predicted": "volatility",
+      "match": "FULL"
+    },
+    {
+      "gid": 4,
+      "group": "volatility",
+      "leaf": "Volatility",
+      "csv": "volatility_828.csv",
+      "expected": "volatility",
+      "predicted": "volatility + mean_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 4,
+      "group": "volatility",
+      "leaf": "Volatility",
+      "csv": "volatility_890.csv",
+      "expected": "volatility",
+      "predicted": "volatility",
+      "match": "FULL"
+    },
+    {
+      "gid": 4,
+      "group": "volatility",
+      "leaf": "Volatility",
+      "csv": "volatility_006.csv",
       "expected": "volatility",
       "predicted": "volatility + variance_shift",
       "match": "PARTIAL"
@@ -328,43 +364,7 @@
       "gid": 4,
       "group": "volatility",
       "leaf": "Volatility",
-      "csv": "volatility_06.csv",
-      "expected": "volatility",
-      "predicted": "volatility",
-      "match": "FULL"
-    },
-    {
-      "gid": 4,
-      "group": "volatility",
-      "leaf": "Volatility",
-      "csv": "volatility_02.csv",
-      "expected": "volatility",
-      "predicted": "volatility",
-      "match": "FULL"
-    },
-    {
-      "gid": 4,
-      "group": "volatility",
-      "leaf": "Volatility",
-      "csv": "volatility_07.csv",
-      "expected": "volatility",
-      "predicted": "volatility",
-      "match": "FULL"
-    },
-    {
-      "gid": 4,
-      "group": "volatility",
-      "leaf": "Volatility",
-      "csv": "volatility_08.csv",
-      "expected": "volatility",
-      "predicted": "volatility",
-      "match": "FULL"
-    },
-    {
-      "gid": 4,
-      "group": "volatility",
-      "leaf": "Volatility",
-      "csv": "volatility_04.csv",
+      "csv": "volatility_777.csv",
       "expected": "volatility",
       "predicted": "volatility",
       "match": "FULL"
@@ -373,7 +373,16 @@
       "gid": 5,
       "group": "collective_anomaly",
       "leaf": "collective_anomaly",
-      "csv": "collective_anomaly_07.csv",
+      "csv": "collective_anomaly_825.csv",
+      "expected": "stationary + collective_anomaly",
+      "predicted": "volatility + collective_anomaly",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 5,
+      "group": "collective_anomaly",
+      "leaf": "collective_anomaly",
+      "csv": "collective_anomaly_163.csv",
       "expected": "stationary + collective_anomaly",
       "predicted": "stationary + collective_anomaly",
       "match": "FULL"
@@ -382,7 +391,16 @@
       "gid": 5,
       "group": "collective_anomaly",
       "leaf": "collective_anomaly",
-      "csv": "collective_anomaly_08.csv",
+      "csv": "collective_anomaly_714.csv",
+      "expected": "stationary + collective_anomaly",
+      "predicted": "volatility + collective_anomaly",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 5,
+      "group": "collective_anomaly",
+      "leaf": "collective_anomaly",
+      "csv": "collective_anomaly_432.csv",
       "expected": "stationary + collective_anomaly",
       "predicted": "stationary + collective_anomaly",
       "match": "FULL"
@@ -391,7 +409,7 @@
       "gid": 5,
       "group": "collective_anomaly",
       "leaf": "collective_anomaly",
-      "csv": "collective_anomaly_01.csv",
+      "csv": "collective_anomaly_348.csv",
       "expected": "stationary + collective_anomaly",
       "predicted": "stationary + collective_anomaly",
       "match": "FULL"
@@ -400,7 +418,7 @@
       "gid": 5,
       "group": "collective_anomaly",
       "leaf": "collective_anomaly",
-      "csv": "collective_anomaly_03.csv",
+      "csv": "collective_anomaly_284.csv",
       "expected": "stationary + collective_anomaly",
       "predicted": "stationary + collective_anomaly",
       "match": "FULL"
@@ -409,7 +427,7 @@
       "gid": 5,
       "group": "collective_anomaly",
       "leaf": "collective_anomaly",
-      "csv": "collective_anomaly_00.csv",
+      "csv": "collective_anomaly_159.csv",
       "expected": "stationary + collective_anomaly",
       "predicted": "stationary + collective_anomaly",
       "match": "FULL"
@@ -418,7 +436,7 @@
       "gid": 5,
       "group": "collective_anomaly",
       "leaf": "collective_anomaly",
-      "csv": "collective_anomaly_04.csv",
+      "csv": "collective_anomaly_220.csv",
       "expected": "stationary + collective_anomaly",
       "predicted": "stationary + collective_anomaly",
       "match": "FULL"
@@ -427,7 +445,7 @@
       "gid": 5,
       "group": "collective_anomaly",
       "leaf": "collective_anomaly",
-      "csv": "collective_anomaly_02.csv",
+      "csv": "collective_anomaly_980.csv",
       "expected": "stationary + collective_anomaly",
       "predicted": "stationary + collective_anomaly",
       "match": "FULL"
@@ -436,124 +454,16 @@
       "gid": 5,
       "group": "collective_anomaly",
       "leaf": "collective_anomaly",
-      "csv": "collective_anomaly_06.csv",
+      "csv": "collective_anomaly_781.csv",
       "expected": "stationary + collective_anomaly",
       "predicted": "stationary + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 5,
-      "group": "collective_anomaly",
-      "leaf": "collective_anomaly",
-      "csv": "collective_anomaly_09.csv",
-      "expected": "stationary + collective_anomaly",
-      "predicted": "stationary + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 5,
-      "group": "collective_anomaly",
-      "leaf": "collective_anomaly",
-      "csv": "collective_anomaly_05.csv",
-      "expected": "stationary + collective_anomaly",
-      "predicted": "stationary + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 6,
-      "group": "contextual_anomaly",
-      "leaf": "contextual_anomaly",
-      "csv": "contextual_anomaly_01.csv",
-      "expected": "stationary + contextual_anomaly",
-      "predicted": "stationary + contextual_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 6,
-      "group": "contextual_anomaly",
-      "leaf": "contextual_anomaly",
-      "csv": "contextual_anomaly_00.csv",
-      "expected": "stationary + contextual_anomaly",
-      "predicted": "stationary + contextual_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 6,
-      "group": "contextual_anomaly",
-      "leaf": "contextual_anomaly",
-      "csv": "contextual_anomaly_03.csv",
-      "expected": "stationary + contextual_anomaly",
-      "predicted": "stationary + contextual_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 6,
-      "group": "contextual_anomaly",
-      "leaf": "contextual_anomaly",
-      "csv": "contextual_anomaly_06.csv",
-      "expected": "stationary + contextual_anomaly",
-      "predicted": "stationary + contextual_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 6,
-      "group": "contextual_anomaly",
-      "leaf": "contextual_anomaly",
-      "csv": "contextual_anomaly_02.csv",
-      "expected": "stationary + contextual_anomaly",
-      "predicted": "stationary + contextual_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 6,
-      "group": "contextual_anomaly",
-      "leaf": "contextual_anomaly",
-      "csv": "contextual_anomaly_08.csv",
-      "expected": "stationary + contextual_anomaly",
-      "predicted": "stationary + contextual_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 6,
-      "group": "contextual_anomaly",
-      "leaf": "contextual_anomaly",
-      "csv": "contextual_anomaly_09.csv",
-      "expected": "stationary + contextual_anomaly",
-      "predicted": "stationary + contextual_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 6,
-      "group": "contextual_anomaly",
-      "leaf": "contextual_anomaly",
-      "csv": "contextual_anomaly_04.csv",
-      "expected": "stationary + contextual_anomaly",
-      "predicted": "stationary + contextual_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 6,
-      "group": "contextual_anomaly",
-      "leaf": "contextual_anomaly",
-      "csv": "contextual_anomaly_07.csv",
-      "expected": "stationary + contextual_anomaly",
-      "predicted": "stationary + contextual_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 6,
-      "group": "contextual_anomaly",
-      "leaf": "contextual_anomaly",
-      "csv": "contextual_anomaly_05.csv",
-      "expected": "stationary + contextual_anomaly",
-      "predicted": "stationary + contextual_anomaly",
       "match": "FULL"
     },
     {
       "gid": 7,
       "group": "mean_shift",
       "leaf": "mean_shift",
-      "csv": "mean_shift_07.csv",
+      "csv": "mean_shift_344.csv",
       "expected": "stationary + mean_shift",
       "predicted": "stationary + mean_shift",
       "match": "FULL"
@@ -562,7 +472,7 @@
       "gid": 7,
       "group": "mean_shift",
       "leaf": "mean_shift",
-      "csv": "mean_shift_05.csv",
+      "csv": "mean_shift_104.csv",
       "expected": "stationary + mean_shift",
       "predicted": "stationary + mean_shift",
       "match": "FULL"
@@ -571,7 +481,7 @@
       "gid": 7,
       "group": "mean_shift",
       "leaf": "mean_shift",
-      "csv": "mean_shift_02.csv",
+      "csv": "mean_shift_094.csv",
       "expected": "stationary + mean_shift",
       "predicted": "stationary + mean_shift",
       "match": "FULL"
@@ -580,7 +490,34 @@
       "gid": 7,
       "group": "mean_shift",
       "leaf": "mean_shift",
-      "csv": "mean_shift_09.csv",
+      "csv": "mean_shift_389.csv",
+      "expected": "stationary + mean_shift",
+      "predicted": "stationary + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 7,
+      "group": "mean_shift",
+      "leaf": "mean_shift",
+      "csv": "mean_shift_099.csv",
+      "expected": "stationary + mean_shift",
+      "predicted": "stationary + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 7,
+      "group": "mean_shift",
+      "leaf": "mean_shift",
+      "csv": "mean_shift_367.csv",
+      "expected": "stationary + mean_shift",
+      "predicted": "stationary + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 7,
+      "group": "mean_shift",
+      "leaf": "mean_shift",
+      "csv": "mean_shift_867.csv",
       "expected": "stationary + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "PARTIAL"
@@ -589,7 +526,7 @@
       "gid": 7,
       "group": "mean_shift",
       "leaf": "mean_shift",
-      "csv": "mean_shift_06.csv",
+      "csv": "mean_shift_352.csv",
       "expected": "stationary + mean_shift",
       "predicted": "stationary + mean_shift",
       "match": "FULL"
@@ -598,7 +535,7 @@
       "gid": 7,
       "group": "mean_shift",
       "leaf": "mean_shift",
-      "csv": "mean_shift_01.csv",
+      "csv": "mean_shift_618.csv",
       "expected": "stationary + mean_shift",
       "predicted": "stationary + mean_shift",
       "match": "FULL"
@@ -607,34 +544,7 @@
       "gid": 7,
       "group": "mean_shift",
       "leaf": "mean_shift",
-      "csv": "mean_shift_08.csv",
-      "expected": "stationary + mean_shift",
-      "predicted": "stationary + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 7,
-      "group": "mean_shift",
-      "leaf": "mean_shift",
-      "csv": "mean_shift_03.csv",
-      "expected": "stationary + mean_shift",
-      "predicted": "stationary + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 7,
-      "group": "mean_shift",
-      "leaf": "mean_shift",
-      "csv": "mean_shift_00.csv",
-      "expected": "stationary + mean_shift",
-      "predicted": "stationary + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 7,
-      "group": "mean_shift",
-      "leaf": "mean_shift",
-      "csv": "mean_shift_04.csv",
+      "csv": "mean_shift_270.csv",
       "expected": "stationary + mean_shift",
       "predicted": "stationary + mean_shift",
       "match": "FULL"
@@ -643,7 +553,7 @@
       "gid": 8,
       "group": "point_anomaly",
       "leaf": "point_anomaly",
-      "csv": "point_anomaly_08.csv",
+      "csv": "point_anomaly_826.csv",
       "expected": "stationary + point_anomaly",
       "predicted": "stationary + point_anomaly",
       "match": "FULL"
@@ -652,7 +562,7 @@
       "gid": 8,
       "group": "point_anomaly",
       "leaf": "point_anomaly",
-      "csv": "point_anomaly_03.csv",
+      "csv": "point_anomaly_044.csv",
       "expected": "stationary + point_anomaly",
       "predicted": "stationary + point_anomaly",
       "match": "FULL"
@@ -661,7 +571,7 @@
       "gid": 8,
       "group": "point_anomaly",
       "leaf": "point_anomaly",
-      "csv": "point_anomaly_02.csv",
+      "csv": "point_anomaly_747.csv",
       "expected": "stationary + point_anomaly",
       "predicted": "stationary + point_anomaly",
       "match": "FULL"
@@ -670,7 +580,16 @@
       "gid": 8,
       "group": "point_anomaly",
       "leaf": "point_anomaly",
-      "csv": "point_anomaly_09.csv",
+      "csv": "point_anomaly_470.csv",
+      "expected": "stationary + point_anomaly",
+      "predicted": "volatility + point_anomaly",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 8,
+      "group": "point_anomaly",
+      "leaf": "point_anomaly",
+      "csv": "point_anomaly_549.csv",
       "expected": "stationary + point_anomaly",
       "predicted": "stationary + point_anomaly",
       "match": "FULL"
@@ -679,7 +598,7 @@
       "gid": 8,
       "group": "point_anomaly",
       "leaf": "point_anomaly",
-      "csv": "point_anomaly_06.csv",
+      "csv": "point_anomaly_127.csv",
       "expected": "stationary + point_anomaly",
       "predicted": "stationary + point_anomaly",
       "match": "FULL"
@@ -688,7 +607,7 @@
       "gid": 8,
       "group": "point_anomaly",
       "leaf": "point_anomaly",
-      "csv": "point_anomaly_07.csv",
+      "csv": "point_anomaly_996.csv",
       "expected": "stationary + point_anomaly",
       "predicted": "stationary + point_anomaly",
       "match": "FULL"
@@ -697,7 +616,7 @@
       "gid": 8,
       "group": "point_anomaly",
       "leaf": "point_anomaly",
-      "csv": "point_anomaly_01.csv",
+      "csv": "point_anomaly_944.csv",
       "expected": "stationary + point_anomaly",
       "predicted": "stationary + point_anomaly",
       "match": "FULL"
@@ -706,7 +625,7 @@
       "gid": 8,
       "group": "point_anomaly",
       "leaf": "point_anomaly",
-      "csv": "point_anomaly_04.csv",
+      "csv": "point_anomaly_387.csv",
       "expected": "stationary + point_anomaly",
       "predicted": "stationary + point_anomaly",
       "match": "FULL"
@@ -715,16 +634,7 @@
       "gid": 8,
       "group": "point_anomaly",
       "leaf": "point_anomaly",
-      "csv": "point_anomaly_05.csv",
-      "expected": "stationary + point_anomaly",
-      "predicted": "stationary + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 8,
-      "group": "point_anomaly",
-      "leaf": "point_anomaly",
-      "csv": "point_anomaly_00.csv",
+      "csv": "point_anomaly_080.csv",
       "expected": "stationary + point_anomaly",
       "predicted": "stationary + point_anomaly",
       "match": "FULL"
@@ -733,79 +643,25 @@
       "gid": 9,
       "group": "trend_shift",
       "leaf": "trend_shift",
-      "csv": "trend_shift_03.csv",
+      "csv": "trend_shift_565.csv",
       "expected": "stationary + trend_shift",
-      "predicted": "stationary",
+      "predicted": "deterministic_trend + trend_shift",
       "match": "PARTIAL"
     },
     {
       "gid": 9,
       "group": "trend_shift",
       "leaf": "trend_shift",
-      "csv": "trend_shift_00.csv",
+      "csv": "trend_shift_300.csv",
       "expected": "stationary + trend_shift",
-      "predicted": "stationary",
-      "match": "PARTIAL"
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "NONE"
     },
     {
       "gid": 9,
       "group": "trend_shift",
       "leaf": "trend_shift",
-      "csv": "trend_shift_05.csv",
-      "expected": "stationary + trend_shift",
-      "predicted": "stationary",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 9,
-      "group": "trend_shift",
-      "leaf": "trend_shift",
-      "csv": "trend_shift_09.csv",
-      "expected": "stationary + trend_shift",
-      "predicted": "stationary",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 9,
-      "group": "trend_shift",
-      "leaf": "trend_shift",
-      "csv": "trend_shift_02.csv",
-      "expected": "stationary + trend_shift",
-      "predicted": "stationary",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 9,
-      "group": "trend_shift",
-      "leaf": "trend_shift",
-      "csv": "trend_shift_08.csv",
-      "expected": "stationary + trend_shift",
-      "predicted": "stationary",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 9,
-      "group": "trend_shift",
-      "leaf": "trend_shift",
-      "csv": "trend_shift_01.csv",
-      "expected": "stationary + trend_shift",
-      "predicted": "stationary",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 9,
-      "group": "trend_shift",
-      "leaf": "trend_shift",
-      "csv": "trend_shift_07.csv",
-      "expected": "stationary + trend_shift",
-      "predicted": "stationary",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 9,
-      "group": "trend_shift",
-      "leaf": "trend_shift",
-      "csv": "trend_shift_06.csv",
+      "csv": "trend_shift_849.csv",
       "expected": "stationary + trend_shift",
       "predicted": "deterministic_trend + mean_shift + trend_shift",
       "match": "PARTIAL"
@@ -814,160 +670,160 @@
       "gid": 9,
       "group": "trend_shift",
       "leaf": "trend_shift",
-      "csv": "trend_shift_04.csv",
+      "csv": "trend_shift_643.csv",
       "expected": "stationary + trend_shift",
       "predicted": "deterministic_trend + trend_shift",
       "match": "PARTIAL"
     },
     {
-      "gid": 10,
-      "group": "variance_shift",
-      "leaf": "variance_shift",
-      "csv": "variance_shift_07.csv",
-      "expected": "stationary + variance_shift",
-      "predicted": "stationary + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 10,
-      "group": "variance_shift",
-      "leaf": "variance_shift",
-      "csv": "variance_shift_06.csv",
-      "expected": "stationary + variance_shift",
-      "predicted": "stationary + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 10,
-      "group": "variance_shift",
-      "leaf": "variance_shift",
-      "csv": "variance_shift_09.csv",
-      "expected": "stationary + variance_shift",
-      "predicted": "stationary + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 10,
-      "group": "variance_shift",
-      "leaf": "variance_shift",
-      "csv": "variance_shift_01.csv",
-      "expected": "stationary + variance_shift",
-      "predicted": "stationary + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 10,
-      "group": "variance_shift",
-      "leaf": "variance_shift",
-      "csv": "variance_shift_02.csv",
-      "expected": "stationary + variance_shift",
-      "predicted": "stationary + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 10,
-      "group": "variance_shift",
-      "leaf": "variance_shift",
-      "csv": "variance_shift_08.csv",
-      "expected": "stationary + variance_shift",
-      "predicted": "stationary + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 10,
-      "group": "variance_shift",
-      "leaf": "variance_shift",
-      "csv": "variance_shift_04.csv",
-      "expected": "stationary + variance_shift",
-      "predicted": "stationary + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 10,
-      "group": "variance_shift",
-      "leaf": "variance_shift",
-      "csv": "variance_shift_05.csv",
-      "expected": "stationary + variance_shift",
-      "predicted": "stationary + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 10,
-      "group": "variance_shift",
-      "leaf": "variance_shift",
-      "csv": "variance_shift_03.csv",
-      "expected": "stationary + variance_shift",
-      "predicted": "stationary + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 10,
-      "group": "variance_shift",
-      "leaf": "variance_shift",
-      "csv": "variance_shift_00.csv",
-      "expected": "stationary + variance_shift",
-      "predicted": "stationary + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 11,
-      "group": "cubic+collective",
-      "leaf": "cubic_collective_anomaly",
-      "csv": "cubic_collective_09.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 11,
-      "group": "cubic+collective",
-      "leaf": "cubic_collective_anomaly",
-      "csv": "cubic_collective_06.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 11,
-      "group": "cubic+collective",
-      "leaf": "cubic_collective_anomaly",
-      "csv": "cubic_collective_05.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 11,
-      "group": "cubic+collective",
-      "leaf": "cubic_collective_anomaly",
-      "csv": "cubic_collective_01.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 11,
-      "group": "cubic+collective",
-      "leaf": "cubic_collective_anomaly",
-      "csv": "cubic_collective_08.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 11,
-      "group": "cubic+collective",
-      "leaf": "cubic_collective_anomaly",
-      "csv": "cubic_collective_04.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "stochastic_trend + collective_anomaly",
+      "gid": 9,
+      "group": "trend_shift",
+      "leaf": "trend_shift",
+      "csv": "trend_shift_633.csv",
+      "expected": "stationary + trend_shift",
+      "predicted": "deterministic_trend + trend_shift",
       "match": "PARTIAL"
     },
     {
+      "gid": 9,
+      "group": "trend_shift",
+      "leaf": "trend_shift",
+      "csv": "trend_shift_906.csv",
+      "expected": "stationary + trend_shift",
+      "predicted": "deterministic_trend + trend_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 9,
+      "group": "trend_shift",
+      "leaf": "trend_shift",
+      "csv": "trend_shift_882.csv",
+      "expected": "stationary + trend_shift",
+      "predicted": "stationary + trend_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 9,
+      "group": "trend_shift",
+      "leaf": "trend_shift",
+      "csv": "trend_shift_370.csv",
+      "expected": "stationary + trend_shift",
+      "predicted": "deterministic_trend + mean_shift + trend_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 9,
+      "group": "trend_shift",
+      "leaf": "trend_shift",
+      "csv": "trend_shift_591.csv",
+      "expected": "stationary + trend_shift",
+      "predicted": "stationary + trend_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 9,
+      "group": "trend_shift",
+      "leaf": "trend_shift",
+      "csv": "trend_shift_196.csv",
+      "expected": "stationary + trend_shift",
+      "predicted": "stationary + trend_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 10,
+      "group": "variance_shift",
+      "leaf": "variance_shift",
+      "csv": "variance_shift_721.csv",
+      "expected": "stationary + variance_shift",
+      "predicted": "stationary + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 10,
+      "group": "variance_shift",
+      "leaf": "variance_shift",
+      "csv": "variance_shift_071.csv",
+      "expected": "stationary + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 10,
+      "group": "variance_shift",
+      "leaf": "variance_shift",
+      "csv": "variance_shift_046.csv",
+      "expected": "stationary + variance_shift",
+      "predicted": "volatility + variance_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 10,
+      "group": "variance_shift",
+      "leaf": "variance_shift",
+      "csv": "variance_shift_677.csv",
+      "expected": "stationary + variance_shift",
+      "predicted": "stationary + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 10,
+      "group": "variance_shift",
+      "leaf": "variance_shift",
+      "csv": "variance_shift_233.csv",
+      "expected": "stationary + variance_shift",
+      "predicted": "volatility + variance_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 10,
+      "group": "variance_shift",
+      "leaf": "variance_shift",
+      "csv": "variance_shift_791.csv",
+      "expected": "stationary + variance_shift",
+      "predicted": "stationary + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 10,
+      "group": "variance_shift",
+      "leaf": "variance_shift",
+      "csv": "variance_shift_296.csv",
+      "expected": "stationary + variance_shift",
+      "predicted": "volatility + variance_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 10,
+      "group": "variance_shift",
+      "leaf": "variance_shift",
+      "csv": "variance_shift_081.csv",
+      "expected": "stationary + variance_shift",
+      "predicted": "stationary",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 10,
+      "group": "variance_shift",
+      "leaf": "variance_shift",
+      "csv": "variance_shift_875.csv",
+      "expected": "stationary + variance_shift",
+      "predicted": "stationary + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 10,
+      "group": "variance_shift",
+      "leaf": "variance_shift",
+      "csv": "variance_shift_238.csv",
+      "expected": "stationary + variance_shift",
+      "predicted": "stationary + variance_shift",
+      "match": "FULL"
+    },
+    {
       "gid": 11,
       "group": "cubic+collective",
       "leaf": "cubic_collective_anomaly",
-      "csv": "cubic_collective_03.csv",
+      "csv": "cubic_collective_887.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -976,7 +832,7 @@
       "gid": 11,
       "group": "cubic+collective",
       "leaf": "cubic_collective_anomaly",
-      "csv": "cubic_collective_00.csv",
+      "csv": "cubic_collective_103.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -985,7 +841,7 @@
       "gid": 11,
       "group": "cubic+collective",
       "leaf": "cubic_collective_anomaly",
-      "csv": "cubic_collective_02.csv",
+      "csv": "cubic_collective_389.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -994,7 +850,61 @@
       "gid": 11,
       "group": "cubic+collective",
       "leaf": "cubic_collective_anomaly",
-      "csv": "cubic_collective_07.csv",
+      "csv": "cubic_collective_284.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 11,
+      "group": "cubic+collective",
+      "leaf": "cubic_collective_anomaly",
+      "csv": "cubic_collective_464.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 11,
+      "group": "cubic+collective",
+      "leaf": "cubic_collective_anomaly",
+      "csv": "cubic_collective_650.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 11,
+      "group": "cubic+collective",
+      "leaf": "cubic_collective_anomaly",
+      "csv": "cubic_collective_854.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 11,
+      "group": "cubic+collective",
+      "leaf": "cubic_collective_anomaly",
+      "csv": "cubic_collective_373.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 11,
+      "group": "cubic+collective",
+      "leaf": "cubic_collective_anomaly",
+      "csv": "cubic_collective_166.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 11,
+      "group": "cubic+collective",
+      "leaf": "cubic_collective_anomaly",
+      "csv": "cubic_collective_379.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -1003,7 +913,7 @@
       "gid": 12,
       "group": "cubic+mean_shift",
       "leaf": "Cubic + Mean Shift",
-      "csv": "cubic_mean_shift_02.csv",
+      "csv": "cubic_mean_shift_363.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "FULL"
@@ -1012,7 +922,7 @@
       "gid": 12,
       "group": "cubic+mean_shift",
       "leaf": "Cubic + Mean Shift",
-      "csv": "cubic_mean_shift_09.csv",
+      "csv": "cubic_mean_shift_214.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "FULL"
@@ -1021,7 +931,7 @@
       "gid": 12,
       "group": "cubic+mean_shift",
       "leaf": "Cubic + Mean Shift",
-      "csv": "cubic_mean_shift_06.csv",
+      "csv": "cubic_mean_shift_686.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "FULL"
@@ -1030,7 +940,7 @@
       "gid": 12,
       "group": "cubic+mean_shift",
       "leaf": "Cubic + Mean Shift",
-      "csv": "cubic_mean_shift_04.csv",
+      "csv": "cubic_mean_shift_273.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "FULL"
@@ -1039,7 +949,7 @@
       "gid": 12,
       "group": "cubic+mean_shift",
       "leaf": "Cubic + Mean Shift",
-      "csv": "cubic_mean_shift_00.csv",
+      "csv": "cubic_mean_shift_718.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "FULL"
@@ -1048,7 +958,7 @@
       "gid": 12,
       "group": "cubic+mean_shift",
       "leaf": "Cubic + Mean Shift",
-      "csv": "cubic_mean_shift_03.csv",
+      "csv": "cubic_mean_shift_959.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "FULL"
@@ -1057,7 +967,7 @@
       "gid": 12,
       "group": "cubic+mean_shift",
       "leaf": "Cubic + Mean Shift",
-      "csv": "cubic_mean_shift_07.csv",
+      "csv": "cubic_mean_shift_699.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "FULL"
@@ -1066,7 +976,7 @@
       "gid": 12,
       "group": "cubic+mean_shift",
       "leaf": "Cubic + Mean Shift",
-      "csv": "cubic_mean_shift_08.csv",
+      "csv": "cubic_mean_shift_663.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "FULL"
@@ -1075,7 +985,7 @@
       "gid": 12,
       "group": "cubic+mean_shift",
       "leaf": "Cubic + Mean Shift",
-      "csv": "cubic_mean_shift_01.csv",
+      "csv": "cubic_mean_shift_073.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "FULL"
@@ -1084,7 +994,7 @@
       "gid": 12,
       "group": "cubic+mean_shift",
       "leaf": "Cubic + Mean Shift",
-      "csv": "cubic_mean_shift_05.csv",
+      "csv": "cubic_mean_shift_623.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "FULL"
@@ -1093,7 +1003,7 @@
       "gid": 13,
       "group": "cubic+point_anomaly",
       "leaf": "Cubic + Point Anomaly",
-      "csv": "cubic_point_anomaly_08.csv",
+      "csv": "cubic_point_anomaly_650.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -1102,718 +1012,718 @@
       "gid": 13,
       "group": "cubic+point_anomaly",
       "leaf": "Cubic + Point Anomaly",
-      "csv": "cubic_point_anomaly_00.csv",
+      "csv": "cubic_point_anomaly_175.csv",
       "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 13,
+      "group": "cubic+point_anomaly",
+      "leaf": "Cubic + Point Anomaly",
+      "csv": "cubic_point_anomaly_546.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 13,
+      "group": "cubic+point_anomaly",
+      "leaf": "Cubic + Point Anomaly",
+      "csv": "cubic_point_anomaly_746.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 13,
+      "group": "cubic+point_anomaly",
+      "leaf": "Cubic + Point Anomaly",
+      "csv": "cubic_point_anomaly_250.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 13,
+      "group": "cubic+point_anomaly",
+      "leaf": "Cubic + Point Anomaly",
+      "csv": "cubic_point_anomaly_167.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 13,
+      "group": "cubic+point_anomaly",
+      "leaf": "Cubic + Point Anomaly",
+      "csv": "cubic_point_anomaly_473.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 13,
+      "group": "cubic+point_anomaly",
+      "leaf": "Cubic + Point Anomaly",
+      "csv": "cubic_point_anomaly_388.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 13,
+      "group": "cubic+point_anomaly",
+      "leaf": "Cubic + Point Anomaly",
+      "csv": "cubic_point_anomaly_276.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 13,
+      "group": "cubic+point_anomaly",
+      "leaf": "Cubic + Point Anomaly",
+      "csv": "cubic_point_anomaly_947.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 14,
+      "group": "cubic+variance_shift",
+      "leaf": "Cubic + Variance Shift",
+      "csv": "cubic_variance_shift_655.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 14,
+      "group": "cubic+variance_shift",
+      "leaf": "Cubic + Variance Shift",
+      "csv": "cubic_variance_shift_704.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 14,
+      "group": "cubic+variance_shift",
+      "leaf": "Cubic + Variance Shift",
+      "csv": "cubic_variance_shift_570.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 14,
+      "group": "cubic+variance_shift",
+      "leaf": "Cubic + Variance Shift",
+      "csv": "cubic_variance_shift_224.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 14,
+      "group": "cubic+variance_shift",
+      "leaf": "Cubic + Variance Shift",
+      "csv": "cubic_variance_shift_701.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 14,
+      "group": "cubic+variance_shift",
+      "leaf": "Cubic + Variance Shift",
+      "csv": "cubic_variance_shift_332.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 14,
+      "group": "cubic+variance_shift",
+      "leaf": "Cubic + Variance Shift",
+      "csv": "cubic_variance_shift_863.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 14,
+      "group": "cubic+variance_shift",
+      "leaf": "Cubic + Variance Shift",
+      "csv": "cubic_variance_shift_786.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 14,
+      "group": "cubic+variance_shift",
+      "leaf": "Cubic + Variance Shift",
+      "csv": "cubic_variance_shift_794.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 14,
+      "group": "cubic+variance_shift",
+      "leaf": "Cubic + Variance Shift",
+      "csv": "cubic_variance_shift_057.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 15,
+      "group": "damped+collective",
+      "leaf": "Damped + Collective Anomaly",
+      "csv": "damped_collective_234.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 15,
+      "group": "damped+collective",
+      "leaf": "Damped + Collective Anomaly",
+      "csv": "damped_collective_841.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 15,
+      "group": "damped+collective",
+      "leaf": "Damped + Collective Anomaly",
+      "csv": "damped_collective_032.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 15,
+      "group": "damped+collective",
+      "leaf": "Damped + Collective Anomaly",
+      "csv": "damped_collective_824.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 15,
+      "group": "damped+collective",
+      "leaf": "Damped + Collective Anomaly",
+      "csv": "damped_collective_323.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 15,
+      "group": "damped+collective",
+      "leaf": "Damped + Collective Anomaly",
+      "csv": "damped_collective_410.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 15,
+      "group": "damped+collective",
+      "leaf": "Damped + Collective Anomaly",
+      "csv": "damped_collective_274.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 15,
+      "group": "damped+collective",
+      "leaf": "Damped + Collective Anomaly",
+      "csv": "damped_collective_067.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 15,
+      "group": "damped+collective",
+      "leaf": "Damped + Collective Anomaly",
+      "csv": "damped_collective_216.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 15,
+      "group": "damped+collective",
+      "leaf": "Damped + Collective Anomaly",
+      "csv": "damped_collective_935.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 16,
+      "group": "damped+mean_shift",
+      "leaf": "Damped + Mean Shift",
+      "csv": "damped_mean_shift_965.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 16,
+      "group": "damped+mean_shift",
+      "leaf": "Damped + Mean Shift",
+      "csv": "damped_mean_shift_580.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 16,
+      "group": "damped+mean_shift",
+      "leaf": "Damped + Mean Shift",
+      "csv": "damped_mean_shift_897.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 16,
+      "group": "damped+mean_shift",
+      "leaf": "Damped + Mean Shift",
+      "csv": "damped_mean_shift_735.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 16,
+      "group": "damped+mean_shift",
+      "leaf": "Damped + Mean Shift",
+      "csv": "damped_mean_shift_322.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 16,
+      "group": "damped+mean_shift",
+      "leaf": "Damped + Mean Shift",
+      "csv": "damped_mean_shift_217.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 16,
+      "group": "damped+mean_shift",
+      "leaf": "Damped + Mean Shift",
+      "csv": "damped_mean_shift_671.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 16,
+      "group": "damped+mean_shift",
+      "leaf": "Damped + Mean Shift",
+      "csv": "damped_mean_shift_511.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 16,
+      "group": "damped+mean_shift",
+      "leaf": "Damped + Mean Shift",
+      "csv": "damped_mean_shift_405.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 16,
+      "group": "damped+mean_shift",
+      "leaf": "Damped + Mean Shift",
+      "csv": "damped_mean_shift_905.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 17,
+      "group": "damped+point_anomaly",
+      "leaf": "Damped + Point Anomaly",
+      "csv": "damped_point_anomaly_936.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 17,
+      "group": "damped+point_anomaly",
+      "leaf": "Damped + Point Anomaly",
+      "csv": "damped_point_anomaly_658.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 17,
+      "group": "damped+point_anomaly",
+      "leaf": "Damped + Point Anomaly",
+      "csv": "damped_point_anomaly_469.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 17,
+      "group": "damped+point_anomaly",
+      "leaf": "Damped + Point Anomaly",
+      "csv": "damped_point_anomaly_146.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 17,
+      "group": "damped+point_anomaly",
+      "leaf": "Damped + Point Anomaly",
+      "csv": "damped_point_anomaly_271.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 17,
+      "group": "damped+point_anomaly",
+      "leaf": "Damped + Point Anomaly",
+      "csv": "damped_point_anomaly_142.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 17,
+      "group": "damped+point_anomaly",
+      "leaf": "Damped + Point Anomaly",
+      "csv": "damped_point_anomaly_252.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 17,
+      "group": "damped+point_anomaly",
+      "leaf": "Damped + Point Anomaly",
+      "csv": "damped_point_anomaly_762.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 17,
+      "group": "damped+point_anomaly",
+      "leaf": "Damped + Point Anomaly",
+      "csv": "damped_point_anomaly_574.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 17,
+      "group": "damped+point_anomaly",
+      "leaf": "Damped + Point Anomaly",
+      "csv": "damped_point_anomaly_551.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 18,
+      "group": "damped+variance_shift",
+      "leaf": "Damped + Variance Shift",
+      "csv": "damped_variance_shift_269.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 18,
+      "group": "damped+variance_shift",
+      "leaf": "Damped + Variance Shift",
+      "csv": "damped_variance_shift_764.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 18,
+      "group": "damped+variance_shift",
+      "leaf": "Damped + Variance Shift",
+      "csv": "damped_variance_shift_598.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 18,
+      "group": "damped+variance_shift",
+      "leaf": "Damped + Variance Shift",
+      "csv": "damped_variance_shift_438.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 18,
+      "group": "damped+variance_shift",
+      "leaf": "Damped + Variance Shift",
+      "csv": "damped_variance_shift_919.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 18,
+      "group": "damped+variance_shift",
+      "leaf": "Damped + Variance Shift",
+      "csv": "damped_variance_shift_597.csv",
+      "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend",
       "match": "PARTIAL"
     },
     {
-      "gid": 13,
-      "group": "cubic+point_anomaly",
-      "leaf": "Cubic + Point Anomaly",
-      "csv": "cubic_point_anomaly_01.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 13,
-      "group": "cubic+point_anomaly",
-      "leaf": "Cubic + Point Anomaly",
-      "csv": "cubic_point_anomaly_05.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 13,
-      "group": "cubic+point_anomaly",
-      "leaf": "Cubic + Point Anomaly",
-      "csv": "cubic_point_anomaly_04.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 13,
-      "group": "cubic+point_anomaly",
-      "leaf": "Cubic + Point Anomaly",
-      "csv": "cubic_point_anomaly_02.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 13,
-      "group": "cubic+point_anomaly",
-      "leaf": "Cubic + Point Anomaly",
-      "csv": "cubic_point_anomaly_06.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 13,
-      "group": "cubic+point_anomaly",
-      "leaf": "Cubic + Point Anomaly",
-      "csv": "cubic_point_anomaly_09.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 13,
-      "group": "cubic+point_anomaly",
-      "leaf": "Cubic + Point Anomaly",
-      "csv": "cubic_point_anomaly_07.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 13,
-      "group": "cubic+point_anomaly",
-      "leaf": "Cubic + Point Anomaly",
-      "csv": "cubic_point_anomaly_03.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 14,
-      "group": "cubic+variance_shift",
-      "leaf": "Cubic + Variance Shift",
-      "csv": "cubic_variance_shift_02.csv",
+      "gid": 18,
+      "group": "damped+variance_shift",
+      "leaf": "Damped + Variance Shift",
+      "csv": "damped_variance_shift_408.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
     },
     {
-      "gid": 14,
-      "group": "cubic+variance_shift",
-      "leaf": "Cubic + Variance Shift",
-      "csv": "cubic_variance_shift_07.csv",
+      "gid": 18,
+      "group": "damped+variance_shift",
+      "leaf": "Damped + Variance Shift",
+      "csv": "damped_variance_shift_370.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
     },
     {
-      "gid": 14,
-      "group": "cubic+variance_shift",
-      "leaf": "Cubic + Variance Shift",
-      "csv": "cubic_variance_shift_00.csv",
+      "gid": 18,
+      "group": "damped+variance_shift",
+      "leaf": "Damped + Variance Shift",
+      "csv": "damped_variance_shift_224.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
     },
     {
-      "gid": 14,
-      "group": "cubic+variance_shift",
-      "leaf": "Cubic + Variance Shift",
-      "csv": "cubic_variance_shift_05.csv",
+      "gid": 18,
+      "group": "damped+variance_shift",
+      "leaf": "Damped + Variance Shift",
+      "csv": "damped_variance_shift_141.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
     },
     {
-      "gid": 14,
-      "group": "cubic+variance_shift",
-      "leaf": "Cubic + Variance Shift",
-      "csv": "cubic_variance_shift_06.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 14,
-      "group": "cubic+variance_shift",
-      "leaf": "Cubic + Variance Shift",
-      "csv": "cubic_variance_shift_09.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 14,
-      "group": "cubic+variance_shift",
-      "leaf": "Cubic + Variance Shift",
-      "csv": "cubic_variance_shift_01.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 14,
-      "group": "cubic+variance_shift",
-      "leaf": "Cubic + Variance Shift",
-      "csv": "cubic_variance_shift_04.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 14,
-      "group": "cubic+variance_shift",
-      "leaf": "Cubic + Variance Shift",
-      "csv": "cubic_variance_shift_08.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 14,
-      "group": "cubic+variance_shift",
-      "leaf": "Cubic + Variance Shift",
-      "csv": "cubic_variance_shift_03.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 15,
-      "group": "damped+collective",
-      "leaf": "Damped + Collective Anomaly",
-      "csv": "damped_collective_08.csv",
+      "gid": 19,
+      "group": "exp+collective",
+      "leaf": "exponential_collective_anomaly",
+      "csv": "exp_collective_521.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
     },
     {
-      "gid": 15,
-      "group": "damped+collective",
-      "leaf": "Damped + Collective Anomaly",
-      "csv": "damped_collective_03.csv",
+      "gid": 19,
+      "group": "exp+collective",
+      "leaf": "exponential_collective_anomaly",
+      "csv": "exp_collective_505.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
     },
     {
-      "gid": 15,
-      "group": "damped+collective",
-      "leaf": "Damped + Collective Anomaly",
-      "csv": "damped_collective_02.csv",
+      "gid": 19,
+      "group": "exp+collective",
+      "leaf": "exponential_collective_anomaly",
+      "csv": "exp_collective_093.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
     },
     {
-      "gid": 15,
-      "group": "damped+collective",
-      "leaf": "Damped + Collective Anomaly",
-      "csv": "damped_collective_07.csv",
+      "gid": 19,
+      "group": "exp+collective",
+      "leaf": "exponential_collective_anomaly",
+      "csv": "exp_collective_773.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
     },
     {
-      "gid": 15,
-      "group": "damped+collective",
-      "leaf": "Damped + Collective Anomaly",
-      "csv": "damped_collective_01.csv",
+      "gid": 19,
+      "group": "exp+collective",
+      "leaf": "exponential_collective_anomaly",
+      "csv": "exp_collective_048.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
     },
     {
-      "gid": 15,
-      "group": "damped+collective",
-      "leaf": "Damped + Collective Anomaly",
-      "csv": "damped_collective_04.csv",
+      "gid": 19,
+      "group": "exp+collective",
+      "leaf": "exponential_collective_anomaly",
+      "csv": "exp_collective_881.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
     },
     {
-      "gid": 15,
-      "group": "damped+collective",
-      "leaf": "Damped + Collective Anomaly",
-      "csv": "damped_collective_00.csv",
+      "gid": 19,
+      "group": "exp+collective",
+      "leaf": "exponential_collective_anomaly",
+      "csv": "exp_collective_112.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
     },
     {
-      "gid": 15,
-      "group": "damped+collective",
-      "leaf": "Damped + Collective Anomaly",
-      "csv": "damped_collective_06.csv",
+      "gid": 19,
+      "group": "exp+collective",
+      "leaf": "exponential_collective_anomaly",
+      "csv": "exp_collective_156.csv",
       "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "stochastic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 19,
+      "group": "exp+collective",
+      "leaf": "exponential_collective_anomaly",
+      "csv": "exp_collective_642.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 19,
+      "group": "exp+collective",
+      "leaf": "exponential_collective_anomaly",
+      "csv": "exp_collective_163.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 20,
+      "group": "exp+mean_shift",
+      "leaf": "Exponential + Mean Shift",
+      "csv": "exp_mean_shift_811.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 20,
+      "group": "exp+mean_shift",
+      "leaf": "Exponential + Mean Shift",
+      "csv": "exp_mean_shift_696.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 20,
+      "group": "exp+mean_shift",
+      "leaf": "Exponential + Mean Shift",
+      "csv": "exp_mean_shift_432.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 20,
+      "group": "exp+mean_shift",
+      "leaf": "Exponential + Mean Shift",
+      "csv": "exp_mean_shift_610.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 20,
+      "group": "exp+mean_shift",
+      "leaf": "Exponential + Mean Shift",
+      "csv": "exp_mean_shift_065.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 20,
+      "group": "exp+mean_shift",
+      "leaf": "Exponential + Mean Shift",
+      "csv": "exp_mean_shift_394.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 20,
+      "group": "exp+mean_shift",
+      "leaf": "Exponential + Mean Shift",
+      "csv": "exp_mean_shift_390.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 20,
+      "group": "exp+mean_shift",
+      "leaf": "Exponential + Mean Shift",
+      "csv": "exp_mean_shift_479.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 20,
+      "group": "exp+mean_shift",
+      "leaf": "Exponential + Mean Shift",
+      "csv": "exp_mean_shift_541.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 20,
+      "group": "exp+mean_shift",
+      "leaf": "Exponential + Mean Shift",
+      "csv": "exp_mean_shift_257.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "volatility + mean_shift",
       "match": "PARTIAL"
     },
     {
-      "gid": 15,
-      "group": "damped+collective",
-      "leaf": "Damped + Collective Anomaly",
-      "csv": "damped_collective_05.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 15,
-      "group": "damped+collective",
-      "leaf": "Damped + Collective Anomaly",
-      "csv": "damped_collective_09.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 16,
-      "group": "damped+mean_shift",
-      "leaf": "Damped + Mean Shift",
-      "csv": "damped_mean_shift_00.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 16,
-      "group": "damped+mean_shift",
-      "leaf": "Damped + Mean Shift",
-      "csv": "damped_mean_shift_01.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 16,
-      "group": "damped+mean_shift",
-      "leaf": "Damped + Mean Shift",
-      "csv": "damped_mean_shift_05.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 16,
-      "group": "damped+mean_shift",
-      "leaf": "Damped + Mean Shift",
-      "csv": "damped_mean_shift_06.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 16,
-      "group": "damped+mean_shift",
-      "leaf": "Damped + Mean Shift",
-      "csv": "damped_mean_shift_02.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 16,
-      "group": "damped+mean_shift",
-      "leaf": "Damped + Mean Shift",
-      "csv": "damped_mean_shift_08.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 16,
-      "group": "damped+mean_shift",
-      "leaf": "Damped + Mean Shift",
-      "csv": "damped_mean_shift_09.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 16,
-      "group": "damped+mean_shift",
-      "leaf": "Damped + Mean Shift",
-      "csv": "damped_mean_shift_03.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 16,
-      "group": "damped+mean_shift",
-      "leaf": "Damped + Mean Shift",
-      "csv": "damped_mean_shift_07.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 16,
-      "group": "damped+mean_shift",
-      "leaf": "Damped + Mean Shift",
-      "csv": "damped_mean_shift_04.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 17,
-      "group": "damped+point_anomaly",
-      "leaf": "Damped + Point Anomaly",
-      "csv": "damped_point_anomaly_07.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 17,
-      "group": "damped+point_anomaly",
-      "leaf": "Damped + Point Anomaly",
-      "csv": "damped_point_anomaly_01.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 17,
-      "group": "damped+point_anomaly",
-      "leaf": "Damped + Point Anomaly",
-      "csv": "damped_point_anomaly_02.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 17,
-      "group": "damped+point_anomaly",
-      "leaf": "Damped + Point Anomaly",
-      "csv": "damped_point_anomaly_08.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 17,
-      "group": "damped+point_anomaly",
-      "leaf": "Damped + Point Anomaly",
-      "csv": "damped_point_anomaly_05.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 17,
-      "group": "damped+point_anomaly",
-      "leaf": "Damped + Point Anomaly",
-      "csv": "damped_point_anomaly_03.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 17,
-      "group": "damped+point_anomaly",
-      "leaf": "Damped + Point Anomaly",
-      "csv": "damped_point_anomaly_06.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 17,
-      "group": "damped+point_anomaly",
-      "leaf": "Damped + Point Anomaly",
-      "csv": "damped_point_anomaly_04.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 17,
-      "group": "damped+point_anomaly",
-      "leaf": "Damped + Point Anomaly",
-      "csv": "damped_point_anomaly_09.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 17,
-      "group": "damped+point_anomaly",
-      "leaf": "Damped + Point Anomaly",
-      "csv": "damped_point_anomaly_00.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 18,
-      "group": "damped+variance_shift",
-      "leaf": "Damped + Variance Shift",
-      "csv": "damped_variance_shift_08.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 18,
-      "group": "damped+variance_shift",
-      "leaf": "Damped + Variance Shift",
-      "csv": "damped_variance_shift_03.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 18,
-      "group": "damped+variance_shift",
-      "leaf": "Damped + Variance Shift",
-      "csv": "damped_variance_shift_04.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 18,
-      "group": "damped+variance_shift",
-      "leaf": "Damped + Variance Shift",
-      "csv": "damped_variance_shift_09.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 18,
-      "group": "damped+variance_shift",
-      "leaf": "Damped + Variance Shift",
-      "csv": "damped_variance_shift_05.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 18,
-      "group": "damped+variance_shift",
-      "leaf": "Damped + Variance Shift",
-      "csv": "damped_variance_shift_02.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 18,
-      "group": "damped+variance_shift",
-      "leaf": "Damped + Variance Shift",
-      "csv": "damped_variance_shift_06.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 18,
-      "group": "damped+variance_shift",
-      "leaf": "Damped + Variance Shift",
-      "csv": "damped_variance_shift_07.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 18,
-      "group": "damped+variance_shift",
-      "leaf": "Damped + Variance Shift",
-      "csv": "damped_variance_shift_01.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 18,
-      "group": "damped+variance_shift",
-      "leaf": "Damped + Variance Shift",
-      "csv": "damped_variance_shift_00.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 19,
-      "group": "exp+collective",
-      "leaf": "exponential_collective_anomaly",
-      "csv": "exp_collective_03.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "stochastic_trend + collective_anomaly",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 19,
-      "group": "exp+collective",
-      "leaf": "exponential_collective_anomaly",
-      "csv": "exp_collective_09.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 19,
-      "group": "exp+collective",
-      "leaf": "exponential_collective_anomaly",
-      "csv": "exp_collective_01.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 19,
-      "group": "exp+collective",
-      "leaf": "exponential_collective_anomaly",
-      "csv": "exp_collective_02.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 19,
-      "group": "exp+collective",
-      "leaf": "exponential_collective_anomaly",
-      "csv": "exp_collective_00.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 19,
-      "group": "exp+collective",
-      "leaf": "exponential_collective_anomaly",
-      "csv": "exp_collective_04.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 19,
-      "group": "exp+collective",
-      "leaf": "exponential_collective_anomaly",
-      "csv": "exp_collective_07.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 19,
-      "group": "exp+collective",
-      "leaf": "exponential_collective_anomaly",
-      "csv": "exp_collective_06.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 19,
-      "group": "exp+collective",
-      "leaf": "exponential_collective_anomaly",
-      "csv": "exp_collective_05.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 19,
-      "group": "exp+collective",
-      "leaf": "exponential_collective_anomaly",
-      "csv": "exp_collective_08.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 20,
-      "group": "exp+mean_shift",
-      "leaf": "Exponential + Mean Shift",
-      "csv": "exp_mean_shift_01.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 20,
-      "group": "exp+mean_shift",
-      "leaf": "Exponential + Mean Shift",
-      "csv": "exp_mean_shift_00.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 20,
-      "group": "exp+mean_shift",
-      "leaf": "Exponential + Mean Shift",
-      "csv": "exp_mean_shift_03.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 20,
-      "group": "exp+mean_shift",
-      "leaf": "Exponential + Mean Shift",
-      "csv": "exp_mean_shift_08.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 20,
-      "group": "exp+mean_shift",
-      "leaf": "Exponential + Mean Shift",
-      "csv": "exp_mean_shift_06.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 20,
-      "group": "exp+mean_shift",
-      "leaf": "Exponential + Mean Shift",
-      "csv": "exp_mean_shift_02.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 20,
-      "group": "exp+mean_shift",
-      "leaf": "Exponential + Mean Shift",
-      "csv": "exp_mean_shift_05.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 20,
-      "group": "exp+mean_shift",
-      "leaf": "Exponential + Mean Shift",
-      "csv": "exp_mean_shift_04.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 20,
-      "group": "exp+mean_shift",
-      "leaf": "Exponential + Mean Shift",
-      "csv": "exp_mean_shift_07.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 20,
-      "group": "exp+mean_shift",
-      "leaf": "Exponential + Mean Shift",
-      "csv": "exp_mean_shift_09.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
       "gid": 21,
       "group": "exp+point_anomaly",
       "leaf": "exponential_point_anomaly",
-      "csv": "exp_point_anomaly_07.csv",
+      "csv": "exp_point_anomaly_994.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -1822,7 +1732,7 @@
       "gid": 21,
       "group": "exp+point_anomaly",
       "leaf": "exponential_point_anomaly",
-      "csv": "exp_point_anomaly_03.csv",
+      "csv": "exp_point_anomaly_566.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -1831,7 +1741,7 @@
       "gid": 21,
       "group": "exp+point_anomaly",
       "leaf": "exponential_point_anomaly",
-      "csv": "exp_point_anomaly_02.csv",
+      "csv": "exp_point_anomaly_881.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -1840,7 +1750,7 @@
       "gid": 21,
       "group": "exp+point_anomaly",
       "leaf": "exponential_point_anomaly",
-      "csv": "exp_point_anomaly_05.csv",
+      "csv": "exp_point_anomaly_965.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -1849,7 +1759,7 @@
       "gid": 21,
       "group": "exp+point_anomaly",
       "leaf": "exponential_point_anomaly",
-      "csv": "exp_point_anomaly_04.csv",
+      "csv": "exp_point_anomaly_011.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -1858,7 +1768,7 @@
       "gid": 21,
       "group": "exp+point_anomaly",
       "leaf": "exponential_point_anomaly",
-      "csv": "exp_point_anomaly_06.csv",
+      "csv": "exp_point_anomaly_696.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -1867,7 +1777,7 @@
       "gid": 21,
       "group": "exp+point_anomaly",
       "leaf": "exponential_point_anomaly",
-      "csv": "exp_point_anomaly_08.csv",
+      "csv": "exp_point_anomaly_738.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -1876,7 +1786,7 @@
       "gid": 21,
       "group": "exp+point_anomaly",
       "leaf": "exponential_point_anomaly",
-      "csv": "exp_point_anomaly_00.csv",
+      "csv": "exp_point_anomaly_117.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -1885,7 +1795,7 @@
       "gid": 21,
       "group": "exp+point_anomaly",
       "leaf": "exponential_point_anomaly",
-      "csv": "exp_point_anomaly_01.csv",
+      "csv": "exp_point_anomaly_698.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -1894,7 +1804,7 @@
       "gid": 21,
       "group": "exp+point_anomaly",
       "leaf": "exponential_point_anomaly",
-      "csv": "exp_point_anomaly_09.csv",
+      "csv": "exp_point_anomaly_906.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -1903,7 +1813,7 @@
       "gid": 22,
       "group": "exp+variance_shift",
       "leaf": "exponential_variance_shift",
-      "csv": "exp_variance_shift_03.csv",
+      "csv": "exp_variance_shift_549.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
@@ -1912,7 +1822,7 @@
       "gid": 22,
       "group": "exp+variance_shift",
       "leaf": "exponential_variance_shift",
-      "csv": "exp_variance_shift_01.csv",
+      "csv": "exp_variance_shift_768.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
@@ -1921,7 +1831,7 @@
       "gid": 22,
       "group": "exp+variance_shift",
       "leaf": "exponential_variance_shift",
-      "csv": "exp_variance_shift_08.csv",
+      "csv": "exp_variance_shift_273.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
@@ -1930,7 +1840,7 @@
       "gid": 22,
       "group": "exp+variance_shift",
       "leaf": "exponential_variance_shift",
-      "csv": "exp_variance_shift_05.csv",
+      "csv": "exp_variance_shift_787.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
@@ -1939,7 +1849,7 @@
       "gid": 22,
       "group": "exp+variance_shift",
       "leaf": "exponential_variance_shift",
-      "csv": "exp_variance_shift_09.csv",
+      "csv": "exp_variance_shift_656.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
@@ -1948,7 +1858,7 @@
       "gid": 22,
       "group": "exp+variance_shift",
       "leaf": "exponential_variance_shift",
-      "csv": "exp_variance_shift_02.csv",
+      "csv": "exp_variance_shift_348.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
@@ -1957,7 +1867,7 @@
       "gid": 22,
       "group": "exp+variance_shift",
       "leaf": "exponential_variance_shift",
-      "csv": "exp_variance_shift_06.csv",
+      "csv": "exp_variance_shift_114.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
@@ -1966,7 +1876,7 @@
       "gid": 22,
       "group": "exp+variance_shift",
       "leaf": "exponential_variance_shift",
-      "csv": "exp_variance_shift_07.csv",
+      "csv": "exp_variance_shift_300.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
@@ -1975,7 +1885,7 @@
       "gid": 22,
       "group": "exp+variance_shift",
       "leaf": "exponential_variance_shift",
-      "csv": "exp_variance_shift_04.csv",
+      "csv": "exp_variance_shift_445.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
@@ -1984,7 +1894,7 @@
       "gid": 22,
       "group": "exp+variance_shift",
       "leaf": "exponential_variance_shift",
-      "csv": "exp_variance_shift_00.csv",
+      "csv": "exp_variance_shift_161.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
@@ -1993,7 +1903,7 @@
       "gid": 23,
       "group": "linear+collective",
       "leaf": "Linear + Collective Anomaly",
-      "csv": "linear_collective_01.csv",
+      "csv": "linear_collective_464.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -2002,7 +1912,7 @@
       "gid": 23,
       "group": "linear+collective",
       "leaf": "Linear + Collective Anomaly",
-      "csv": "linear_collective_00.csv",
+      "csv": "linear_collective_003.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -2011,7 +1921,7 @@
       "gid": 23,
       "group": "linear+collective",
       "leaf": "Linear + Collective Anomaly",
-      "csv": "linear_collective_06.csv",
+      "csv": "linear_collective_976.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -2020,7 +1930,7 @@
       "gid": 23,
       "group": "linear+collective",
       "leaf": "Linear + Collective Anomaly",
-      "csv": "linear_collective_05.csv",
+      "csv": "linear_collective_739.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -2029,7 +1939,7 @@
       "gid": 23,
       "group": "linear+collective",
       "leaf": "Linear + Collective Anomaly",
-      "csv": "linear_collective_02.csv",
+      "csv": "linear_collective_896.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -2038,7 +1948,7 @@
       "gid": 23,
       "group": "linear+collective",
       "leaf": "Linear + Collective Anomaly",
-      "csv": "linear_collective_08.csv",
+      "csv": "linear_collective_736.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -2047,7 +1957,7 @@
       "gid": 23,
       "group": "linear+collective",
       "leaf": "Linear + Collective Anomaly",
-      "csv": "linear_collective_09.csv",
+      "csv": "linear_collective_269.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -2056,7 +1966,7 @@
       "gid": 23,
       "group": "linear+collective",
       "leaf": "Linear + Collective Anomaly",
-      "csv": "linear_collective_04.csv",
+      "csv": "linear_collective_995.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -2065,7 +1975,7 @@
       "gid": 23,
       "group": "linear+collective",
       "leaf": "Linear + Collective Anomaly",
-      "csv": "linear_collective_07.csv",
+      "csv": "linear_collective_512.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -2074,7 +1984,7 @@
       "gid": 23,
       "group": "linear+collective",
       "leaf": "Linear + Collective Anomaly",
-      "csv": "linear_collective_03.csv",
+      "csv": "linear_collective_780.csv",
       "expected": "deterministic_trend + collective_anomaly",
       "predicted": "deterministic_trend + collective_anomaly",
       "match": "FULL"
@@ -2083,61 +1993,7 @@
       "gid": 24,
       "group": "linear+mean_shift",
       "leaf": "Linear + Mean Shift",
-      "csv": "linear_mean_shift_02.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 24,
-      "group": "linear+mean_shift",
-      "leaf": "Linear + Mean Shift",
-      "csv": "linear_mean_shift_06.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 24,
-      "group": "linear+mean_shift",
-      "leaf": "Linear + Mean Shift",
-      "csv": "linear_mean_shift_09.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 24,
-      "group": "linear+mean_shift",
-      "leaf": "Linear + Mean Shift",
-      "csv": "linear_mean_shift_07.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 24,
-      "group": "linear+mean_shift",
-      "leaf": "Linear + Mean Shift",
-      "csv": "linear_mean_shift_03.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 24,
-      "group": "linear+mean_shift",
-      "leaf": "Linear + Mean Shift",
-      "csv": "linear_mean_shift_01.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 24,
-      "group": "linear+mean_shift",
-      "leaf": "Linear + Mean Shift",
-      "csv": "linear_mean_shift_00.csv",
+      "csv": "linear_mean_shift_182.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend",
       "match": "PARTIAL"
@@ -2146,7 +2002,16 @@
       "gid": 24,
       "group": "linear+mean_shift",
       "leaf": "Linear + Mean Shift",
-      "csv": "linear_mean_shift_04.csv",
+      "csv": "linear_mean_shift_519.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 24,
+      "group": "linear+mean_shift",
+      "leaf": "Linear + Mean Shift",
+      "csv": "linear_mean_shift_934.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "FULL"
@@ -2155,7 +2020,7 @@
       "gid": 24,
       "group": "linear+mean_shift",
       "leaf": "Linear + Mean Shift",
-      "csv": "linear_mean_shift_05.csv",
+      "csv": "linear_mean_shift_108.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "FULL"
@@ -2164,7 +2029,52 @@
       "gid": 24,
       "group": "linear+mean_shift",
       "leaf": "Linear + Mean Shift",
-      "csv": "linear_mean_shift_08.csv",
+      "csv": "linear_mean_shift_891.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 24,
+      "group": "linear+mean_shift",
+      "leaf": "Linear + Mean Shift",
+      "csv": "linear_mean_shift_640.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 24,
+      "group": "linear+mean_shift",
+      "leaf": "Linear + Mean Shift",
+      "csv": "linear_mean_shift_305.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 24,
+      "group": "linear+mean_shift",
+      "leaf": "Linear + Mean Shift",
+      "csv": "linear_mean_shift_861.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 24,
+      "group": "linear+mean_shift",
+      "leaf": "Linear + Mean Shift",
+      "csv": "linear_mean_shift_654.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 24,
+      "group": "linear+mean_shift",
+      "leaf": "Linear + Mean Shift",
+      "csv": "linear_mean_shift_623.csv",
       "expected": "deterministic_trend + mean_shift",
       "predicted": "deterministic_trend + mean_shift",
       "match": "FULL"
@@ -2173,7 +2083,7 @@
       "gid": 25,
       "group": "linear+point_anomaly",
       "leaf": "Linear + Point Anomaly",
-      "csv": "linear_point_anomaly_08.csv",
+      "csv": "linear_point_anomaly_203.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -2182,7 +2092,7 @@
       "gid": 25,
       "group": "linear+point_anomaly",
       "leaf": "Linear + Point Anomaly",
-      "csv": "linear_point_anomaly_00.csv",
+      "csv": "linear_point_anomaly_156.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -2191,7 +2101,7 @@
       "gid": 25,
       "group": "linear+point_anomaly",
       "leaf": "Linear + Point Anomaly",
-      "csv": "linear_point_anomaly_01.csv",
+      "csv": "linear_point_anomaly_382.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -2200,7 +2110,7 @@
       "gid": 25,
       "group": "linear+point_anomaly",
       "leaf": "Linear + Point Anomaly",
-      "csv": "linear_point_anomaly_06.csv",
+      "csv": "linear_point_anomaly_780.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -2209,7 +2119,7 @@
       "gid": 25,
       "group": "linear+point_anomaly",
       "leaf": "Linear + Point Anomaly",
-      "csv": "linear_point_anomaly_07.csv",
+      "csv": "linear_point_anomaly_165.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -2218,7 +2128,7 @@
       "gid": 25,
       "group": "linear+point_anomaly",
       "leaf": "Linear + Point Anomaly",
-      "csv": "linear_point_anomaly_05.csv",
+      "csv": "linear_point_anomaly_552.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -2227,7 +2137,7 @@
       "gid": 25,
       "group": "linear+point_anomaly",
       "leaf": "Linear + Point Anomaly",
-      "csv": "linear_point_anomaly_03.csv",
+      "csv": "linear_point_anomaly_976.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -2236,7 +2146,7 @@
       "gid": 25,
       "group": "linear+point_anomaly",
       "leaf": "Linear + Point Anomaly",
-      "csv": "linear_point_anomaly_04.csv",
+      "csv": "linear_point_anomaly_797.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -2245,7 +2155,7 @@
       "gid": 25,
       "group": "linear+point_anomaly",
       "leaf": "Linear + Point Anomaly",
-      "csv": "linear_point_anomaly_02.csv",
+      "csv": "linear_point_anomaly_944.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -2254,7 +2164,7 @@
       "gid": 25,
       "group": "linear+point_anomaly",
       "leaf": "Linear + Point Anomaly",
-      "csv": "linear_point_anomaly_09.csv",
+      "csv": "linear_point_anomaly_543.csv",
       "expected": "deterministic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "FULL"
@@ -2263,16 +2173,7 @@
       "gid": 26,
       "group": "linear+trend_shift",
       "leaf": "Linear + Trend Shift",
-      "csv": "linear_trend_shift_06.csv",
-      "expected": "deterministic_trend + trend_shift",
-      "predicted": "stationary + mean_shift",
-      "match": "NONE"
-    },
-    {
-      "gid": 26,
-      "group": "linear+trend_shift",
-      "leaf": "Linear + Trend Shift",
-      "csv": "linear_trend_shift_00.csv",
+      "csv": "linear_trend_shift_940.csv",
       "expected": "deterministic_trend + trend_shift",
       "predicted": "deterministic_trend + mean_shift + trend_shift",
       "match": "FULL"
@@ -2281,457 +2182,502 @@
       "gid": 26,
       "group": "linear+trend_shift",
       "leaf": "Linear + Trend Shift",
-      "csv": "linear_trend_shift_02.csv",
+      "csv": "linear_trend_shift_000.csv",
       "expected": "deterministic_trend + trend_shift",
-      "predicted": "deterministic_trend + trend_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 26,
-      "group": "linear+trend_shift",
-      "leaf": "Linear + Trend Shift",
-      "csv": "linear_trend_shift_03.csv",
-      "expected": "deterministic_trend + trend_shift",
-      "predicted": "deterministic_trend + trend_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 26,
-      "group": "linear+trend_shift",
-      "leaf": "Linear + Trend Shift",
-      "csv": "linear_trend_shift_08.csv",
-      "expected": "deterministic_trend + trend_shift",
-      "predicted": "deterministic_trend + trend_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 26,
-      "group": "linear+trend_shift",
-      "leaf": "Linear + Trend Shift",
-      "csv": "linear_trend_shift_09.csv",
-      "expected": "deterministic_trend + trend_shift",
-      "predicted": "stationary",
+      "predicted": "volatility",
       "match": "NONE"
     },
     {
       "gid": 26,
       "group": "linear+trend_shift",
       "leaf": "Linear + Trend Shift",
-      "csv": "linear_trend_shift_07.csv",
+      "csv": "linear_trend_shift_613.csv",
       "expected": "deterministic_trend + trend_shift",
-      "predicted": "stationary",
-      "match": "NONE"
+      "predicted": "stationary + trend_shift",
+      "match": "PARTIAL"
     },
     {
       "gid": 26,
       "group": "linear+trend_shift",
       "leaf": "Linear + Trend Shift",
-      "csv": "linear_trend_shift_01.csv",
+      "csv": "linear_trend_shift_331.csv",
       "expected": "deterministic_trend + trend_shift",
+      "predicted": "stationary + trend_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 26,
+      "group": "linear+trend_shift",
+      "leaf": "Linear + Trend Shift",
+      "csv": "linear_trend_shift_500.csv",
+      "expected": "deterministic_trend + trend_shift",
+      "predicted": "deterministic_trend + mean_shift + trend_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 26,
+      "group": "linear+trend_shift",
+      "leaf": "Linear + Trend Shift",
+      "csv": "linear_trend_shift_019.csv",
+      "expected": "deterministic_trend + trend_shift",
+      "predicted": "deterministic_trend + trend_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 26,
+      "group": "linear+trend_shift",
+      "leaf": "Linear + Trend Shift",
+      "csv": "linear_trend_shift_114.csv",
+      "expected": "deterministic_trend + trend_shift",
+      "predicted": "deterministic_trend + trend_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 26,
+      "group": "linear+trend_shift",
+      "leaf": "Linear + Trend Shift",
+      "csv": "linear_trend_shift_951.csv",
+      "expected": "deterministic_trend + trend_shift",
+      "predicted": "stationary + trend_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 26,
+      "group": "linear+trend_shift",
+      "leaf": "Linear + Trend Shift",
+      "csv": "linear_trend_shift_371.csv",
+      "expected": "deterministic_trend + trend_shift",
+      "predicted": "deterministic_trend + trend_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 26,
+      "group": "linear+trend_shift",
+      "leaf": "Linear + Trend Shift",
+      "csv": "linear_trend_shift_899.csv",
+      "expected": "deterministic_trend + trend_shift",
+      "predicted": "volatility + trend_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 27,
+      "group": "linear+variance_shift",
+      "leaf": "Linear + Variance Shift",
+      "csv": "linear_variance_shift_851.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 27,
+      "group": "linear+variance_shift",
+      "leaf": "Linear + Variance Shift",
+      "csv": "linear_variance_shift_826.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 27,
+      "group": "linear+variance_shift",
+      "leaf": "Linear + Variance Shift",
+      "csv": "linear_variance_shift_314.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 27,
+      "group": "linear+variance_shift",
+      "leaf": "Linear + Variance Shift",
+      "csv": "linear_variance_shift_245.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 27,
+      "group": "linear+variance_shift",
+      "leaf": "Linear + Variance Shift",
+      "csv": "linear_variance_shift_059.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 27,
+      "group": "linear+variance_shift",
+      "leaf": "Linear + Variance Shift",
+      "csv": "linear_variance_shift_246.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 27,
+      "group": "linear+variance_shift",
+      "leaf": "Linear + Variance Shift",
+      "csv": "linear_variance_shift_899.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 27,
+      "group": "linear+variance_shift",
+      "leaf": "Linear + Variance Shift",
+      "csv": "linear_variance_shift_580.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 27,
+      "group": "linear+variance_shift",
+      "leaf": "Linear + Variance Shift",
+      "csv": "linear_variance_shift_969.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 27,
+      "group": "linear+variance_shift",
+      "leaf": "Linear + Variance Shift",
+      "csv": "linear_variance_shift_080.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 28,
+      "group": "quad+collective",
+      "leaf": "Quadratic + Collective anomaly",
+      "csv": "quad_collective_087.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 28,
+      "group": "quad+collective",
+      "leaf": "Quadratic + Collective anomaly",
+      "csv": "quad_collective_749.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 28,
+      "group": "quad+collective",
+      "leaf": "Quadratic + Collective anomaly",
+      "csv": "quad_collective_497.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 28,
+      "group": "quad+collective",
+      "leaf": "Quadratic + Collective anomaly",
+      "csv": "quad_collective_835.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 28,
+      "group": "quad+collective",
+      "leaf": "Quadratic + Collective anomaly",
+      "csv": "quad_collective_070.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 28,
+      "group": "quad+collective",
+      "leaf": "Quadratic + Collective anomaly",
+      "csv": "quad_collective_778.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 28,
+      "group": "quad+collective",
+      "leaf": "Quadratic + Collective anomaly",
+      "csv": "quad_collective_545.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 28,
+      "group": "quad+collective",
+      "leaf": "Quadratic + Collective anomaly",
+      "csv": "quad_collective_784.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 28,
+      "group": "quad+collective",
+      "leaf": "Quadratic + Collective anomaly",
+      "csv": "quad_collective_128.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 28,
+      "group": "quad+collective",
+      "leaf": "Quadratic + Collective anomaly",
+      "csv": "quad_collective_131.csv",
+      "expected": "deterministic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 29,
+      "group": "quad+mean_shift",
+      "leaf": "Quadratic + Mean Shift",
+      "csv": "quad_mean_shift_675.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 29,
+      "group": "quad+mean_shift",
+      "leaf": "Quadratic + Mean Shift",
+      "csv": "quad_mean_shift_486.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 29,
+      "group": "quad+mean_shift",
+      "leaf": "Quadratic + Mean Shift",
+      "csv": "quad_mean_shift_969.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 29,
+      "group": "quad+mean_shift",
+      "leaf": "Quadratic + Mean Shift",
+      "csv": "quad_mean_shift_562.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 29,
+      "group": "quad+mean_shift",
+      "leaf": "Quadratic + Mean Shift",
+      "csv": "quad_mean_shift_169.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 29,
+      "group": "quad+mean_shift",
+      "leaf": "Quadratic + Mean Shift",
+      "csv": "quad_mean_shift_271.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 29,
+      "group": "quad+mean_shift",
+      "leaf": "Quadratic + Mean Shift",
+      "csv": "quad_mean_shift_540.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift + trend_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 29,
+      "group": "quad+mean_shift",
+      "leaf": "Quadratic + Mean Shift",
+      "csv": "quad_mean_shift_893.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 29,
+      "group": "quad+mean_shift",
+      "leaf": "Quadratic + Mean Shift",
+      "csv": "quad_mean_shift_621.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + trend_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 29,
+      "group": "quad+mean_shift",
+      "leaf": "Quadratic + Mean Shift",
+      "csv": "quad_mean_shift_433.csv",
+      "expected": "deterministic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 30,
+      "group": "quad+point_anomaly",
+      "leaf": "Quadratic + Point Anomaly",
+      "csv": "quad_point_anomaly_987.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 30,
+      "group": "quad+point_anomaly",
+      "leaf": "Quadratic + Point Anomaly",
+      "csv": "quad_point_anomaly_216.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 30,
+      "group": "quad+point_anomaly",
+      "leaf": "Quadratic + Point Anomaly",
+      "csv": "quad_point_anomaly_951.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 30,
+      "group": "quad+point_anomaly",
+      "leaf": "Quadratic + Point Anomaly",
+      "csv": "quad_point_anomaly_552.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 30,
+      "group": "quad+point_anomaly",
+      "leaf": "Quadratic + Point Anomaly",
+      "csv": "quad_point_anomaly_773.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 30,
+      "group": "quad+point_anomaly",
+      "leaf": "Quadratic + Point Anomaly",
+      "csv": "quad_point_anomaly_747.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 30,
+      "group": "quad+point_anomaly",
+      "leaf": "Quadratic + Point Anomaly",
+      "csv": "quad_point_anomaly_706.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 30,
+      "group": "quad+point_anomaly",
+      "leaf": "Quadratic + Point Anomaly",
+      "csv": "quad_point_anomaly_205.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 30,
+      "group": "quad+point_anomaly",
+      "leaf": "Quadratic + Point Anomaly",
+      "csv": "quad_point_anomaly_730.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 30,
+      "group": "quad+point_anomaly",
+      "leaf": "Quadratic + Point Anomaly",
+      "csv": "quad_point_anomaly_319.csv",
+      "expected": "deterministic_trend + point_anomaly",
+      "predicted": "deterministic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 31,
+      "group": "quad+variance_shift",
+      "leaf": "Quadratic + Variance Shift",
+      "csv": "quad_variance_shift_408.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 31,
+      "group": "quad+variance_shift",
+      "leaf": "Quadratic + Variance Shift",
+      "csv": "quad_variance_shift_687.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 31,
+      "group": "quad+variance_shift",
+      "leaf": "Quadratic + Variance Shift",
+      "csv": "quad_variance_shift_665.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 31,
+      "group": "quad+variance_shift",
+      "leaf": "Quadratic + Variance Shift",
+      "csv": "quad_variance_shift_382.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 31,
+      "group": "quad+variance_shift",
+      "leaf": "Quadratic + Variance Shift",
+      "csv": "quad_variance_shift_448.csv",
+      "expected": "deterministic_trend + variance_shift",
+      "predicted": "deterministic_trend + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 31,
+      "group": "quad+variance_shift",
+      "leaf": "Quadratic + Variance Shift",
+      "csv": "quad_variance_shift_921.csv",
+      "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + trend_shift + variance_shift",
       "match": "FULL"
     },
     {
-      "gid": 26,
-      "group": "linear+trend_shift",
-      "leaf": "Linear + Trend Shift",
-      "csv": "linear_trend_shift_04.csv",
-      "expected": "deterministic_trend + trend_shift",
-      "predicted": "stationary",
-      "match": "NONE"
-    },
-    {
-      "gid": 26,
-      "group": "linear+trend_shift",
-      "leaf": "Linear + Trend Shift",
-      "csv": "linear_trend_shift_05.csv",
-      "expected": "deterministic_trend + trend_shift",
-      "predicted": "deterministic_trend + trend_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 27,
-      "group": "linear+variance_shift",
-      "leaf": "Linear + Variance Shift",
-      "csv": "linear_variance_shift_08.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 27,
-      "group": "linear+variance_shift",
-      "leaf": "Linear + Variance Shift",
-      "csv": "linear_variance_shift_07.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 27,
-      "group": "linear+variance_shift",
-      "leaf": "Linear + Variance Shift",
-      "csv": "linear_variance_shift_02.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 27,
-      "group": "linear+variance_shift",
-      "leaf": "Linear + Variance Shift",
-      "csv": "linear_variance_shift_01.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 27,
-      "group": "linear+variance_shift",
-      "leaf": "Linear + Variance Shift",
-      "csv": "linear_variance_shift_09.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 27,
-      "group": "linear+variance_shift",
-      "leaf": "Linear + Variance Shift",
-      "csv": "linear_variance_shift_06.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 27,
-      "group": "linear+variance_shift",
-      "leaf": "Linear + Variance Shift",
-      "csv": "linear_variance_shift_00.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 27,
-      "group": "linear+variance_shift",
-      "leaf": "Linear + Variance Shift",
-      "csv": "linear_variance_shift_05.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 27,
-      "group": "linear+variance_shift",
-      "leaf": "Linear + Variance Shift",
-      "csv": "linear_variance_shift_03.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 27,
-      "group": "linear+variance_shift",
-      "leaf": "Linear + Variance Shift",
-      "csv": "linear_variance_shift_04.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 28,
-      "group": "quad+collective",
-      "leaf": "Quadratic + Collective anomaly",
-      "csv": "quad_collective_00.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 28,
-      "group": "quad+collective",
-      "leaf": "Quadratic + Collective anomaly",
-      "csv": "quad_collective_09.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 28,
-      "group": "quad+collective",
-      "leaf": "Quadratic + Collective anomaly",
-      "csv": "quad_collective_07.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 28,
-      "group": "quad+collective",
-      "leaf": "Quadratic + Collective anomaly",
-      "csv": "quad_collective_04.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 28,
-      "group": "quad+collective",
-      "leaf": "Quadratic + Collective anomaly",
-      "csv": "quad_collective_06.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 28,
-      "group": "quad+collective",
-      "leaf": "Quadratic + Collective anomaly",
-      "csv": "quad_collective_01.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 28,
-      "group": "quad+collective",
-      "leaf": "Quadratic + Collective anomaly",
-      "csv": "quad_collective_08.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 28,
-      "group": "quad+collective",
-      "leaf": "Quadratic + Collective anomaly",
-      "csv": "quad_collective_02.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly + contextual_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 28,
-      "group": "quad+collective",
-      "leaf": "Quadratic + Collective anomaly",
-      "csv": "quad_collective_03.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 28,
-      "group": "quad+collective",
-      "leaf": "Quadratic + Collective anomaly",
-      "csv": "quad_collective_05.csv",
-      "expected": "deterministic_trend + collective_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 29,
-      "group": "quad+mean_shift",
-      "leaf": "Quadratic + Mean Shift",
-      "csv": "quad_mean_shift_01.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 29,
-      "group": "quad+mean_shift",
-      "leaf": "Quadratic + Mean Shift",
-      "csv": "quad_mean_shift_09.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 29,
-      "group": "quad+mean_shift",
-      "leaf": "Quadratic + Mean Shift",
-      "csv": "quad_mean_shift_03.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 29,
-      "group": "quad+mean_shift",
-      "leaf": "Quadratic + Mean Shift",
-      "csv": "quad_mean_shift_07.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 29,
-      "group": "quad+mean_shift",
-      "leaf": "Quadratic + Mean Shift",
-      "csv": "quad_mean_shift_00.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 29,
-      "group": "quad+mean_shift",
-      "leaf": "Quadratic + Mean Shift",
-      "csv": "quad_mean_shift_04.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 29,
-      "group": "quad+mean_shift",
-      "leaf": "Quadratic + Mean Shift",
-      "csv": "quad_mean_shift_08.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 29,
-      "group": "quad+mean_shift",
-      "leaf": "Quadratic + Mean Shift",
-      "csv": "quad_mean_shift_02.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 29,
-      "group": "quad+mean_shift",
-      "leaf": "Quadratic + Mean Shift",
-      "csv": "quad_mean_shift_05.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 29,
-      "group": "quad+mean_shift",
-      "leaf": "Quadratic + Mean Shift",
-      "csv": "quad_mean_shift_06.csv",
-      "expected": "deterministic_trend + mean_shift",
-      "predicted": "deterministic_trend",
-      "match": "PARTIAL"
-    },
-    {
-      "gid": 30,
-      "group": "quad+point_anomaly",
-      "leaf": "Quadratic + Point Anomaly",
-      "csv": "quad_point_anomaly_06.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 30,
-      "group": "quad+point_anomaly",
-      "leaf": "Quadratic + Point Anomaly",
-      "csv": "quad_point_anomaly_08.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 30,
-      "group": "quad+point_anomaly",
-      "leaf": "Quadratic + Point Anomaly",
-      "csv": "quad_point_anomaly_05.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 30,
-      "group": "quad+point_anomaly",
-      "leaf": "Quadratic + Point Anomaly",
-      "csv": "quad_point_anomaly_02.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 30,
-      "group": "quad+point_anomaly",
-      "leaf": "Quadratic + Point Anomaly",
-      "csv": "quad_point_anomaly_01.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 30,
-      "group": "quad+point_anomaly",
-      "leaf": "Quadratic + Point Anomaly",
-      "csv": "quad_point_anomaly_09.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 30,
-      "group": "quad+point_anomaly",
-      "leaf": "Quadratic + Point Anomaly",
-      "csv": "quad_point_anomaly_07.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 30,
-      "group": "quad+point_anomaly",
-      "leaf": "Quadratic + Point Anomaly",
-      "csv": "quad_point_anomaly_03.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 30,
-      "group": "quad+point_anomaly",
-      "leaf": "Quadratic + Point Anomaly",
-      "csv": "quad_point_anomaly_04.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 30,
-      "group": "quad+point_anomaly",
-      "leaf": "Quadratic + Point Anomaly",
-      "csv": "quad_point_anomaly_00.csv",
-      "expected": "deterministic_trend + point_anomaly",
-      "predicted": "deterministic_trend + collective_anomaly + point_anomaly",
-      "match": "FULL"
-    },
-    {
       "gid": 31,
       "group": "quad+variance_shift",
       "leaf": "Quadratic + Variance Shift",
-      "csv": "quad_variance_shift_04.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 31,
-      "group": "quad+variance_shift",
-      "leaf": "Quadratic + Variance Shift",
-      "csv": "quad_variance_shift_07.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 31,
-      "group": "quad+variance_shift",
-      "leaf": "Quadratic + Variance Shift",
-      "csv": "quad_variance_shift_05.csv",
+      "csv": "quad_variance_shift_529.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "stationary + variance_shift",
       "match": "PARTIAL"
@@ -2740,7 +2686,7 @@
       "gid": 31,
       "group": "quad+variance_shift",
       "leaf": "Quadratic + Variance Shift",
-      "csv": "quad_variance_shift_06.csv",
+      "csv": "quad_variance_shift_462.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
@@ -2749,7 +2695,7 @@
       "gid": 31,
       "group": "quad+variance_shift",
       "leaf": "Quadratic + Variance Shift",
-      "csv": "quad_variance_shift_00.csv",
+      "csv": "quad_variance_shift_123.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
@@ -2758,133 +2704,97 @@
       "gid": 31,
       "group": "quad+variance_shift",
       "leaf": "Quadratic + Variance Shift",
-      "csv": "quad_variance_shift_08.csv",
+      "csv": "quad_variance_shift_253.csv",
       "expected": "deterministic_trend + variance_shift",
       "predicted": "deterministic_trend + variance_shift",
       "match": "FULL"
     },
     {
-      "gid": 31,
-      "group": "quad+variance_shift",
-      "leaf": "Quadratic + Variance Shift",
-      "csv": "quad_variance_shift_03.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
+      "gid": 32,
+      "group": "stoch+collective",
+      "leaf": "Stochastic Trend + Collective Anomaly",
+      "csv": "stoch_collective_230.csv",
+      "expected": "stochastic_trend + collective_anomaly",
+      "predicted": "stochastic_trend + collective_anomaly",
       "match": "FULL"
     },
     {
-      "gid": 31,
-      "group": "quad+variance_shift",
-      "leaf": "Quadratic + Variance Shift",
-      "csv": "quad_variance_shift_02.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "volatility + variance_shift",
+      "gid": 32,
+      "group": "stoch+collective",
+      "leaf": "Stochastic Trend + Collective Anomaly",
+      "csv": "stoch_collective_065.csv",
+      "expected": "stochastic_trend + collective_anomaly",
+      "predicted": "stochastic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 32,
+      "group": "stoch+collective",
+      "leaf": "Stochastic Trend + Collective Anomaly",
+      "csv": "stoch_collective_346.csv",
+      "expected": "stochastic_trend + collective_anomaly",
+      "predicted": "stochastic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 32,
+      "group": "stoch+collective",
+      "leaf": "Stochastic Trend + Collective Anomaly",
+      "csv": "stoch_collective_021.csv",
+      "expected": "stochastic_trend + collective_anomaly",
+      "predicted": "volatility + collective_anomaly",
       "match": "PARTIAL"
     },
     {
-      "gid": 31,
-      "group": "quad+variance_shift",
-      "leaf": "Quadratic + Variance Shift",
-      "csv": "quad_variance_shift_09.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend + variance_shift",
+      "gid": 32,
+      "group": "stoch+collective",
+      "leaf": "Stochastic Trend + Collective Anomaly",
+      "csv": "stoch_collective_602.csv",
+      "expected": "stochastic_trend + collective_anomaly",
+      "predicted": "stochastic_trend + collective_anomaly",
       "match": "FULL"
     },
     {
-      "gid": 31,
-      "group": "quad+variance_shift",
-      "leaf": "Quadratic + Variance Shift",
-      "csv": "quad_variance_shift_01.csv",
-      "expected": "deterministic_trend + variance_shift",
-      "predicted": "deterministic_trend",
+      "gid": 32,
+      "group": "stoch+collective",
+      "leaf": "Stochastic Trend + Collective Anomaly",
+      "csv": "stoch_collective_567.csv",
+      "expected": "stochastic_trend + collective_anomaly",
+      "predicted": "stochastic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 32,
+      "group": "stoch+collective",
+      "leaf": "Stochastic Trend + Collective Anomaly",
+      "csv": "stoch_collective_235.csv",
+      "expected": "stochastic_trend + collective_anomaly",
+      "predicted": "stochastic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 32,
+      "group": "stoch+collective",
+      "leaf": "Stochastic Trend + Collective Anomaly",
+      "csv": "stoch_collective_225.csv",
+      "expected": "stochastic_trend + collective_anomaly",
+      "predicted": "stochastic_trend + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 32,
+      "group": "stoch+collective",
+      "leaf": "Stochastic Trend + Collective Anomaly",
+      "csv": "stoch_collective_007.csv",
+      "expected": "stochastic_trend + collective_anomaly",
+      "predicted": "deterministic_trend + collective_anomaly",
       "match": "PARTIAL"
     },
     {
       "gid": 32,
       "group": "stoch+collective",
       "leaf": "Stochastic Trend + Collective Anomaly",
-      "csv": "stoch_collective_08.csv",
-      "expected": "stochastic_trend + collective_anomaly",
-      "predicted": "stochastic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 32,
-      "group": "stoch+collective",
-      "leaf": "Stochastic Trend + Collective Anomaly",
-      "csv": "stoch_collective_03.csv",
-      "expected": "stochastic_trend + collective_anomaly",
-      "predicted": "stochastic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 32,
-      "group": "stoch+collective",
-      "leaf": "Stochastic Trend + Collective Anomaly",
-      "csv": "stoch_collective_04.csv",
-      "expected": "stochastic_trend + collective_anomaly",
-      "predicted": "stochastic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 32,
-      "group": "stoch+collective",
-      "leaf": "Stochastic Trend + Collective Anomaly",
-      "csv": "stoch_collective_01.csv",
-      "expected": "stochastic_trend + collective_anomaly",
-      "predicted": "stochastic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 32,
-      "group": "stoch+collective",
-      "leaf": "Stochastic Trend + Collective Anomaly",
-      "csv": "stoch_collective_02.csv",
-      "expected": "stochastic_trend + collective_anomaly",
-      "predicted": "stochastic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 32,
-      "group": "stoch+collective",
-      "leaf": "Stochastic Trend + Collective Anomaly",
-      "csv": "stoch_collective_00.csv",
-      "expected": "stochastic_trend + collective_anomaly",
-      "predicted": "stochastic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 32,
-      "group": "stoch+collective",
-      "leaf": "Stochastic Trend + Collective Anomaly",
-      "csv": "stoch_collective_06.csv",
-      "expected": "stochastic_trend + collective_anomaly",
-      "predicted": "stochastic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 32,
-      "group": "stoch+collective",
-      "leaf": "Stochastic Trend + Collective Anomaly",
-      "csv": "stoch_collective_09.csv",
-      "expected": "stochastic_trend + collective_anomaly",
-      "predicted": "stochastic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 32,
-      "group": "stoch+collective",
-      "leaf": "Stochastic Trend + Collective Anomaly",
-      "csv": "stoch_collective_05.csv",
-      "expected": "stochastic_trend + collective_anomaly",
-      "predicted": "stochastic_trend + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 32,
-      "group": "stoch+collective",
-      "leaf": "Stochastic Trend + Collective Anomaly",
-      "csv": "stoch_collective_07.csv",
+      "csv": "stoch_collective_072.csv",
       "expected": "stochastic_trend + collective_anomaly",
       "predicted": "stochastic_trend + collective_anomaly",
       "match": "FULL"
@@ -2893,7 +2803,7 @@
       "gid": 33,
       "group": "stoch+mean_shift",
       "leaf": "Stochastic Trend + Mean Shift",
-      "csv": "stoch_mean_shift_07.csv",
+      "csv": "stoch_mean_shift_724.csv",
       "expected": "stochastic_trend + mean_shift",
       "predicted": "stochastic_trend + mean_shift",
       "match": "FULL"
@@ -2902,7 +2812,7 @@
       "gid": 33,
       "group": "stoch+mean_shift",
       "leaf": "Stochastic Trend + Mean Shift",
-      "csv": "stoch_mean_shift_08.csv",
+      "csv": "stoch_mean_shift_646.csv",
       "expected": "stochastic_trend + mean_shift",
       "predicted": "stochastic_trend + mean_shift",
       "match": "FULL"
@@ -2911,16 +2821,43 @@
       "gid": 33,
       "group": "stoch+mean_shift",
       "leaf": "Stochastic Trend + Mean Shift",
-      "csv": "stoch_mean_shift_04.csv",
+      "csv": "stoch_mean_shift_060.csv",
       "expected": "stochastic_trend + mean_shift",
-      "predicted": "stochastic_trend",
+      "predicted": "stochastic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 33,
+      "group": "stoch+mean_shift",
+      "leaf": "Stochastic Trend + Mean Shift",
+      "csv": "stoch_mean_shift_234.csv",
+      "expected": "stochastic_trend + mean_shift",
+      "predicted": "stochastic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 33,
+      "group": "stoch+mean_shift",
+      "leaf": "Stochastic Trend + Mean Shift",
+      "csv": "stoch_mean_shift_069.csv",
+      "expected": "stochastic_trend + mean_shift",
+      "predicted": "stochastic_trend + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 33,
+      "group": "stoch+mean_shift",
+      "leaf": "Stochastic Trend + Mean Shift",
+      "csv": "stoch_mean_shift_927.csv",
+      "expected": "stochastic_trend + mean_shift",
+      "predicted": "deterministic_trend + mean_shift",
       "match": "PARTIAL"
     },
     {
       "gid": 33,
       "group": "stoch+mean_shift",
       "leaf": "Stochastic Trend + Mean Shift",
-      "csv": "stoch_mean_shift_09.csv",
+      "csv": "stoch_mean_shift_032.csv",
       "expected": "stochastic_trend + mean_shift",
       "predicted": "stochastic_trend + mean_shift",
       "match": "FULL"
@@ -2929,7 +2866,7 @@
       "gid": 33,
       "group": "stoch+mean_shift",
       "leaf": "Stochastic Trend + Mean Shift",
-      "csv": "stoch_mean_shift_05.csv",
+      "csv": "stoch_mean_shift_880.csv",
       "expected": "stochastic_trend + mean_shift",
       "predicted": "stochastic_trend + mean_shift",
       "match": "FULL"
@@ -2938,7 +2875,7 @@
       "gid": 33,
       "group": "stoch+mean_shift",
       "leaf": "Stochastic Trend + Mean Shift",
-      "csv": "stoch_mean_shift_06.csv",
+      "csv": "stoch_mean_shift_338.csv",
       "expected": "stochastic_trend + mean_shift",
       "predicted": "stochastic_trend + mean_shift",
       "match": "FULL"
@@ -2947,34 +2884,7 @@
       "gid": 33,
       "group": "stoch+mean_shift",
       "leaf": "Stochastic Trend + Mean Shift",
-      "csv": "stoch_mean_shift_00.csv",
-      "expected": "stochastic_trend + mean_shift",
-      "predicted": "stochastic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 33,
-      "group": "stoch+mean_shift",
-      "leaf": "Stochastic Trend + Mean Shift",
-      "csv": "stoch_mean_shift_02.csv",
-      "expected": "stochastic_trend + mean_shift",
-      "predicted": "stochastic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 33,
-      "group": "stoch+mean_shift",
-      "leaf": "Stochastic Trend + Mean Shift",
-      "csv": "stoch_mean_shift_01.csv",
-      "expected": "stochastic_trend + mean_shift",
-      "predicted": "stochastic_trend + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 33,
-      "group": "stoch+mean_shift",
-      "leaf": "Stochastic Trend + Mean Shift",
-      "csv": "stoch_mean_shift_03.csv",
+      "csv": "stoch_mean_shift_072.csv",
       "expected": "stochastic_trend + mean_shift",
       "predicted": "stochastic_trend + mean_shift",
       "match": "FULL"
@@ -2983,7 +2893,61 @@
       "gid": 34,
       "group": "stoch+point_anomaly",
       "leaf": "Stochastic Trend + Point Anomaly",
-      "csv": "stoch_point_anomaly_02.csv",
+      "csv": "stoch_point_anomaly_526.csv",
+      "expected": "stochastic_trend + point_anomaly",
+      "predicted": "stochastic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 34,
+      "group": "stoch+point_anomaly",
+      "leaf": "Stochastic Trend + Point Anomaly",
+      "csv": "stoch_point_anomaly_243.csv",
+      "expected": "stochastic_trend + point_anomaly",
+      "predicted": "stochastic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 34,
+      "group": "stoch+point_anomaly",
+      "leaf": "Stochastic Trend + Point Anomaly",
+      "csv": "stoch_point_anomaly_285.csv",
+      "expected": "stochastic_trend + point_anomaly",
+      "predicted": "stochastic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 34,
+      "group": "stoch+point_anomaly",
+      "leaf": "Stochastic Trend + Point Anomaly",
+      "csv": "stoch_point_anomaly_685.csv",
+      "expected": "stochastic_trend + point_anomaly",
+      "predicted": "stochastic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 34,
+      "group": "stoch+point_anomaly",
+      "leaf": "Stochastic Trend + Point Anomaly",
+      "csv": "stoch_point_anomaly_497.csv",
+      "expected": "stochastic_trend + point_anomaly",
+      "predicted": "stochastic_trend + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 34,
+      "group": "stoch+point_anomaly",
+      "leaf": "Stochastic Trend + Point Anomaly",
+      "csv": "stoch_point_anomaly_219.csv",
+      "expected": "stochastic_trend + point_anomaly",
+      "predicted": "stationary + point_anomaly",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 34,
+      "group": "stoch+point_anomaly",
+      "leaf": "Stochastic Trend + Point Anomaly",
+      "csv": "stoch_point_anomaly_552.csv",
       "expected": "stochastic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "PARTIAL"
@@ -2992,7 +2956,7 @@
       "gid": 34,
       "group": "stoch+point_anomaly",
       "leaf": "Stochastic Trend + Point Anomaly",
-      "csv": "stoch_point_anomaly_04.csv",
+      "csv": "stoch_point_anomaly_135.csv",
       "expected": "stochastic_trend + point_anomaly",
       "predicted": "deterministic_trend + point_anomaly",
       "match": "PARTIAL"
@@ -3001,7 +2965,7 @@
       "gid": 34,
       "group": "stoch+point_anomaly",
       "leaf": "Stochastic Trend + Point Anomaly",
-      "csv": "stoch_point_anomaly_01.csv",
+      "csv": "stoch_point_anomaly_740.csv",
       "expected": "stochastic_trend + point_anomaly",
       "predicted": "stochastic_trend + point_anomaly",
       "match": "FULL"
@@ -3010,70 +2974,25 @@
       "gid": 34,
       "group": "stoch+point_anomaly",
       "leaf": "Stochastic Trend + Point Anomaly",
-      "csv": "stoch_point_anomaly_00.csv",
+      "csv": "stoch_point_anomaly_957.csv",
       "expected": "stochastic_trend + point_anomaly",
-      "predicted": "stochastic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 34,
-      "group": "stoch+point_anomaly",
-      "leaf": "Stochastic Trend + Point Anomaly",
-      "csv": "stoch_point_anomaly_05.csv",
-      "expected": "stochastic_trend + point_anomaly",
-      "predicted": "stochastic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 34,
-      "group": "stoch+point_anomaly",
-      "leaf": "Stochastic Trend + Point Anomaly",
-      "csv": "stoch_point_anomaly_08.csv",
-      "expected": "stochastic_trend + point_anomaly",
-      "predicted": "stochastic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 34,
-      "group": "stoch+point_anomaly",
-      "leaf": "Stochastic Trend + Point Anomaly",
-      "csv": "stoch_point_anomaly_07.csv",
-      "expected": "stochastic_trend + point_anomaly",
-      "predicted": "stochastic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 34,
-      "group": "stoch+point_anomaly",
-      "leaf": "Stochastic Trend + Point Anomaly",
-      "csv": "stoch_point_anomaly_03.csv",
-      "expected": "stochastic_trend + point_anomaly",
-      "predicted": "stochastic_trend + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 34,
-      "group": "stoch+point_anomaly",
-      "leaf": "Stochastic Trend + Point Anomaly",
-      "csv": "stoch_point_anomaly_09.csv",
-      "expected": "stochastic_trend + point_anomaly",
-      "predicted": "deterministic_trend + point_anomaly",
+      "predicted": "stationary + point_anomaly",
       "match": "PARTIAL"
     },
     {
-      "gid": 34,
-      "group": "stoch+point_anomaly",
-      "leaf": "Stochastic Trend + Point Anomaly",
-      "csv": "stoch_point_anomaly_06.csv",
-      "expected": "stochastic_trend + point_anomaly",
-      "predicted": "stochastic_trend + point_anomaly",
-      "match": "FULL"
+      "gid": 35,
+      "group": "stoch+variance_shift",
+      "leaf": "Stochastic Trend + Variance Shift",
+      "csv": "stoch_variance_shift_903.csv",
+      "expected": "stochastic_trend + variance_shift",
+      "predicted": "stochastic_trend + mean_shift",
+      "match": "PARTIAL"
     },
     {
       "gid": 35,
       "group": "stoch+variance_shift",
       "leaf": "Stochastic Trend + Variance Shift",
-      "csv": "stoch_variance_shift_05.csv",
+      "csv": "stoch_variance_shift_584.csv",
       "expected": "stochastic_trend + variance_shift",
       "predicted": "stochastic_trend + variance_shift",
       "match": "FULL"
@@ -3082,7 +3001,7 @@
       "gid": 35,
       "group": "stoch+variance_shift",
       "leaf": "Stochastic Trend + Variance Shift",
-      "csv": "stoch_variance_shift_03.csv",
+      "csv": "stoch_variance_shift_590.csv",
       "expected": "stochastic_trend + variance_shift",
       "predicted": "stochastic_trend + variance_shift",
       "match": "FULL"
@@ -3091,7 +3010,16 @@
       "gid": 35,
       "group": "stoch+variance_shift",
       "leaf": "Stochastic Trend + Variance Shift",
-      "csv": "stoch_variance_shift_04.csv",
+      "csv": "stoch_variance_shift_484.csv",
+      "expected": "stochastic_trend + variance_shift",
+      "predicted": "stochastic_trend + mean_shift + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 35,
+      "group": "stoch+variance_shift",
+      "leaf": "Stochastic Trend + Variance Shift",
+      "csv": "stoch_variance_shift_248.csv",
       "expected": "stochastic_trend + variance_shift",
       "predicted": "stochastic_trend + variance_shift",
       "match": "FULL"
@@ -3100,7 +3028,16 @@
       "gid": 35,
       "group": "stoch+variance_shift",
       "leaf": "Stochastic Trend + Variance Shift",
-      "csv": "stoch_variance_shift_07.csv",
+      "csv": "stoch_variance_shift_803.csv",
+      "expected": "stochastic_trend + variance_shift",
+      "predicted": "stochastic_trend + mean_shift + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 35,
+      "group": "stoch+variance_shift",
+      "leaf": "Stochastic Trend + Variance Shift",
+      "csv": "stoch_variance_shift_826.csv",
       "expected": "stochastic_trend + variance_shift",
       "predicted": "stochastic_trend + variance_shift",
       "match": "FULL"
@@ -3109,7 +3046,7 @@
       "gid": 35,
       "group": "stoch+variance_shift",
       "leaf": "Stochastic Trend + Variance Shift",
-      "csv": "stoch_variance_shift_08.csv",
+      "csv": "stoch_variance_shift_416.csv",
       "expected": "stochastic_trend + variance_shift",
       "predicted": "stochastic_trend + variance_shift",
       "match": "FULL"
@@ -3118,43 +3055,16 @@
       "gid": 35,
       "group": "stoch+variance_shift",
       "leaf": "Stochastic Trend + Variance Shift",
-      "csv": "stoch_variance_shift_02.csv",
+      "csv": "stoch_variance_shift_194.csv",
       "expected": "stochastic_trend + variance_shift",
-      "predicted": "stochastic_trend + variance_shift",
-      "match": "FULL"
+      "predicted": "stationary + variance_shift",
+      "match": "PARTIAL"
     },
     {
       "gid": 35,
       "group": "stoch+variance_shift",
       "leaf": "Stochastic Trend + Variance Shift",
-      "csv": "stoch_variance_shift_00.csv",
-      "expected": "stochastic_trend + variance_shift",
-      "predicted": "stochastic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 35,
-      "group": "stoch+variance_shift",
-      "leaf": "Stochastic Trend + Variance Shift",
-      "csv": "stoch_variance_shift_09.csv",
-      "expected": "stochastic_trend + variance_shift",
-      "predicted": "stochastic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 35,
-      "group": "stoch+variance_shift",
-      "leaf": "Stochastic Trend + Variance Shift",
-      "csv": "stoch_variance_shift_01.csv",
-      "expected": "stochastic_trend + variance_shift",
-      "predicted": "stochastic_trend + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 35,
-      "group": "stoch+variance_shift",
-      "leaf": "Stochastic Trend + Variance Shift",
-      "csv": "stoch_variance_shift_06.csv",
+      "csv": "stoch_variance_shift_096.csv",
       "expected": "stochastic_trend + variance_shift",
       "predicted": "stochastic_trend + variance_shift",
       "match": "FULL"
@@ -3163,7 +3073,7 @@
       "gid": 36,
       "group": "vol+collective",
       "leaf": "Volatility + Collective Anomaly",
-      "csv": "vol_collective_00.csv",
+      "csv": "vol_collective_099.csv",
       "expected": "volatility + collective_anomaly",
       "predicted": "volatility + collective_anomaly",
       "match": "FULL"
@@ -3172,7 +3082,7 @@
       "gid": 36,
       "group": "vol+collective",
       "leaf": "Volatility + Collective Anomaly",
-      "csv": "vol_collective_09.csv",
+      "csv": "vol_collective_674.csv",
       "expected": "volatility + collective_anomaly",
       "predicted": "volatility + collective_anomaly",
       "match": "FULL"
@@ -3181,7 +3091,7 @@
       "gid": 36,
       "group": "vol+collective",
       "leaf": "Volatility + Collective Anomaly",
-      "csv": "vol_collective_05.csv",
+      "csv": "vol_collective_441.csv",
       "expected": "volatility + collective_anomaly",
       "predicted": "volatility + collective_anomaly",
       "match": "FULL"
@@ -3190,7 +3100,34 @@
       "gid": 36,
       "group": "vol+collective",
       "leaf": "Volatility + Collective Anomaly",
-      "csv": "vol_collective_06.csv",
+      "csv": "vol_collective_362.csv",
+      "expected": "volatility + collective_anomaly",
+      "predicted": "volatility + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 36,
+      "group": "vol+collective",
+      "leaf": "Volatility + Collective Anomaly",
+      "csv": "vol_collective_433.csv",
+      "expected": "volatility + collective_anomaly",
+      "predicted": "volatility + collective_anomaly + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 36,
+      "group": "vol+collective",
+      "leaf": "Volatility + Collective Anomaly",
+      "csv": "vol_collective_420.csv",
+      "expected": "volatility + collective_anomaly",
+      "predicted": "volatility + collective_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 36,
+      "group": "vol+collective",
+      "leaf": "Volatility + Collective Anomaly",
+      "csv": "vol_collective_478.csv",
       "expected": "volatility + collective_anomaly",
       "predicted": "stationary + collective_anomaly",
       "match": "PARTIAL"
@@ -3199,7 +3136,7 @@
       "gid": 36,
       "group": "vol+collective",
       "leaf": "Volatility + Collective Anomaly",
-      "csv": "vol_collective_01.csv",
+      "csv": "vol_collective_884.csv",
       "expected": "volatility + collective_anomaly",
       "predicted": "volatility + collective_anomaly",
       "match": "FULL"
@@ -3208,43 +3145,16 @@
       "gid": 36,
       "group": "vol+collective",
       "leaf": "Volatility + Collective Anomaly",
-      "csv": "vol_collective_02.csv",
+      "csv": "vol_collective_746.csv",
       "expected": "volatility + collective_anomaly",
-      "predicted": "volatility + collective_anomaly",
-      "match": "FULL"
+      "predicted": "stationary + collective_anomaly",
+      "match": "PARTIAL"
     },
     {
       "gid": 36,
       "group": "vol+collective",
       "leaf": "Volatility + Collective Anomaly",
-      "csv": "vol_collective_07.csv",
-      "expected": "volatility + collective_anomaly",
-      "predicted": "volatility + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 36,
-      "group": "vol+collective",
-      "leaf": "Volatility + Collective Anomaly",
-      "csv": "vol_collective_04.csv",
-      "expected": "volatility + collective_anomaly",
-      "predicted": "volatility + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 36,
-      "group": "vol+collective",
-      "leaf": "Volatility + Collective Anomaly",
-      "csv": "vol_collective_03.csv",
-      "expected": "volatility + collective_anomaly",
-      "predicted": "volatility + collective_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 36,
-      "group": "vol+collective",
-      "leaf": "Volatility + Collective Anomaly",
-      "csv": "vol_collective_08.csv",
+      "csv": "vol_collective_055.csv",
       "expected": "volatility + collective_anomaly",
       "predicted": "volatility + collective_anomaly",
       "match": "FULL"
@@ -3253,7 +3163,7 @@
       "gid": 37,
       "group": "vol+mean_shift",
       "leaf": "Volatility + Mean Shift",
-      "csv": "vol_mean_shift_08.csv",
+      "csv": "vol_mean_shift_689.csv",
       "expected": "volatility + mean_shift",
       "predicted": "volatility + mean_shift",
       "match": "FULL"
@@ -3262,16 +3172,25 @@
       "gid": 37,
       "group": "vol+mean_shift",
       "leaf": "Volatility + Mean Shift",
-      "csv": "vol_mean_shift_00.csv",
+      "csv": "vol_mean_shift_669.csv",
       "expected": "volatility + mean_shift",
-      "predicted": "volatility",
+      "predicted": "volatility + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 37,
+      "group": "vol+mean_shift",
+      "leaf": "Volatility + Mean Shift",
+      "csv": "vol_mean_shift_661.csv",
+      "expected": "volatility + mean_shift",
+      "predicted": "stationary + mean_shift",
       "match": "PARTIAL"
     },
     {
       "gid": 37,
       "group": "vol+mean_shift",
       "leaf": "Volatility + Mean Shift",
-      "csv": "vol_mean_shift_01.csv",
+      "csv": "vol_mean_shift_100.csv",
       "expected": "volatility + mean_shift",
       "predicted": "volatility + mean_shift",
       "match": "FULL"
@@ -3280,61 +3199,52 @@
       "gid": 37,
       "group": "vol+mean_shift",
       "leaf": "Volatility + Mean Shift",
-      "csv": "vol_mean_shift_09.csv",
+      "csv": "vol_mean_shift_062.csv",
       "expected": "volatility + mean_shift",
-      "predicted": "volatility + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 37,
-      "group": "vol+mean_shift",
-      "leaf": "Volatility + Mean Shift",
-      "csv": "vol_mean_shift_05.csv",
-      "expected": "volatility + mean_shift",
-      "predicted": "volatility + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 37,
-      "group": "vol+mean_shift",
-      "leaf": "Volatility + Mean Shift",
-      "csv": "vol_mean_shift_07.csv",
-      "expected": "volatility + mean_shift",
-      "predicted": "volatility + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 37,
-      "group": "vol+mean_shift",
-      "leaf": "Volatility + Mean Shift",
-      "csv": "vol_mean_shift_06.csv",
-      "expected": "volatility + mean_shift",
-      "predicted": "volatility + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 37,
-      "group": "vol+mean_shift",
-      "leaf": "Volatility + Mean Shift",
-      "csv": "vol_mean_shift_04.csv",
-      "expected": "volatility + mean_shift",
-      "predicted": "volatility + mean_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 37,
-      "group": "vol+mean_shift",
-      "leaf": "Volatility + Mean Shift",
-      "csv": "vol_mean_shift_03.csv",
-      "expected": "volatility + mean_shift",
-      "predicted": "deterministic_trend + mean_shift",
+      "predicted": "stationary + mean_shift",
       "match": "PARTIAL"
     },
     {
       "gid": 37,
       "group": "vol+mean_shift",
       "leaf": "Volatility + Mean Shift",
-      "csv": "vol_mean_shift_02.csv",
+      "csv": "vol_mean_shift_412.csv",
+      "expected": "volatility + mean_shift",
+      "predicted": "volatility + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 37,
+      "group": "vol+mean_shift",
+      "leaf": "Volatility + Mean Shift",
+      "csv": "vol_mean_shift_745.csv",
+      "expected": "volatility + mean_shift",
+      "predicted": "stationary + mean_shift",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 37,
+      "group": "vol+mean_shift",
+      "leaf": "Volatility + Mean Shift",
+      "csv": "vol_mean_shift_347.csv",
+      "expected": "volatility + mean_shift",
+      "predicted": "volatility + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 37,
+      "group": "vol+mean_shift",
+      "leaf": "Volatility + Mean Shift",
+      "csv": "vol_mean_shift_819.csv",
+      "expected": "volatility + mean_shift",
+      "predicted": "volatility + mean_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 37,
+      "group": "vol+mean_shift",
+      "leaf": "Volatility + Mean Shift",
+      "csv": "vol_mean_shift_882.csv",
       "expected": "volatility + mean_shift",
       "predicted": "volatility + mean_shift",
       "match": "FULL"
@@ -3343,70 +3253,7 @@
       "gid": 38,
       "group": "vol+point_anomaly",
       "leaf": "Volatility + Point Anomaly",
-      "csv": "vol_point_anomaly_02.csv",
-      "expected": "volatility + point_anomaly",
-      "predicted": "volatility + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 38,
-      "group": "vol+point_anomaly",
-      "leaf": "Volatility + Point Anomaly",
-      "csv": "vol_point_anomaly_00.csv",
-      "expected": "volatility + point_anomaly",
-      "predicted": "volatility + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 38,
-      "group": "vol+point_anomaly",
-      "leaf": "Volatility + Point Anomaly",
-      "csv": "vol_point_anomaly_04.csv",
-      "expected": "volatility + point_anomaly",
-      "predicted": "volatility + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 38,
-      "group": "vol+point_anomaly",
-      "leaf": "Volatility + Point Anomaly",
-      "csv": "vol_point_anomaly_09.csv",
-      "expected": "volatility + point_anomaly",
-      "predicted": "volatility + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 38,
-      "group": "vol+point_anomaly",
-      "leaf": "Volatility + Point Anomaly",
-      "csv": "vol_point_anomaly_08.csv",
-      "expected": "volatility + point_anomaly",
-      "predicted": "volatility + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 38,
-      "group": "vol+point_anomaly",
-      "leaf": "Volatility + Point Anomaly",
-      "csv": "vol_point_anomaly_06.csv",
-      "expected": "volatility + point_anomaly",
-      "predicted": "volatility + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 38,
-      "group": "vol+point_anomaly",
-      "leaf": "Volatility + Point Anomaly",
-      "csv": "vol_point_anomaly_01.csv",
-      "expected": "volatility + point_anomaly",
-      "predicted": "volatility + point_anomaly",
-      "match": "FULL"
-    },
-    {
-      "gid": 38,
-      "group": "vol+point_anomaly",
-      "leaf": "Volatility + Point Anomaly",
-      "csv": "vol_point_anomaly_07.csv",
+      "csv": "vol_point_anomaly_111.csv",
       "expected": "volatility + point_anomaly",
       "predicted": "stationary + point_anomaly",
       "match": "PARTIAL"
@@ -3415,16 +3262,79 @@
       "gid": 38,
       "group": "vol+point_anomaly",
       "leaf": "Volatility + Point Anomaly",
-      "csv": "vol_point_anomaly_05.csv",
+      "csv": "vol_point_anomaly_254.csv",
       "expected": "volatility + point_anomaly",
-      "predicted": "volatility + collective_anomaly + point_anomaly",
+      "predicted": "volatility + point_anomaly",
       "match": "FULL"
     },
     {
       "gid": 38,
       "group": "vol+point_anomaly",
       "leaf": "Volatility + Point Anomaly",
-      "csv": "vol_point_anomaly_03.csv",
+      "csv": "vol_point_anomaly_196.csv",
+      "expected": "volatility + point_anomaly",
+      "predicted": "stationary + point_anomaly",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 38,
+      "group": "vol+point_anomaly",
+      "leaf": "Volatility + Point Anomaly",
+      "csv": "vol_point_anomaly_194.csv",
+      "expected": "volatility + point_anomaly",
+      "predicted": "volatility + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 38,
+      "group": "vol+point_anomaly",
+      "leaf": "Volatility + Point Anomaly",
+      "csv": "vol_point_anomaly_549.csv",
+      "expected": "volatility + point_anomaly",
+      "predicted": "volatility + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 38,
+      "group": "vol+point_anomaly",
+      "leaf": "Volatility + Point Anomaly",
+      "csv": "vol_point_anomaly_459.csv",
+      "expected": "volatility + point_anomaly",
+      "predicted": "volatility + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 38,
+      "group": "vol+point_anomaly",
+      "leaf": "Volatility + Point Anomaly",
+      "csv": "vol_point_anomaly_143.csv",
+      "expected": "volatility + point_anomaly",
+      "predicted": "volatility + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 38,
+      "group": "vol+point_anomaly",
+      "leaf": "Volatility + Point Anomaly",
+      "csv": "vol_point_anomaly_432.csv",
+      "expected": "volatility + point_anomaly",
+      "predicted": "volatility + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 38,
+      "group": "vol+point_anomaly",
+      "leaf": "Volatility + Point Anomaly",
+      "csv": "vol_point_anomaly_187.csv",
+      "expected": "volatility + point_anomaly",
+      "predicted": "volatility + point_anomaly",
+      "match": "FULL"
+    },
+    {
+      "gid": 38,
+      "group": "vol+point_anomaly",
+      "leaf": "Volatility + Point Anomaly",
+      "csv": "vol_point_anomaly_285.csv",
       "expected": "volatility + point_anomaly",
       "predicted": "volatility + point_anomaly",
       "match": "FULL"
@@ -3433,7 +3343,7 @@
       "gid": 39,
       "group": "vol+variance_shift",
       "leaf": "Volatility + Variance Shift",
-      "csv": "vol_variance_shift_05.csv",
+      "csv": "vol_variance_shift_473.csv",
       "expected": "volatility + variance_shift",
       "predicted": "volatility + variance_shift",
       "match": "FULL"
@@ -3442,7 +3352,7 @@
       "gid": 39,
       "group": "vol+variance_shift",
       "leaf": "Volatility + Variance Shift",
-      "csv": "vol_variance_shift_08.csv",
+      "csv": "vol_variance_shift_255.csv",
       "expected": "volatility + variance_shift",
       "predicted": "volatility + variance_shift",
       "match": "FULL"
@@ -3451,7 +3361,16 @@
       "gid": 39,
       "group": "vol+variance_shift",
       "leaf": "Volatility + Variance Shift",
-      "csv": "vol_variance_shift_06.csv",
+      "csv": "vol_variance_shift_895.csv",
+      "expected": "volatility + variance_shift",
+      "predicted": "volatility",
+      "match": "PARTIAL"
+    },
+    {
+      "gid": 39,
+      "group": "vol+variance_shift",
+      "leaf": "Volatility + Variance Shift",
+      "csv": "vol_variance_shift_945.csv",
       "expected": "volatility + variance_shift",
       "predicted": "volatility + variance_shift",
       "match": "FULL"
@@ -3460,7 +3379,7 @@
       "gid": 39,
       "group": "vol+variance_shift",
       "leaf": "Volatility + Variance Shift",
-      "csv": "vol_variance_shift_04.csv",
+      "csv": "vol_variance_shift_077.csv",
       "expected": "volatility + variance_shift",
       "predicted": "volatility + variance_shift",
       "match": "FULL"
@@ -3469,55 +3388,46 @@
       "gid": 39,
       "group": "vol+variance_shift",
       "leaf": "Volatility + Variance Shift",
-      "csv": "vol_variance_shift_09.csv",
-      "expected": "volatility + variance_shift",
-      "predicted": "volatility + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 39,
-      "group": "vol+variance_shift",
-      "leaf": "Volatility + Variance Shift",
-      "csv": "vol_variance_shift_01.csv",
-      "expected": "volatility + variance_shift",
-      "predicted": "volatility + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 39,
-      "group": "vol+variance_shift",
-      "leaf": "Volatility + Variance Shift",
-      "csv": "vol_variance_shift_07.csv",
-      "expected": "volatility + variance_shift",
-      "predicted": "volatility + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 39,
-      "group": "vol+variance_shift",
-      "leaf": "Volatility + Variance Shift",
-      "csv": "vol_variance_shift_00.csv",
-      "expected": "volatility + variance_shift",
-      "predicted": "volatility + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 39,
-      "group": "vol+variance_shift",
-      "leaf": "Volatility + Variance Shift",
-      "csv": "vol_variance_shift_02.csv",
-      "expected": "volatility + variance_shift",
-      "predicted": "volatility + variance_shift",
-      "match": "FULL"
-    },
-    {
-      "gid": 39,
-      "group": "vol+variance_shift",
-      "leaf": "Volatility + Variance Shift",
-      "csv": "vol_variance_shift_03.csv",
+      "csv": "vol_variance_shift_453.csv",
       "expected": "volatility + variance_shift",
       "predicted": "stationary + variance_shift",
       "match": "PARTIAL"
+    },
+    {
+      "gid": 39,
+      "group": "vol+variance_shift",
+      "leaf": "Volatility + Variance Shift",
+      "csv": "vol_variance_shift_827.csv",
+      "expected": "volatility + variance_shift",
+      "predicted": "volatility + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 39,
+      "group": "vol+variance_shift",
+      "leaf": "Volatility + Variance Shift",
+      "csv": "vol_variance_shift_882.csv",
+      "expected": "volatility + variance_shift",
+      "predicted": "volatility + variance_shift",
+      "match": "FULL"
+    },
+    {
+      "gid": 39,
+      "group": "vol+variance_shift",
+      "leaf": "Volatility + Variance Shift",
+      "csv": "vol_variance_shift_876.csv",
+      "expected": "volatility + variance_shift",
+      "predicted": "deterministic_trend + mean_shift",
+      "match": "NONE"
+    },
+    {
+      "gid": 39,
+      "group": "vol+variance_shift",
+      "leaf": "Volatility + Variance Shift",
+      "csv": "vol_variance_shift_563.csv",
+      "expected": "volatility + variance_shift",
+      "predicted": "volatility + variance_shift",
+      "match": "FULL"
     }
   ]
 }
