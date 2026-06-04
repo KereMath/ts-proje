@@ -1,0 +1,53 @@
+{
+  "base_meta": {
+    "acc": 0.918,
+    "f1": 0.9166
+  },
+  "approach": "full stacking v4: meta base + blended anomaly (meta*alpha + new*(1-alpha))",
+  "blend_params": {
+    "collective_anomaly": {
+      "alpha": 0.5,
+      "threshold": 0.5
+    },
+    "mean_shift": {
+      "alpha": 0.8,
+      "threshold": 0.38
+    },
+    "point_anomaly": {
+      "alpha": 0.5,
+      "threshold": 0.5
+    },
+    "trend_shift": {
+      "alpha": 0.5,
+      "threshold": 0.5
+    },
+    "variance_shift": {
+      "alpha": 0.45,
+      "threshold": 0.4
+    }
+  },
+  "anomaly_meta": {
+    "collective_anomaly": {
+      "f1": 0.9333,
+      "acc": 0.974
+    },
+    "mean_shift": {
+      "f1": 0.9333,
+      "acc": 0.974
+    },
+    "point_anomaly": {
+      "f1": 0.9697,
+      "acc": 0.987
+    },
+    "trend_shift": {
+      "f1": 1.0,
+      "acc": 1.0
+    },
+    "variance_shift": {
+      "f1": 0.9032,
+      "acc": 0.961
+    }
+  },
+  "n_samples": 304,
+  "n_features": 808
+}

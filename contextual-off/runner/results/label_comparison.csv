@@ -1,0 +1,22 @@
+file,n,source,gt_base,gt_anoms,pred_base,pred_anoms,base_ok,match
+W1.csv,45,Wei,stationary,point_anomaly,deterministic_trend,collective_anomaly,False,NONE
+W2.csv,302,Wei,stationary,variance_shift,stochastic_trend,"collective_anomaly, point_anomaly",False,NONE
+W3.csv,82,Wei,stationary,variance_shift,deterministic_trend,collective_anomaly,False,NONE
+W5.csv,71,Wei,deterministic_trend,mean_shift,deterministic_trend,collective_anomaly,True,PARTIAL
+W6.csv,114,Wei,deterministic_trend,variance_shift,deterministic_trend,collective_anomaly,True,PARTIAL
+W10.csv,-,Wei,stochastic_trend,point_anomaly,(pipeline'a girmedi),-,False,MISSING
+uspop.csv,21,Brockwell,deterministic_trend,-,deterministic_trend,collective_anomaly,True,PARTIAL
+strikes.csv,30,Brockwell,stationary,-,deterministic_trend,collective_anomaly,False,NONE
+sunspots.csv,100,Brockwell,stationary,-,deterministic_trend,collective_anomaly,False,NONE
+airpass.csv,144,Brockwell,stochastic_trend,-,deterministic_trend,collective_anomaly,False,NONE
+deaths.csv,72,Brockwell,stochastic_trend,-,deterministic_trend,collective_anomaly,False,NONE
+INDPRO.csv,372,Shumway,stochastic_trend,-,deterministic_trend,collective_anomaly,False,NONE
+UNRATE.csv,372,Shumway,stochastic_trend,-,deterministic_trend,collective_anomaly,False,NONE
+soi_dataframe.csv,453,Shumway,stationary,-,volatility,"collective_anomaly, variance_shift",False,NONE
+rec_dataframe.csv,453,Shumway,stationary,-,deterministic_trend,collective_anomaly,False,NONE
+GermanGNP.csv,88,JMulTi,deterministic_trend,trend_shift,deterministic_trend,collective_anomaly,True,PARTIAL
+US_investment.csv,104,JMulTi,stationary,-,stationary,collective_anomaly,True,PARTIAL
+German_consumption.csv,93,JMulTi,stochastic_trend,-,deterministic_trend,collective_anomaly,False,NONE
+Polish_productivity.csv,117,JMulTi,stochastic_trend,trend_shift,stochastic_trend,variance_shift,True,PARTIAL
+RealInt_dataframe.csv,103,Bai-Perron,stationary,mean_shift,deterministic_trend,collective_anomaly,False,NONE
+NP_xetradax_returns100.csv,1028,Lutkepohl,stationary,-,stationary,"collective_anomaly, point_anomaly",True,PARTIAL
