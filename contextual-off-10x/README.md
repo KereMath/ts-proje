@@ -158,3 +158,39 @@ python contextual-off-10x/runner/50_threshold_sweep.py
 
 NOT: `contextual-off/data_10x/` ve `processed_data/` klasorleri gitignore'da
 (181MB) — reproducible script var.
+
+## 6. Joint Alpha/Threshold Sweep (per-anomaly grid)
+
+`runner/55_alpha_thresh_sweep.py`: 3 STAT_GATE × 5 anomali × 6 alpha × 13 threshold = 1170 evaluation, training set'i (20/grup × 38 = 760) optimize ediyor.
+
+### Optimal blend (sweep'ten)
+| anomali | baseline alpha/thresh | **optimal alpha/thresh** |
+|---|---|---|
+| collective_anomaly | 0.55/0.46 | **0.20/0.85** |
+| mean_shift | 0.65/0.44 | **0.50/0.80** |
+| point_anomaly | 0.55/0.46 | **0.20/0.75** |
+| trend_shift | 0.75/0.38 | **0.20/0.90** |
+| variance_shift | 0.60/0.54 | **0.35/0.90** |
+
+**Kritik gozlem:** Trainer'in ogrendigi threshold'lar (0.38-0.54) **cok dusuk**. Optimal degerler **0.75-0.90 arasinda**. Bu, 10x modellerin yuksek probability'leri icin trainer'in F1-maximize stratejisinin pipeline FULL-maximize ile uyusmadigini gosteriyor.
+
+### Sonuc: training-set overfitting
+| Metrik | Baseline | Optimized | Delta |
+|---|---|---|---|
+| Training FULL (760) | 571 | **584** | **+13** (+1.7 puan) |
+| Realdata base acc (20 GT) | 6 | 6 | +0 |
+| Realdata FULL (10 saf stat) | 0 | 0 | +0 |
+| Sentetik base acc (500) | 385 (77%) | 385 (77%) | +0 |
+
+Optimization training set'i iyilestirdi (+13 FULL) ama **test setlerine yansimadi**. Egitim seti icinde grid search ile bulunan degerler, gercek-dunya verilerinde ayni kalibrasyon avantajini vermiyor.
+
+### STAT_GATE etkisiz
+Joint sweep'te 3 STAT_GATE degerinde (0.90, 0.95, 1.00) sonuc **aynen ayni** (584/760). Cunku STAT_BASE_AND=0.40 sabit ve training set'te neredeyse hicbir ornekte hem stat_prob>=gate hem base_meta_p_stat>=0.40 birlikte saglanmiyor (eski sweep gosterdi).
+
+### Cikarim
+- **Trainer threshold'lari overfit:** Eğitim seti optimum'u, test setine generalize etmiyor
+- **10x veri binary F1'leri iyilestirdi** ama pipeline FULL match icin "more samples != better decisions"
+- **Anomali threshold'larini yukseltmek** (0.70+) FULL_match'te kucuk iyilesme veriyor (+13/760 = +1.7 puan) ama test seti degismez
+- **Realdata FULL=0** sebebi: 10x ile modeller daha tutarli ama saf stationary realdata icin base meta P(stationary)>0.75 esigi nadiren saglaniyor; suppress mekanizmasi tetiklenemiyor
+
+Detay: [runner/results/ALPHA_THRESH_SWEEP.md](runner/results/ALPHA_THRESH_SWEEP.md), [runner/results/OPTIMIZED_EVAL.md](runner/results/OPTIMIZED_EVAL.md)

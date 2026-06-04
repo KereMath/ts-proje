@@ -1,0 +1,116 @@
+{
+  "baseline_full": 571,
+  "baseline_total": 760,
+  "best_stat_gate": 0.9,
+  "best_blend": {
+    "collective_anomaly": {
+      "alpha": 0.2,
+      "threshold": 0.85
+    },
+    "mean_shift": {
+      "alpha": 0.5,
+      "threshold": 0.8
+    },
+    "point_anomaly": {
+      "alpha": 0.2,
+      "threshold": 0.75
+    },
+    "trend_shift": {
+      "alpha": 0.2,
+      "threshold": 0.9
+    },
+    "variance_shift": {
+      "alpha": 0.35,
+      "threshold": 0.9
+    }
+  },
+  "best_full": 584,
+  "best_partial": 149,
+  "best_none": 27,
+  "joint_results": [
+    {
+      "stat_gate": 0.9,
+      "blend": {
+        "collective_anomaly": {
+          "alpha": 0.2,
+          "threshold": 0.85
+        },
+        "mean_shift": {
+          "alpha": 0.5,
+          "threshold": 0.8
+        },
+        "point_anomaly": {
+          "alpha": 0.2,
+          "threshold": 0.75
+        },
+        "trend_shift": {
+          "alpha": 0.2,
+          "threshold": 0.9
+        },
+        "variance_shift": {
+          "alpha": 0.35,
+          "threshold": 0.9
+        }
+      },
+      "FULL": 584,
+      "PARTIAL": 149,
+      "NONE": 27
+    },
+    {
+      "stat_gate": 0.95,
+      "blend": {
+        "collective_anomaly": {
+          "alpha": 0.2,
+          "threshold": 0.85
+        },
+        "mean_shift": {
+          "alpha": 0.5,
+          "threshold": 0.8
+        },
+        "point_anomaly": {
+          "alpha": 0.2,
+          "threshold": 0.75
+        },
+        "trend_shift": {
+          "alpha": 0.2,
+          "threshold": 0.9
+        },
+        "variance_shift": {
+          "alpha": 0.35,
+          "threshold": 0.9
+        }
+      },
+      "FULL": 584,
+      "PARTIAL": 149,
+      "NONE": 27
+    },
+    {
+      "stat_gate": 1.0,
+      "blend": {
+        "collective_anomaly": {
+          "alpha": 0.2,
+          "threshold": 0.85
+        },
+        "mean_shift": {
+          "alpha": 0.5,
+          "threshold": 0.8
+        },
+        "point_anomaly": {
+          "alpha": 0.2,
+          "threshold": 0.75
+        },
+        "trend_shift": {
+          "alpha": 0.2,
+          "threshold": 0.9
+        },
+        "variance_shift": {
+          "alpha": 0.35,
+          "threshold": 0.9
+        }
+      },
+      "FULL": 584,
+      "PARTIAL": 149,
+      "NONE": 27
+    }
+  ]
+}
